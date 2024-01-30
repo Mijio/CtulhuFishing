@@ -38,7 +38,12 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye1Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -53,7 +58,12 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye0Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -67,7 +77,16 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/EyeProgressSetProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -94,7 +113,12 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye6Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -109,7 +133,12 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye5Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -124,7 +153,12 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye4Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -139,7 +173,12 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye3Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -154,7 +193,12 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye2Procedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -166,8 +210,8 @@
       "registry_name": "third_eye",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json"
         ]
       }
     },
