@@ -22,8 +22,8 @@ import com.mojang.brigadier.arguments.DoubleArgumentType;
 public class EyeProgressCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("eyeprogress").requires(s -> s.hasPermission(1))
-				.then(Commands.argument("eyeprogress", MessageArgument.message()).then(Commands.argument("eye", DoubleArgumentType.doubleArg()).then(Commands.argument("revelation_score", DoubleArgumentType.doubleArg(0)).executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("eyeprogress").requires(s -> s.hasPermission(1)).then(
+				Commands.argument("eyeprogress", MessageArgument.message()).then(Commands.argument("revelation_score", MessageArgument.message()).then(Commands.argument("revelation_score", DoubleArgumentType.doubleArg(0)).executes(arguments -> {
 					ServerLevel world = arguments.getSource().getLevel();
 					double x = arguments.getSource().getPosition().x();
 					double y = arguments.getSource().getPosition().y();

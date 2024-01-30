@@ -79,11 +79,20 @@
       {
         "type": "image",
         "data": {
-          "image": "testreveleation.png",
+          "image": "testreveleation_6.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "ThirdEye6"
           },
+          "x": 187,
+          "y": -8
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "testreveleation.png",
+          "use1Xscale": false,
           "x": 187,
           "y": -8
         }
