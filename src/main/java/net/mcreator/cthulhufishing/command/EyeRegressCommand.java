@@ -19,7 +19,7 @@ import net.mcreator.cthulhufishing.procedures.EyeRegressSetProcedure;
 public class EyeRegressCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("eyeprogress").requires(s -> s.hasPermission(1)).executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("eyeregress").requires(s -> s.hasPermission(1)).executes(arguments -> {
 			ServerLevel world = arguments.getSource().getLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();
