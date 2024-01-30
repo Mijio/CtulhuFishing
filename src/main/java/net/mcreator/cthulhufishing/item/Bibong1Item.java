@@ -3,8 +3,8 @@ package net.mcreator.cthulhufishing.item;
 
 import net.minecraft.world.entity.ai.attributes.Attributes;
 
-public class Test2Item extends PickaxeItem {
-	public Test2Item() {
+public class Bibong1Item extends PickaxeItem {
+	public Bibong1Item() {
 		super(new Tier() {
 			public int getUses() {
 				return 100;

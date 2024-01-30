@@ -12,10 +12,12 @@ import net.minecraft.world.item.Item;
 
 import net.mcreator.cthulhufishing.item.TestItemItem;
 import net.mcreator.cthulhufishing.item.Test2Item;
+import net.mcreator.cthulhufishing.item.Bibong1Item;
 import net.mcreator.cthulhufishing.CthulhufishingMod;
 
 public class CthulhufishingModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, CthulhufishingMod.MODID);
 	public static final RegistryObject<Item> TEST_2 = REGISTRY.register("test_2", () -> new Test2Item());
+	public static final RegistryObject<Item> BIBONG_1 = REGISTRY.register("bibong_1", () -> new Bibong1Item());
 	public static final RegistryObject<Item> TEST_ITEM = REGISTRY.register("test_item", () -> new TestItemItem());
 }
