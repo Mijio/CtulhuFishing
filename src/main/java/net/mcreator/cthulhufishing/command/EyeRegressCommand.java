@@ -13,7 +13,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.commands.Commands;
 
-import net.mcreator.cthulhufishing.procedures.EyeRegressSetProcedure;
+import net.mcreator.cthulhufishing.procedures.EyeProgressSetProcedure;
 
 @Mod.EventBusSubscriber
 public class EyeRegressCommand {
@@ -29,7 +29,7 @@ public class EyeRegressCommand {
 				entity = FakePlayerFactory.getMinecraft(world);
 			Direction direction = entity.getDirection();
 
-			EyeRegressSetProcedure.execute(world, entity);
+			EyeProgressSetProcedure.execute(world, entity);
 			return 0;
 		}));
 	}
