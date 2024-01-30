@@ -212,6 +212,18 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "EyeHUD",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eye_hud",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/client/screens/EyeHUDOverlay.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
