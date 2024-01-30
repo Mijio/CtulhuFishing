@@ -17,7 +17,7 @@
     {
       "name": "EyeHUD",
       "type": "overlay",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "eye_hud",
       "metadata": {
@@ -30,7 +30,7 @@
       "name": "ThirdEye1",
       "type": "procedure",
       "sortid": 3,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "third_eye_1",
       "metadata": {
@@ -50,7 +50,7 @@
       "name": "ThirdEye0",
       "type": "procedure",
       "sortid": 4,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "third_eye_0",
       "metadata": {
@@ -105,7 +105,7 @@
       "name": "ThirdEye6",
       "type": "procedure",
       "sortid": 9,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "third_eye_6",
       "metadata": {
@@ -125,7 +125,7 @@
       "name": "ThirdEye5",
       "type": "procedure",
       "sortid": 8,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "third_eye_5",
       "metadata": {
@@ -145,7 +145,7 @@
       "name": "ThirdEye4",
       "type": "procedure",
       "sortid": 7,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "third_eye_4",
       "metadata": {
@@ -165,7 +165,7 @@
       "name": "ThirdEye3",
       "type": "procedure",
       "sortid": 6,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "third_eye_3",
       "metadata": {
@@ -185,7 +185,7 @@
       "name": "ThirdEye2",
       "type": "procedure",
       "sortid": 5,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "third_eye_2",
       "metadata": {
