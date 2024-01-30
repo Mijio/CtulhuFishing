@@ -15,18 +15,6 @@
       }
     },
     {
-      "name": "EyeHUD",
-      "type": "overlay",
-      "compiles": false,
-      "locked_code": false,
-      "registry_name": "eye_hud",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/client/screens/EyeHUDOverlay.java"
-        ]
-      }
-    },
-    {
       "name": "ThirdEye1",
       "type": "procedure",
       "sortid": 3,
