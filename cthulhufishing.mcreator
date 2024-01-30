@@ -3,6 +3,7 @@
     {
       "name": "TestItem",
       "type": "tool",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "test_item",
@@ -46,6 +47,8 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.cthulhufishing.bibong_1": "Bibong 1",
+      "item.cthulhufishing.test_2": "Test 2",
       "item.cthulhufishing.test_item": "Test Item"
     }
   },

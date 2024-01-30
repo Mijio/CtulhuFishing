@@ -1,7 +1,11 @@
 
 package net.mcreator.cthulhufishing.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.PickaxeItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
 
 public class Bibong1Item extends PickaxeItem {
 	public Bibong1Item() {
