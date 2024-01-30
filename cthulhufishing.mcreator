@@ -80,6 +80,7 @@
     {
       "name": "EyeProgress",
       "type": "command",
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "eye_progress",
@@ -222,6 +223,42 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/client/screens/EyeHUDOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "EyeRegressSet",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eye_regress_set",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/EyeRegressSetProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EyeRegress",
+      "type": "command",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eye_regress",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/command/EyeRegressCommand.java"
         ]
       }
     }
