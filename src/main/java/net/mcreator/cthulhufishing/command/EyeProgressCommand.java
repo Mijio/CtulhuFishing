@@ -16,25 +16,22 @@ import net.minecraft.commands.Commands;
 
 import net.mcreator.cthulhufishing.procedures.EyeProgressSetProcedure;
 
-import com.mojang.brigadier.arguments.DoubleArgumentType;
-
 @Mod.EventBusSubscriber
 public class EyeProgressCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("eyeprogress").requires(s -> s.hasPermission(1)).then(
-				Commands.argument("eyeprogress", MessageArgument.message()).then(Commands.argument("revelation_score", MessageArgument.message()).then(Commands.argument("revelation_score", DoubleArgumentType.doubleArg(0)).executes(arguments -> {
-					ServerLevel world = arguments.getSource().getLevel();
-					double x = arguments.getSource().getPosition().x();
-					double y = arguments.getSource().getPosition().y();
-					double z = arguments.getSource().getPosition().z();
-					Entity entity = arguments.getSource().getEntity();
-					if (entity == null)
-						entity = FakePlayerFactory.getMinecraft(world);
-					Direction direction = entity.getDirection();
+		event.getDispatcher().register(Commands.literal("eyeprogress").requires(s -> s.hasPermission(1)).then(Commands.argument("eyeprogress", MessageArgument.message()).executes(arguments -> {
+			ServerLevel world = arguments.getSource().getLevel();
+			double x = arguments.getSource().getPosition().x();
+			double y = arguments.getSource().getPosition().y();
+			double z = arguments.getSource().getPosition().z();
+			Entity entity = arguments.getSource().getEntity();
+			if (entity == null)
+				entity = FakePlayerFactory.getMinecraft(world);
+			Direction direction = entity.getDirection();
 
-					EyeProgressSetProcedure.execute(arguments, entity);
-					return 0;
-				})))));
+			EyeProgressSetProcedure.execute(world, entity);
+			return 0;
+		})));
 	}
 }
