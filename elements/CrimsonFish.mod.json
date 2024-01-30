@@ -3,16 +3,16 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "thirdeye",
+    "texture": "crimsonfish",
     "customModelName": "Normal",
-    "name": "Third Eye",
-    "rarity": "UNCOMMON",
+    "name": "Crimson Fish",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:CtulhuFishingTab"
     },
-    "stackSize": 1,
+    "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 32,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -29,14 +29,14 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "isFood": false,
-    "nutritionalValue": 4,
-    "saturation": 0.3,
+    "isFood": true,
+    "nutritionalValue": 2,
+    "saturation": 0.19999999999999998,
     "eatResultItem": {
       "value": ""
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "animation": "none"
+    "animation": "eat"
   }
 }

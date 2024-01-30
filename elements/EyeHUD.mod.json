@@ -7,85 +7,85 @@
       {
         "type": "image",
         "data": {
-          "image": "testreveleation_0.png",
+          "image": "eye0.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "ThirdEye0"
           },
-          "x": 191,
-          "y": 8
+          "x": 181,
+          "y": 0
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "testreveleation_1.png",
+          "image": "eye1.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "ThirdEye1"
           },
-          "x": 191,
-          "y": 8
+          "x": 249,
+          "y": 77
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "testreveleation_2.png",
+          "image": "eye2.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "ThirdEye2"
           },
-          "x": 191,
-          "y": 8
+          "x": 260,
+          "y": 123
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "testreveleation_3.png",
+          "image": "eye3.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "ThirdEye3"
           },
-          "x": 191,
-          "y": 8
+          "x": 352,
+          "y": 169
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "testreveleation_4.png",
+          "image": "eye4.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "ThirdEye4"
           },
-          "x": 191,
-          "y": 8
+          "x": 203,
+          "y": 146
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "testreveleation_5.png",
+          "image": "eye5.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "ThirdEye5"
           },
-          "x": 191,
-          "y": 8
+          "x": 157,
+          "y": 146
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "testreveleation_6.png",
+          "image": "eye6.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "ThirdEye6"
           },
-          "x": 191,
-          "y": 8
+          "x": 111,
+          "y": 169
         }
       }
     ],
@@ -96,7 +96,7 @@
       "sy": 23,
       "ox": 13,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

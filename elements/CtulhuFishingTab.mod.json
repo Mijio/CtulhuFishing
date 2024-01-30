@@ -4,7 +4,7 @@
   "definition": {
     "name": "Ctulhu Fishing Tab",
     "icon": {
-      "value": "CUSTOM:TestItem"
+      "value": "CUSTOM:ThirdEye"
     },
     "showSearch": true
   }

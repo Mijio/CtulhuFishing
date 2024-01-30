@@ -32,6 +32,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
+import net.mcreator.cthulhufishing.init.CthulhufishingModSounds;
 import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
 
 import java.util.function.Supplier;
@@ -52,6 +53,7 @@ public class CthulhufishingMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		CthulhufishingModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+		CthulhufishingModSounds.REGISTRY.register(bus);
 
 		CthulhufishingModItems.REGISTRY.register(bus);
 

@@ -1,20 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "TestItem",
-      "type": "tool",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "test_item",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/TestItemItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/test_item.json"
-        ]
-      }
-    },
-    {
       "name": "ThirdEye1",
       "type": "procedure",
       "sortid": 3,
@@ -199,8 +185,8 @@
       "registry_name": "third_eye",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json"
         ]
       }
     },
@@ -218,7 +204,7 @@
       "name": "EyeHUD",
       "type": "overlay",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "eye_hud",
       "metadata": {
         "files": [
@@ -261,6 +247,55 @@
           "src/main/java/net/mcreator/cthulhufishing/command/EyeRegressCommand.java"
         ]
       }
+    },
+    {
+      "name": "CrimsonFish",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_fish",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/crimson_fish.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/CrimsonFishItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CatchRelevation0",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "catch_relevation_0",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/CatchRelevation0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -271,11 +306,21 @@
       "value": "0"
     }
   ],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "catchfishmen",
+      "files": [
+        "catchfishmen"
+      ],
+      "category": "player",
+      "subtitle": "fishmen"
+    }
+  ],
   "language_map": {
     "en_us": {
+      "item.cthulhufishing.crimson_fish": "Crimson Fish",
       "item.cthulhufishing.third_eye": "Third Eye",
-      "item.cthulhufishing.test_item": "Test Item",
+      "subtitles.catchfishmen": "fishmen",
       "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab"
     }
   },
