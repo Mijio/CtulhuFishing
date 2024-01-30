@@ -9,6 +9,9 @@
         "data": {
           "image": "testreveleation_0.png",
           "use1Xscale": false,
+          "displayCondition": {
+            "name": "ThirdEye0"
+          },
           "x": 188,
           "y": -7
         }
@@ -18,6 +21,9 @@
         "data": {
           "image": "testreveleation_1.png",
           "use1Xscale": false,
+          "displayCondition": {
+            "name": "ThirdEye1"
+          },
           "x": 188,
           "y": -7
         }
@@ -27,6 +33,9 @@
         "data": {
           "image": "testreveleation_2.png",
           "use1Xscale": false,
+          "displayCondition": {
+            "name": "ThirdEye2"
+          },
           "x": 188,
           "y": -7
         }
@@ -36,6 +45,9 @@
         "data": {
           "image": "testreveleation_3.png",
           "use1Xscale": false,
+          "displayCondition": {
+            "name": "ThirdEye3"
+          },
           "x": 188,
           "y": -7
         }
@@ -45,6 +57,9 @@
         "data": {
           "image": "testreveleation_4.png",
           "use1Xscale": false,
+          "displayCondition": {
+            "name": "ThirdEye4"
+          },
           "x": 187,
           "y": -8
         }
@@ -54,15 +69,9 @@
         "data": {
           "image": "testreveleation_5.png",
           "use1Xscale": false,
-          "x": 187,
-          "y": -8
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "testreveleation_6.png",
-          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ThirdEye5"
+          },
           "x": 187,
           "y": -8
         }
@@ -72,6 +81,9 @@
         "data": {
           "image": "testreveleation.png",
           "use1Xscale": false,
+          "displayCondition": {
+            "name": "ThirdEye6"
+          },
           "x": 187,
           "y": -8
         }
