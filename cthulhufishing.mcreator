@@ -3,6 +3,7 @@
     {
       "name": "TestItem",
       "type": "tool",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "test_item",
@@ -12,12 +13,27 @@
           "src/main/resources/assets/cthulhufishing/models/item/test_item.json"
         ]
       }
+    },
+    {
+      "name": "Bibong1",
+      "type": "tool",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bibong_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/bibong_1.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/Bibong1Item.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.cthulhufishing.bibong_1": "Bibong 1",
       "item.cthulhufishing.test_item": "Test Item"
     }
   },
