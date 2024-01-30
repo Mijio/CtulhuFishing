@@ -54,31 +54,31 @@ public class EyeHUDOverlay {
 		if (true) {
 			if (ThirdEye0Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/testreveleation_0.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -25, posY + -127, 0, 0, 51, 45, 51, 45);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -186, posY + -121, 0, 0, 51, 45, 51, 45);
 			}
 			if (ThirdEye1Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/testreveleation_1.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -25, posY + -127, 0, 0, 51, 45, 51, 45);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -129, posY + -120, 0, 0, 51, 45, 51, 45);
 			}
 			if (ThirdEye2Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/testreveleation_2.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -25, posY + -127, 0, 0, 51, 45, 51, 45);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -75, posY + -119, 0, 0, 51, 45, 51, 45);
 			}
-			if (ThirdEye3Procedure.execute(entity)) {
+			if (ThirdEye3Procedure.execute()) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/testreveleation_3.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -25, posY + -127, 0, 0, 51, 45, 51, 45);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -20, posY + -118, 0, 0, 51, 45, 51, 45);
 			}
 			if (ThirdEye4Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/testreveleation_4.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -26, posY + -128, 0, 0, 51, 45, 51, 45);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 37, posY + -118, 0, 0, 51, 45, 51, 45);
 			}
 			if (ThirdEye5Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/testreveleation_5.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -26, posY + -128, 0, 0, 51, 45, 51, 45);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 93, posY + -115, 0, 0, 51, 45, 51, 45);
 			}
 			if (ThirdEye6Procedure.execute(entity)) {
-				RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/testreveleation_6.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -26, posY + -128, 0, 0, 51, 45, 51, 45);
+				RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/testreveleation.png"));
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + 153, posY + -113, 0, 0, 51, 45, 51, 45);
 			}
 		}
 		RenderSystem.depthMask(true);

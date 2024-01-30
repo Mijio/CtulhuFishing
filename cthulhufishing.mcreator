@@ -17,7 +17,7 @@
     {
       "name": "EyeHUD",
       "type": "overlay",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "eye_hud",
       "metadata": {
