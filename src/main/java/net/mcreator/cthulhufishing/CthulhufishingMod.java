@@ -13,6 +13,8 @@
  */
 package net.mcreator.cthulhufishing;
 
+import software.bernie.geckolib3.GeckoLib;
+
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
