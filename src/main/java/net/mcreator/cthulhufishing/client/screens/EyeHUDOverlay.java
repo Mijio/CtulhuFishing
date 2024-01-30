@@ -80,9 +80,6 @@ public class EyeHUDOverlay {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/testreveleation_6.png"));
 				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -26, posY + -128, 0, 0, 51, 45, 51, 45);
 			}
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/testreveleation.png"));
-			Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -26, posY + -128, 0, 0, 51, 45, 51, 45);
-
 		}
 		RenderSystem.depthMask(true);
 		RenderSystem.defaultBlendFunc();

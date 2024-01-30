@@ -87,15 +87,6 @@
           "x": 187,
           "y": -8
         }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "testreveleation.png",
-          "use1Xscale": false,
-          "x": 187,
-          "y": -8
-        }
       }
     ],
     "baseTexture": "",
