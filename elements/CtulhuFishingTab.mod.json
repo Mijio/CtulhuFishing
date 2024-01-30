@@ -1,0 +1,11 @@
+{
+  "_fv": 43,
+  "_type": "tab",
+  "definition": {
+    "name": "Ctulhu Fishing Tab",
+    "icon": {
+      "value": "CUSTOM:TestItem"
+    },
+    "showSearch": true
+  }
+}

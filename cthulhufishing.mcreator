@@ -27,26 +27,6 @@
       }
     },
     {
-      "name": "ThirdEye0",
-      "type": "procedure",
-      "sortid": 4,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "third_eye_0",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye0Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "ThirdEye1",
       "type": "procedure",
       "sortid": 3,
@@ -58,91 +38,47 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye1Procedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
-      "name": "ThirdEye2",
+      "name": "ThirdEye0",
       "type": "procedure",
-      "sortid": 5,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "third_eye_2",
+      "registry_name": "third_eye_0",
       "metadata": {
         "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye2Procedure.java"
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye0Procedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
-      "name": "ThirdEye3",
+      "name": "EyeProgressSet",
       "type": "procedure",
-      "sortid": 6,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "third_eye_3",
+      "registry_name": "eye_progress_set",
       "metadata": {
-        "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye3Procedure.java"
+          "src/main/java/net/mcreator/cthulhufishing/procedures/EyeProgressSetProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
-      "name": "ThirdEye4",
-      "type": "procedure",
-      "sortid": 7,
+      "name": "EyeProgress",
+      "type": "command",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "third_eye_4",
+      "registry_name": "eye_progress",
       "metadata": {
-        "return_type": "logic",
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye4Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "ThirdEye5",
-      "type": "procedure",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "third_eye_5",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye5Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+          "src/main/java/net/mcreator/cthulhufishing/command/EyeProgressCommand.java"
         ]
       }
     },
@@ -158,47 +94,91 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye6Procedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       }
     },
     {
-      "name": "EyeProgressSet",
+      "name": "ThirdEye5",
       "type": "procedure",
-      "sortid": 10,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "eye_progress_set",
+      "registry_name": "third_eye_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye5Procedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "ThirdEye4",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "third_eye_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye4Procedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "ThirdEye3",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "third_eye_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye3Procedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "ThirdEye2",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "third_eye_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ThirdEye2Procedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "ThirdEye",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "third_eye",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/EyeProgressSetProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "arguments",
-            "type": "cmdcontext"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java"
         ]
       }
     },
     {
-      "name": "EyeProgress",
-      "type": "command",
+      "name": "CtulhuFishingTab",
+      "type": "tab",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "eye_progress",
+      "registry_name": "ctulhu_fishing_tab",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/command/EyeProgressCommand.java"
-        ]
+        "files": []
       }
     }
   ],
@@ -213,7 +193,9 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.cthulhufishing.test_item": "Test Item"
+      "item.cthulhufishing.third_eye": "Third Eye",
+      "item.cthulhufishing.test_item": "Test Item",
+      "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab"
     }
   },
   "foldersRoot": {

@@ -1,19 +1,15 @@
 package net.mcreator.cthulhufishing.procedures;
 
-import net.minecraft.world.entity.Entity;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.cthulhufishing.network.CthulhufishingModVariables;
+import javax.annotation.Nullable;
 
 public class ThirdEye4Procedure {
-	public static boolean execute(Entity entity) {
-		if (entity == null)
-			return false;
-		if ((entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).EyeProgress >= 40) {
-			if ((entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).EyeProgress < 50) {
-				return true;
-			}
-			return false;
-		}
-		return false;
-	}
+public static boolean execute(
+) {
+if (>=40) {if (<50) {return
+true;}return
+false;}return
+false;
+}
 }
