@@ -1,0 +1,51 @@
+{
+  "mod_elements": [
+    {
+      "name": "TestItem",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/TestItemItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/test_item.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.cthulhufishing.test_item": "Test Item"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "cthulhufishing",
+    "modName": "CthulhuFishing",
+    "version": "1.0.0",
+    "author": "123, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "curios_api",
+      "geckolib",
+      "playeranimator"
+    ],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.cthulhufishing",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}
