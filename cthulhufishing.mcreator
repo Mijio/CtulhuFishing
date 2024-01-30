@@ -3,6 +3,7 @@
     {
       "name": "TestItem",
       "type": "tool",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "test_item",
@@ -12,12 +13,27 @@
           "src/main/resources/assets/cthulhufishing/models/item/test_item.json"
         ]
       }
+    },
+    {
+      "name": "Test2",
+      "type": "tool",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/test_2.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/Test2Item.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.cthulhufishing.test_2": "Test 2",
       "item.cthulhufishing.test_item": "Test Item"
     }
   },
