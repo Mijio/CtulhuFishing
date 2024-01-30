@@ -296,6 +296,19 @@
           }
         ]
       }
+    },
+    {
+      "name": "CtulhuAltar",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ctulhu_altar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/world/inventory/CtulhuAltarMenu.java",
+          "src/main/java/net/mcreator/cthulhufishing/client/gui/CtulhuAltarScreen.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
