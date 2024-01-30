@@ -11,14 +11,14 @@ public class EyeRegressSetProcedure {
 		if (entity == null)
 			return;
 		{
-			double _setval = (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).EyeProgress - 10;
+			double _setval = (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score - 10;
 			entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.EyeProgress = _setval;
+				capability.Revelation_Score = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		if (!world.isClientSide() && world.getServer() != null)
 			world.getServer().getPlayerList()
-					.broadcastSystemMessage(Component.literal(("Revelation: " + (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).EyeProgress)), false);
+					.broadcastSystemMessage(Component.literal(("Revelation: " + (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score)), false);
 	}
 }

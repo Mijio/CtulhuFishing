@@ -66,7 +66,7 @@ public class CthulhufishingModVariables {
 			event.getOriginal().revive();
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-			clone.EyeProgress = original.EyeProgress;
+			clone.Revelation_Score = original.Revelation_Score;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -103,7 +103,7 @@ public class CthulhufishingModVariables {
 	}
 
 	public static class PlayerVariables {
-		public double EyeProgress = 0;
+		public double Revelation_Score = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -112,13 +112,13 @@ public class CthulhufishingModVariables {
 
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
-			nbt.putDouble("EyeProgress", EyeProgress);
+			nbt.putDouble("Revelation_Score", Revelation_Score);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
-			EyeProgress = nbt.getDouble("EyeProgress");
+			Revelation_Score = nbt.getDouble("Revelation_Score");
 		}
 	}
 
@@ -143,7 +143,7 @@ public class CthulhufishingModVariables {
 			context.enqueueWork(() -> {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
-					variables.EyeProgress = message.data.EyeProgress;
+					variables.Revelation_Score = message.data.Revelation_Score;
 				}
 			});
 			context.setPacketHandled(true);
