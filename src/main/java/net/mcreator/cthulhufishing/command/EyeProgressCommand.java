@@ -11,7 +11,6 @@ import net.minecraftforge.common.util.FakePlayerFactory;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
-import net.minecraft.commands.arguments.MessageArgument;
 import net.minecraft.commands.Commands;
 
 import net.mcreator.cthulhufishing.procedures.EyeProgressSetProcedure;
@@ -20,7 +19,7 @@ import net.mcreator.cthulhufishing.procedures.EyeProgressSetProcedure;
 public class EyeProgressCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {
-		event.getDispatcher().register(Commands.literal("eyeprogress").requires(s -> s.hasPermission(1)).then(Commands.argument("eyeprogress", MessageArgument.message()).executes(arguments -> {
+		event.getDispatcher().register(Commands.literal("eyeprogress").requires(s -> s.hasPermission(1)).executes(arguments -> {
 			ServerLevel world = arguments.getSource().getLevel();
 			double x = arguments.getSource().getPosition().x();
 			double y = arguments.getSource().getPosition().y();
@@ -32,6 +31,6 @@ public class EyeProgressCommand {
 
 			EyeProgressSetProcedure.execute(world, entity);
 			return 0;
-		})));
+		}));
 	}
 }
