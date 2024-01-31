@@ -343,6 +343,37 @@
           "src/main/resources/assets/cthulhufishing/blockstates/ctulhu_altar_fish.json"
         ]
       }
+    },
+    {
+      "name": "CrimsonCatcherEnchant",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_catcher_enchant",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/enchantment/CrimsonCatcherEnchantEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "RitualBleedingActiveTickCondition",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ritual_bleeding_active_tick_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/RitualBleedingActiveTickConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -367,6 +398,7 @@
     "en_us": {
       "item.cthulhufishing.crimson_fish": "Crimson Fish",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
+      "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "block.cthulhufishing.deep_oil": "Deep Oil",
       "item.cthulhufishing.third_eye": "Third Eye",
       "subtitles.catchfishmen": "fishmen",

@@ -3,7 +3,7 @@
   "textures": {
     "all": "cthulhufishing:blocks/texture_altar_fish",
     "particle": "cthulhufishing:blocks/texture_altar_fish",
-    "1": "cthulhufishing:blocks/texture_altar_fish"
+    "0": "cthulhufishing:blocks/texture_altar_fish"
   },
   "render_type": "solid"
 }
