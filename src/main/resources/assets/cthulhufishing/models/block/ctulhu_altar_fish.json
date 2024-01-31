@@ -1,0 +1,9 @@
+{
+  "parent": "cthulhufishing:custom/model_altar_fish1",
+  "textures": {
+    "all": "cthulhufishing:blocks/texture_altar_fish",
+    "particle": "cthulhufishing:blocks/texture_altar_fish",
+    "0": "cthulhufishing:blocks/texture_altar_fish"
+  },
+  "render_type": "solid"
+}

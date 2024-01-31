@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "cthulhufishing:blocks/none",
+    "up": "cthulhufishing:blocks/none",
+    "north": "cthulhufishing:blocks/none",
+    "east": "cthulhufishing:blocks/none",
+    "south": "cthulhufishing:blocks/none",
+    "west": "cthulhufishing:blocks/none",
+    "particle": "cthulhufishing:blocks/none"
+  },
+  "render_type": "solid"
+}
