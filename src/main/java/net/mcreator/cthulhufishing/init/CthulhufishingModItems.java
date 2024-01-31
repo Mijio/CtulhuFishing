@@ -14,6 +14,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.cthulhufishing.item.ThirdEyeItem;
+import net.mcreator.cthulhufishing.item.DormantEyeOfTheAbyssItem;
 import net.mcreator.cthulhufishing.item.CrimsonFishItem;
 import net.mcreator.cthulhufishing.CthulhufishingMod;
 
@@ -23,6 +24,7 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> CRIMSON_FISH = REGISTRY.register("crimson_fish", () -> new CrimsonFishItem());
 	public static final RegistryObject<Item> DEEP_OIL = block(CthulhufishingModBlocks.DEEP_OIL, CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB);
 	public static final RegistryObject<Item> CTULHU_ALTAR_FISH = block(CthulhufishingModBlocks.CTULHU_ALTAR_FISH, CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB);
+	public static final RegistryObject<Item> DORMANT_EYE_OF_THE_ABYSS = REGISTRY.register("dormant_eye_of_the_abyss", () -> new DormantEyeOfTheAbyssItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

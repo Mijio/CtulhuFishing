@@ -374,6 +374,44 @@
           }
         ]
       }
+    },
+    {
+      "name": "RitualBleeding",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ritual_bleeding",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/potion/RitualBleedingMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "DormantEyeOfTheAbyss",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dormant_eye_of_the_abyss",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/dormant_eye_of_the_abyss.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/DormantEyeOfTheAbyssItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Blocksdeepoil",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blocksdeepoil",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/loot_tables/blocks/deep_oil.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -397,12 +435,14 @@
   "language_map": {
     "en_us": {
       "item.cthulhufishing.crimson_fish": "Crimson Fish",
+      "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "block.cthulhufishing.deep_oil": "Deep Oil",
       "item.cthulhufishing.third_eye": "Third Eye",
       "subtitles.catchfishmen": "fishmen",
-      "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab"
+      "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab",
+      "item.cthulhufishing.dormant_eye_of_the_abyss": "Dormant Eye Of The Abyss"
     }
   },
   "foldersRoot": {
