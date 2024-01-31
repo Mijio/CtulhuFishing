@@ -309,6 +309,24 @@
           "src/main/java/net/mcreator/cthulhufishing/client/gui/CtulhuAltarScreen.java"
         ]
       }
+    },
+    {
+      "name": "DeepOil",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deep_oil",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/DeepOilBlock.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/deep_oil.json",
+          "src/main/resources/assets/cthulhufishing/models/item/deep_oil.json",
+          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/DeepOilFeature.java",
+          "src/main/resources/data/cthulhufishing/forge/biome_modifier/deep_oil_biome_modifier.json",
+          "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -332,6 +350,7 @@
   "language_map": {
     "en_us": {
       "item.cthulhufishing.crimson_fish": "Crimson Fish",
+      "block.cthulhufishing.deep_oil": "Deep Oil",
       "item.cthulhufishing.third_eye": "Third Eye",
       "subtitles.catchfishmen": "fishmen",
       "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab"
