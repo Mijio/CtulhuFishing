@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "cthulhufishing:block/ctulhu_altar_fish"
+    },
+    "facing=east": {
+      "model": "cthulhufishing:block/ctulhu_altar_fish",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "cthulhufishing:block/ctulhu_altar_fish",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "cthulhufishing:block/ctulhu_altar_fish",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "cthulhufishing:block/ctulhu_altar_fish",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "cthulhufishing:block/ctulhu_altar_fish",
+      "x": 90
+    }
+  }
+}

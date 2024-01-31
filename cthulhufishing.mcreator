@@ -327,6 +327,22 @@
           "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json"
         ]
       }
+    },
+    {
+      "name": "CtulhuAltarFish",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ctulhu_altar_fish",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/block/ctulhu_altar_fish.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/CtulhuAltarFishBlock.java",
+          "src/main/resources/assets/cthulhufishing/models/item/ctulhu_altar_fish.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/ctulhu_altar_fish.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -350,6 +366,7 @@
   "language_map": {
     "en_us": {
       "item.cthulhufishing.crimson_fish": "Crimson Fish",
+      "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
       "block.cthulhufishing.deep_oil": "Deep Oil",
       "item.cthulhufishing.third_eye": "Third Eye",
       "subtitles.catchfishmen": "fishmen",
