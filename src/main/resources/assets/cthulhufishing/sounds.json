@@ -1,0 +1,11 @@
+{
+  "catchfishmen": {
+    "subtitle": "subtitles.catchfishmen",
+    "sounds": [
+      {
+        "name": "cthulhufishing:catchfishmen",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,5 +1,9 @@
 {
+  "item.cthulhufishing.crimson_fish": "Crimson Fish",
+  "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
+  "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
+  "block.cthulhufishing.deep_oil": "Deep Oil",
   "item.cthulhufishing.third_eye": "Third Eye",
-  "item.cthulhufishing.test_item": "Test Item",
+  "subtitles.catchfishmen": "fishmen",
   "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab"
 }

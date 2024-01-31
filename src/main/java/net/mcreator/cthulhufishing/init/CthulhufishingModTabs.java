@@ -14,7 +14,7 @@ public class CthulhufishingModTabs {
 		TAB_CTULHU_FISHING_TAB = new CreativeModeTab("tabctulhu_fishing_tab") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(CthulhufishingModItems.TEST_ITEM.get());
+				return new ItemStack(CthulhufishingModItems.THIRD_EYE.get());
 			}
 
 			@Override
