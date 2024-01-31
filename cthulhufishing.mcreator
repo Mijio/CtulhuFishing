@@ -185,8 +185,8 @@
       "registry_name": "third_eye",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json"
         ]
       }
     },
@@ -305,8 +305,8 @@
       "registry_name": "ctulhu_altar",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/client/gui/CtulhuAltarScreen.java",
-          "src/main/java/net/mcreator/cthulhufishing/world/inventory/CtulhuAltarMenu.java"
+          "src/main/java/net/mcreator/cthulhufishing/world/inventory/CtulhuAltarMenu.java",
+          "src/main/java/net/mcreator/cthulhufishing/client/gui/CtulhuAltarScreen.java"
         ]
       }
     },
@@ -337,10 +337,10 @@
       "registry_name": "ctulhu_altar_fish",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/blockstates/ctulhu_altar_fish.json",
-          "src/main/resources/assets/cthulhufishing/models/item/ctulhu_altar_fish.json",
+          "src/main/resources/assets/cthulhufishing/models/block/ctulhu_altar_fish.json",
           "src/main/java/net/mcreator/cthulhufishing/block/CtulhuAltarFishBlock.java",
-          "src/main/resources/assets/cthulhufishing/models/block/ctulhu_altar_fish.json"
+          "src/main/resources/assets/cthulhufishing/models/item/ctulhu_altar_fish.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/ctulhu_altar_fish.json"
         ]
       }
     },
@@ -386,11 +386,44 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRecipeGenerationProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+        "dependencies": []
+      }
+    },
+    {
+      "name": "DormantEyeOfTheAbyss",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dormant_eye_of_the_abyss",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/DormantEyeOfTheAbyssItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/dormant_eye_of_the_abyss.json"
+        ]
+      }
+    },
+    {
+      "name": "Blocksdeepoil",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blocksdeepoil",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/loot_tables/blocks/deep_oil.json"
+        ]
+      }
+    },
+    {
+      "name": "RitualBleeding",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ritual_bleeding",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/potion/RitualBleedingMobEffect.java"
         ]
       }
     }
@@ -403,7 +436,7 @@
       "value": "0"
     },
     {
-      "name": "Altar_Recipe1",
+      "name": "Altar_Recipe3",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -415,7 +448,7 @@
       "value": "0"
     },
     {
-      "name": "Altar_Recipe3",
+      "name": "Altar_Recipe1",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -434,14 +467,14 @@
   "language_map": {
     "en_us": {
       "item.cthulhufishing.crimson_fish": "Crimson Fish",
+      "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "block.cthulhufishing.deep_oil": "Deep Oil",
       "item.cthulhufishing.third_eye": "Third Eye",
       "subtitles.catchfishmen": "fishmen",
-      "gui.cthulhufishing.ctulhu_altar.button_grab": "GRAB",
-      "gui.cthulhufishing.ctulhu_altar.label_12": "12",
-      "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab"
+      "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab",
+      "item.cthulhufishing.dormant_eye_of_the_abyss": "Dormant Eye Of The Abyss"
     }
   },
   "foldersRoot": {

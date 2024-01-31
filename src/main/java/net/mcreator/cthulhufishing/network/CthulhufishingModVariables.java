@@ -67,9 +67,9 @@ public class CthulhufishingModVariables {
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.Revelation_Score = original.Revelation_Score;
-			clone.Altar_Recipe1 = original.Altar_Recipe1;
-			clone.Altar_Recipe2 = original.Altar_Recipe2;
 			clone.Altar_Recipe3 = original.Altar_Recipe3;
+			clone.Altar_Recipe2 = original.Altar_Recipe2;
+			clone.Altar_Recipe1 = original.Altar_Recipe1;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -107,9 +107,9 @@ public class CthulhufishingModVariables {
 
 	public static class PlayerVariables {
 		public double Revelation_Score = 0;
-		public double Altar_Recipe1 = 0;
-		public double Altar_Recipe2 = 0;
 		public double Altar_Recipe3 = 0;
+		public double Altar_Recipe2 = 0;
+		public double Altar_Recipe1 = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -119,18 +119,18 @@ public class CthulhufishingModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("Revelation_Score", Revelation_Score);
-			nbt.putDouble("Altar_Recipe1", Altar_Recipe1);
-			nbt.putDouble("Altar_Recipe2", Altar_Recipe2);
 			nbt.putDouble("Altar_Recipe3", Altar_Recipe3);
+			nbt.putDouble("Altar_Recipe2", Altar_Recipe2);
+			nbt.putDouble("Altar_Recipe1", Altar_Recipe1);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
 			Revelation_Score = nbt.getDouble("Revelation_Score");
-			Altar_Recipe1 = nbt.getDouble("Altar_Recipe1");
-			Altar_Recipe2 = nbt.getDouble("Altar_Recipe2");
 			Altar_Recipe3 = nbt.getDouble("Altar_Recipe3");
+			Altar_Recipe2 = nbt.getDouble("Altar_Recipe2");
+			Altar_Recipe1 = nbt.getDouble("Altar_Recipe1");
 		}
 	}
 
@@ -156,9 +156,9 @@ public class CthulhufishingModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.Revelation_Score = message.data.Revelation_Score;
-					variables.Altar_Recipe1 = message.data.Altar_Recipe1;
-					variables.Altar_Recipe2 = message.data.Altar_Recipe2;
 					variables.Altar_Recipe3 = message.data.Altar_Recipe3;
+					variables.Altar_Recipe2 = message.data.Altar_Recipe2;
+					variables.Altar_Recipe1 = message.data.Altar_Recipe1;
 				}
 			});
 			context.setPacketHandled(true);

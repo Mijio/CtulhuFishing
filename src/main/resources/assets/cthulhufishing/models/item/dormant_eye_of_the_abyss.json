@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "cthulhufishing:items/dormant_eye_of_the_deep"
+  }
+}
