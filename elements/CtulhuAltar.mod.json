@@ -33,7 +33,8 @@
         "data": {
           "name": "label_12",
           "text": {
-            "fixedValue": "12"
+            "fixedValue": "11",
+            "name": "AltarFishCountTexting"
           },
           "color": {
             "value": -12829636,
@@ -86,16 +87,6 @@
           "dropItemsWhenNotBound": true,
           "x": 186,
           "y": 37
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_realtruegrab",
-          "image": "realtruegrab.png",
-          "hoveredImage": "",
-          "x": 124,
-          "y": 68
         }
       }
     ],

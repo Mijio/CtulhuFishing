@@ -1,8 +1,10 @@
 
 package net.mcreator.cthulhufishing.potion;
 
-public class RitualBleedingMobEffect extends MobEffect {
+import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.effect.MobEffect;
 
+public class RitualBleedingMobEffect extends MobEffect {
 	public RitualBleedingMobEffect() {
 		super(MobEffectCategory.HARMFUL, -6750208);
 	}
@@ -16,5 +18,4 @@ public class RitualBleedingMobEffect extends MobEffect {
 	public boolean isDurationEffectTick(int duration, int amplifier) {
 		return true;
 	}
-
 }

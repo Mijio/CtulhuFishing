@@ -6,10 +6,10 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.cthulhufishing.world.inventory.CtulhuAltarMenu;
+import net.mcreator.cthulhufishing.procedures.AltarFishCountTextingProcedure;
 
 import java.util.HashMap;
 
@@ -21,7 +21,6 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	ImageButton imagebutton_realtruegrab;
 
 	public CtulhuAltarScreen(CtulhuAltarMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -73,7 +72,9 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.cthulhufishing.ctulhu_altar.label_12"), 82, 107, -12829636);
+		this.font.draw(poseStack,
+
+				AltarFishCountTextingProcedure.execute(entity), 82, 107, -12829636);
 	}
 
 	@Override
@@ -86,9 +87,5 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		imagebutton_realtruegrab = new ImageButton(this.leftPos + -1, this.topPos + 51, 176, 70, 0, 0, 70, new ResourceLocation("cthulhufishing:textures/screens/atlas/imagebutton_realtruegrab.png"), 176, 140, e -> {
-		});
-		guistate.put("button:imagebutton_realtruegrab", imagebutton_realtruegrab);
-		this.addRenderableWidget(imagebutton_realtruegrab);
 	}
 }
