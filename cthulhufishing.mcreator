@@ -185,8 +185,8 @@
       "registry_name": "third_eye",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json"
+          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java"
         ]
       }
     },
@@ -305,8 +305,8 @@
       "registry_name": "ctulhu_altar",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/world/inventory/CtulhuAltarMenu.java",
-          "src/main/java/net/mcreator/cthulhufishing/client/gui/CtulhuAltarScreen.java"
+          "src/main/java/net/mcreator/cthulhufishing/client/gui/CtulhuAltarScreen.java",
+          "src/main/java/net/mcreator/cthulhufishing/world/inventory/CtulhuAltarMenu.java"
         ]
       }
     },
@@ -337,10 +337,10 @@
       "registry_name": "ctulhu_altar_fish",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/block/ctulhu_altar_fish.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/CtulhuAltarFishBlock.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/ctulhu_altar_fish.json",
           "src/main/resources/assets/cthulhufishing/models/item/ctulhu_altar_fish.json",
-          "src/main/resources/assets/cthulhufishing/blockstates/ctulhu_altar_fish.json"
+          "src/main/java/net/mcreator/cthulhufishing/block/CtulhuAltarFishBlock.java",
+          "src/main/resources/assets/cthulhufishing/models/block/ctulhu_altar_fish.json"
         ]
       }
     },
@@ -374,11 +374,48 @@
           }
         ]
       }
+    },
+    {
+      "name": "AltarRecipeGeneration",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_recipe_generation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRecipeGenerationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
     {
       "name": "Revelation_Score",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Altar_Recipe1",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Altar_Recipe2",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Altar_Recipe3",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -402,6 +439,8 @@
       "block.cthulhufishing.deep_oil": "Deep Oil",
       "item.cthulhufishing.third_eye": "Third Eye",
       "subtitles.catchfishmen": "fishmen",
+      "gui.cthulhufishing.ctulhu_altar.button_grab": "GRAB",
+      "gui.cthulhufishing.ctulhu_altar.label_12": "12",
       "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab"
     }
   },

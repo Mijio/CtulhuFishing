@@ -30,7 +30,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
+import net.mcreator.cthulhufishing.init.CthulhufishingModSounds;
+import net.mcreator.cthulhufishing.init.CthulhufishingModMenus;
 import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
+import net.mcreator.cthulhufishing.init.CthulhufishingModFeatures;
+import net.mcreator.cthulhufishing.init.CthulhufishingModEnchantments;
+import net.mcreator.cthulhufishing.init.CthulhufishingModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -50,8 +55,15 @@ public class CthulhufishingMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		CthulhufishingModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		CthulhufishingModSounds.REGISTRY.register(bus);
+		CthulhufishingModBlocks.REGISTRY.register(bus);
 		CthulhufishingModItems.REGISTRY.register(bus);
+
+		CthulhufishingModFeatures.REGISTRY.register(bus);
+
+		CthulhufishingModEnchantments.REGISTRY.register(bus);
+
+		CthulhufishingModMenus.REGISTRY.register(bus);
 
 	}
 

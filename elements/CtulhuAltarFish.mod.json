@@ -101,7 +101,7 @@
     "breakHarvestLevel": 2,
     "isBonemealable": false,
     "hasInventory": false,
-    "guiBoundTo": "<NONE>",
+    "guiBoundTo": "CtulhuAltar",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
     "inventoryStackSize": 64,
