@@ -825,12 +825,6 @@
       "value": "0"
     },
     {
-      "name": "AltarNewFish",
-      "type": "logic",
-      "scope": "player_persistent",
-      "value": "false"
-    },
-    {
       "name": "Altar_Recipe",
       "type": "number",
       "scope": "player_persistent",

@@ -68,7 +68,6 @@ public class CthulhufishingModVariables {
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.Revelation_Score = original.Revelation_Score;
 			clone.AltarFishCount = original.AltarFishCount;
-			clone.AltarNewFish = original.AltarNewFish;
 			clone.Altar_Recipe = original.Altar_Recipe;
 			if (!event.isWasDeath()) {
 			}
@@ -108,7 +107,6 @@ public class CthulhufishingModVariables {
 	public static class PlayerVariables {
 		public double Revelation_Score = 0;
 		public double AltarFishCount = 0;
-		public boolean AltarNewFish = false;
 		public double Altar_Recipe = 0;
 
 		public void syncPlayerVariables(Entity entity) {
@@ -120,7 +118,6 @@ public class CthulhufishingModVariables {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("Revelation_Score", Revelation_Score);
 			nbt.putDouble("AltarFishCount", AltarFishCount);
-			nbt.putBoolean("AltarNewFish", AltarNewFish);
 			nbt.putDouble("Altar_Recipe", Altar_Recipe);
 			return nbt;
 		}
@@ -129,7 +126,6 @@ public class CthulhufishingModVariables {
 			CompoundTag nbt = (CompoundTag) Tag;
 			Revelation_Score = nbt.getDouble("Revelation_Score");
 			AltarFishCount = nbt.getDouble("AltarFishCount");
-			AltarNewFish = nbt.getBoolean("AltarNewFish");
 			Altar_Recipe = nbt.getDouble("Altar_Recipe");
 		}
 	}
@@ -157,7 +153,6 @@ public class CthulhufishingModVariables {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.Revelation_Score = message.data.Revelation_Score;
 					variables.AltarFishCount = message.data.AltarFishCount;
-					variables.AltarNewFish = message.data.AltarNewFish;
 					variables.Altar_Recipe = message.data.Altar_Recipe;
 				}
 			});
