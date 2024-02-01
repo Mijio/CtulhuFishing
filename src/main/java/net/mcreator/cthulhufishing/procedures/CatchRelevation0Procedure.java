@@ -41,21 +41,17 @@ public class CatchRelevation0Procedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score >= 10) {
+		double RandomCrisonFishCatch = 0;
+		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(CthulhufishingModItems.THIRD_EYE.get())) : false) {
 			if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(CthulhufishingModMobEffects.RITUAL_BLEEDING.get()) ? _livEnt.getEffect(CthulhufishingModMobEffects.RITUAL_BLEEDING.get()).getAmplifier() : 0) >= 1) {
-				if (Mth.nextInt(RandomSource.create(), 1, 100)
-						+ EnchantmentHelper.getItemEnchantmentLevel(CthulhufishingModEnchantments.CRIMSON_CATCHER_ENCHANT.get(), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) * 0.05 > 50) {
+				if (Mth.nextInt(RandomSource.create(), 1, 100) + (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score * 0.5
+						+ EnchantmentHelper.getItemEnchantmentLevel(CthulhufishingModEnchantments.CRIMSON_CATCHER_ENCHANT.get(), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) * 5 > 90) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:catchfishmen")), SoundSource.PLAYERS, 1, 1);
+							_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:catch_strange_fish")), SoundSource.PLAYERS, 1, 1);
 						} else {
-							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:catchfishmen")), SoundSource.PLAYERS, 1, 1, false);
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:catch_strange_fish")), SoundSource.PLAYERS, 1, 1, false);
 						}
-					}
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(CthulhufishingModItems.CRIMSON_FISH.get());
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 					{
 						double _setval = (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score + 1;
@@ -63,6 +59,26 @@ public class CatchRelevation0Procedure {
 							capability.Revelation_Score = _setval;
 							capability.syncPlayerVariables(entity);
 						});
+					}
+					RandomCrisonFishCatch = Mth.nextInt(RandomSource.create(), 1, 3);
+					if (RandomCrisonFishCatch == 1) {
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = new ItemStack(CthulhufishingModItems.CRIMSON_FISH.get());
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
+					} else if (RandomCrisonFishCatch == 2) {
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = new ItemStack(CthulhufishingModItems.CRIMSON_JELLYFISH.get());
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
+					} else if (RandomCrisonFishCatch == 3) {
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = new ItemStack(CthulhufishingModItems.CRIMSON_CRUNCH.get());
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
 					}
 				}
 			}
