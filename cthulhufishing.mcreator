@@ -809,6 +809,29 @@
         ]
       },
       "path": "~/Altar"
+    },
+    {
+      "name": "ToolTipHoodOfTheVoid",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tool_tip_hood_of_the_void",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ToolTipHoodOfTheVoidProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "tooltip",
+            "type": "tooltip"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [

@@ -18,7 +18,10 @@
     "bodyName": "Hood Of The Deep Void Chestplate",
     "leggingsName": "Hood Of The Deep Void Leggings",
     "bootsName": "Hood Of The Deep Void Boots",
-    "helmetSpecialInfo": [],
+    "helmetSpecialInfo": [
+      "by expending the power of your revelation",
+      "your attacks return part of the creature's damage"
+    ],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],
     "bootsSpecialInfo": [],
