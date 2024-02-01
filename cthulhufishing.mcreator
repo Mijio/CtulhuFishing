@@ -194,8 +194,8 @@
       "registry_name": "third_eye",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json"
+          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java"
         ]
       }
     },
@@ -242,7 +242,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/EyeCommands"
     },
     {
       "name": "EyeRegress",
@@ -255,7 +256,8 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/command/EyeRegressCommand.java"
         ]
-      }
+      },
+      "path": "~/EyeCommands"
     },
     {
       "name": "CrimsonFish",
@@ -316,10 +318,11 @@
       "registry_name": "ctulhu_altar",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/world/inventory/CtulhuAltarMenu.java",
-          "src/main/java/net/mcreator/cthulhufishing/client/gui/CtulhuAltarScreen.java"
+          "src/main/java/net/mcreator/cthulhufishing/client/gui/CtulhuAltarScreen.java",
+          "src/main/java/net/mcreator/cthulhufishing/world/inventory/CtulhuAltarMenu.java"
         ]
-      }
+      },
+      "path": "~/Altar"
     },
     {
       "name": "DeepOil",
@@ -331,11 +334,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/block/DeepOilBlock.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/deep_oil.json",
-          "src/main/resources/assets/cthulhufishing/models/item/deep_oil.json",
           "src/main/java/net/mcreator/cthulhufishing/world/features/ores/DeepOilFeature.java",
+          "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json",
           "src/main/resources/data/cthulhufishing/forge/biome_modifier/deep_oil_biome_modifier.json",
-          "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json"
+          "src/main/resources/assets/cthulhufishing/models/item/deep_oil.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/deep_oil.json"
         ]
       }
     },
@@ -348,10 +351,10 @@
       "registry_name": "ctulhu_altar_fish",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/block/ctulhu_altar_fish.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/CtulhuAltarFishBlock.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/ctulhu_altar_fish.json",
           "src/main/resources/assets/cthulhufishing/models/item/ctulhu_altar_fish.json",
-          "src/main/resources/assets/cthulhufishing/blockstates/ctulhu_altar_fish.json"
+          "src/main/java/net/mcreator/cthulhufishing/block/CtulhuAltarFishBlock.java",
+          "src/main/resources/assets/cthulhufishing/models/block/ctulhu_altar_fish.json"
         ]
       }
     },
@@ -403,7 +406,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Altar"
     },
     {
       "name": "DormantEyeOfTheAbyss",
@@ -414,8 +418,8 @@
       "registry_name": "dormant_eye_of_the_abyss",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/dormant_eye_of_the_abyss.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/DormantEyeOfTheAbyssItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/DormantEyeOfTheAbyssItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/dormant_eye_of_the_abyss.json"
         ]
       }
     },
@@ -553,6 +557,10 @@
             "type": "entity"
           },
           {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -589,7 +597,218 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "FishShows2",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_shows_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FishShows2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "FishShows1",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_shows_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FishShows1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "FishShows3",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_shows_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FishShows3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "FishShows4",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_shows_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FishShows4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "FishShows5",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_shows_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FishShows5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "FishShows6",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_shows_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FishShows6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "FishShows7",
+      "type": "procedure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_shows_7",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FishShows7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "FishShows8",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_shows_8",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FishShows8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "FishShows9",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_shows_9",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FishShows9Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "FishShows10",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_shows_10",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FishShows10Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Altar"
     }
   ],
   "variable_elements": [
@@ -659,6 +878,10 @@
       },
       {
         "name": "EyeCommands",
+        "children": []
+      },
+      {
+        "name": "Altar",
         "children": []
       }
     ]

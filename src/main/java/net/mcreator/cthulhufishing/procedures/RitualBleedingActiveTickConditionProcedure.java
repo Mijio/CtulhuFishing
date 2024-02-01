@@ -8,6 +8,6 @@ public class RitualBleedingActiveTickConditionProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		entity.hurt(DamageSource.MAGIC, (float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) * 0.1));
+		entity.hurt(DamageSource.MAGIC, (float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) * 0.05));
 	}
 }

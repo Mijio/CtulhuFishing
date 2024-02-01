@@ -26,12 +26,6 @@ authors="123, MCreator"
     ordering="NONE"
     side="BOTH"
 [[dependencies.cthulhufishing]]
-    modId="geckolib"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.cthulhufishing]]
     modId="playeranimator"
     mandatory=false
     versionRange="[0,)"
