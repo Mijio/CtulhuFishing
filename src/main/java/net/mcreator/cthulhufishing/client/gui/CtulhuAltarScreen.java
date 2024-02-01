@@ -1,22 +1,9 @@
 package net.mcreator.cthulhufishing.client.gui;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
-import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.Minecraft;
-
-import net.mcreator.cthulhufishing.world.inventory.CtulhuAltarMenu;
-
-import java.util.HashMap;
-
-import com.mojang.blaze3d.vertex.PoseStack;
-import com.mojang.blaze3d.systems.RenderSystem;
-
 public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> {
+
 	private final static HashMap<String, Object> guistate = CtulhuAltarMenu.guistate;
+
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
@@ -28,8 +15,8 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageWidth = 177;
+		this.imageHeight = 207;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("cthulhufishing:textures/screens/ctulhu_altar.png");
@@ -39,6 +26,7 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 		this.renderBackground(ms);
 		super.render(ms, mouseX, mouseY, partialTicks);
 		this.renderTooltip(ms, mouseX, mouseY);
+
 	}
 
 	@Override
@@ -46,11 +34,12 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
+
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/eye0.png"));
-		this.blit(ms, this.leftPos + 68, this.topPos + 41, 0, 0, 64, 32, 64, 32);
+		RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/coolfish.png"));
+		this.blit(ms, this.leftPos + 80, this.topPos + 86, 0, 0, 16, 16, 16, 16);
 
 		RenderSystem.disableBlend();
 	}
@@ -61,6 +50,7 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 			this.minecraft.player.closeContainer();
 			return true;
 		}
+
 		return super.keyPressed(key, b, c);
 	}
 
@@ -71,6 +61,9 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
+		this.font.draw(poseStack,
+
+				AltarFishCountTextingProcedure.execute(), 82, 107, -12829636);
 	}
 
 	@Override
@@ -82,6 +75,9 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 	@Override
 	public void init() {
 		super.init();
+
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
+
 	}
+
 }
