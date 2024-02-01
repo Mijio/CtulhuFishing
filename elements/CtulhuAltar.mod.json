@@ -3,10 +3,10 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 177,
-    "height": 207,
+    "width": 176,
+    "height": 166,
     "inventoryOffsetX": 0,
-    "inventoryOffsetY": 20,
+    "inventoryOffsetY": 0,
     "renderBgLayer": true,
     "doesPauseGame": false,
     "components": [
@@ -24,78 +24,17 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 204,
-          "y": 102
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_12",
-          "text": {
-            "fixedValue": "12"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 207,
-          "y": 124
+          "x": 132,
+          "y": 91
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "coolfish.png",
+          "image": "eye0.png",
           "use1Xscale": false,
-          "x": 205,
-          "y": 103
-        }
-      },
-      {
-        "type": "outputslot",
-        "data": {
-          "id": 1,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 204,
-          "y": 37
-        }
-      },
-      {
-        "type": "outputslot",
-        "data": {
-          "id": 2,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 222,
-          "y": 37
-        }
-      },
-      {
-        "type": "outputslot",
-        "data": {
-          "id": 3,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 186,
-          "y": 37
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_realtruegrab",
-          "image": "realtruegrab.png",
-          "hoveredImage": "",
-          "x": 124,
-          "y": 68
+          "x": 194,
+          "y": 78
         }
       }
     ],

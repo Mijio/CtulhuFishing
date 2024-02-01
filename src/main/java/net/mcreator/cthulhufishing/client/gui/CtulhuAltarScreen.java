@@ -6,7 +6,6 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
-import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.cthulhufishing.world.inventory.CtulhuAltarMenu;
@@ -21,7 +20,6 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-	ImageButton imagebutton_realtruegrab;
 
 	public CtulhuAltarScreen(CtulhuAltarMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -30,8 +28,8 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 177;
-		this.imageHeight = 207;
+		this.imageWidth = 176;
+		this.imageHeight = 166;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("cthulhufishing:textures/screens/ctulhu_altar.png");
@@ -51,8 +49,8 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/coolfish.png"));
-		this.blit(ms, this.leftPos + 80, this.topPos + 86, 0, 0, 16, 16, 16, 16);
+		RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/eye0.png"));
+		this.blit(ms, this.leftPos + 68, this.topPos + 41, 0, 0, 64, 32, 64, 32);
 
 		RenderSystem.disableBlend();
 	}
@@ -73,7 +71,6 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, Component.translatable("gui.cthulhufishing.ctulhu_altar.label_12"), 82, 107, -12829636);
 	}
 
 	@Override
@@ -86,9 +83,5 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		imagebutton_realtruegrab = new ImageButton(this.leftPos + -1, this.topPos + 51, 176, 70, 0, 0, 70, new ResourceLocation("cthulhufishing:textures/screens/atlas/imagebutton_realtruegrab.png"), 176, 140, e -> {
-		});
-		guistate.put("button:imagebutton_realtruegrab", imagebutton_realtruegrab);
-		this.addRenderableWidget(imagebutton_realtruegrab);
 	}
 }

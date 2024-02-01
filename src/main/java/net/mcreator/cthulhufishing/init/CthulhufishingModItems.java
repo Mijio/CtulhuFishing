@@ -14,8 +14,12 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.cthulhufishing.item.ThirdEyeItem;
+import net.mcreator.cthulhufishing.item.KnifeForRitualBleedingItem;
+import net.mcreator.cthulhufishing.item.HoodOfTheDeepVoidItem;
 import net.mcreator.cthulhufishing.item.DormantEyeOfTheAbyssItem;
+import net.mcreator.cthulhufishing.item.CrimsonJellyfishItem;
 import net.mcreator.cthulhufishing.item.CrimsonFishItem;
+import net.mcreator.cthulhufishing.item.CrimsonCrunchItem;
 import net.mcreator.cthulhufishing.CthulhufishingMod;
 
 public class CthulhufishingModItems {
@@ -25,6 +29,10 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> DEEP_OIL = block(CthulhufishingModBlocks.DEEP_OIL, CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB);
 	public static final RegistryObject<Item> CTULHU_ALTAR_FISH = block(CthulhufishingModBlocks.CTULHU_ALTAR_FISH, CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB);
 	public static final RegistryObject<Item> DORMANT_EYE_OF_THE_ABYSS = REGISTRY.register("dormant_eye_of_the_abyss", () -> new DormantEyeOfTheAbyssItem());
+	public static final RegistryObject<Item> KNIFE_FOR_RITUAL_BLEEDING = REGISTRY.register("knife_for_ritual_bleeding", () -> new KnifeForRitualBleedingItem());
+	public static final RegistryObject<Item> HOOD_OF_THE_DEEP_VOID_HELMET = REGISTRY.register("hood_of_the_deep_void_helmet", () -> new HoodOfTheDeepVoidItem.Helmet());
+	public static final RegistryObject<Item> CRIMSON_JELLYFISH = REGISTRY.register("crimson_jellyfish", () -> new CrimsonJellyfishItem());
+	public static final RegistryObject<Item> CRIMSON_CRUNCH = REGISTRY.register("crimson_crunch", () -> new CrimsonCrunchItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
