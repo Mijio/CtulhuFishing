@@ -39,6 +39,27 @@ public class ToolTipHoodOfTheVoidProcedure {
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.KNIFE_FOR_RITUAL_BLEEDING.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bSacrificial knife"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bLeft-click to apply Ritual bleeeding"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.THIRD_EYE.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bThird eye"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bNow you can see what live in the deep void"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.DORMANT_EYE_OF_THE_ABYSS.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bDormant eye"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bNeed to be awake"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
 		}
 	}
 }

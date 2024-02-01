@@ -7,5 +7,29 @@
         "stream": false
       }
     ]
+  },
+  "ritual_bleeding_knife": {
+    "sounds": [
+      {
+        "name": "cthulhufishing:ritualbleeding",
+        "stream": false
+      }
+    ]
+  },
+  "catch_strange_fish": {
+    "sounds": [
+      {
+        "name": "cthulhufishing:water_swirl",
+        "stream": false
+      }
+    ]
+  },
+  "hood_ablity": {
+    "sounds": [
+      {
+        "name": "cthulhufishing:vibrate",
+        "stream": false
+      }
+    ]
   }
 }

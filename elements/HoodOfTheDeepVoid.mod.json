@@ -3,7 +3,7 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "nonetexture",
+    "textureHelmet": "hood_icons",
     "enableBody": false,
     "textureBody": "",
     "enableLeggings": false,
@@ -11,21 +11,18 @@
     "enableBoots": false,
     "textureBoots": "",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:CtulhuFishingTab"
     },
-    "armorTextureFile": "texture",
+    "armorTextureFile": "texture_hoodofthevoid",
     "helmetName": "Hood Of The Deep Void Helmet",
     "bodyName": "Hood Of The Deep Void Chestplate",
     "leggingsName": "Hood Of The Deep Void Leggings",
     "bootsName": "Hood Of The Deep Void Boots",
-    "helmetSpecialInfo": [
-      "by expending the power of your revelation",
-      "your attacks return part of the creature's damage"
-    ],
+    "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],
     "bootsSpecialInfo": [],
-    "helmetModelName": "ModelHoodOfTheWhispersOfTheDeep",
+    "helmetModelName": "Modelmodel_HoodOfTheWhispersOfTheDeep",
     "helmetModelPart": "bone",
     "helmetModelTexture": "From armor",
     "bodyModelName": "Default",

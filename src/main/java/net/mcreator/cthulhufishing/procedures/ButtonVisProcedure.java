@@ -1,15 +1,8 @@
 package net.mcreator.cthulhufishing.procedures;
 
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.Slot;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerPlayer;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.cthulhufishing.network.CthulhufishingModVariables;
-import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
-
-import java.util.function.Supplier;
-import java.util.Map;
+import javax.annotation.Nullable;
 
 public class ButtonVisProcedure {
 	public static boolean execute(Entity entity) {
