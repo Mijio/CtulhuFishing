@@ -19,6 +19,7 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
 import net.mcreator.cthulhufishing.client.model.ModelHoodOfTheWhispersOfTheDeep;
 
 import java.util.function.Consumer;
@@ -35,7 +36,7 @@ public abstract class HoodOfTheDeepVoidItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForSlot(EquipmentSlot slot) {
-				return new int[]{2, 5, 6, 2}[slot.getIndex()];
+				return new int[]{0, 0, 0, 3}[slot.getIndex()];
 			}
 
 			@Override
@@ -50,7 +51,7 @@ public abstract class HoodOfTheDeepVoidItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of();
+				return Ingredient.of(new ItemStack(CthulhufishingModItems.THIRD_EYE.get()));
 			}
 
 			@Override
@@ -60,7 +61,7 @@ public abstract class HoodOfTheDeepVoidItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 0f;
+				return 1.5f;
 			}
 
 			@Override
@@ -95,7 +96,7 @@ public abstract class HoodOfTheDeepVoidItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "cthulhufishing:textures/models/armor/texture2_layer_1.png";
+			return "cthulhufishing:textures/models/armor/texture_layer_1.png";
 		}
 	}
 }

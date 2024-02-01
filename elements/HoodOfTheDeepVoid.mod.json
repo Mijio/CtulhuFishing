@@ -13,7 +13,7 @@
     "creativeTab": {
       "value": "COMBAT"
     },
-    "armorTextureFile": "texture2",
+    "armorTextureFile": "texture",
     "helmetName": "Hood Of The Deep Void Helmet",
     "bodyName": "Hood Of The Deep Void Chestplate",
     "leggingsName": "Hood Of The Deep Void Leggings",
@@ -51,16 +51,20 @@
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
     "maxDamage": 25,
-    "damageValueHelmet": 2,
-    "damageValueBody": 6,
-    "damageValueLeggings": 5,
-    "damageValueBoots": 2,
+    "damageValueHelmet": 3,
+    "damageValueBody": 0,
+    "damageValueLeggings": 0,
+    "damageValueBoots": 0,
     "enchantability": 9,
-    "toughness": 0.0,
+    "toughness": 1.5,
     "knockbackResistance": 0.0,
     "equipSound": {
       "value": ""
     },
-    "repairItems": []
+    "repairItems": [
+      {
+        "value": "CUSTOM:ThirdEye"
+      }
+    ]
   }
 }
