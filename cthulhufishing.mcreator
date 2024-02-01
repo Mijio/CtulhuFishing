@@ -827,6 +827,26 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "ActionsForDecreaseRevelation",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "actions_for_decrease_revelation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ActionsForDecreaseRevelationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/AtionsForDecreaseRevelationScore"
     }
   ],
   "variable_elements": [
@@ -912,6 +932,10 @@
       },
       {
         "name": "Altar",
+        "children": []
+      },
+      {
+        "name": "AtionsForDecreaseRevelationScore",
         "children": []
       }
     ]

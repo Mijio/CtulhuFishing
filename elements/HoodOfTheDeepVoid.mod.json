@@ -3,7 +3,7 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "nonetexture",
+    "textureHelmet": "hood_icons",
     "enableBody": false,
     "textureBody": "",
     "enableLeggings": false,

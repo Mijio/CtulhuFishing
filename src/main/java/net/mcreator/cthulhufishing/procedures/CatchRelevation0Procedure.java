@@ -53,6 +53,8 @@ public class CatchRelevation0Procedure {
 							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:catch_strange_fish")), SoundSource.PLAYERS, 1, 1, false);
 						}
 					}
+				}
+				if ((entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score < 60) {
 					{
 						double _setval = (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score + 1;
 						entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -60,25 +62,25 @@ public class CatchRelevation0Procedure {
 							capability.syncPlayerVariables(entity);
 						});
 					}
-					RandomCrisonFishCatch = Mth.nextInt(RandomSource.create(), 1, 3);
-					if (RandomCrisonFishCatch == 1) {
-						if (entity instanceof Player _player) {
-							ItemStack _setstack = new ItemStack(CthulhufishingModItems.CRIMSON_FISH.get());
-							_setstack.setCount(1);
-							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-						}
-					} else if (RandomCrisonFishCatch == 2) {
-						if (entity instanceof Player _player) {
-							ItemStack _setstack = new ItemStack(CthulhufishingModItems.CRIMSON_JELLYFISH.get());
-							_setstack.setCount(1);
-							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-						}
-					} else if (RandomCrisonFishCatch == 3) {
-						if (entity instanceof Player _player) {
-							ItemStack _setstack = new ItemStack(CthulhufishingModItems.CRIMSON_CRUNCH.get());
-							_setstack.setCount(1);
-							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-						}
+				}
+				RandomCrisonFishCatch = Mth.nextInt(RandomSource.create(), 1, 3);
+				if (RandomCrisonFishCatch == 1) {
+					if (entity instanceof Player _player) {
+						ItemStack _setstack = new ItemStack(CthulhufishingModItems.CRIMSON_FISH.get());
+						_setstack.setCount(1);
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+					}
+				} else if (RandomCrisonFishCatch == 2) {
+					if (entity instanceof Player _player) {
+						ItemStack _setstack = new ItemStack(CthulhufishingModItems.CRIMSON_JELLYFISH.get());
+						_setstack.setCount(1);
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+					}
+				} else if (RandomCrisonFishCatch == 3) {
+					if (entity instanceof Player _player) {
+						ItemStack _setstack = new ItemStack(CthulhufishingModItems.CRIMSON_CRUNCH.get());
+						_setstack.setCount(1);
+						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 					}
 				}
 			}
