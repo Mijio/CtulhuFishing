@@ -10,10 +10,12 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.item.enchantment.Enchantment;
 
+import net.mcreator.cthulhufishing.enchantment.DarkWaterEnchantment;
 import net.mcreator.cthulhufishing.enchantment.CrimsonCatcherEnchantEnchantment;
 import net.mcreator.cthulhufishing.CthulhufishingMod;
 
 public class CthulhufishingModEnchantments {
 	public static final DeferredRegister<Enchantment> REGISTRY = DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, CthulhufishingMod.MODID);
+	public static final RegistryObject<Enchantment> DARK_WATER = REGISTRY.register("dark_water", () -> new DarkWaterEnchantment());
 	public static final RegistryObject<Enchantment> CRIMSON_CATCHER_ENCHANT = REGISTRY.register("crimson_catcher_enchant", () -> new CrimsonCatcherEnchantEnchantment());
 }

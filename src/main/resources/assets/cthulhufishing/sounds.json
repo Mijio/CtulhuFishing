@@ -23,5 +23,13 @@
         "stream": false
       }
     ]
+  },
+  "hood_ablity": {
+    "sounds": [
+      {
+        "name": "cthulhufishing:vibrate",
+        "stream": false
+      }
+    ]
   }
 }

@@ -18,4 +18,5 @@ public class CthulhufishingModSounds {
 	public static final RegistryObject<SoundEvent> CATCHFISHMEN = REGISTRY.register("catchfishmen", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "catchfishmen")));
 	public static final RegistryObject<SoundEvent> RITUAL_BLEEDING_KNIFE = REGISTRY.register("ritual_bleeding_knife", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "ritual_bleeding_knife")));
 	public static final RegistryObject<SoundEvent> CATCH_STRANGE_FISH = REGISTRY.register("catch_strange_fish", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "catch_strange_fish")));
+	public static final RegistryObject<SoundEvent> HOOD_ABLITY = REGISTRY.register("hood_ablity", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "hood_ablity")));
 }

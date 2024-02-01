@@ -361,31 +361,13 @@
     {
       "name": "CrimsonCatcherEnchant",
       "type": "enchantment",
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crimson_catcher_enchant",
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/enchantment/CrimsonCatcherEnchantEnchantment.java"
-        ]
-      }
-    },
-    {
-      "name": "RitualBleedingActiveTickCondition",
-      "type": "procedure",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ritual_bleeding_active_tick_condition",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/RitualBleedingActiveTickConditionProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
         ]
       }
     },
@@ -462,6 +444,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "x",
@@ -852,6 +838,131 @@
         ]
       },
       "path": "~/AtionsForDecreaseRevelationScore"
+    },
+    {
+      "name": "DecanterOfDepthsRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decanter_of_depths_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/DecanterOfDepthsRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DarkWater",
+      "type": "enchantment",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_water",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/enchantment/DarkWaterEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "DecanterOfDepthsFilled",
+      "type": "tool",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decanter_of_depths_filled",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/DecanterOfDepthsFilledItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/decanter_of_depths_filled.json"
+        ]
+      }
+    },
+    {
+      "name": "DecanterOfDepths",
+      "type": "tool",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decanter_of_depths",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/DecanterOfDepthsItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/decanter_of_depths.json"
+        ]
+      }
+    },
+    {
+      "name": "HermitSlulkFish",
+      "type": "item",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hermit_slulk_fish",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/hermit_slulk_fish.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/HermitSlulkFishItem.java"
+        ]
+      },
+      "path": "~/SculkSet"
+    },
+    {
+      "name": "HorseSculkFish",
+      "type": "item",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "horse_sculk_fish",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/HorseSculkFishItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/horse_sculk_fish.json"
+        ]
+      },
+      "path": "~/SculkSet"
+    },
+    {
+      "name": "GlutonSculkFish",
+      "type": "item",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gluton_sculk_fish",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/gluton_sculk_fish.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/GlutonSculkFishItem.java"
+        ]
+      },
+      "path": "~/SculkSet"
     }
   ],
   "variable_elements": [
@@ -898,24 +1009,39 @@
       ],
       "category": "player",
       "subtitle": ""
+    },
+    {
+      "name": "hood_ablity",
+      "files": [
+        "vibrate"
+      ],
+      "category": "player",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
       "item.cthulhufishing.crimson_fish": "Crimson Fish",
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
+      "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
       "item.cthulhufishing.third_eye": "Third Eye",
       "item.cthulhufishing.knife_for_ritual_bleeding": "Knife For Ritual Bleeding",
       "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
+      "item.cthulhufishing.decanter_of_depths_filled": "Decanter Of Depths Filled",
       "subtitles.catchfishmen": "fishmen",
       "gui.cthulhufishing.ctulhu_altar.label_12": "11",
+      "item.cthulhufishing.decanter_of_depths": "Decanter Of Depths",
       "subtitles.ritual_bleeding_knife": "",
       "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
+      "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
+      "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "subtitles.catch_strange_fish": "",
+      "enchantment.cthulhufishing.dark_water": "Dark Water",
       "block.cthulhufishing.deep_oil": "Deep Oil",
+      "subtitles.hood_ablity": "",
       "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab",
       "item.cthulhufishing.dormant_eye_of_the_abyss": "Dormant Eye Of The Abyss"
     }
@@ -941,6 +1067,10 @@
       },
       {
         "name": "AtionsForDecreaseRevelationScore",
+        "children": []
+      },
+      {
+        "name": "SculkSet",
         "children": []
       }
     ]
