@@ -18,7 +18,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/ThirdEyeProcedures"
     },
     {
       "name": "ThirdEye0",
@@ -38,7 +39,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/ThirdEyeProcedures"
     },
     {
       "name": "EyeProgressSet",
@@ -61,7 +63,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/EyeCommands"
     },
     {
       "name": "EyeProgress",
@@ -74,7 +77,8 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/command/EyeProgressCommand.java"
         ]
-      }
+      },
+      "path": "~/EyeCommands"
     },
     {
       "name": "ThirdEye6",
@@ -94,7 +98,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/ThirdEyeProcedures"
     },
     {
       "name": "ThirdEye5",
@@ -114,7 +119,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/ThirdEyeProcedures"
     },
     {
       "name": "ThirdEye4",
@@ -134,7 +140,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/ThirdEyeProcedures"
     },
     {
       "name": "ThirdEye3",
@@ -154,7 +161,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/ThirdEyeProcedures"
     },
     {
       "name": "ThirdEye2",
@@ -174,7 +182,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/ThirdEyeProcedures"
     },
     {
       "name": "ThirdEye",
@@ -260,7 +269,8 @@
           "src/main/resources/assets/cthulhufishing/models/item/crimson_fish.json",
           "src/main/java/net/mcreator/cthulhufishing/item/CrimsonFishItem.java"
         ]
-      }
+      },
+      "path": "~/CrimsonSet"
     },
     {
       "name": "CatchRelevation0",
@@ -295,7 +305,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/CrimsonSet"
     },
     {
       "name": "CtulhuAltar",
@@ -386,7 +397,12 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRecipeGenerationProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
@@ -398,8 +414,8 @@
       "registry_name": "dormant_eye_of_the_abyss",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/DormantEyeOfTheAbyssItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/dormant_eye_of_the_abyss.json"
+          "src/main/resources/assets/cthulhufishing/models/item/dormant_eye_of_the_abyss.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/DormantEyeOfTheAbyssItem.java"
         ]
       }
     },
@@ -567,7 +583,12 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/AltarFishCountTextingProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     }
   ],
@@ -613,8 +634,12 @@
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
       "item.cthulhufishing.third_eye": "Third Eye",
+      "item.cthulhufishing.knife_for_ritual_bleeding": "Knife For Ritual Bleeding",
+      "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
       "subtitles.catchfishmen": "fishmen",
       "gui.cthulhufishing.ctulhu_altar.label_12": "11",
+      "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
+      "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "block.cthulhufishing.deep_oil": "Deep Oil",
       "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab",

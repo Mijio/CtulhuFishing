@@ -1,11 +1,13 @@
 package net.mcreator.cthulhufishing.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.entity.Entity;
 
-import javax.annotation.Nullable;
+import net.mcreator.cthulhufishing.network.CthulhufishingModVariables;
 
 public class AltarFishCountTextingProcedure {
-	public static String execute() {
-		return new java.text.DecimalFormat("##.##").format() + "";
+	public static String execute(Entity entity) {
+		if (entity == null)
+			return "";
+		return new java.text.DecimalFormat("##.##").format((entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).AltarFishCount) + "";
 	}
 }
