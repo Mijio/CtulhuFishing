@@ -69,6 +69,7 @@ public class CthulhufishingModVariables {
 			clone.Revelation_Score = original.Revelation_Score;
 			clone.AltarFishCount = original.AltarFishCount;
 			clone.Altar_Recipe = original.Altar_Recipe;
+			clone.ButtonVis = original.ButtonVis;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -108,6 +109,7 @@ public class CthulhufishingModVariables {
 		public double Revelation_Score = 0;
 		public double AltarFishCount = 0;
 		public double Altar_Recipe = 0;
+		public boolean ButtonVis = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -119,6 +121,7 @@ public class CthulhufishingModVariables {
 			nbt.putDouble("Revelation_Score", Revelation_Score);
 			nbt.putDouble("AltarFishCount", AltarFishCount);
 			nbt.putDouble("Altar_Recipe", Altar_Recipe);
+			nbt.putBoolean("ButtonVis", ButtonVis);
 			return nbt;
 		}
 
@@ -127,6 +130,7 @@ public class CthulhufishingModVariables {
 			Revelation_Score = nbt.getDouble("Revelation_Score");
 			AltarFishCount = nbt.getDouble("AltarFishCount");
 			Altar_Recipe = nbt.getDouble("Altar_Recipe");
+			ButtonVis = nbt.getBoolean("ButtonVis");
 		}
 	}
 
@@ -154,6 +158,7 @@ public class CthulhufishingModVariables {
 					variables.Revelation_Score = message.data.Revelation_Score;
 					variables.AltarFishCount = message.data.AltarFishCount;
 					variables.Altar_Recipe = message.data.Altar_Recipe;
+					variables.ButtonVis = message.data.ButtonVis;
 				}
 			});
 			context.setPacketHandled(true);

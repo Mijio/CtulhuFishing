@@ -24,6 +24,9 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
+          "onSlotChanged": {
+            "name": "CheckFishSlot"
+          },
           "x": 204,
           "y": 102
         }
@@ -47,46 +50,54 @@
       {
         "type": "image",
         "data": {
-          "image": "coolfish.png",
+          "image": "fishblur1.png",
           "use1Xscale": false,
+          "displayCondition": {
+            "name": "FishShows1"
+          },
           "x": 205,
           "y": 103
         }
       },
       {
-        "type": "outputslot",
+        "type": "image",
         "data": {
-          "id": 1,
-          "disablePickup": {
-            "fixedValue": false
+          "image": "fishblur2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FishShows2"
           },
-          "dropItemsWhenNotBound": true,
-          "x": 204,
-          "y": 37
+          "x": 205,
+          "y": 103
         }
       },
       {
-        "type": "outputslot",
+        "type": "image",
         "data": {
-          "id": 2,
-          "disablePickup": {
-            "fixedValue": false
+          "image": "fishblur3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FishShows3"
           },
-          "dropItemsWhenNotBound": true,
-          "x": 222,
-          "y": 37
+          "x": 205,
+          "y": 103
         }
       },
       {
-        "type": "outputslot",
+        "type": "button",
         "data": {
-          "id": 3,
-          "disablePickup": {
-            "fixedValue": false
+          "name": "button_grab",
+          "text": "GRAB",
+          "onClick": {
+            "name": "AltarReward"
           },
-          "dropItemsWhenNotBound": true,
-          "x": 186,
-          "y": 37
+          "displayCondition": {
+            "name": "ButtonVis"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 190,
+          "y": 65
         }
       }
     ],

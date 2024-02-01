@@ -319,6 +319,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/client/gui/CtulhuAltarScreen.java",
+          "src/main/java/net/mcreator/cthulhufishing/network/CtulhuAltarButtonMessage.java",
+          "src/main/java/net/mcreator/cthulhufishing/network/CtulhuAltarSlotMessage.java",
           "src/main/java/net/mcreator/cthulhufishing/world/inventory/CtulhuAltarMenu.java"
         ]
       },
@@ -832,6 +834,83 @@
           }
         ]
       }
+    },
+    {
+      "name": "CheckFishSlot",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_fish_slot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/CheckFishSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "AltarReward",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_reward",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRewardProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "ButtonIsVisible",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_is_visible",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ButtonIsVisibleProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "ButtonVis",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "button_vis",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ButtonVisProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Altar"
     }
   ],
   "variable_elements": [
@@ -852,6 +931,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "ButtonVis",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -878,6 +963,7 @@
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "block.cthulhufishing.deep_oil": "Deep Oil",
+      "gui.cthulhufishing.ctulhu_altar.button_grab": "GRAB",
       "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab",
       "item.cthulhufishing.dormant_eye_of_the_abyss": "Dormant Eye Of The Abyss"
     }
