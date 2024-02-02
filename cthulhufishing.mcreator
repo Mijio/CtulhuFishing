@@ -319,6 +319,7 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/client/gui/CtulhuAltarScreen.java",
+          "src/main/java/net/mcreator/cthulhufishing/network/CtulhuAltarButtonMessage.java",
           "src/main/java/net/mcreator/cthulhufishing/world/inventory/CtulhuAltarMenu.java"
         ]
       },
@@ -361,6 +362,7 @@
     {
       "name": "CrimsonCatcherEnchant",
       "type": "enchantment",
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crimson_catcher_enchant",
@@ -839,27 +841,6 @@
       "path": "~/Altar"
     },
     {
-      "name": "ButtonVis",
-      "type": "procedure",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "button_vis",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/ButtonVisProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Altar"
-    },
-    {
       "name": "CheckFishSlot",
       "type": "procedure",
       "sortid": 38,
@@ -891,7 +872,12 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/ButtonIsVisibleProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Altar"
     },

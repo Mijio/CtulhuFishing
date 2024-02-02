@@ -36,7 +36,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.cthulhufishing.world.inventory.CtulhuAltarMenu;
-import net.mcreator.cthulhufishing.procedures.AltarRecipeGenerationProcedure;
 
 import java.util.List;
 import java.util.Collections;
@@ -115,14 +114,6 @@ public class CtulhuAltarFishBlock extends Block {
 				}
 			}, pos);
 		}
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-		double hitX = hit.getLocation().x;
-		double hitY = hit.getLocation().y;
-		double hitZ = hit.getLocation().z;
-		Direction direction = hit.getDirection();
-		AltarRecipeGenerationProcedure.execute(entity);
 		return InteractionResult.SUCCESS;
 	}
 }

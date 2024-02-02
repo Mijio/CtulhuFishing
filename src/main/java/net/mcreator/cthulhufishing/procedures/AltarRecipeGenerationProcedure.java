@@ -10,9 +10,16 @@ public class AltarRecipeGenerationProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Altar_Recipe != 0) {
+		{
+			boolean _setval = false;
+			entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.ButtonVis = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+		if ((entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Altar_Recipe == 0) {
 			{
-				double _setval = Mth.nextInt(RandomSource.create(), 1, 10);
+				double _setval = Mth.nextInt(RandomSource.create(), 1, 6);
 				entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Altar_Recipe = _setval;
 					capability.syncPlayerVariables(entity);

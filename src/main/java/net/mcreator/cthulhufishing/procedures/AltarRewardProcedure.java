@@ -25,6 +25,7 @@ public class AltarRewardProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
+		ButtonIsVisibleProcedure.execute(entity);
 		if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 			((Slot) _slots.get(0)).remove((int) (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).AltarFishCount);
 			_player.containerMenu.broadcastChanges();

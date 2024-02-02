@@ -54,42 +54,101 @@
         }
       },
       {
-        "type": "outputslot",
+        "type": "button",
         "data": {
-          "id": 1,
-          "disablePickup": {
-            "fixedValue": false
+          "name": "button_grab",
+          "text": "GRAB",
+          "onClick": {
+            "name": "AltarReward"
           },
-          "dropItemsWhenNotBound": true,
-          "x": 204,
-          "y": 37
+          "displayCondition": {
+            "name": "ButtonIsVisible"
+          },
+          "width": 46,
+          "height": 20,
+          "x": 189,
+          "y": 57
         }
       },
       {
-        "type": "outputslot",
+        "type": "image",
         "data": {
-          "id": 2,
-          "disablePickup": {
-            "fixedValue": false
+          "image": "fishblur1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FishShows1"
           },
-          "dropItemsWhenNotBound": true,
-          "x": 222,
-          "y": 37
+          "x": 205,
+          "y": 103
         }
       },
       {
-        "type": "outputslot",
+        "type": "image",
         "data": {
-          "id": 3,
-          "disablePickup": {
-            "fixedValue": false
+          "image": "fishblur2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FishShows2"
           },
-          "dropItemsWhenNotBound": true,
-          "x": 186,
-          "y": 37
+          "x": 205,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fishblur4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FishShows4"
+          },
+          "x": 205,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fishblur5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FishShows5"
+          },
+          "x": 205,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fishblur6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FishShows6"
+          },
+          "x": 205,
+          "y": 103
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fishblur3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FishShows3"
+          },
+          "x": 205,
+          "y": 103
         }
       }
     ],
+    "onOpen": {
+      "name": "AltarRecipeGeneration"
+    },
+    "onTick": {
+      "name": "CheckFishSlot"
+    },
     "gridSettings": {
       "sx": 18,
       "sy": 18,
