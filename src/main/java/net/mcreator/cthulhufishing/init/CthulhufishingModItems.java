@@ -20,8 +20,6 @@ import net.mcreator.cthulhufishing.item.HoodOfTheDeepVoidItem;
 import net.mcreator.cthulhufishing.item.HermitSlulkFishItem;
 import net.mcreator.cthulhufishing.item.GlutonSculkFishItem;
 import net.mcreator.cthulhufishing.item.DormantEyeOfTheAbyssItem;
-import net.mcreator.cthulhufishing.item.DecanterOfDepthsItem;
-import net.mcreator.cthulhufishing.item.DecanterOfDepthsFilledItem;
 import net.mcreator.cthulhufishing.item.CrimsonJellyfishItem;
 import net.mcreator.cthulhufishing.item.CrimsonFishItem;
 import net.mcreator.cthulhufishing.item.CrimsonCrunchItem;
@@ -38,8 +36,6 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> HOOD_OF_THE_DEEP_VOID_HELMET = REGISTRY.register("hood_of_the_deep_void_helmet", () -> new HoodOfTheDeepVoidItem.Helmet());
 	public static final RegistryObject<Item> CRIMSON_JELLYFISH = REGISTRY.register("crimson_jellyfish", () -> new CrimsonJellyfishItem());
 	public static final RegistryObject<Item> CRIMSON_CRUNCH = REGISTRY.register("crimson_crunch", () -> new CrimsonCrunchItem());
-	public static final RegistryObject<Item> DECANTER_OF_DEPTHS_FILLED = REGISTRY.register("decanter_of_depths_filled", () -> new DecanterOfDepthsFilledItem());
-	public static final RegistryObject<Item> DECANTER_OF_DEPTHS = REGISTRY.register("decanter_of_depths", () -> new DecanterOfDepthsItem());
 	public static final RegistryObject<Item> HERMIT_SLULK_FISH = REGISTRY.register("hermit_slulk_fish", () -> new HermitSlulkFishItem());
 	public static final RegistryObject<Item> HORSE_SCULK_FISH = REGISTRY.register("horse_sculk_fish", () -> new HorseSculkFishItem());
 	public static final RegistryObject<Item> GLUTON_SCULK_FISH = REGISTRY.register("gluton_sculk_fish", () -> new GlutonSculkFishItem());

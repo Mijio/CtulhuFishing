@@ -29,6 +29,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onFinishUsingItem": {
+      "name": "CrimsonFishPlayerFinishesUsingItem"
+    },
     "isFood": true,
     "nutritionalValue": 2,
     "saturation": 0.19999999999999998,

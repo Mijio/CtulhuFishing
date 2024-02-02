@@ -2,17 +2,17 @@
   "_fv": 43,
   "_type": "enchantment",
   "definition": {
-    "name": "Dark Water",
-    "type": "VANISHABLE",
-    "rarity": "COMMON",
-    "minLevel": 0,
+    "name": "Dark Blade",
+    "type": "WEAPON",
+    "rarity": "RARE",
+    "minLevel": 1,
     "maxLevel": 1,
     "damageModifier": 0,
     "compatibleEnchantments": [],
-    "excludeEnchantments": false,
+    "excludeEnchantments": true,
     "compatibleItems": [
       {
-        "value": "CUSTOM:DecanterOfDepthsFilled"
+        "value": "CUSTOM:KnifeForRitualBleeding"
       }
     ],
     "excludeItems": false,

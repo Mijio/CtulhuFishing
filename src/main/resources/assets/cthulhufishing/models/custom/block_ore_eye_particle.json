@@ -1,6 +1,5 @@
-
 {
-  "parent": "cthulhufishing:displaysettings/block_eye.item",
+  "parent": "cthulhufishing:displaysettings/block-itemeye.item",
   "textures": {
     "particle": "cthulhufishing:blocks/texture_block_eye_item"
   }
