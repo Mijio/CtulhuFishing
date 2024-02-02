@@ -395,6 +395,7 @@
     {
       "name": "Blocksdeepoil",
       "type": "loottable",
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blocksdeepoil",
@@ -821,6 +822,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -1105,20 +1122,6 @@
       }
     },
     {
-      "name": "HiddenBladeProc",
-      "type": "procedure",
-      "sortid": 62,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hidden_blade_proc",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/HiddenBladeProcProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
       "name": "NecklaceOfFleshAndBones",
       "type": "curiosbauble",
       "sortid": 59,
@@ -1129,20 +1132,6 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/item/NecklaceOfFleshAndBonesItem.java",
           "src/main/resources/assets/cthulhufishing/models/item/necklace_of_flesh_and_bones.json"
-        ]
-      }
-    },
-    {
-      "name": "HiddenBlade",
-      "type": "tool",
-      "sortid": 61,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "hidden_blade",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/hidden_blade.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/HiddenBladeItem.java"
         ]
       }
     },
@@ -1159,6 +1148,20 @@
           "src/main/resources/assets/cthulhufishing/models/item/drip_void.json"
         ]
       }
+    },
+    {
+      "name": "AltarLoot",
+      "type": "loottable",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/loot_tables/blocks/altar_loot.json"
+        ]
+      },
+      "path": "~/Altar"
     }
   ],
   "variable_elements": [
@@ -1226,11 +1229,13 @@
       "item.cthulhufishing.crimson_fish": "Crimson Fish",
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
+      "item.cthulhufishing.drip_void": "Drip Void",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
       "item.cthulhufishing.knife_for_ritual_bleeding": "Knife For Ritual Bleeding",
       "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
       "subtitles.ritual_bleeding_knife": "",
       "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
+      "item.cthulhufishing.necklace_of_flesh_and_bones": "Necklace Of Flesh And Bones",
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
       "subtitles.catch_strange_fish": "",
       "subtitles.hood_ablity": "",
