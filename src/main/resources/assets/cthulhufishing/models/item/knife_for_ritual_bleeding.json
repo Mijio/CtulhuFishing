@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "cthulhufishing:items/knife_for_ritualbleeding"
+    "layer0": "cthulhufishing:items/knife_for_ritual_bleeding"
   }
 }

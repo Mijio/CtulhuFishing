@@ -11,20 +11,15 @@ import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
 
 import java.util.List;
 
-public class DarkWaterEnchantment extends Enchantment {
-	public DarkWaterEnchantment(EquipmentSlot... slots) {
-		super(Enchantment.Rarity.COMMON, EnchantmentCategory.VANISHABLE, slots);
-	}
-
-	@Override
-	public int getMinLevel() {
-		return 0;
+public class DarkBladeEnchantment extends Enchantment {
+	public DarkBladeEnchantment(EquipmentSlot... slots) {
+		super(Enchantment.Rarity.RARE, EnchantmentCategory.WEAPON, slots);
 	}
 
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack stack) {
 		Item item = stack.getItem();
-		return List.of(CthulhufishingModItems.DECANTER_OF_DEPTHS_FILLED.get()).contains(item);
+		return List.of(CthulhufishingModItems.KNIFE_FOR_RITUAL_BLEEDING.get()).contains(item);
 	}
 
 	@Override
