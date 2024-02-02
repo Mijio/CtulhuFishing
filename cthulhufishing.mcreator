@@ -194,8 +194,8 @@
       "registry_name": "third_eye",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json"
         ]
       }
     },
@@ -318,9 +318,9 @@
       "registry_name": "ctulhu_altar",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/cthulhufishing/world/inventory/CtulhuAltarMenu.java",
           "src/main/java/net/mcreator/cthulhufishing/client/gui/CtulhuAltarScreen.java",
-          "src/main/java/net/mcreator/cthulhufishing/network/CtulhuAltarButtonMessage.java",
-          "src/main/java/net/mcreator/cthulhufishing/world/inventory/CtulhuAltarMenu.java"
+          "src/main/java/net/mcreator/cthulhufishing/network/CtulhuAltarButtonMessage.java"
         ]
       },
       "path": "~/Altar"
@@ -335,11 +335,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/block/DeepOilBlock.java",
-          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/DeepOilFeature.java",
-          "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json",
-          "src/main/resources/data/cthulhufishing/forge/biome_modifier/deep_oil_biome_modifier.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/deep_oil.json",
           "src/main/resources/assets/cthulhufishing/models/item/deep_oil.json",
-          "src/main/resources/assets/cthulhufishing/blockstates/deep_oil.json"
+          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/DeepOilFeature.java",
+          "src/main/resources/data/cthulhufishing/forge/biome_modifier/deep_oil_biome_modifier.json",
+          "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json"
         ]
       }
     },
@@ -352,10 +352,10 @@
       "registry_name": "ctulhu_altar_fish",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/blockstates/ctulhu_altar_fish.json",
-          "src/main/resources/assets/cthulhufishing/models/item/ctulhu_altar_fish.json",
+          "src/main/resources/assets/cthulhufishing/models/block/ctulhu_altar_fish.json",
           "src/main/java/net/mcreator/cthulhufishing/block/CtulhuAltarFishBlock.java",
-          "src/main/resources/assets/cthulhufishing/models/block/ctulhu_altar_fish.json"
+          "src/main/resources/assets/cthulhufishing/models/item/ctulhu_altar_fish.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/ctulhu_altar_fish.json"
         ]
       }
     },
@@ -913,8 +913,8 @@
       "registry_name": "gluton_sculk_fish",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/GlutonSculkFishItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/gluton_sculk_fish.json"
+          "src/main/resources/assets/cthulhufishing/models/item/gluton_sculk_fish.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/GlutonSculkFishItem.java"
         ]
       },
       "path": "~/SculkSet"
@@ -1008,15 +1008,15 @@
       "registry_name": "block_ore_eye",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeTileRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/display/BlockOreEyeDisplayItem.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeBlockModel.java",
-          "src/main/resources/assets/cthulhufishing/models/custom/block_ore_eye_particle.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeDisplayModel.java",
           "src/main/java/net/mcreator/cthulhufishing/block/BlockOreEyeBlock.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/block_ore_eye.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/BlockOreEyeDisplayItem.java",
           "src/main/java/net/mcreator/cthulhufishing/block/entity/BlockOreEyeTileEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeBlockModel.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/block_ore_eye.json",
+          "src/main/resources/assets/cthulhufishing/models/custom/block_ore_eye_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeTileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeDisplayModel.java",
           "src/main/resources/assets/cthulhufishing/models/item/block_ore_eye.json"
         ]
       }
@@ -1144,8 +1144,41 @@
       "registry_name": "drip_void",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/DripVoidItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/drip_void.json"
+          "src/main/resources/assets/cthulhufishing/models/item/drip_void.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/DripVoidItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SwordOfRevelation",
+      "type": "tool",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_of_revelation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/SwordOfRevelationItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/sword_of_revelation.json"
+        ]
+      }
+    },
+    {
+      "name": "RevelationChange",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revelation_change",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/RevelationChangeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       }
     },
@@ -1188,6 +1221,12 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "Revalation_Change",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -1239,6 +1278,7 @@
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
       "subtitles.catch_strange_fish": "",
       "subtitles.hood_ablity": "",
+      "item.cthulhufishing.sword_of_revelation": "Knife For Ritual Bleeding",
       "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
       "enchantment.cthulhufishing.dark_blade": "Dark Blade",
       "item.cthulhufishing.third_eye": "Third Eye",

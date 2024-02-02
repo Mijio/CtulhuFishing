@@ -1,0 +1,30 @@
+{
+  "_fv": 43,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "knife_for_ritual_bleeding",
+    "customModelName": "Normal",
+    "name": "Knife For Ritual Bleeding",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:CtulhuFishingTab"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 1.0,
+    "attackSpeed": 1.7999999999999998,
+    "enchantability": 2,
+    "damageVsEntity": 2.5,
+    "usageCount": 65,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "KnifeForRitualBleedingRightclicked"
+    }
+  }
+}

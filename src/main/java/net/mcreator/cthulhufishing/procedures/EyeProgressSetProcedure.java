@@ -11,12 +11,13 @@ public class EyeProgressSetProcedure {
 		if (entity == null)
 			return;
 		{
-			double _setval = (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score + 10;
+			double _setval = 10;
 			entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.Revelation_Score = _setval;
+				capability.Revalation_Change = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
+		RevelationChangeProcedure.execute(entity);
 		if (!world.isClientSide() && world.getServer() != null)
 			world.getServer().getPlayerList()
 					.broadcastSystemMessage(Component.literal(("Revelation: " + (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score)), false);
