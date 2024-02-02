@@ -370,7 +370,8 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/enchantment/CrimsonCatcherEnchantEnchantment.java"
         ]
-      }
+      },
+      "path": "~/Enchantments"
     },
     {
       "name": "AltarRecipeGeneration",
