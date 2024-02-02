@@ -1164,6 +1164,61 @@
           }
         ]
       }
+    },
+    {
+      "name": "TentacleStaff",
+      "type": "animateditem",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tentacle_staff",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/model/TentacleStaffItemModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/item/TentacleStaffItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/tentacle_staff.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/renderer/TentacleStaffItemRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "TentacleStaffAbillity",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tentacle_staff_abillity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/TentacleStaffAbillityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1258,6 +1313,7 @@
       "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "block.cthulhufishing.deep_oil": "Deep Oil",
+      "item.cthulhufishing.tentacle_staff": "Tentacle Staff",
       "gui.cthulhufishing.ctulhu_altar.button_grab": "GRAB",
       "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab"
     }
