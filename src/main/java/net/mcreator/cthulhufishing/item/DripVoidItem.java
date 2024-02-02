@@ -6,8 +6,8 @@ import net.minecraft.world.item.Item;
 
 import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 
-public class DormantEyeOfTheAbyssItem extends Item {
-	public DormantEyeOfTheAbyssItem() {
+public class DripVoidItem extends Item {
+	public DripVoidItem() {
 		super(new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB).stacksTo(64).rarity(Rarity.COMMON));
 	}
 }

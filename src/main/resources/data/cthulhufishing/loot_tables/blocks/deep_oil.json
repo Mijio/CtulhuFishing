@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "cthulhufishing:dormant_eye_of_the_abyss",
+          "name": "cthulhufishing:drip_void",
           "weight": 0,
           "functions": [
             {
@@ -20,7 +20,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "cthulhufishing:dormant_eye_of_the_abyss",
+          "name": "cthulhufishing:drip_void",
           "weight": 1,
           "functions": [
             {

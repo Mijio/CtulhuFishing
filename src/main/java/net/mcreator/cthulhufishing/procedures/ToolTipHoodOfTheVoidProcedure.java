@@ -53,7 +53,7 @@ public class ToolTipHoodOfTheVoidProcedure {
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
-		} else if (itemstack.getItem() == CthulhufishingModItems.DORMANT_EYE_OF_THE_ABYSS.get()) {
+		} else if (itemstack.getItem() == CthulhufishingModItems.DRIP_VOID.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bDormant eye"));
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A7bNeed to be awake"));

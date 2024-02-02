@@ -335,11 +335,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/block/DeepOilBlock.java",
-          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/DeepOilFeature.java",
-          "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json",
-          "src/main/resources/data/cthulhufishing/forge/biome_modifier/deep_oil_biome_modifier.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/deep_oil.json",
           "src/main/resources/assets/cthulhufishing/models/item/deep_oil.json",
-          "src/main/resources/assets/cthulhufishing/blockstates/deep_oil.json"
+          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/DeepOilFeature.java",
+          "src/main/resources/data/cthulhufishing/forge/biome_modifier/deep_oil_biome_modifier.json",
+          "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json"
         ]
       }
     },
@@ -391,20 +391,6 @@
         ]
       },
       "path": "~/Altar"
-    },
-    {
-      "name": "DormantEyeOfTheAbyss",
-      "type": "item",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dormant_eye_of_the_abyss",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/DormantEyeOfTheAbyssItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/dormant_eye_of_the_abyss.json"
-        ]
-      }
     },
     {
       "name": "Blocksdeepoil",
@@ -1082,6 +1068,20 @@
         ]
       },
       "path": "~/CrimsonSet"
+    },
+    {
+      "name": "DripVoid",
+      "type": "item",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drip_void",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/drip_void.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/DripVoidItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1149,6 +1149,7 @@
       "item.cthulhufishing.crimson_fish": "Crimson Fish",
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
+      "item.cthulhufishing.drip_void": "Drip Void",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
       "item.cthulhufishing.knife_for_ritual_bleeding": "Knife For Ritual Bleeding",
       "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
@@ -1157,7 +1158,6 @@
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
       "subtitles.catch_strange_fish": "",
       "subtitles.hood_ablity": "",
-      "item.cthulhufishing.dormant_eye_of_the_abyss": "Dormant Eye Of The Abyss",
       "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
       "enchantment.cthulhufishing.dark_blade": "Dark Blade",
       "item.cthulhufishing.third_eye": "Third Eye",
