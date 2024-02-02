@@ -194,8 +194,8 @@
       "registry_name": "third_eye",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json"
         ]
       }
     },
@@ -318,8 +318,8 @@
       "registry_name": "ctulhu_altar",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/client/gui/CtulhuAltarScreen.java",
-          "src/main/java/net/mcreator/cthulhufishing/world/inventory/CtulhuAltarMenu.java"
+          "src/main/java/net/mcreator/cthulhufishing/world/inventory/CtulhuAltarMenu.java",
+          "src/main/java/net/mcreator/cthulhufishing/client/gui/CtulhuAltarScreen.java"
         ]
       },
       "path": "~/Altar"
@@ -334,11 +334,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/block/DeepOilBlock.java",
-          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/DeepOilFeature.java",
-          "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json",
-          "src/main/resources/data/cthulhufishing/forge/biome_modifier/deep_oil_biome_modifier.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/deep_oil.json",
           "src/main/resources/assets/cthulhufishing/models/item/deep_oil.json",
-          "src/main/resources/assets/cthulhufishing/blockstates/deep_oil.json"
+          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/DeepOilFeature.java",
+          "src/main/resources/data/cthulhufishing/forge/biome_modifier/deep_oil_biome_modifier.json",
+          "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json"
         ]
       }
     },
@@ -351,16 +351,17 @@
       "registry_name": "ctulhu_altar_fish",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/blockstates/ctulhu_altar_fish.json",
-          "src/main/resources/assets/cthulhufishing/models/item/ctulhu_altar_fish.json",
+          "src/main/resources/assets/cthulhufishing/models/block/ctulhu_altar_fish.json",
           "src/main/java/net/mcreator/cthulhufishing/block/CtulhuAltarFishBlock.java",
-          "src/main/resources/assets/cthulhufishing/models/block/ctulhu_altar_fish.json"
+          "src/main/resources/assets/cthulhufishing/models/item/ctulhu_altar_fish.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/ctulhu_altar_fish.json"
         ]
       }
     },
     {
       "name": "CrimsonCatcherEnchant",
       "type": "enchantment",
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crimson_catcher_enchant",
@@ -368,7 +369,8 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/enchantment/CrimsonCatcherEnchantEnchantment.java"
         ]
-      }
+      },
+      "path": "~/Enchantments"
     },
     {
       "name": "AltarRecipeGeneration",
@@ -399,8 +401,8 @@
       "registry_name": "dormant_eye_of_the_abyss",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/DormantEyeOfTheAbyssItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/dormant_eye_of_the_abyss.json"
+          "src/main/resources/assets/cthulhufishing/models/item/dormant_eye_of_the_abyss.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/DormantEyeOfTheAbyssItem.java"
         ]
       }
     },
@@ -443,6 +445,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "x",
@@ -916,7 +922,8 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/enchantment/DarkWaterEnchantment.java"
         ]
-      }
+      },
+      "path": "~/Enchantments"
     },
     {
       "name": "ActionsForDecreaseRevelation",
@@ -947,8 +954,8 @@
       "registry_name": "gluton_sculk_fish",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/GlutonSculkFishItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/gluton_sculk_fish.json"
+          "src/main/resources/assets/cthulhufishing/models/item/gluton_sculk_fish.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/GlutonSculkFishItem.java"
         ]
       },
       "path": "~/SculkSet"
@@ -1035,6 +1042,109 @@
         ]
       },
       "path": "~/SculkSet"
+    },
+    {
+      "name": "CatchSculk",
+      "type": "procedure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "catch_sculk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/CatchSculkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/SculkSet"
+    },
+    {
+      "name": "SculkCatcherEnchantment",
+      "type": "enchantment",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sculk_catcher_enchantment",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/enchantment/SculkCatcherEnchantmentEnchantment.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "BlockOreEye",
+      "type": "animatedblock",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_ore_eye",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/BlockOreEyeBlock.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/BlockOreEyeDisplayItem.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/BlockOreEyeTileEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeBlockModel.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/block_ore_eye.json",
+          "src/main/resources/assets/cthulhufishing/models/custom/block_ore_eye_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeTileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeDisplayModel.java",
+          "src/main/resources/assets/cthulhufishing/models/item/block_ore_eye.json"
+        ]
+      }
+    },
+    {
+      "name": "BlockOreEyeOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_ore_eye_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/BlockOreEyeOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1101,22 +1211,30 @@
     "en_us": {
       "item.cthulhufishing.crimson_fish": "Crimson Fish",
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
+      "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
-      "item.cthulhufishing.third_eye": "Third Eye",
       "item.cthulhufishing.knife_for_ritual_bleeding": "Knife For Ritual Bleeding",
       "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
-      "subtitles.catchfishmen": "fishmen",
-      "gui.cthulhufishing.ctulhu_altar.label_12": "11",
+      "item.cthulhufishing.decanter_of_depths_filled": "Decanter Of Depths Filled",
+      "item.cthulhufishing.decanter_of_depths": "Decanter Of Depths",
       "subtitles.ritual_bleeding_knife": "",
-      "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
+      "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
-      "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "subtitles.catch_strange_fish": "",
+      "subtitles.hood_ablity": "",
+      "item.cthulhufishing.dormant_eye_of_the_abyss": "Dormant Eye Of The Abyss",
+      "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
+      "item.cthulhufishing.third_eye": "Third Eye",
+      "subtitles.catchfishmen": "fishmen",
+      "block.cthulhufishing.block_ore_eye": "Block Ore Eye",
+      "gui.cthulhufishing.ctulhu_altar.label_12": "11",
+      "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
+      "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
+      "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
+      "enchantment.cthulhufishing.dark_water": "Dark Water",
       "block.cthulhufishing.deep_oil": "Deep Oil",
       "gui.cthulhufishing.ctulhu_altar.button_grab": "GRAB",
-      "subtitles.hood_ablity": "",
-      "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab",
-      "item.cthulhufishing.dormant_eye_of_the_abyss": "Dormant Eye Of The Abyss"
+      "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab"
     }
   },
   "foldersRoot": {
@@ -1144,6 +1262,10 @@
       },
       {
         "name": "EyeCommands",
+        "children": []
+      },
+      {
+        "name": "Enchantments",
         "children": []
       }
     ]

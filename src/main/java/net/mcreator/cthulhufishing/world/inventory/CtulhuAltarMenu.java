@@ -18,9 +18,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.cthulhufishing.network.CtulhuAltarSlotMessage;
 import net.mcreator.cthulhufishing.init.CthulhufishingModMenus;
-import net.mcreator.cthulhufishing.CthulhufishingMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
@@ -39,7 +37,7 @@ public class CtulhuAltarMenu extends AbstractContainerMenu implements Supplier<M
 		super(CthulhufishingModMenus.CTULHU_ALTAR.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
-		this.internal = new ItemStackHandler(1);
+		this.internal = new ItemStackHandler(4);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -78,10 +76,23 @@ public class CtulhuAltarMenu extends AbstractContainerMenu implements Supplier<M
 			}
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 80, 86) {
+		}));
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 80, 21) {
 			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(0, 0, 0);
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 98, 21) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
+			}
+		}));
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 62, 21) {
+			@Override
+			public boolean mayPlace(ItemStack stack) {
+				return false;
 			}
 		}));
 		for (int si = 0; si < 3; ++si)
@@ -103,16 +114,16 @@ public class CtulhuAltarMenu extends AbstractContainerMenu implements Supplier<M
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 1) {
-				if (!this.moveItemStackTo(itemstack1, 1, this.slots.size(), true))
+			if (index < 4) {
+				if (!this.moveItemStackTo(itemstack1, 4, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 1, false)) {
-				if (index < 1 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 1 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 4, false)) {
+				if (index < 4 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 4 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 1, 1 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 4, 4 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;
@@ -217,13 +228,6 @@ public class CtulhuAltarMenu extends AbstractContainerMenu implements Supplier<M
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}
-		}
-	}
-
-	private void slotChanged(int slotid, int ctype, int meta) {
-		if (this.world != null && this.world.isClientSide()) {
-			CthulhufishingMod.PACKET_HANDLER.sendToServer(new CtulhuAltarSlotMessage(slotid, x, y, z, ctype, meta));
-			CtulhuAltarSlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 

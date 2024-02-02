@@ -25,6 +25,7 @@ import net.mcreator.cthulhufishing.item.DecanterOfDepthsFilledItem;
 import net.mcreator.cthulhufishing.item.CrimsonJellyfishItem;
 import net.mcreator.cthulhufishing.item.CrimsonFishItem;
 import net.mcreator.cthulhufishing.item.CrimsonCrunchItem;
+import net.mcreator.cthulhufishing.block.display.BlockOreEyeDisplayItem;
 import net.mcreator.cthulhufishing.CthulhufishingMod;
 
 public class CthulhufishingModItems {
@@ -43,6 +44,8 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> HERMIT_SLULK_FISH = REGISTRY.register("hermit_slulk_fish", () -> new HermitSlulkFishItem());
 	public static final RegistryObject<Item> HORSE_SCULK_FISH = REGISTRY.register("horse_sculk_fish", () -> new HorseSculkFishItem());
 	public static final RegistryObject<Item> GLUTON_SCULK_FISH = REGISTRY.register("gluton_sculk_fish", () -> new GlutonSculkFishItem());
+	public static final RegistryObject<Item> BLOCK_ORE_EYE = REGISTRY.register(CthulhufishingModBlocks.BLOCK_ORE_EYE.getId().getPath(),
+			() -> new BlockOreEyeDisplayItem(CthulhufishingModBlocks.BLOCK_ORE_EYE.get(), new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

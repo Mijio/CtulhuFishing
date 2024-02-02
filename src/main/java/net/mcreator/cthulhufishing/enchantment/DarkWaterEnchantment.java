@@ -1,8 +1,17 @@
 
 package net.mcreator.cthulhufishing.enchantment;
 
-public class DarkWaterEnchantment extends Enchantment {
+import net.minecraft.world.item.enchantment.EnchantmentCategory;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.EquipmentSlot;
 
+import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
+
+import java.util.List;
+
+public class DarkWaterEnchantment extends Enchantment {
 	public DarkWaterEnchantment(EquipmentSlot... slots) {
 		super(Enchantment.Rarity.COMMON, EnchantmentCategory.VANISHABLE, slots);
 	}
@@ -15,7 +24,7 @@ public class DarkWaterEnchantment extends Enchantment {
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack stack) {
 		Item item = stack.getItem();
-		return List.of(CthulhufishingModItems.DELETED_MOD_ELEMENT.get()).contains(item);
+		return List.of(CthulhufishingModItems.DECANTER_OF_DEPTHS_FILLED.get()).contains(item);
 	}
 
 	@Override

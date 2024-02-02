@@ -8,8 +8,12 @@
     "minLevel": 1,
     "maxLevel": 5,
     "damageModifier": 0,
-    "compatibleEnchantments": [],
-    "excludeEnchantments": false,
+    "compatibleEnchantments": [
+      {
+        "value": "CUSTOM:SculkCatcherEnchantment"
+      }
+    ],
+    "excludeEnchantments": true,
     "compatibleItems": [],
     "excludeItems": false,
     "isTreasureEnchantment": false,
