@@ -7,6 +7,7 @@
   "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
   "subtitles.ritual_bleeding_knife": "",
   "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
+  "item.cthulhufishing.necklace_of_flesh_and_bones": "Necklace Of Flesh And Bones",
   "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
   "subtitles.catch_strange_fish": "",
   "subtitles.hood_ablity": "",
@@ -20,6 +21,7 @@
   "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
   "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
   "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
+  "item.cthulhufishing.hidden_blade": "Hidden Blade",
   "block.cthulhufishing.deep_oil": "Deep Oil",
   "gui.cthulhufishing.ctulhu_altar.button_grab": "GRAB",
   "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab"
