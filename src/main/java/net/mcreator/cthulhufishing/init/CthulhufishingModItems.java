@@ -14,11 +14,11 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.cthulhufishing.item.ThirdEyeItem;
+import net.mcreator.cthulhufishing.item.SwordOfRevelationItem;
 import net.mcreator.cthulhufishing.item.NecklaceOfFleshAndBonesItem;
 import net.mcreator.cthulhufishing.item.KnifeForRitualBleedingItem;
 import net.mcreator.cthulhufishing.item.HorseSculkFishItem;
 import net.mcreator.cthulhufishing.item.HoodOfTheDeepVoidItem;
-import net.mcreator.cthulhufishing.item.HiddenBladeItem;
 import net.mcreator.cthulhufishing.item.HermitSlulkFishItem;
 import net.mcreator.cthulhufishing.item.GlutonSculkFishItem;
 import net.mcreator.cthulhufishing.item.DripVoidItem;
@@ -45,7 +45,7 @@ public class CthulhufishingModItems {
 			() -> new BlockOreEyeDisplayItem(CthulhufishingModBlocks.BLOCK_ORE_EYE.get(), new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB)));
 	public static final RegistryObject<Item> NECKLACE_OF_FLESH_AND_BONES = REGISTRY.register("necklace_of_flesh_and_bones", () -> new NecklaceOfFleshAndBonesItem());
 	public static final RegistryObject<Item> DRIP_VOID = REGISTRY.register("drip_void", () -> new DripVoidItem());
-	public static final RegistryObject<Item> HIDDEN_BLADE = REGISTRY.register("hidden_blade", () -> new HiddenBladeItem());
+	public static final RegistryObject<Item> SWORD_OF_REVELATION = REGISTRY.register("sword_of_revelation", () -> new SwordOfRevelationItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

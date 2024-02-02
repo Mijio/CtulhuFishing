@@ -1,13 +1,15 @@
 
 package net.mcreator.cthulhufishing.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import javax.annotation.Nullable;
+import top.theillusivec4.curios.api.type.capability.ICurioItem;
+
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.Item;
+
+import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 
 public class NecklaceOfFleshAndBonesItem extends Item implements ICurioItem {
-
 	public NecklaceOfFleshAndBonesItem() {
 		super(new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB).stacksTo(1).rarity(Rarity.COMMON));
 	}
-
 }

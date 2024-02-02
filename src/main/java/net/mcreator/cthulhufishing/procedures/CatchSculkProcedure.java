@@ -54,34 +54,33 @@ public class CatchSculkProcedure {
 							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:catch_strange_fish")), SoundSource.PLAYERS, 1, 1, false);
 						}
 					}
-				}
-				if ((entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score < 60) {
+					RandomCrisonFishCatch = Mth.nextInt(RandomSource.create(), 1, 3);
 					{
-						double _setval = (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score + 1;
+						double _setval = 3;
 						entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-							capability.Revelation_Score = _setval;
+							capability.Revalation_Change = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
-				}
-				RandomCrisonFishCatch = Mth.nextInt(RandomSource.create(), 1, 3);
-				if (RandomCrisonFishCatch == 1) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(CthulhufishingModItems.GLUTON_SCULK_FISH.get());
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-				} else if (RandomCrisonFishCatch == 2) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(CthulhufishingModItems.HORSE_SCULK_FISH.get());
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
-					}
-				} else if (RandomCrisonFishCatch == 3) {
-					if (entity instanceof Player _player) {
-						ItemStack _setstack = new ItemStack(CthulhufishingModItems.HERMIT_SLULK_FISH.get());
-						_setstack.setCount(1);
-						ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+					RevelationChangeProcedure.execute(entity);
+					if (RandomCrisonFishCatch == 1) {
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = new ItemStack(CthulhufishingModItems.GLUTON_SCULK_FISH.get());
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
+					} else if (RandomCrisonFishCatch == 2) {
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = new ItemStack(CthulhufishingModItems.HORSE_SCULK_FISH.get());
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
+					} else if (RandomCrisonFishCatch == 3) {
+						if (entity instanceof Player _player) {
+							ItemStack _setstack = new ItemStack(CthulhufishingModItems.HERMIT_SLULK_FISH.get());
+							_setstack.setCount(1);
+							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+						}
 					}
 				}
 			}

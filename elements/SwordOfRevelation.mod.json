@@ -3,25 +3,28 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "nonetexture",
+    "texture": "knife_for_ritual_bleeding",
     "customModelName": "Normal",
-    "name": "Hidden Blade",
+    "name": "Knife For Ritual Bleeding",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:CtulhuFishingTab"
     },
     "toolType": "Sword",
     "harvestLevel": 1,
-    "efficiency": 4.0,
-    "attackSpeed": 1.0,
+    "efficiency": 1.0,
+    "attackSpeed": 1.7999999999999998,
     "enchantability": 2,
-    "damageVsEntity": 4.0,
-    "usageCount": 100,
+    "damageVsEntity": 2.5,
+    "usageCount": 65,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "KnifeForRitualBleedingRightclicked"
+    }
   }
 }
