@@ -319,6 +319,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/client/gui/CtulhuAltarScreen.java",
+          "src/main/java/net/mcreator/cthulhufishing/network/CtulhuAltarButtonMessage.java",
+          "src/main/java/net/mcreator/cthulhufishing/network/CtulhuAltarSlotMessage.java",
           "src/main/java/net/mcreator/cthulhufishing/world/inventory/CtulhuAltarMenu.java"
         ]
       },
@@ -361,6 +363,7 @@
     {
       "name": "CrimsonCatcherEnchant",
       "type": "enchantment",
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crimson_catcher_enchant",
@@ -443,6 +446,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           },
           {
             "name": "x",
@@ -1101,22 +1108,28 @@
     "en_us": {
       "item.cthulhufishing.crimson_fish": "Crimson Fish",
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
+      "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
-      "item.cthulhufishing.third_eye": "Third Eye",
       "item.cthulhufishing.knife_for_ritual_bleeding": "Knife For Ritual Bleeding",
       "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
+      "item.cthulhufishing.decanter_of_depths_filled": "Decanter Of Depths Filled",
+      "item.cthulhufishing.decanter_of_depths": "Decanter Of Depths",
+      "subtitles.ritual_bleeding_knife": "",
+      "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
+      "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
+      "subtitles.catch_strange_fish": "",
+      "subtitles.hood_ablity": "",
+      "item.cthulhufishing.dormant_eye_of_the_abyss": "Dormant Eye Of The Abyss",
+      "item.cthulhufishing.third_eye": "Third Eye",
       "subtitles.catchfishmen": "fishmen",
       "gui.cthulhufishing.ctulhu_altar.label_12": "11",
-      "subtitles.ritual_bleeding_knife": "",
       "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
-      "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
+      "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
-      "subtitles.catch_strange_fish": "",
+      "enchantment.cthulhufishing.dark_water": "Dark Water",
       "block.cthulhufishing.deep_oil": "Deep Oil",
       "gui.cthulhufishing.ctulhu_altar.button_grab": "GRAB",
-      "subtitles.hood_ablity": "",
-      "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab",
-      "item.cthulhufishing.dormant_eye_of_the_abyss": "Dormant Eye Of The Abyss"
+      "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab"
     }
   },
   "foldersRoot": {
@@ -1162,7 +1175,6 @@
     "dependants": [],
     "mcreatorDependencies": [
       "curios_api",
-      "geckolib",
       "playeranimator"
     ],
     "currentGenerator": "forge-1.19.2",

@@ -1,7 +1,27 @@
 
 package net.mcreator.cthulhufishing.item;
 
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.cthulhufishing.procedures.DecanterOfDepthsRightclickedOnBlockProcedure;
+import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
+
+import java.util.List;
+
+import com.google.common.collect.Multimap;
+import com.google.common.collect.ImmutableMultimap;
 
 public class DecanterOfDepthsItem extends Item {
 	public DecanterOfDepthsItem() {
@@ -45,7 +65,8 @@ public class DecanterOfDepthsItem extends Item {
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		DecanterOfDepthsRightclickedOnBlockProcedure.execute();
+		DecanterOfDepthsRightclickedOnBlockProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getLevel().getBlockState(context.getClickedPos()),
+				context.getPlayer());
 		return InteractionResult.SUCCESS;
 	}
 }
