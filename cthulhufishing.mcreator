@@ -1066,6 +1066,20 @@
       }
     },
     {
+      "name": "DarkBlade",
+      "type": "enchantment",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_blade",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/enchantment/DarkBladeEnchantment.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
       "name": "CrimsonFishPlayerFinishesUsingItem",
       "type": "procedure",
       "sortid": 56,
@@ -1084,20 +1098,6 @@
         ]
       },
       "path": "~/CrimsonSet"
-    },
-    {
-      "name": "DarkBlade",
-      "type": "enchantment",
-      "sortid": 57,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dark_blade",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/enchantment/DarkBladeEnchantment.java"
-        ]
-      },
-      "path": "~/Enchantments"
     }
   ],
   "variable_elements": [
@@ -1175,7 +1175,6 @@
       "subtitles.hood_ablity": "",
       "item.cthulhufishing.dormant_eye_of_the_abyss": "Dormant Eye Of The Abyss",
       "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
-      "enchantment.cthulhufishing.dark_blade": "Dark Blade",
       "item.cthulhufishing.third_eye": "Third Eye",
       "subtitles.catchfishmen": "fishmen",
       "block.cthulhufishing.block_ore_eye": "Block Ore Eye",

@@ -51,7 +51,7 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/coolfish.png"));
-		this.blit(ms, this.leftPos + 80, this.topPos + 86, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.leftPos + 80, this.topPos + 86, 0, 0, -1, -1, -1, -1);
 
 		RenderSystem.disableBlend();
 	}
