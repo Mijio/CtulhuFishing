@@ -393,20 +393,6 @@
       "path": "~/Altar"
     },
     {
-      "name": "DormantEyeOfTheAbyss",
-      "type": "item",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dormant_eye_of_the_abyss",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/DormantEyeOfTheAbyssItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/dormant_eye_of_the_abyss.json"
-        ]
-      }
-    },
-    {
       "name": "Blocksdeepoil",
       "type": "loottable",
       "compiles": true,
@@ -1084,20 +1070,6 @@
       "path": "~/CrimsonSet"
     },
     {
-      "name": "NecklaceOfFleshAndBones",
-      "type": "curiosbauble",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "necklace_of_flesh_and_bones",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/NecklaceOfFleshAndBonesItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/necklace_of_flesh_and_bones.json"
-        ]
-      }
-    },
-    {
       "name": "NecklaceOfFleshAndBounceProc",
       "type": "procedure",
       "sortid": 60,
@@ -1133,6 +1105,34 @@
       }
     },
     {
+      "name": "HiddenBladeProc",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hidden_blade_proc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/HiddenBladeProcProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "NecklaceOfFleshAndBones",
+      "type": "curiosbauble",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "necklace_of_flesh_and_bones",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/NecklaceOfFleshAndBonesItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/necklace_of_flesh_and_bones.json"
+        ]
+      }
+    },
+    {
       "name": "HiddenBlade",
       "type": "tool",
       "sortid": 61,
@@ -1147,17 +1147,17 @@
       }
     },
     {
-      "name": "HiddenBladeProc",
-      "type": "procedure",
-      "sortid": 62,
+      "name": "DripVoid",
+      "type": "item",
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "hidden_blade_proc",
+      "registry_name": "drip_void",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/HiddenBladeProcProcedure.java"
-        ],
-        "dependencies": []
+          "src/main/java/net/mcreator/cthulhufishing/item/DripVoidItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/drip_void.json"
+        ]
       }
     }
   ],
@@ -1231,11 +1231,9 @@
       "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
       "subtitles.ritual_bleeding_knife": "",
       "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
-      "item.cthulhufishing.necklace_of_flesh_and_bones": "Necklace Of Flesh And Bones",
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
       "subtitles.catch_strange_fish": "",
       "subtitles.hood_ablity": "",
-      "item.cthulhufishing.dormant_eye_of_the_abyss": "Dormant Eye Of The Abyss",
       "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
       "enchantment.cthulhufishing.dark_blade": "Dark Blade",
       "item.cthulhufishing.third_eye": "Third Eye",
@@ -1245,7 +1243,6 @@
       "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
       "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
-      "item.cthulhufishing.hidden_blade": "Hidden Blade",
       "block.cthulhufishing.deep_oil": "Deep Oil",
       "gui.cthulhufishing.ctulhu_altar.button_grab": "GRAB",
       "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab"

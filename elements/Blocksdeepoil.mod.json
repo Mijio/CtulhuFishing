@@ -14,7 +14,7 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:DormantEyeOfTheAbyss"
+              "value": "CUSTOM:DripVoid"
             },
             "weight": 0,
             "minCount": 1,
@@ -28,7 +28,7 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:DormantEyeOfTheAbyss"
+              "value": "CUSTOM:DripVoid"
             },
             "weight": 1,
             "minCount": 0,

@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "dormant_eye_of_the_deep",
+    "texture": "drip_void",
     "customModelName": "Normal",
-    "name": "Dormant Eye Of The Abyss",
+    "name": "Drip Void",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:CtulhuFishingTab"
