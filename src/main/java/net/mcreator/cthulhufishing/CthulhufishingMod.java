@@ -13,6 +13,8 @@
  */
 package net.mcreator.cthulhufishing;
 
+import software.bernie.geckolib3.GeckoLib;
+
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -37,6 +39,7 @@ import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
 import net.mcreator.cthulhufishing.init.CthulhufishingModFeatures;
 import net.mcreator.cthulhufishing.init.CthulhufishingModEnchantments;
 import net.mcreator.cthulhufishing.init.CthulhufishingModBlocks;
+import net.mcreator.cthulhufishing.init.CthulhufishingModBlockEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -60,6 +63,7 @@ public class CthulhufishingMod {
 		CthulhufishingModBlocks.REGISTRY.register(bus);
 		CthulhufishingModItems.REGISTRY.register(bus);
 
+		CthulhufishingModBlockEntities.REGISTRY.register(bus);
 		CthulhufishingModFeatures.REGISTRY.register(bus);
 
 		CthulhufishingModMobEffects.REGISTRY.register(bus);
@@ -68,6 +72,7 @@ public class CthulhufishingMod {
 
 		CthulhufishingModMenus.REGISTRY.register(bus);
 
+		GeckoLib.initialize();
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

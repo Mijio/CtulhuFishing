@@ -362,6 +362,7 @@
     {
       "name": "CrimsonCatcherEnchant",
       "type": "enchantment",
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "crimson_catcher_enchant",
@@ -871,7 +872,12 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/ButtonIsVisibleProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       },
       "path": "~/Altar"
     },
@@ -999,15 +1005,15 @@
       "registry_name": "block_ore_eye",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/block/BlockOreEyeBlock.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/display/BlockOreEyeDisplayItem.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/entity/BlockOreEyeTileEntity.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeBlockModel.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/block_ore_eye.json",
-          "src/main/resources/assets/cthulhufishing/models/custom/block_ore_eye_particle.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeDisplayItemRenderer.java",
           "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeTileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/BlockOreEyeDisplayItem.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeBlockModel.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/block_ore_eye_particle.json",
           "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeDisplayModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/BlockOreEyeBlock.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/block_ore_eye.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/BlockOreEyeTileEntity.java",
           "src/main/resources/assets/cthulhufishing/models/item/block_ore_eye.json"
         ]
       }
@@ -1023,7 +1029,24 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/BlockOreEyeOnBlockRightClickedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -1136,6 +1159,7 @@
       "subtitles.hood_ablity": "",
       "item.cthulhufishing.dormant_eye_of_the_abyss": "Dormant Eye Of The Abyss",
       "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
+      "enchantment.cthulhufishing.dark_blade": "Dark Blade",
       "item.cthulhufishing.third_eye": "Third Eye",
       "subtitles.catchfishmen": "fishmen",
       "block.cthulhufishing.block_ore_eye": "Block Ore Eye",
