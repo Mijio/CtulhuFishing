@@ -9,8 +9,8 @@ import net.mcreator.cthulhufishing.init.CthulhufishingModEnchantments;
 
 import java.util.List;
 
-public class CrimsonCatcherEnchantEnchantment extends Enchantment {
-	public CrimsonCatcherEnchantEnchantment(EquipmentSlot... slots) {
+public class SculkCatcherEnchantmentEnchantment extends Enchantment {
+	public SculkCatcherEnchantmentEnchantment(EquipmentSlot... slots) {
 		super(Enchantment.Rarity.RARE, EnchantmentCategory.FISHING_ROD, slots);
 	}
 
@@ -21,6 +21,6 @@ public class CrimsonCatcherEnchantEnchantment extends Enchantment {
 
 	@Override
 	protected boolean checkCompatibility(Enchantment ench) {
-		return this != ench && !List.of(CthulhufishingModEnchantments.SCULK_CATCHER_ENCHANTMENT.get()).contains(ench);
+		return this != ench && !List.of(CthulhufishingModEnchantments.CRIMSON_CATCHER_ENCHANT.get()).contains(ench);
 	}
 }
