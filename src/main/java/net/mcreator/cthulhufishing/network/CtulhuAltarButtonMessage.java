@@ -64,7 +64,7 @@ public class CtulhuAltarButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			AltarRewardProcedure.execute(entity);
+			AltarRewardProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

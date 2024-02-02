@@ -1,11 +1,5 @@
 package net.mcreator.cthulhufishing.item.model;
 
-import software.bernie.geckolib3.model.AnimatedGeoModel;
-
-import net.minecraft.resources.ResourceLocation;
-
-import net.mcreator.cthulhufishing.item.TentacleStaffItem;
-
 public class TentacleStaffItemModel extends AnimatedGeoModel<TentacleStaffItem> {
 	@Override
 	public ResourceLocation getAnimationResource(TentacleStaffItem animatable) {

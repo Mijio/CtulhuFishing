@@ -1,32 +1,12 @@
 
 package net.mcreator.cthulhufishing.item;
 
-import software.bernie.geckolib3.util.GeckoLibUtil;
-import software.bernie.geckolib3.core.manager.AnimationFactory;
-import software.bernie.geckolib3.core.manager.AnimationData;
-import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
-import software.bernie.geckolib3.core.controller.AnimationController;
 import software.bernie.geckolib3.core.builder.ILoopType.EDefaultLoopTypes;
-import software.bernie.geckolib3.core.builder.AnimationBuilder;
-import software.bernie.geckolib3.core.PlayState;
-import software.bernie.geckolib3.core.IAnimatable;
 
-import net.minecraftforge.client.extensions.common.IClientItemExtensions;
-
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
 import net.minecraft.client.renderer.block.model.ItemTransforms;
-import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 
-import net.mcreator.cthulhufishing.item.renderer.TentacleStaffItemRenderer;
-import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
-
-import java.util.function.Consumer;
-import java.util.List;
-
-import com.mojang.blaze3d.vertex.PoseStack;
+import javax.annotation.Nullable;
 
 public class TentacleStaffItem extends Item implements IAnimatable {
 	public AnimationFactory factory = GeckoLibUtil.createFactory(this);
@@ -127,4 +107,5 @@ public class TentacleStaffItem extends Item implements IAnimatable {
 	public float getDestroySpeed(ItemStack par1ItemStack, BlockState par2Block) {
 		return 1.3F;
 	}
+
 }

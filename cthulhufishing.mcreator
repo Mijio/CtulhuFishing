@@ -1219,6 +1219,20 @@
           }
         ]
       }
+    },
+    {
+      "name": "AltarLoot",
+      "type": "loottable",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/loot_tables/blocks/altar_loot.json"
+        ]
+      },
+      "path": "~/Altar"
     }
   ],
   "variable_elements": [
