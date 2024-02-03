@@ -37,6 +37,7 @@ import net.mcreator.cthulhufishing.init.CthulhufishingModMobEffects;
 import net.mcreator.cthulhufishing.init.CthulhufishingModMenus;
 import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
 import net.mcreator.cthulhufishing.init.CthulhufishingModFeatures;
+import net.mcreator.cthulhufishing.init.CthulhufishingModEntities;
 import net.mcreator.cthulhufishing.init.CthulhufishingModEnchantments;
 import net.mcreator.cthulhufishing.init.CthulhufishingModBlocks;
 import net.mcreator.cthulhufishing.init.CthulhufishingModBlockEntities;
@@ -62,7 +63,7 @@ public class CthulhufishingMod {
 		CthulhufishingModSounds.REGISTRY.register(bus);
 		CthulhufishingModBlocks.REGISTRY.register(bus);
 		CthulhufishingModItems.REGISTRY.register(bus);
-
+		CthulhufishingModEntities.REGISTRY.register(bus);
 		CthulhufishingModBlockEntities.REGISTRY.register(bus);
 		CthulhufishingModFeatures.REGISTRY.register(bus);
 
