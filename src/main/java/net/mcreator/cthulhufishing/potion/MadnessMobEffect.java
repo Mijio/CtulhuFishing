@@ -1,8 +1,10 @@
 
 package net.mcreator.cthulhufishing.potion;
 
-public class MadnessMobEffect extends MobEffect {
+import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.effect.MobEffect;
 
+public class MadnessMobEffect extends MobEffect {
 	public MadnessMobEffect() {
 		super(MobEffectCategory.HARMFUL, -10678770);
 	}
@@ -16,5 +18,4 @@ public class MadnessMobEffect extends MobEffect {
 	public boolean isDurationEffectTick(int duration, int amplifier) {
 		return true;
 	}
-
 }
