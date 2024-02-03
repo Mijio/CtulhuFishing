@@ -1,7 +1,8 @@
 package net.mcreator.cthulhufishing.procedures;
 
-import net.minecraft.world.entity.Mob;
-import net.minecraft.world.entity.Entity;
+import net.minecraftforge.eventbus.api.Event;
+
+import javax.annotation.Nullable;
 
 public class ObsessedEyeOnEntityTickUpdateProcedure {
 	public static void execute(Entity entity) {
@@ -13,7 +14,6 @@ public class ObsessedEyeOnEntityTickUpdateProcedure {
 			entity.getPersistentData().putDouble("AI", (entity.getPersistentData().getDouble("AI") + 1));
 		}
 		if (entity.getPersistentData().getDouble("AI") >= 30) {
-			ObsessedEyeAbilProcedure.execute(entity);
 			entity.getPersistentData().putDouble("AI", 0);
 		}
 	}

@@ -26,7 +26,14 @@ public class ActionsForDecreaseRevelationProcedure {
 		if (entity == null)
 			return;
 		{
-			double _setval = -10;
+			boolean _setval = true;
+			entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.RC_IsNegative = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+		{
+			double _setval = 10;
 			entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.Revalation_Change = _setval;
 				capability.syncPlayerVariables(entity);

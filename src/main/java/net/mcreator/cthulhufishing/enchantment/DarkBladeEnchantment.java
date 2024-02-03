@@ -17,6 +17,11 @@ public class DarkBladeEnchantment extends Enchantment {
 	}
 
 	@Override
+	public int getMaxLevel() {
+		return 5;
+	}
+
+	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack stack) {
 		Item item = stack.getItem();
 		return List.of(CthulhufishingModItems.KNIFE_FOR_RITUAL_BLEEDING.get()).contains(item);

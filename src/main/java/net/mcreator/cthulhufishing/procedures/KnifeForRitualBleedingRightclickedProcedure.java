@@ -27,7 +27,7 @@ public class KnifeForRitualBleedingRightclickedProcedure {
 			_entity.hurt(new DamageSource("made an extreme sacrifice").bypassArmor(), (float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) * 0.1));
 		if (EnchantmentHelper.getItemEnchantmentLevel(CthulhufishingModEnchantments.DARK_BLADE.get(), itemstack) != 0) {
 			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 600, 1));
+				_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 600, 0));
 		}
 		if (entity instanceof Player _player)
 			_player.getCooldowns().addCooldown(itemstack.getItem(), 100);
@@ -39,6 +39,6 @@ public class KnifeForRitualBleedingRightclickedProcedure {
 			}
 		}
 		if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-			_entity.addEffect(new MobEffectInstance(CthulhufishingModMobEffects.RITUAL_BLEEDING.get(), 600, 1));
+			_entity.addEffect(new MobEffectInstance(CthulhufishingModMobEffects.RITUAL_BLEEDING.get(), 600, 0));
 	}
 }
