@@ -370,8 +370,7 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/enchantment/CrimsonCatcherEnchantEnchantment.java"
         ]
-      },
-      "path": "~/Enchantments"
+      }
     },
     {
       "name": "AltarRecipeGeneration",
@@ -1357,6 +1356,29 @@
       }
     },
     {
+      "name": "CurseOfObsessedEye",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curse_of_obsessed_eye",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/CurseOfObsessedEyeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
       "name": "ObsessedEye",
       "type": "animatedentity",
       "sortid": 72,
@@ -1365,11 +1387,11 @@
       "registry_name": "obsessed_eye",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/entity/ObsessedEyeEntity.java",
-          "src/main/resources/data/cthulhufishing/forge/biome_modifier/obsessed_eye_biome_modifier.json",
-          "src/main/java/net/mcreator/cthulhufishing/client/renderer/ObsessedEyeRenderer.java",
           "src/main/java/net/mcreator/cthulhufishing/entity/model/ObsessedEyeModel.java",
-          "src/main/resources/assets/cthulhufishing/models/item/obsessed_eye_spawn_egg.json"
+          "src/main/java/net/mcreator/cthulhufishing/client/renderer/ObsessedEyeRenderer.java",
+          "src/main/resources/data/cthulhufishing/forge/biome_modifier/obsessed_eye_biome_modifier.json",
+          "src/main/resources/assets/cthulhufishing/models/item/obsessed_eye_spawn_egg.json",
+          "src/main/java/net/mcreator/cthulhufishing/entity/ObsessedEyeEntity.java"
         ]
       }
     }
