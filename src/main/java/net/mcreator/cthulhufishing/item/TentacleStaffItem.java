@@ -1,12 +1,39 @@
 
 package net.mcreator.cthulhufishing.item;
 
+import software.bernie.geckolib3.util.GeckoLibUtil;
+import software.bernie.geckolib3.core.manager.AnimationFactory;
+import software.bernie.geckolib3.core.manager.AnimationData;
+import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
+import software.bernie.geckolib3.core.controller.AnimationController;
 import software.bernie.geckolib3.core.builder.ILoopType.EDefaultLoopTypes;
+import software.bernie.geckolib3.core.builder.AnimationBuilder;
+import software.bernie.geckolib3.core.PlayState;
+import software.bernie.geckolib3.core.IAnimatable;
 
-import net.minecraft.client.renderer.block.model.ItemTransforms;
+import net.minecraftforge.client.extensions.common.IClientItemExtensions;
+
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.client.renderer.block.model.ItemTransforms;
+import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 
-import javax.annotation.Nullable;
+import net.mcreator.cthulhufishing.item.renderer.TentacleStaffItemRenderer;
+import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
+
+import java.util.function.Consumer;
+import java.util.List;
+
+import com.mojang.blaze3d.vertex.PoseStack;
+
+import com.google.common.collect.Multimap;
+import com.google.common.collect.ImmutableMultimap;
 
 public class TentacleStaffItem extends Item implements IAnimatable {
 	public AnimationFactory factory = GeckoLibUtil.createFactory(this);
@@ -60,9 +87,9 @@ public class TentacleStaffItem extends Item implements IAnimatable {
 	}
 
 	private <P extends Item & IAnimatable> PlayState idlePredicate(AnimationEvent<P> event) {
-		if (this.transformType != null ? true : false) {
+		if (this.transformType != null ? this.transformType.firstPerson() : false) {
 			if (this.animationprocedure.equals("empty")) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("0", EDefaultLoopTypes.LOOP));
+				event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.tentacle.idle", EDefaultLoopTypes.LOOP));
 				return PlayState.CONTINUE;
 			}
 		}
@@ -70,7 +97,7 @@ public class TentacleStaffItem extends Item implements IAnimatable {
 	}
 
 	private <P extends Item & IAnimatable> PlayState procedurePredicate(AnimationEvent<P> event) {
-		if (this.transformType != null ? true : false) {
+		if (this.transformType != null ? this.transformType.firstPerson() : false) {
 			if (!(this.animationprocedure.equals("empty")) && event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
 				event.getController().setAnimation(new AnimationBuilder().addAnimation(this.animationprocedure, EDefaultLoopTypes.PLAY_ONCE));
 				if (event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
@@ -108,4 +135,15 @@ public class TentacleStaffItem extends Item implements IAnimatable {
 		return 1.3F;
 	}
 
+	@Override
+	public Multimap<Attribute, AttributeModifier> getDefaultAttributeModifiers(EquipmentSlot equipmentSlot) {
+		if (equipmentSlot == EquipmentSlot.MAINHAND) {
+			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
+			builder.putAll(super.getDefaultAttributeModifiers(equipmentSlot));
+			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Item modifier", 5d, AttributeModifier.Operation.ADDITION));
+			builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Item modifier", -2.4, AttributeModifier.Operation.ADDITION));
+			return builder.build();
+		}
+		return super.getDefaultAttributeModifiers(equipmentSlot);
+	}
 }

@@ -54,34 +54,31 @@ public class EyeHUDOverlay {
 		if (true) {
 			if (ThirdEye0Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/eye0.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -32, posY + -120, 0, 0, 64, 32, 64, 32);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -31, posY + -120, 0, 0, 64, 32, 64, 32);
 			}
 			if (ThirdEye1Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/eye1.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -32, posY + -120, 0, 0, 64, 32, 64, 32);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -31, posY + -120, 0, 0, 64, 32, 64, 32);
 			}
 			if (ThirdEye2Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/eye2.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -32, posY + -120, 0, 0, 64, 32, 64, 32);
-
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -31, posY + -120, 0, 0, 64, 32, 64, 32);
 			}
 			if (ThirdEye3Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/eye3.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -32, posY + -120, 0, 0, 64, 32, 64, 32);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -31, posY + -120, 0, 0, 64, 32, 64, 32);
 			}
 			if (ThirdEye4Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/eye4.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -32, posY + -120, 0, 0, 64, 32, 64, 32);
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -31, posY + -120, 0, 0, 64, 32, 64, 32);
 			}
 			if (ThirdEye5Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/eye5.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -32, posY + -120, 0, 0, 64, 32, 64, 32);
-
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -31, posY + -120, 0, 0, 64, 32, 64, 32);
 			}
 			if (ThirdEye6Procedure.execute(entity)) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/eye6.png"));
-				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -32, posY + -120, 0, 0, 64, 32, 64, 32);
-
+				Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -31, posY + -120, 0, 0, 64, 32, 64, 32);
 			}
 		}
 		RenderSystem.depthMask(true);
