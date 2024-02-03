@@ -32,8 +32,8 @@ public class ToolTipHoodOfTheVoidProcedure {
 	private static void execute(@Nullable Event event, ItemStack itemstack, List<Component> tooltip) {
 		if (tooltip == null)
 			return;
-		if (itemstack.getItem() == CthulhufishingModItems.HOOD_OF_THE_DEEP_VOID_HELMET.get()) {
-			(itemstack).setHoverName(Component.literal("\u00A7bHood of the abyss"));
+		if (itemstack.getItem() == CthulhufishingModItems.TENTACLE_STAFF.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bTentacle staff"));
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A7bBy expending the power of your revelation, your attacks return part of the creature's damage"));
 			} else {
@@ -50,6 +50,13 @@ public class ToolTipHoodOfTheVoidProcedure {
 			(itemstack).setHoverName(Component.literal("\u00A7bThird eye"));
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A7bNow you can see what live in the deep void"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.SWORD_OF_REVELATION.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bGreatsword of Revelation"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bRevelation power give additions "));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}

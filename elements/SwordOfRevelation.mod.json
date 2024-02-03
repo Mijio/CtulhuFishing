@@ -5,7 +5,7 @@
     "renderType": 1,
     "texture": "texture_revelation_greatsword",
     "customModelName": "revelation_great_sword:default",
-    "name": "Knife For Ritual Bleeding",
+    "name": "GreatSwordOfRevelation",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:CtulhuFishingTab"
@@ -13,18 +13,15 @@
     "toolType": "Sword",
     "harvestLevel": 1,
     "efficiency": 1.0,
-    "attackSpeed": 1.7999999999999998,
+    "attackSpeed": 2.8000000000000003,
     "enchantability": 2,
-    "damageVsEntity": 2.5,
+    "damageVsEntity": 7.0,
     "usageCount": 65,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [],
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onRightClickedInAir": {
-      "name": "KnifeForRitualBleedingRightclicked"
-    }
+    "damageOnCrafting": false
   }
 }

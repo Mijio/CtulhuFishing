@@ -53,7 +53,7 @@ public class TentacleStaffAbillityProcedure {
 					capability.syncPlayerVariables(sourceentity);
 				});
 			}
-			RevelationChangeProcedure.execute(entity);
+			RevelationChangeSourceProcedure.execute(sourceentity);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:hood_ablity")), SoundSource.PLAYERS, 1, 1);

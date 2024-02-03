@@ -1165,7 +1165,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/AtionsForDecreaseRevelationScore"
     },
     {
       "name": "TentacleStaff",
@@ -1327,6 +1328,49 @@
           "src/main/java/net/mcreator/cthulhufishing/potion/MadnessMobEffect.java"
         ]
       }
+    },
+    {
+      "name": "RevelationChangeSource",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revelation_change_source",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/RevelationChangeSourceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/AtionsForDecreaseRevelationScore"
+    },
+    {
+      "name": "SwordOfRevelationAbillity",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_of_revelation_abillity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/SwordOfRevelationAbillityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1423,7 +1467,7 @@
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
       "subtitles.catch_strange_fish": "",
       "subtitles.hood_ablity": "",
-      "item.cthulhufishing.sword_of_revelation": "Knife For Ritual Bleeding",
+      "item.cthulhufishing.sword_of_revelation": "GreatSwordOfRevelation",
       "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
       "enchantment.cthulhufishing.dark_blade": "Dark Blade",
       "item.cthulhufishing.third_eye": "Third Eye",
