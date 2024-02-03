@@ -17,7 +17,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 
 public class AltarRewardProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
 		{
@@ -33,7 +33,8 @@ public class AltarRewardProcedure {
 			_player.containerMenu.broadcastChanges();
 		}
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+			_level.getServer().getCommands().performPrefixedCommand(
+					new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 					"loot spawn ~ ~ ~ loot cthulhufishing:blocks/altar_loot");
 		{
 			double _setval = 0;
