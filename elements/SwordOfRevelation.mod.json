@@ -2,9 +2,9 @@
   "_fv": 43,
   "_type": "tool",
   "definition": {
-    "renderType": 0,
-    "texture": "knife_for_ritual_bleeding",
-    "customModelName": "Normal",
+    "renderType": 1,
+    "texture": "texture_revelation_greatsword",
+    "customModelName": "revelation_great_sword:default",
     "name": "Knife For Ritual Bleeding",
     "specialInfo": [],
     "creativeTab": {

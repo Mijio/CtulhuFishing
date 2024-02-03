@@ -370,7 +370,8 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/enchantment/CrimsonCatcherEnchantEnchantment.java"
         ]
-      }
+      },
+      "path": "~/Enchantments"
     },
     {
       "name": "AltarRecipeGeneration",
@@ -408,6 +409,7 @@
     {
       "name": "RitualBleeding",
       "type": "potioneffect",
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ritual_bleeding",
@@ -528,10 +530,6 @@
         "dependencies": [
           {
             "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
             "type": "entity"
           },
           {
@@ -1250,6 +1248,43 @@
         ]
       },
       "path": "~/Altar"
+    },
+    {
+      "name": "Madness",
+      "type": "potioneffect",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "madness",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/potion/MadnessMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "DarkBladeProcedure",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dark_blade_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/DarkBladeProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Enchantments"
     }
   ],
   "variable_elements": [
@@ -1263,7 +1298,7 @@
       "name": "AltarFishCount",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "0.0"
     },
     {
       "name": "Altar_Recipe",
@@ -1281,7 +1316,19 @@
       "name": "Revalation_Change",
       "type": "number",
       "scope": "player_persistent",
-      "value": "0"
+      "value": "0.0"
+    },
+    {
+      "name": "Madness",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "RC_IsNegative",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [
@@ -1340,6 +1387,7 @@
       "subtitles.catchfishmen": "fishmen",
       "block.cthulhufishing.block_ore_eye": "Block Ore Eye",
       "gui.cthulhufishing.ctulhu_altar.label_12": "11",
+      "effect.cthulhufishing.madness": "Madness",
       "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
       "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",

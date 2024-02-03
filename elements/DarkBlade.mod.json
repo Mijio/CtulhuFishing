@@ -6,7 +6,7 @@
     "type": "WEAPON",
     "rarity": "RARE",
     "minLevel": 1,
-    "maxLevel": 1,
+    "maxLevel": 5,
     "damageModifier": 0,
     "compatibleEnchantments": [],
     "excludeEnchantments": true,

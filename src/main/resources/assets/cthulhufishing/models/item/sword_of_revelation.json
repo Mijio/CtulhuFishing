@@ -1,6 +1,7 @@
 {
-  "parent": "item/handheld",
+  "parent": "cthulhufishing:custom/revelation_great_sword",
   "textures": {
-    "layer0": "cthulhufishing:items/knife_for_ritual_bleeding"
+    "0": "cthulhufishing:blocks/texture_revelation_greatsword",
+    "particle": "cthulhufishing:items/texture_revelation_greatsword"
   }
 }

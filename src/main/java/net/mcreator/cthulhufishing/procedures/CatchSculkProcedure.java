@@ -43,8 +43,7 @@ public class CatchSculkProcedure {
 			return;
 		double RandomCrisonFishCatch = 0;
 		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(CthulhufishingModItems.THIRD_EYE.get())) : false) {
-			if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DARKNESS) ? _livEnt.getEffect(MobEffects.DARKNESS).getAmplifier() : 0) >= 1
-					&& world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("deep_dark"))) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.DARKNESS) : false) && world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("deep_dark"))) {
 				if (Mth.nextInt(RandomSource.create(), 1, 100) + (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score * 0.5
 						+ EnchantmentHelper.getItemEnchantmentLevel(CthulhufishingModEnchantments.SCULK_CATCHER_ENCHANTMENT.get(), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) * 5 > 90) {
 					if (world instanceof Level _level) {
@@ -55,6 +54,13 @@ public class CatchSculkProcedure {
 						}
 					}
 					RandomCrisonFishCatch = Mth.nextInt(RandomSource.create(), 1, 3);
+					{
+						boolean _setval = false;
+						entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.RC_IsNegative = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
 					{
 						double _setval = 3;
 						entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
