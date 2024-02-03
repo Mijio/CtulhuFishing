@@ -1,18 +1,61 @@
 
 package net.mcreator.cthulhufishing.entity;
 
-import net.minecraft.world.entity.ai.attributes.Attribute;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.nbt.Tag;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.network.syncher.EntityDataAccessor;
-import net.minecraft.network.syncher.EntityDataSerializers;
-import net.minecraft.network.syncher.SynchedEntityData;
-
-import javax.annotation.Nullable;
-
+import software.bernie.geckolib3.util.GeckoLibUtil;
+import software.bernie.geckolib3.core.manager.AnimationFactory;
+import software.bernie.geckolib3.core.manager.AnimationData;
+import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
+import software.bernie.geckolib3.core.controller.AnimationController;
 import software.bernie.geckolib3.core.builder.ILoopType.EDefaultLoopTypes;
+import software.bernie.geckolib3.core.builder.AnimationBuilder;
+import software.bernie.geckolib3.core.PlayState;
+import software.bernie.geckolib3.core.IAnimatable;
+
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
+
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ai.navigation.PathNavigation;
+import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.world.entity.ai.goal.Goal;
+import net.minecraft.world.entity.ai.control.FlyingMoveControl;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.Pose;
+import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntityDimensions;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.Difficulty;
+import net.minecraft.util.RandomSource;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.protocol.Packet;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.cthulhufishing.procedures.ObsessedEyeOnEntityTickUpdateProcedure;
+import net.mcreator.cthulhufishing.procedures.CurseOfObsessedEyeProcedure;
+import net.mcreator.cthulhufishing.init.CthulhufishingModEntities;
+
+import java.util.EnumSet;
 
 public class ObsessedEyeEntity extends Monster implements IAnimatable {
 	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(ObsessedEyeEntity.class, EntityDataSerializers.BOOLEAN);
@@ -32,7 +75,6 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
-
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
@@ -41,7 +83,7 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "texture_obsessed_eye");
+		this.entityData.define(TEXTURE, "flying_eye");
 	}
 
 	public void setTexture(String texture) {
@@ -65,7 +107,6 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-
 		this.goalSelector.addGoal(1, new Goal() {
 			{
 				this.setFlags(EnumSet.of(Goal.Flag.MOVE));
@@ -106,7 +147,6 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 			}
 		});
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.8, 20) {
-
 			@Override
 			protected Vec3 getPosition() {
 				RandomSource random = ObsessedEyeEntity.this.getRandom();
@@ -115,20 +155,16 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 				double dir_z = ObsessedEyeEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
-
 		});
 		this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, false) {
-
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
-
 		});
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, false, false));
 		this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
-
 	}
 
 	@Override
@@ -148,8 +184,16 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 
 	@Override
 	public boolean causeFallDamage(float l, float d, DamageSource source) {
-
 		return false;
+	}
+
+	@Override
+	public boolean hurt(DamageSource source, float amount) {
+		if (source == DamageSource.WITHER)
+			return false;
+		if (source.getMsgId().equals("witherSkull"))
+			return false;
+		return super.hurt(source, amount);
 	}
 
 	@Override
@@ -161,13 +205,26 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 1.7);
+		return super.getDimensions(p_33597_).scale((float) 1);
 	}
 
 	@Override
 	public void playerTouch(Player sourceentity) {
 		super.playerTouch(sourceentity);
 		CurseOfObsessedEyeProcedure.execute(this, sourceentity);
+	}
+
+	@Override
+	public boolean isPushable() {
+		return false;
+	}
+
+	@Override
+	protected void doPush(Entity entityIn) {
+	}
+
+	@Override
+	protected void pushEntities() {
 	}
 
 	@Override
@@ -187,51 +244,25 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 	public static void init() {
 		SpawnPlacements.register(CthulhufishingModEntities.OBSESSED_EYE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos, random) -> (world.getDifficulty() != Difficulty.PEACEFUL && Monster.isDarkEnoughToSpawn(world, pos, random) && Mob.checkMobSpawnRules(entityType, world, reason, pos, random)));
-
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 10);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 50);
+		builder = builder.add(Attributes.MAX_HEALTH, 18);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 4);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-
-		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
-
+		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
+		builder = builder.add(Attributes.FLYING_SPEED, 50);
 		return builder;
 	}
 
 	private <E extends IAnimatable> PlayState movementPredicate(AnimationEvent<E> event) {
 		if (this.animationprocedure.equals("empty")) {
-			if (this.isDeadOrDying()) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.obsessed_eye.die", EDefaultLoopTypes.PLAY_ONCE));
-				return PlayState.CONTINUE;
-			}
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.obsessed_eye.idle2", EDefaultLoopTypes.LOOP));
+			event.getController().setAnimation(new AnimationBuilder().addAnimation("Chill", EDefaultLoopTypes.LOOP));
 			return PlayState.CONTINUE;
 		}
 		return PlayState.STOP;
-	}
-
-	private <E extends IAnimatable> PlayState attackingPredicate(AnimationEvent<E> event) {
-		double d1 = this.getX() - this.xOld;
-		double d0 = this.getZ() - this.zOld;
-		float velocity = (float) Math.sqrt(d1 * d1 + d0 * d0);
-		if (getAttackAnim(event.getPartialTick()) > 0f && !this.swinging) {
-			this.swinging = true;
-			this.lastSwing = level.getGameTime();
-		}
-		if (this.swinging && this.lastSwing + 15L <= level.getGameTime()) {
-			this.swinging = false;
-		}
-		if (this.swinging && event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
-			event.getController().markNeedsReload();
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.obsessed_eye.idle", EDefaultLoopTypes.PLAY_ONCE));
-			return PlayState.CONTINUE;
-		}
-		return PlayState.CONTINUE;
 	}
 
 	private <E extends IAnimatable> PlayState procedurePredicate(AnimationEvent<E> event) {
@@ -245,7 +276,6 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 			this.lastloop = false;
 			event.getController().setAnimation(new AnimationBuilder().addAnimation(this.animationprocedure, EDefaultLoopTypes.PLAY_ONCE));
 			event.getController().clearAnimationCache();
-
 			return PlayState.STOP;
 		}
 		if (!this.animationprocedure.equals("empty") && event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
@@ -266,10 +296,9 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 	@Override
 	protected void tickDeath() {
 		++this.deathTime;
-		if (this.deathTime == 60) {
+		if (this.deathTime == 20) {
 			this.remove(ObsessedEyeEntity.RemovalReason.KILLED);
 			this.dropExperience();
-
 		}
 	}
 
@@ -284,7 +313,6 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 	@Override
 	public void registerControllers(AnimationData data) {
 		data.addAnimationController(new AnimationController<>(this, "movement", 4, this::movementPredicate));
-		data.addAnimationController(new AnimationController<>(this, "attacking", 4, this::attackingPredicate));
 		data.addAnimationController(new AnimationController<>(this, "procedure", 4, this::procedurePredicate));
 	}
 
@@ -292,5 +320,4 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 	public AnimationFactory getFactory() {
 		return this.factory;
 	}
-
 }
