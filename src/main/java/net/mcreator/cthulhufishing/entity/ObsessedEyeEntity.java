@@ -308,7 +308,7 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 	@Override
 	protected void tickDeath() {
 		++this.deathTime;
-		if (this.deathTime == 41) {
+		if (this.deathTime == 40) {
 			this.remove(ObsessedEyeEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}
