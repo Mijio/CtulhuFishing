@@ -17,12 +17,12 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class ObsessedEyeRenderer extends GeoEntityRenderer<ObsessedEyeEntity> {
 	public ObsessedEyeRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new ObsessedEyeModel());
-		this.shadowRadius = 0.5f;
+		this.shadowRadius = 0.6f;
 	}
 
 	@Override
 	public RenderType getRenderType(ObsessedEyeEntity entity, float partialTicks, PoseStack stack, MultiBufferSource renderTypeBuffer, VertexConsumer vertexBuilder, int packedLightIn, ResourceLocation textureLocation) {
-		stack.scale(1f, 1f, 1f);
+		stack.scale(2f, 2f, 2f);
 		return RenderType.entityTranslucent(getTextureLocation(entity));
 	}
 }

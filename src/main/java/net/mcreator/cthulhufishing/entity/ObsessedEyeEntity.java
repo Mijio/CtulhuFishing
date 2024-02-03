@@ -51,6 +51,8 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.cthulhufishing.procedures.ObsessedEyeOnEntityTickUpdateProcedure;
+import net.mcreator.cthulhufishing.procedures.CurseOfObsessedEyeProcedure;
 import net.mcreator.cthulhufishing.init.CthulhufishingModEntities;
 
 import java.util.EnumSet;
@@ -188,12 +190,19 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 	@Override
 	public void baseTick() {
 		super.baseTick();
+		ObsessedEyeOnEntityTickUpdateProcedure.execute(this);
 		this.refreshDimensions();
 	}
 
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 1);
+		return super.getDimensions(p_33597_).scale((float) 1.7);
+	}
+
+	@Override
+	public void playerTouch(Player sourceentity) {
+		super.playerTouch(sourceentity);
+		CurseOfObsessedEyeProcedure.execute(this, sourceentity);
 	}
 
 	@Override
@@ -220,7 +229,7 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
 		builder = builder.add(Attributes.MAX_HEALTH, 10);
 		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 4);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
 		return builder;
@@ -229,10 +238,10 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 	private <E extends IAnimatable> PlayState movementPredicate(AnimationEvent<E> event) {
 		if (this.animationprocedure.equals("empty")) {
 			if (this.isDeadOrDying()) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("die", EDefaultLoopTypes.PLAY_ONCE));
+				event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.obsessed_eye.die", EDefaultLoopTypes.PLAY_ONCE));
 				return PlayState.CONTINUE;
 			}
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("idle2", EDefaultLoopTypes.LOOP));
+			event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.obsessed_eye.idle2", EDefaultLoopTypes.LOOP));
 			return PlayState.CONTINUE;
 		}
 		return PlayState.STOP;
@@ -251,7 +260,7 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 		}
 		if (this.swinging && event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
 			event.getController().markNeedsReload();
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("idle", EDefaultLoopTypes.PLAY_ONCE));
+			event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.obsessed_eye.idle", EDefaultLoopTypes.PLAY_ONCE));
 			return PlayState.CONTINUE;
 		}
 		return PlayState.CONTINUE;
@@ -288,7 +297,7 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 	@Override
 	protected void tickDeath() {
 		++this.deathTime;
-		if (this.deathTime == 20) {
+		if (this.deathTime == 60) {
 			this.remove(ObsessedEyeEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}

@@ -1265,9 +1265,6 @@
       "locked_code": false,
       "registry_name": "obsessed_eye_abil",
       "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/ObsessedEyeAbilProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -1370,6 +1367,29 @@
           "src/main/java/net/mcreator/cthulhufishing/client/renderer/ObsessedEyeRenderer.java",
           "src/main/java/net/mcreator/cthulhufishing/entity/model/ObsessedEyeModel.java",
           "src/main/resources/assets/cthulhufishing/models/item/obsessed_eye_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "CurseOfObsessedEye",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curse_of_obsessed_eye",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/CurseOfObsessedEyeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
         ]
       }
     }
