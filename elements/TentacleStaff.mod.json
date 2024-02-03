@@ -7,10 +7,10 @@
     "name": "Tentacle Staff",
     "idle": "animation.tentacle.idle",
     "rarity": "COMMON",
-    "displaySettings": "tentacle.item.json",
+    "displaySettings": "gui_tentacle_staff.item.json",
     "leftArm": "",
     "rightArm": "",
-    "perspective": "First Person",
+    "perspective": "All Perspectives",
     "creativeTab": {
       "value": "CUSTOM:CtulhuFishingTab"
     },

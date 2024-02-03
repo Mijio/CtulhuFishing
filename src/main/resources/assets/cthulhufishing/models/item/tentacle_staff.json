@@ -1,5 +1,5 @@
 {
-  "parent": "cthulhufishing:displaysettings/tentacle.item",
+  "parent": "cthulhufishing:displaysettings/gui_tentacle_staff.item",
   "textures": {
     "layer0": "cthulhufishing:items/texture_tentacle_staff"
   }
