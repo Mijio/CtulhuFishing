@@ -22,7 +22,7 @@ public class ObsessedEyeRenderer extends GeoEntityRenderer<ObsessedEyeEntity> {
 
 	@Override
 	public RenderType getRenderType(ObsessedEyeEntity entity, float partialTicks, PoseStack stack, MultiBufferSource renderTypeBuffer, VertexConsumer vertexBuilder, int packedLightIn, ResourceLocation textureLocation) {
-		stack.scale(1f, 1f, 1f);
+		stack.scale(2f, 2f, 2f);
 		return RenderType.entityTranslucent(getTextureLocation(entity));
 	}
 }

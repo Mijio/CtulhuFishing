@@ -993,15 +993,15 @@
       "registry_name": "block_ore_eye",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeTileRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/display/BlockOreEyeDisplayItem.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeBlockModel.java",
-          "src/main/resources/assets/cthulhufishing/models/custom/block_ore_eye_particle.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeDisplayModel.java",
           "src/main/java/net/mcreator/cthulhufishing/block/BlockOreEyeBlock.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/block_ore_eye.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/BlockOreEyeDisplayItem.java",
           "src/main/java/net/mcreator/cthulhufishing/block/entity/BlockOreEyeTileEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeBlockModel.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/block_ore_eye.json",
+          "src/main/resources/assets/cthulhufishing/models/custom/block_ore_eye_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeTileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeDisplayModel.java",
           "src/main/resources/assets/cthulhufishing/models/item/block_ore_eye.json"
         ]
       }
@@ -1238,25 +1238,6 @@
       "path": "~/Altar"
     },
     {
-      "name": "ObsessedEyeOnEntityTickUpdate",
-      "type": "procedure",
-      "sortid": 67,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "obsessed_eye_on_entity_tick_update",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/ObsessedEyeOnEntityTickUpdateProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "ObsessedEyeAbil",
       "type": "procedure",
       "sortid": 68,
@@ -1389,9 +1370,43 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/entity/model/ObsessedEyeModel.java",
           "src/main/java/net/mcreator/cthulhufishing/client/renderer/ObsessedEyeRenderer.java",
-          "src/main/resources/data/cthulhufishing/forge/biome_modifier/obsessed_eye_biome_modifier.json",
           "src/main/resources/assets/cthulhufishing/models/item/obsessed_eye_spawn_egg.json",
           "src/main/java/net/mcreator/cthulhufishing/entity/ObsessedEyeEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "BlockOreEyeBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "block_ore_eye_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/BlockOreEyeBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     }
@@ -1472,6 +1487,22 @@
       ],
       "category": "player",
       "subtitle": ""
+    },
+    {
+      "name": "obsessed_eye_spawn",
+      "files": [
+        "scary_cave_sounds"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "obsessed_eye_damage",
+      "files": [
+        "srackandmystics"
+      ],
+      "category": "hostile",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -1484,6 +1515,7 @@
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
       "item.cthulhufishing.knife_for_ritual_bleeding": "Knife For Ritual Bleeding",
       "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
+      "subtitles.obsessed_eye_damage": "",
       "subtitles.ritual_bleeding_knife": "",
       "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
       "item.cthulhufishing.necklace_of_flesh_and_bones": "Necklace Of Flesh And Bones",
@@ -1493,6 +1525,7 @@
       "item.cthulhufishing.sword_of_revelation": "GreatSwordOfRevelation",
       "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
       "enchantment.cthulhufishing.dark_blade": "Dark Blade",
+      "subtitles.obsessed_eye_spawn": "",
       "item.cthulhufishing.third_eye": "Third Eye",
       "subtitles.catchfishmen": "fishmen",
       "block.cthulhufishing.block_ore_eye": "Block Ore Eye",

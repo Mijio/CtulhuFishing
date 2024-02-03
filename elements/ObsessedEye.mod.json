@@ -4,25 +4,25 @@
   "definition": {
     "mobName": "Obsessed Eye",
     "mobLabel": "",
-    "mobModelTexture": "flying_eye.png",
+    "mobModelTexture": "texture_obsessed_eye.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 2.0
     },
     "boundingBoxScale": {
-      "fixedValue": 1.0
+      "fixedValue": 1.6
     },
-    "modelWidth": 0.6,
-    "modelHeight": 1.8,
+    "modelWidth": 0.5,
+    "modelHeight": 0.5,
     "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -1,
+      "value": -14275226,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -1,
+      "value": -10723738,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -59,15 +59,15 @@
     "trackingRange": 64,
     "followRange": 32,
     "health": 18,
-    "xpAmount": 0,
+    "xpAmount": 3,
     "waterMob": false,
     "flyingMob": true,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "deathTime": 20,
+    "deathTime": 41,
     "lerp": 4,
-    "disableCollisions": true,
+    "disableCollisions": false,
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
@@ -85,13 +85,13 @@
     "immuneToWither": true,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:ThirdEye"
     },
     "livingSound": {
       "value": ""
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "CUSTOM:obsessed_eye_damage"
     },
     "deathSound": {
       "value": "entity.generic.death"
@@ -100,7 +100,7 @@
       "value": ""
     },
     "onMobTickUpdate": {
-      "name": "ObsessedEyeOnEntityTickUpdate"
+      "name": "ObsessedEyeAbil"
     },
     "onPlayerCollidesWith": {
       "name": "CurseOfObsessedEye"
@@ -108,12 +108,12 @@
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_fly\"><field name=\"radius\">16</field><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "model": "block_eye.geo.json",
+    "model": "obsessed_eye.geo.json",
     "groupName": "",
-    "animation1": "Chill",
+    "animation1": "animation.obsessed_eye.idle2",
     "animation2": "",
-    "animation3": "",
-    "animation4": "",
+    "animation3": "animation.obsessed_eye.die",
+    "animation4": "animation.obsessed_eye.idle",
     "animation5": "",
     "animation6": "",
     "animation7": "",
@@ -121,8 +121,8 @@
     "animation9": "",
     "animation10": "",
     "enable2": false,
-    "enable3": false,
-    "enable4": false,
+    "enable3": true,
+    "enable4": true,
     "enable5": false,
     "enable6": false,
     "enable7": false,
@@ -143,7 +143,7 @@
     "rangedAttackInterval": 20,
     "rangedAttackRadius": 10.0,
     "height": 1.0,
-    "spawnThisMob": true,
+    "spawnThisMob": false,
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "monster",

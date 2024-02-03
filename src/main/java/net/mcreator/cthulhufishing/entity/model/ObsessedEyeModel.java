@@ -9,12 +9,12 @@ import net.mcreator.cthulhufishing.entity.ObsessedEyeEntity;
 public class ObsessedEyeModel extends AnimatedGeoModel<ObsessedEyeEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(ObsessedEyeEntity entity) {
-		return new ResourceLocation("cthulhufishing", "animations/block_eye.animation.json");
+		return new ResourceLocation("cthulhufishing", "animations/obsessed_eye.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(ObsessedEyeEntity entity) {
-		return new ResourceLocation("cthulhufishing", "geo/block_eye.geo.json");
+		return new ResourceLocation("cthulhufishing", "geo/obsessed_eye.geo.json");
 	}
 
 	@Override

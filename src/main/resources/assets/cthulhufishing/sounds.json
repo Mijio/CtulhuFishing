@@ -31,5 +31,21 @@
         "stream": false
       }
     ]
+  },
+  "obsessed_eye_spawn": {
+    "sounds": [
+      {
+        "name": "cthulhufishing:scary_cave_sounds",
+        "stream": false
+      }
+    ]
+  },
+  "obsessed_eye_damage": {
+    "sounds": [
+      {
+        "name": "cthulhufishing:srackandmystics",
+        "stream": false
+      }
+    ]
   }
 }

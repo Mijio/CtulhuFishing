@@ -50,7 +50,7 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> SWORD_OF_REVELATION = REGISTRY.register("sword_of_revelation", () -> new SwordOfRevelationItem());
 	public static final RegistryObject<Item> TENTACLE_STAFF = REGISTRY.register("tentacle_staff", () -> new TentacleStaffItem());
 	public static final RegistryObject<Item> OBSESSED_EYE_SPAWN_EGG = REGISTRY.register("obsessed_eye_spawn_egg",
-			() -> new ForgeSpawnEggItem(CthulhufishingModEntities.OBSESSED_EYE, -1, -1, new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB)));
+			() -> new ForgeSpawnEggItem(CthulhufishingModEntities.OBSESSED_EYE, -14275226, -10723738, new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
