@@ -11,6 +11,7 @@ import net.minecraft.client.renderer.ItemInHandRenderer;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.cthulhufishing.item.TentacleStaffItem;
+import net.mcreator.cthulhufishing.item.CthulhuGrimoireItem;
 
 import java.lang.reflect.Field;
 
@@ -51,11 +52,21 @@ public class ItemAnimationFactory {
 						animatable.animationprocedure = animation;
 						disableUseAnim();
 					}
+				if (event.player.getMainHandItem().getItem() instanceof CthulhuGrimoireItem animatable)
+					if (event.player.level.isClientSide()) {
+						animatable.animationprocedure = animation;
+						disableUseAnim();
+					}
 			}
 			if (!event.player.getOffhandItem().getOrCreateTag().getString("geckoAnim").equals("") && !(event.player.getOffhandItem().getItem() instanceof GeoArmorItem)) {
 				animation = event.player.getOffhandItem().getOrCreateTag().getString("geckoAnim");
 				event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
 				if (event.player.getOffhandItem().getItem() instanceof TentacleStaffItem animatable)
+					if (event.player.level.isClientSide()) {
+						animatable.animationprocedure = animation;
+						disableUseAnim();
+					}
+				if (event.player.getOffhandItem().getItem() instanceof CthulhuGrimoireItem animatable)
 					if (event.player.level.isClientSide()) {
 						animatable.animationprocedure = animation;
 						disableUseAnim();
