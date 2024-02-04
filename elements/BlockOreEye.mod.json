@@ -41,9 +41,9 @@
     "creativeTab": {
       "value": "CUSTOM:CtulhuFishingTab"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "Blocks.STONE#0"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -123,8 +123,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "BlockOreEyeOnBlockRightClicked"
+    "onDestroyedByPlayer": {
+      "name": "BlockOreEyeBlockDestroyedByPlayer"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

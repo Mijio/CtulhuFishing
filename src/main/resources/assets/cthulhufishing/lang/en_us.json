@@ -1,5 +1,4 @@
 {
-  "entity.cthulhufishing.obsessed_eye": "Obsessed Eye",
   "item.cthulhufishing.crimson_fish": "Crimson Fish",
   "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
   "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
@@ -7,6 +6,7 @@
   "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
   "item.cthulhufishing.knife_for_ritual_bleeding": "Knife For Ritual Bleeding",
   "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
+  "subtitles.obsessed_eye_damage": "",
   "subtitles.ritual_bleeding_knife": "",
   "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
   "item.cthulhufishing.necklace_of_flesh_and_bones": "Necklace Of Flesh And Bones",
@@ -16,6 +16,7 @@
   "item.cthulhufishing.sword_of_revelation": "GreatSwordOfRevelation",
   "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
   "enchantment.cthulhufishing.dark_blade": "Dark Blade",
+  "subtitles.obsessed_eye_spawn": "",
   "item.cthulhufishing.third_eye": "Third Eye",
   "subtitles.catchfishmen": "fishmen",
   "block.cthulhufishing.block_ore_eye": "Block Ore Eye",
@@ -26,7 +27,6 @@
   "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
   "block.cthulhufishing.deep_oil": "Deep Oil",
   "item.cthulhufishing.tentacle_staff": "Tentacle Staff",
-  "item.cthulhufishing.obsessed_eye_spawn_egg": "Obsessed Eye Spawn Egg",
   "gui.cthulhufishing.ctulhu_altar.button_grab": "GRAB",
   "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab"
 }
