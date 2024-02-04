@@ -24,6 +24,7 @@ import net.mcreator.cthulhufishing.item.HoodOfTheDeepVoidItem;
 import net.mcreator.cthulhufishing.item.HermitSlulkFishItem;
 import net.mcreator.cthulhufishing.item.GlutonSculkFishItem;
 import net.mcreator.cthulhufishing.item.DripVoidItem;
+import net.mcreator.cthulhufishing.item.CthulhuGrimoireItem;
 import net.mcreator.cthulhufishing.item.CrimsonJellyfishItem;
 import net.mcreator.cthulhufishing.item.CrimsonFishItem;
 import net.mcreator.cthulhufishing.item.CrimsonCrunchItem;
@@ -51,6 +52,8 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> TENTACLE_STAFF = REGISTRY.register("tentacle_staff", () -> new TentacleStaffItem());
 	public static final RegistryObject<Item> OBSESSED_EYE_MOB_SPAWN_EGG = REGISTRY.register("obsessed_eye_mob_spawn_egg",
 			() -> new ForgeSpawnEggItem(CthulhufishingModEntities.OBSESSED_EYE_MOB, -12563314, -11183488, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> CTHULHU_GRIMOIRE = REGISTRY.register("cthulhu_grimoire", () -> new CthulhuGrimoireItem());
+	public static final RegistryObject<Item> GRIMOIRE_TENTACLE_SPAWN_EGG = REGISTRY.register("grimoire_tentacle_spawn_egg", () -> new ForgeSpawnEggItem(CthulhufishingModEntities.GRIMOIRE_TENTACLE, -1, -1, new Item.Properties().tab(null)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

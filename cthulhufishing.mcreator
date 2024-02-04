@@ -1254,7 +1254,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/ObsessedEye"
     },
     {
       "name": "DarkBladeProcedure",
@@ -1357,7 +1358,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/ObsessedEye"
     },
     {
       "name": "BlockOreEyeBlockDestroyedByPlayer",
@@ -1408,7 +1410,122 @@
           "src/main/java/net/mcreator/cthulhufishing/entity/model/ObsessedEyeMobModel.java",
           "src/main/resources/assets/cthulhufishing/models/item/obsessed_eye_mob_spawn_egg.json"
         ]
-      }
+      },
+      "path": "~/ObsessedEye"
+    },
+    {
+      "name": "CthulhuGrimoireRightclicked",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cthulhu_grimoire_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/CthulhuGrimoireRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CthulhuGrimoire"
+    },
+    {
+      "name": "CthulhuGrimoire",
+      "type": "animateditem",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cthulhu_grimoire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/renderer/CthulhuGrimoireItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/item/CthulhuGrimoireItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/cthulhu_grimoire.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/model/CthulhuGrimoireItemModel.java"
+        ]
+      },
+      "path": "~/CthulhuGrimoire"
+    },
+    {
+      "name": "GrimoireTentacleOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grimoire_tentacle_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/GrimoireTentacleOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CthulhuGrimoire"
+    },
+    {
+      "name": "GrimoireTentacleOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grimoire_tentacle_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/GrimoireTentacleOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/CthulhuGrimoire"
+    },
+    {
+      "name": "GrimoireTentacle",
+      "type": "animatedentity",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grimoire_tentacle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/client/renderer/GrimoireTentacleRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/model/GrimoireTentacleModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/GrimoireTentacleEntity.java",
+          "src/main/resources/assets/cthulhufishing/models/item/grimoire_tentacle_spawn_egg.json"
+        ]
+      },
+      "path": "~/CthulhuGrimoire"
     }
   ],
   "variable_elements": [
@@ -1511,6 +1628,7 @@
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
       "item.cthulhufishing.drip_void": "Drip Void",
+      "item.cthulhufishing.cthulhu_grimoire": "Cthulhu Grimoire",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
       "subtitles.obsessed_eye_damage": "",
       "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
@@ -1522,6 +1640,8 @@
       "subtitles.catch_strange_fish": "",
       "subtitles.hood_ablity": "",
       "item.cthulhufishing.sword_of_revelation": "GreatSwordOfRevelation",
+      "entity.cthulhufishing.grimoire_tentacle": "Grimoire Tentacle",
+      "item.cthulhufishing.grimoire_tentacle_spawn_egg": "Grimoire Tentacle Spawn Egg",
       "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
       "enchantment.cthulhufishing.dark_blade": "Dark Blade",
       "subtitles.obsessed_eye_spawn": "",
@@ -1570,6 +1690,14 @@
       },
       {
         "name": "Enchantments",
+        "children": []
+      },
+      {
+        "name": "ObsessedEye",
+        "children": []
+      },
+      {
+        "name": "CthulhuGrimoire",
         "children": []
       }
     ]
