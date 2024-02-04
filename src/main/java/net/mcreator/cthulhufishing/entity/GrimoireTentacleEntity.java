@@ -166,6 +166,19 @@ public class GrimoireTentacleEntity extends Monster implements IAnimatable {
 		return super.getDimensions(p_33597_).scale((float) 1);
 	}
 
+	@Override
+	public boolean isPushable() {
+		return false;
+	}
+
+	@Override
+	protected void doPush(Entity entityIn) {
+	}
+
+	@Override
+	protected void pushEntities() {
+	}
+
 	public static void init() {
 	}
 
