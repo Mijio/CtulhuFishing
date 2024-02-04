@@ -56,21 +56,21 @@ import net.mcreator.cthulhufishing.init.CthulhufishingModEntities;
 
 import java.util.EnumSet;
 
-public class ObsessedEyeEntity extends Monster implements IAnimatable {
-	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(ObsessedEyeEntity.class, EntityDataSerializers.BOOLEAN);
-	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(ObsessedEyeEntity.class, EntityDataSerializers.STRING);
-	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(ObsessedEyeEntity.class, EntityDataSerializers.STRING);
+public class ObsessedEyeMobEntity extends Monster implements IAnimatable {
+	public static final EntityDataAccessor<Boolean> SHOOT = SynchedEntityData.defineId(ObsessedEyeMobEntity.class, EntityDataSerializers.BOOLEAN);
+	public static final EntityDataAccessor<String> ANIMATION = SynchedEntityData.defineId(ObsessedEyeMobEntity.class, EntityDataSerializers.STRING);
+	public static final EntityDataAccessor<String> TEXTURE = SynchedEntityData.defineId(ObsessedEyeMobEntity.class, EntityDataSerializers.STRING);
 	private AnimationFactory factory = GeckoLibUtil.createFactory(this);
 	private boolean swinging;
 	private boolean lastloop;
 	private long lastSwing;
 	public String animationprocedure = "empty";
 
-	public ObsessedEyeEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(CthulhufishingModEntities.OBSESSED_EYE.get(), world);
+	public ObsessedEyeMobEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(CthulhufishingModEntities.OBSESSED_EYE_MOB.get(), world);
 	}
 
-	public ObsessedEyeEntity(EntityType<ObsessedEyeEntity> type, Level world) {
+	public ObsessedEyeMobEntity(EntityType<ObsessedEyeMobEntity> type, Level world) {
 		super(type, world);
 		xpReward = 3;
 		setNoAi(false);
@@ -112,7 +112,7 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 			}
 
 			public boolean canUse() {
-				if (ObsessedEyeEntity.this.getTarget() != null && !ObsessedEyeEntity.this.getMoveControl().hasWanted()) {
+				if (ObsessedEyeMobEntity.this.getTarget() != null && !ObsessedEyeMobEntity.this.getMoveControl().hasWanted()) {
 					return true;
 				} else {
 					return false;
@@ -121,26 +121,26 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 
 			@Override
 			public boolean canContinueToUse() {
-				return ObsessedEyeEntity.this.getMoveControl().hasWanted() && ObsessedEyeEntity.this.getTarget() != null && ObsessedEyeEntity.this.getTarget().isAlive();
+				return ObsessedEyeMobEntity.this.getMoveControl().hasWanted() && ObsessedEyeMobEntity.this.getTarget() != null && ObsessedEyeMobEntity.this.getTarget().isAlive();
 			}
 
 			@Override
 			public void start() {
-				LivingEntity livingentity = ObsessedEyeEntity.this.getTarget();
+				LivingEntity livingentity = ObsessedEyeMobEntity.this.getTarget();
 				Vec3 vec3d = livingentity.getEyePosition(1);
-				ObsessedEyeEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 1);
+				ObsessedEyeMobEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 1);
 			}
 
 			@Override
 			public void tick() {
-				LivingEntity livingentity = ObsessedEyeEntity.this.getTarget();
-				if (ObsessedEyeEntity.this.getBoundingBox().intersects(livingentity.getBoundingBox())) {
-					ObsessedEyeEntity.this.doHurtTarget(livingentity);
+				LivingEntity livingentity = ObsessedEyeMobEntity.this.getTarget();
+				if (ObsessedEyeMobEntity.this.getBoundingBox().intersects(livingentity.getBoundingBox())) {
+					ObsessedEyeMobEntity.this.doHurtTarget(livingentity);
 				} else {
-					double d0 = ObsessedEyeEntity.this.distanceToSqr(livingentity);
+					double d0 = ObsessedEyeMobEntity.this.distanceToSqr(livingentity);
 					if (d0 < 16) {
 						Vec3 vec3d = livingentity.getEyePosition(1);
-						ObsessedEyeEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 1);
+						ObsessedEyeMobEntity.this.moveControl.setWantedPosition(vec3d.x, vec3d.y, vec3d.z, 1);
 					}
 				}
 			}
@@ -148,10 +148,10 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
-				RandomSource random = ObsessedEyeEntity.this.getRandom();
-				double dir_x = ObsessedEyeEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
-				double dir_y = ObsessedEyeEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
-				double dir_z = ObsessedEyeEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
+				RandomSource random = ObsessedEyeMobEntity.this.getRandom();
+				double dir_x = ObsessedEyeMobEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
+				double dir_y = ObsessedEyeMobEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
+				double dir_z = ObsessedEyeMobEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);
 				return new Vec3(dir_x, dir_y, dir_z);
 			}
 		});
@@ -192,15 +192,6 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 	}
 
 	@Override
-	public boolean hurt(DamageSource source, float amount) {
-		if (source == DamageSource.WITHER)
-			return false;
-		if (source.getMsgId().equals("witherSkull"))
-			return false;
-		return super.hurt(source, amount);
-	}
-
-	@Override
 	public void baseTick() {
 		super.baseTick();
 		ObsessedEyeAbilProcedure.execute(this);
@@ -237,12 +228,13 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 50);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
 		builder = builder.add(Attributes.MAX_HEALTH, 18);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 4);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 32);
-		builder = builder.add(Attributes.FLYING_SPEED, 50);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 0.3);
+		builder = builder.add(Attributes.FLYING_SPEED, 0.3);
 		return builder;
 	}
 
@@ -309,7 +301,7 @@ public class ObsessedEyeEntity extends Monster implements IAnimatable {
 	protected void tickDeath() {
 		++this.deathTime;
 		if (this.deathTime == 40) {
-			this.remove(ObsessedEyeEntity.RemovalReason.KILLED);
+			this.remove(ObsessedEyeMobEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}
 	}

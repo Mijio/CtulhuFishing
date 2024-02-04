@@ -12,21 +12,21 @@
     "boundingBoxScale": {
       "fixedValue": 1.6
     },
-    "modelWidth": 0.5,
-    "modelHeight": 0.5,
-    "modelShadowSize": 0.5,
+    "modelWidth": 0.6,
+    "modelHeight": 0.6,
+    "modelShadowSize": 0.6,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -14275226,
+      "value": -12563314,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -10723738,
+      "value": -11183488,
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "CUSTOM:CtulhuFishingTab"
+      "value": "MISC"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -52,12 +52,12 @@
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
     "attackStrength": 4,
-    "attackKnockback": 0.0,
+    "attackKnockback": 0.30000000000000004,
     "knockbackResistance": 0.0,
-    "movementSpeed": 50.0,
+    "movementSpeed": 0.3,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
-    "followRange": 32,
+    "followRange": 16,
     "health": 18,
     "xpAmount": 3,
     "waterMob": false,
@@ -82,7 +82,7 @@
     "immuneToExplosion": false,
     "immuneToTrident": false,
     "immuneToAnvil": false,
-    "immuneToWither": true,
+    "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
       "value": "CUSTOM:ThirdEye"

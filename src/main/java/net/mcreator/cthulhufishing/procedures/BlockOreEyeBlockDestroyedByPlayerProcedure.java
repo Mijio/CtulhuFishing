@@ -16,7 +16,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.cthulhufishing.network.CthulhufishingModVariables;
 import net.mcreator.cthulhufishing.init.CthulhufishingModEntities;
-import net.mcreator.cthulhufishing.entity.ObsessedEyeEntity;
+import net.mcreator.cthulhufishing.entity.ObsessedEyeMobEntity;
 
 public class BlockOreEyeBlockDestroyedByPlayerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -31,7 +31,7 @@ public class BlockOreEyeBlockDestroyedByPlayerProcedure {
 				}
 			}
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new ObsessedEyeEntity(CthulhufishingModEntities.OBSESSED_EYE.get(), _level);
+				Entity entityToSpawn = new ObsessedEyeMobEntity(CthulhufishingModEntities.OBSESSED_EYE_MOB.get(), _level);
 				entityToSpawn.moveTo(x, y, z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
