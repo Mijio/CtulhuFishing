@@ -1,0 +1,66 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.TentacleAttack",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "Tentacle",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "Down_part",
+					"parent": "Tentacle",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-2.5, -4.2, -4.7], "size": [5, 5, 2], "pivot": [0, 0, 0], "rotation": [-40, 0, 0], "uv": [15, 40]},
+						{"origin": [-2.5, -4.2, -4.6], "size": [5, 5, 2], "pivot": [0, 0, 0], "rotation": [-40, -90, 0], "uv": [13, 29]},
+						{"origin": [-4, 0, -4], "size": [8, 1, 8], "uv": [0, 0]},
+						{"origin": [-3, 0, -3], "size": [6, 7, 6], "uv": [33, 0]},
+						{"origin": [-2.5, -4.2, 2.6], "size": [5, 5, 2], "pivot": [0, 0, 0], "rotation": [40, -90, 0], "uv": [28, 29]},
+						{"origin": [-2.5, -4.2, 2.7], "size": [5, 5, 2], "pivot": [0, 0, 0], "rotation": [40, 0, 0], "uv": [0, 40]}
+					]
+				},
+				{
+					"name": "TP1",
+					"parent": "Tentacle",
+					"pivot": [0, 7, 0],
+					"cubes": [
+						{"origin": [-2.5, 7, -2.5], "size": [5, 7, 5], "pivot": [0, 0, 0], "rotation": [-0.66963, 14.98539, -2.58807], "uv": [0, 14]}
+					]
+				},
+				{
+					"name": "TP2",
+					"parent": "Tentacle",
+					"pivot": [0, 15, 0],
+					"cubes": [
+						{"origin": [0.5, 13, -2.2], "size": [4, 10, 4], "pivot": [0, 0, 0], "rotation": [-7.12284, 29.21893, -14.35885], "uv": [21, 14]}
+					]
+				},
+				{
+					"name": "TP3",
+					"parent": "Tentacle",
+					"pivot": [-3, 23, 1],
+					"cubes": [
+						{"origin": [-2.9, 21.5, 4.2], "size": [3, 7, 3], "pivot": [0, 0, 0], "rotation": [13.55739, 29.96852, -2.88614], "uv": [0, 29]}
+					]
+				},
+				{
+					"name": "TP4",
+					"parent": "Tentacle",
+					"pivot": [-3, 29, 0],
+					"cubes": [
+						{"origin": [-6.5, 27.5, 4.9], "size": [2, 4, 2], "pivot": [0, 0, 0], "rotation": [13.25987, 5.27666, 4.19931], "uv": [30, 40]}
+					]
+				}
+			]
+		}
+	]
+}
