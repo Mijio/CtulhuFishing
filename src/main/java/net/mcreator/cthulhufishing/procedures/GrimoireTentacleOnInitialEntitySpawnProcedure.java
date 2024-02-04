@@ -10,9 +10,9 @@ public class GrimoireTentacleOnInitialEntitySpawnProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		entity.setDeltaMovement(new Vec3(0, 1, 0));
-		CthulhufishingMod.queueServerWork(40, () -> {
-			entity.setDeltaMovement(new Vec3(0, (-1), 0));
+		entity.setDeltaMovement(new Vec3(0, 0.5, 0));
+		CthulhufishingMod.queueServerWork(50, () -> {
+			entity.setDeltaMovement(new Vec3(0, (-0.5), 0));
 			CthulhufishingMod.queueServerWork(20, () -> {
 				if (!entity.level.isClientSide())
 					entity.discard();
