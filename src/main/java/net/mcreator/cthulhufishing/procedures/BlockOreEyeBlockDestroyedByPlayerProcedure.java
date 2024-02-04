@@ -1,8 +1,22 @@
 package net.mcreator.cthulhufishing.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.registries.ForgeRegistries;
 
-import javax.annotation.Nullable;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.cthulhufishing.network.CthulhufishingModVariables;
+import net.mcreator.cthulhufishing.init.CthulhufishingModEntities;
+import net.mcreator.cthulhufishing.entity.ObsessedEyeMobEntity;
 
 public class BlockOreEyeBlockDestroyedByPlayerProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -17,7 +31,7 @@ public class BlockOreEyeBlockDestroyedByPlayerProcedure {
 				}
 			}
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new ObsessedEyeMobEntity(CthulhufishingModEntities.DELETED_MOD_ELEMENT.get(), _level);
+				Entity entityToSpawn = new ObsessedEyeMobEntity(CthulhufishingModEntities.OBSESSED_EYE_MOB.get(), _level);
 				entityToSpawn.moveTo(x, y, z, 0, 0);
 				entityToSpawn.setYBodyRot(0);
 				entityToSpawn.setYHeadRot(0);
