@@ -28,7 +28,7 @@ public class CthulhufishingModEntities {
 
 					.sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<GrimoireTentacleEntity>> GRIMOIRE_TENTACLE = register("grimoire_tentacle", EntityType.Builder.<GrimoireTentacleEntity>of(GrimoireTentacleEntity::new, MobCategory.MONSTER)
-			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GrimoireTentacleEntity::new).fireImmune().sized(1f, 2.5f));
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GrimoireTentacleEntity::new).fireImmune().sized(1f, 1f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
