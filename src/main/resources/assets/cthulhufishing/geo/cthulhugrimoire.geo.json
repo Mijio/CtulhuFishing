@@ -1,0 +1,116 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.CthulhuGrimoire",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "book",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "spine",
+					"parent": "book",
+					"pivot": [-4.7, 1, 0.5],
+					"cubes": [
+						{
+							"origin": [-5, 1, -5.5],
+							"size": [1, 2, 11],
+							"uv": {
+								"north": {"uv": [28, 27], "uv_size": [1, 2]},
+								"east": {"uv": [8, 24], "uv_size": [12, 2]},
+								"south": {"uv": [29, 4], "uv_size": [1, 2]},
+								"west": {"uv": [8, 26], "uv_size": [12, 2]},
+								"up": {"uv": [28, 4], "uv_size": [1, 12]},
+								"down": {"uv": [8, 40], "uv_size": [1, -12]}
+							}
+						}
+					]
+				},
+				{
+					"name": "page1",
+					"parent": "book",
+					"pivot": [-4, 1.4, 0],
+					"cubes": [
+						{
+							"origin": [-4, 1, -5.5],
+							"size": [8, 1, 11],
+							"uv": {
+								"north": {"uv": [28, 23], "uv_size": [8, 1]},
+								"east": {"uv": [9, 28], "uv_size": [11, 1]},
+								"south": {"uv": [28, 24], "uv_size": [8, 1]},
+								"west": {"uv": [28, 16], "uv_size": [11, 1]},
+								"up": {"uv": [20, 0], "uv_size": [8, 11]},
+								"down": {"uv": [20, 22], "uv_size": [8, -11]}
+							}
+						}
+					]
+				},
+				{
+					"name": "page2",
+					"parent": "book",
+					"pivot": [-4.5, 2.6, 0],
+					"cubes": [
+						{
+							"origin": [-4, 2, -5.5],
+							"size": [8, 1, 11],
+							"uv": {
+								"north": {"uv": [28, 25], "uv_size": [8, 1]},
+								"east": {"uv": [28, 17], "uv_size": [11, 1]},
+								"south": {"uv": [28, 26], "uv_size": [8, 1]},
+								"west": {"uv": [28, 18], "uv_size": [11, 1]},
+								"up": {"uv": [20, 22], "uv_size": [8, 11]},
+								"down": {"uv": [0, 35], "uv_size": [8, -11]}
+							}
+						}
+					]
+				},
+				{
+					"name": "cover1",
+					"parent": "book",
+					"pivot": [-4.5, 3, 0],
+					"cubes": [
+						{
+							"origin": [-5, 3, -6],
+							"size": [10, 1, 12],
+							"uv": {
+								"north": {"uv": [28, 21], "uv_size": [10, 1]},
+								"east": {"uv": [28, 2], "uv_size": [12, 1]},
+								"south": {"uv": [28, 22], "uv_size": [10, 1]},
+								"west": {"uv": [28, 3], "uv_size": [12, 1]},
+								"up": {"uv": [0, 12], "uv_size": [10, 12]},
+								"down": {"uv": [10, 24], "uv_size": [10, -12]}
+							}
+						}
+					]
+				},
+				{
+					"name": "cover2",
+					"parent": "book",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-5, 0, -6],
+							"size": [10, 1, 12],
+							"uv": {
+								"north": {"uv": [28, 19], "uv_size": [10, 1]},
+								"east": {"uv": [28, 0], "uv_size": [12, 1]},
+								"south": {"uv": [28, 20], "uv_size": [10, 1]},
+								"west": {"uv": [28, 1], "uv_size": [12, 1]},
+								"up": {"uv": [0, 0], "uv_size": [10, 12]},
+								"down": {"uv": [10, 12], "uv_size": [10, -12]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
