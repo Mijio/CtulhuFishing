@@ -9,12 +9,12 @@ import net.mcreator.cthulhufishing.entity.GrimoireTentacleEntity;
 public class GrimoireTentacleModel extends AnimatedGeoModel<GrimoireTentacleEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(GrimoireTentacleEntity entity) {
-		return new ResourceLocation("cthulhufishing", "animations/block_eye.animation.json");
+		return new ResourceLocation("cthulhufishing", "animations/tentacleattack.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(GrimoireTentacleEntity entity) {
-		return new ResourceLocation("cthulhufishing", "geo/block_eye.geo.json");
+		return new ResourceLocation("cthulhufishing", "geo/tentacleattack.geo.json");
 	}
 
 	@Override

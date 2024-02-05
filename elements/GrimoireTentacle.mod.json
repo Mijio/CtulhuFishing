@@ -4,16 +4,16 @@
   "definition": {
     "mobName": "Grimoire Tentacle",
     "mobLabel": "",
-    "mobModelTexture": "flying_eye.png",
+    "mobModelTexture": "texture_tentacle_attack.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 1.0
+      "fixedValue": 2.0
     },
     "boundingBoxScale": {
       "fixedValue": 1.0
     },
     "modelWidth": 1.0,
-    "modelHeight": 1.0,
+    "modelHeight": 2.0,
     "modelShadowSize": 1.0,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
@@ -67,7 +67,7 @@
     "inventoryStackSize": 64,
     "deathTime": 20,
     "lerp": 4,
-    "disableCollisions": false,
+    "disableCollisions": true,
     "ridable": false,
     "canControlForward": false,
     "canControlStrafe": false,
@@ -108,9 +108,9 @@
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"></block></xml>",
-    "model": "block_eye.geo.json",
+    "model": "tentacleattack.geo.json",
     "groupName": "",
-    "animation1": "0",
+    "animation1": "idle",
     "animation2": "",
     "animation3": "",
     "animation4": "",
