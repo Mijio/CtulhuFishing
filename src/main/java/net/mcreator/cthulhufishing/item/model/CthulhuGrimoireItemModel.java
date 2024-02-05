@@ -9,16 +9,16 @@ import net.mcreator.cthulhufishing.item.CthulhuGrimoireItem;
 public class CthulhuGrimoireItemModel extends AnimatedGeoModel<CthulhuGrimoireItem> {
 	@Override
 	public ResourceLocation getAnimationResource(CthulhuGrimoireItem animatable) {
-		return new ResourceLocation("cthulhufishing", "animations/tentacle_staff_item.animation.json");
+		return new ResourceLocation("cthulhufishing", "animations/cthulhugrimoire.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(CthulhuGrimoireItem animatable) {
-		return new ResourceLocation("cthulhufishing", "geo/tentacle_staff_item.geo.json");
+		return new ResourceLocation("cthulhufishing", "geo/cthulhugrimoire.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(CthulhuGrimoireItem animatable) {
-		return new ResourceLocation("cthulhufishing", "textures/items/nonetexture.png");
+		return new ResourceLocation("cthulhufishing", "textures/items/texture_cthulhu_grimoire.png");
 	}
 }

@@ -86,7 +86,7 @@ public class CthulhuGrimoireItem extends Item implements IAnimatable {
 	private <P extends Item & IAnimatable> PlayState idlePredicate(AnimationEvent<P> event) {
 		if (this.transformType != null ? true : false) {
 			if (this.animationprocedure.equals("empty")) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.tentacle.idle", EDefaultLoopTypes.LOOP));
+				event.getController().setAnimation(new AnimationBuilder().addAnimation("nope", EDefaultLoopTypes.LOOP));
 				return PlayState.CONTINUE;
 			}
 		}
@@ -130,7 +130,7 @@ public class CthulhuGrimoireItem extends Item implements IAnimatable {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		CthulhuGrimoireRightclickedProcedure.execute(world, entity);
+		CthulhuGrimoireRightclickedProcedure.execute(world, entity, itemstack);
 		return ar;
 	}
 }

@@ -1,6 +1,6 @@
 {
-  "parent": "cthulhufishing:displaysettings/gui_tentacle_staff.item",
+  "parent": "cthulhufishing:displaysettings/cthulhu_grimoire.item",
   "textures": {
-    "layer0": "cthulhufishing:items/nonetexture"
+    "layer0": "cthulhufishing:items/texture_cthulhu_grimoire"
   }
 }

@@ -2,6 +2,7 @@ package net.mcreator.cthulhufishing.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
@@ -9,15 +10,18 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.ParticleTypes;
 
 import net.mcreator.cthulhufishing.network.CthulhufishingModVariables;
+import net.mcreator.cthulhufishing.item.CthulhuGrimoireItem;
 import net.mcreator.cthulhufishing.init.CthulhufishingModEntities;
 import net.mcreator.cthulhufishing.entity.GrimoireTentacleEntity;
 import net.mcreator.cthulhufishing.CthulhufishingMod;
 
 public class CthulhuGrimoireRightclickedProcedure {
-	public static void execute(LevelAccessor world, Entity entity) {
+	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
 		double Height = 0;
+		if (itemstack.getItem() instanceof CthulhuGrimoireItem)
+			itemstack.getOrCreateTag().putString("geckoAnim", "animation.CthulhuGrimoire.idle");
 		if ((entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score >= 5) {
 			if ((entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score > 30) {
 				world.addParticle(ParticleTypes.PORTAL,
