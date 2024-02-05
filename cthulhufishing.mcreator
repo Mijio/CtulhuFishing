@@ -1530,6 +1530,20 @@
         ]
       },
       "path": "~/CthulhuGrimoire"
+    },
+    {
+      "name": "PortalTentacleParticle",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "portal_tentacle_particle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/client/particle/PortalTentacleParticleParticle.java",
+          "src/main/resources/assets/cthulhufishing/particles/portal_tentacle_particle.json"
+        ]
+      },
+      "path": "~/CthulhuGrimoire"
     }
   ],
   "variable_elements": [

@@ -33,6 +33,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 import net.mcreator.cthulhufishing.init.CthulhufishingModSounds;
+import net.mcreator.cthulhufishing.init.CthulhufishingModParticleTypes;
 import net.mcreator.cthulhufishing.init.CthulhufishingModMobEffects;
 import net.mcreator.cthulhufishing.init.CthulhufishingModMenus;
 import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
@@ -70,7 +71,7 @@ public class CthulhufishingMod {
 		CthulhufishingModMobEffects.REGISTRY.register(bus);
 
 		CthulhufishingModEnchantments.REGISTRY.register(bus);
-
+		CthulhufishingModParticleTypes.REGISTRY.register(bus);
 		CthulhufishingModMenus.REGISTRY.register(bus);
 
 		GeckoLib.initialize();
