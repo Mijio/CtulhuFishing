@@ -14,7 +14,6 @@ import software.bernie.geckolib3.core.IAnimatable;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.common.DungeonHooks;
 
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.Level;
@@ -170,7 +169,7 @@ public class GrimoireTentacleEntity extends Monster implements IAnimatable {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		GrimoireTentacleOnEntityTickUpdateProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		GrimoireTentacleOnEntityTickUpdateProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 		this.refreshDimensions();
 	}
 
@@ -179,14 +178,26 @@ public class GrimoireTentacleEntity extends Monster implements IAnimatable {
 		return super.getDimensions(p_33597_).scale((float) 1);
 	}
 
+	@Override
+	public boolean isPushable() {
+		return false;
+	}
+
+	@Override
+	protected void doPush(Entity entityIn) {
+	}
+
+	@Override
+	protected void pushEntities() {
+	}
+
 	public static void init() {
-		DungeonHooks.addDungeonMob(CthulhufishingModEntities.GRIMOIRE_TENTACLE.get(), 180);
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 50);
+		builder = builder.add(Attributes.MAX_HEALTH, 60);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);

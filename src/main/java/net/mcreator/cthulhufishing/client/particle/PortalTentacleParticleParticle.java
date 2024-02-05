@@ -35,14 +35,14 @@ public class PortalTentacleParticleParticle extends TextureSheetParticle {
 	protected PortalTentacleParticleParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
-		this.setSize(0.2f, 0.2f);
-		this.quadSize *= 1.5f;
-		this.lifetime = 7;
+		this.setSize(0.3f, 0.3f);
+		this.quadSize *= 10f;
+		this.lifetime = 12;
 		this.gravity = 0f;
 		this.hasPhysics = true;
-		this.xd = vx * 1;
-		this.yd = vy * 1;
-		this.zd = vz * 1;
+		this.xd = vx * 0.6;
+		this.yd = vy * 0.6;
+		this.zd = vz * 0.6;
 		this.pickSprite(spriteSet);
 	}
 
