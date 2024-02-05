@@ -7,10 +7,12 @@ import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.particles.ParticleTypes;
 
 import net.mcreator.cthulhufishing.network.CthulhufishingModVariables;
 import net.mcreator.cthulhufishing.item.CthulhuGrimoireItem;
+import net.mcreator.cthulhufishing.init.CthulhufishingModParticleTypes;
 import net.mcreator.cthulhufishing.init.CthulhufishingModEntities;
 import net.mcreator.cthulhufishing.entity.GrimoireTentacleEntity;
 import net.mcreator.cthulhufishing.CthulhufishingMod;
@@ -134,22 +136,22 @@ public class CthulhuGrimoireRightclickedProcedure {
 			} else {
 				Height = 1;
 				for (int index0 = 0; index0 < 2; index0++) {
-					world.addParticle(ParticleTypes.PORTAL,
+					world.addParticle((SimpleParticleType) (CthulhufishingModParticleTypes.PORTAL_TENTACLE_PARTICLE.get()),
 							(0.5 + entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(10)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getX()),
 							(Height + entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(10)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getY()),
 							(0.5 + entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(10)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ()),
 							0.2, 0.2, 0.2);
-					world.addParticle(ParticleTypes.PORTAL,
+					world.addParticle((SimpleParticleType) (CthulhufishingModParticleTypes.PORTAL_TENTACLE_PARTICLE.get()),
 							(0.5 + entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(10)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getX()),
 							(Height + entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(10)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getY()),
 							(-0.5 + entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(10)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ()),
 							0.2, 0.2, 0.2);
-					world.addParticle(ParticleTypes.PORTAL,
+					world.addParticle((SimpleParticleType) (CthulhufishingModParticleTypes.PORTAL_TENTACLE_PARTICLE.get()),
 							(-0.5 + entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(10)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getX()),
 							(Height + entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(10)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getY()),
 							(-0.5 + entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(10)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ()),
 							0.2, 0.2, 0.2);
-					world.addParticle(ParticleTypes.PORTAL,
+					world.addParticle((SimpleParticleType) (CthulhufishingModParticleTypes.PORTAL_TENTACLE_PARTICLE.get()),
 							(-0.5 + entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(10)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getX()),
 							(Height + entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(10)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getY()),
 							(0.5 + entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(10)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getBlockPos().getZ()),
