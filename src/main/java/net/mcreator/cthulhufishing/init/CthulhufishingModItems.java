@@ -14,9 +14,11 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.cthulhufishing.item.TreasureLureItem;
 import net.mcreator.cthulhufishing.item.ThirdEyeItem;
 import net.mcreator.cthulhufishing.item.TentacleStaffItem;
 import net.mcreator.cthulhufishing.item.SwordOfRevelationItem;
+import net.mcreator.cthulhufishing.item.SculkLureItem;
 import net.mcreator.cthulhufishing.item.NecklaceOfFleshAndBonesItem;
 import net.mcreator.cthulhufishing.item.KnifeForRitualBleedingItem;
 import net.mcreator.cthulhufishing.item.HorseSculkFishItem;
@@ -25,6 +27,7 @@ import net.mcreator.cthulhufishing.item.HermitSlulkFishItem;
 import net.mcreator.cthulhufishing.item.GlutonSculkFishItem;
 import net.mcreator.cthulhufishing.item.DripVoidItem;
 import net.mcreator.cthulhufishing.item.CthulhuGrimoireItem;
+import net.mcreator.cthulhufishing.item.CrimsonLureItem;
 import net.mcreator.cthulhufishing.item.CrimsonJellyfishItem;
 import net.mcreator.cthulhufishing.item.CrimsonFishItem;
 import net.mcreator.cthulhufishing.item.CrimsonCrunchItem;
@@ -54,6 +57,9 @@ public class CthulhufishingModItems {
 			() -> new ForgeSpawnEggItem(CthulhufishingModEntities.OBSESSED_EYE_MOB, -12563314, -11183488, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> CTHULHU_GRIMOIRE = REGISTRY.register("cthulhu_grimoire", () -> new CthulhuGrimoireItem());
 	public static final RegistryObject<Item> GRIMOIRE_TENTACLE_SPAWN_EGG = REGISTRY.register("grimoire_tentacle_spawn_egg", () -> new ForgeSpawnEggItem(CthulhufishingModEntities.GRIMOIRE_TENTACLE, -1, -1, new Item.Properties().tab(null)));
+	public static final RegistryObject<Item> CRIMSON_LURE = REGISTRY.register("crimson_lure", () -> new CrimsonLureItem());
+	public static final RegistryObject<Item> SCULK_LURE = REGISTRY.register("sculk_lure", () -> new SculkLureItem());
+	public static final RegistryObject<Item> TREASURE_LURE = REGISTRY.register("treasure_lure", () -> new TreasureLureItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -1,0 +1,48 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:DripVoid"
+      },
+      {
+        "value": "CUSTOM:DripVoid"
+      },
+      {
+        "value": "CUSTOM:DripVoid"
+      },
+      {
+        "value": "CUSTOM:DripVoid"
+      },
+      {
+        "value": "Items.DYE#18"
+      },
+      {
+        "value": "CUSTOM:DripVoid"
+      },
+      {
+        "value": "CUSTOM:DripVoid"
+      },
+      {
+        "value": "CUSTOM:DripVoid"
+      },
+      {
+        "value": "CUSTOM:DripVoid"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SculkLure"
+    },
+    "name": "sculk_lure_recipe",
+    "namespace": "mod"
+  }
+}
