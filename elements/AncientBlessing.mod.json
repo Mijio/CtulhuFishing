@@ -2,14 +2,14 @@
   "_fv": 43,
   "_type": "potioneffect",
   "definition": {
-    "effectName": "AncientBlessing",
+    "effectName": "Ancient Curse",
     "icon": "madness.png",
     "color": {
-      "value": -6750055,
+      "value": -10092544,
       "falpha": 0.0
     },
-    "isInstant": true,
-    "isBad": false,
+    "isInstant": false,
+    "isBad": true,
     "isBenefitical": false,
     "renderStatusInInventory": true,
     "renderStatusInHUD": true,

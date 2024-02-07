@@ -16,7 +16,6 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.cthulhufishing.entity.RelicAltarEntity;
 import net.mcreator.cthulhufishing.entity.ObsessedEyeMobEntity;
 import net.mcreator.cthulhufishing.entity.GrimoireTentacleEntity;
 import net.mcreator.cthulhufishing.CthulhufishingMod;
@@ -30,8 +29,6 @@ public class CthulhufishingModEntities {
 					.sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<GrimoireTentacleEntity>> GRIMOIRE_TENTACLE = register("grimoire_tentacle", EntityType.Builder.<GrimoireTentacleEntity>of(GrimoireTentacleEntity::new, MobCategory.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GrimoireTentacleEntity::new).fireImmune().sized(1f, 2.5f));
-	public static final RegistryObject<EntityType<RelicAltarEntity>> RELIC_ALTAR = register("relic_altar", EntityType.Builder.<RelicAltarEntity>of(RelicAltarEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-			.setUpdateInterval(3).setCustomClientFactory(RelicAltarEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -42,7 +39,6 @@ public class CthulhufishingModEntities {
 		event.enqueueWork(() -> {
 			ObsessedEyeMobEntity.init();
 			GrimoireTentacleEntity.init();
-			RelicAltarEntity.init();
 		});
 	}
 
@@ -50,6 +46,5 @@ public class CthulhufishingModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(OBSESSED_EYE_MOB.get(), ObsessedEyeMobEntity.createAttributes().build());
 		event.put(GRIMOIRE_TENTACLE.get(), GrimoireTentacleEntity.createAttributes().build());
-		event.put(RELIC_ALTAR.get(), RelicAltarEntity.createAttributes().build());
 	}
 }

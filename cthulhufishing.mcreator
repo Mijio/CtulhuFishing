@@ -1679,42 +1679,6 @@
       "path": "~/Relic"
     },
     {
-      "name": "RelicAltarOnEntityTickUpdate",
-      "type": "procedure",
-      "sortid": 98,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "relic_altar_on_entity_tick_update",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/RelicAltarOnEntityTickUpdateProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Relic"
-    },
-    {
       "name": "AncientBlessing",
       "type": "potioneffect",
       "sortid": 86,
@@ -1762,22 +1726,6 @@
         ]
       },
       "path": "~/Lures"
-    },
-    {
-      "name": "RelicAltar",
-      "type": "animatedentity",
-      "sortid": 97,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "relic_altar",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/entity/RelicAltarEntity.java",
-          "src/main/java/net/mcreator/cthulhufishing/entity/model/RelicAltarModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/client/renderer/RelicAltarRenderer.java"
-        ]
-      },
-      "path": "~/Relic"
     }
   ],
   "variable_elements": [
@@ -1885,13 +1833,12 @@
       "subtitles.obsessed_eye_damage": "",
       "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
       "item.cthulhufishing.knife_for_ritual_bleeding": "Knife For Ritual Bleeding",
-      "effect.cthulhufishing.ancient_blessing": "AncientBlessing",
+      "effect.cthulhufishing.ancient_blessing": "Ancient Curse",
       "item.cthulhufishing.treasure_lure": "Treasure Lure",
       "subtitles.ritual_bleeding_knife": "",
       "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
       "item.cthulhufishing.necklace_of_flesh_and_bones": "Necklace Of Flesh And Bones",
       "item.cthulhufishing.sculk_lure": "Sculk Lure",
-      "entity.cthulhufishing.relic_altar": "Relic Altar",
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
       "subtitles.catch_strange_fish": "",
       "subtitles.hood_ablity": "",
@@ -1912,7 +1859,6 @@
       "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
       "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
-      "item.cthulhufishing.relic_altar_spawn_egg": "Relic Altar Spawn Egg",
       "block.cthulhufishing.deep_oil": "Deep Oil",
       "item.cthulhufishing.tentacle_staff": "Tentacle Staff",
       "item.cthulhufishing.obsessed_eye_mob_spawn_egg": "Obsessed Eye Spawn Egg",
