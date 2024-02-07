@@ -5,10 +5,10 @@
     "effectName": "AncientBlessing",
     "icon": "madness.png",
     "color": {
-      "value": -1,
+      "value": -6750055,
       "falpha": 0.0
     },
-    "isInstant": false,
+    "isInstant": true,
     "isBad": false,
     "isBenefitical": false,
     "renderStatusInInventory": true,

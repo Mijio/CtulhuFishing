@@ -1681,39 +1681,104 @@
       "path": "~/RelicAltarEffect"
     },
     {
-      "name": "RelicAltarOnBlockRightClicked",
+      "name": "RelicRightclickedOnBlock",
       "type": "procedure",
-      "sortid": 93,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "relic_altar_on_block_right_clicked",
+      "registry_name": "relic_rightclicked_on_block",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/RelicAltarOnBlockRightClickedProcedure.java"
+          "src/main/java/net/mcreator/cthulhufishing/procedures/RelicRightclickedOnBlockProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "Relic",
+      "type": "item",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "relic",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/relic.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/RelicItem.java"
+        ]
       },
       "path": "~/Relic"
     },
     {
       "name": "RelicAltar",
-      "type": "animatedblock",
-      "sortid": 94,
+      "type": "animatedentity",
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "registry_name": "relic_altar",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/blockstates/relic_altar.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/entity/RelicAltarTileEntity.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/RelicAltarBlock.java",
-          "src/main/resources/assets/cthulhufishing/models/item/relic_altar.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/RelicAltarDisplayItemRenderer.java",
-          "src/main/resources/assets/cthulhufishing/models/custom/relic_altar_particle.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/RelicAltarTileRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/RelicAltarBlockModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/display/RelicAltarDisplayItem.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/RelicAltarDisplayModel.java"
+          "src/main/java/net/mcreator/cthulhufishing/entity/model/RelicAltarModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/client/renderer/RelicAltarRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/RelicAltarEntity.java"
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "RelicAltarOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "relic_altar_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/RelicAltarOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       },
       "path": "~/Relic"
@@ -1817,7 +1882,6 @@
     "en_us": {
       "item.cthulhufishing.crimson_fish": "Crimson Fish",
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
-      "block.cthulhufishing.relic_altar": "Relic Altar",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
       "item.cthulhufishing.drip_void": "Drip Void",
       "item.cthulhufishing.cthulhu_grimoire": "Cthulhu Grimoire",
@@ -1831,6 +1895,7 @@
       "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
       "item.cthulhufishing.necklace_of_flesh_and_bones": "Necklace Of Flesh And Bones",
       "item.cthulhufishing.sculk_lure": "Sculk Lure",
+      "entity.cthulhufishing.relic_altar": "Relic Altar",
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
       "subtitles.catch_strange_fish": "",
       "subtitles.hood_ablity": "",
@@ -1838,6 +1903,7 @@
       "item.cthulhufishing.crimson_lure": "Crimson Lure",
       "entity.cthulhufishing.grimoire_tentacle": "Grimoire Tentacle",
       "item.cthulhufishing.grimoire_tentacle_spawn_egg": "Grimoire Tentacle Spawn Egg",
+      "item.cthulhufishing.relic": "Relic",
       "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
       "enchantment.cthulhufishing.dark_blade": "Dark Blade",
       "subtitles.obsessed_eye_spawn": "",
@@ -1850,6 +1916,7 @@
       "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
       "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
+      "item.cthulhufishing.relic_altar_spawn_egg": "Relic Altar Spawn Egg",
       "block.cthulhufishing.deep_oil": "Deep Oil",
       "item.cthulhufishing.tentacle_staff": "Tentacle Staff",
       "item.cthulhufishing.obsessed_eye_mob_spawn_egg": "Obsessed Eye Spawn Egg",

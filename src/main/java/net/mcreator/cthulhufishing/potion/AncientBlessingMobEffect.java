@@ -3,6 +3,7 @@ package net.mcreator.cthulhufishing.potion;
 
 import net.minecraft.world.entity.ai.attributes.AttributeMap;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 
@@ -11,7 +12,7 @@ import net.mcreator.cthulhufishing.procedures.AncientBlessingEffectExpiresProced
 
 public class AncientBlessingMobEffect extends MobEffect {
 	public AncientBlessingMobEffect() {
-		super(MobEffectCategory.NEUTRAL, -1);
+		super(MobEffectCategory.NEUTRAL, -6750055);
 	}
 
 	@Override
@@ -20,7 +21,12 @@ public class AncientBlessingMobEffect extends MobEffect {
 	}
 
 	@Override
-	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
+	public boolean isInstantenous() {
+		return true;
+	}
+
+	@Override
+	public void applyInstantenousEffect(Entity source, Entity indirectSource, LivingEntity entity, int amplifier, double health) {
 		AncientBlessingEffectStartedappliedProcedure.execute(entity);
 	}
 
