@@ -11,7 +11,6 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.cthulhufishing.world.inventory.CtulhuAltarMenu;
 import net.mcreator.cthulhufishing.procedures.FishShows6Procedure;
-import net.mcreator.cthulhufishing.procedures.FishShows5Procedure;
 import net.mcreator.cthulhufishing.procedures.FishShows4Procedure;
 import net.mcreator.cthulhufishing.procedures.FishShows3Procedure;
 import net.mcreator.cthulhufishing.procedures.FishShows2Procedure;
@@ -41,7 +40,7 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 		this.z = container.z;
 		this.entity = container.entity;
 		this.imageWidth = 170;
-		this.imageHeight = 223;
+		this.imageHeight = 221;
 	}
 
 	private static final ResourceLocation texture = new ResourceLocation("cthulhufishing:textures/screens/ctulhu_altar.png");
@@ -60,34 +59,34 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		if (FishShows4Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur4.png"));
-			this.blit(ms, this.leftPos + 75, this.topPos + 79, 0, 0, 16, 16, 16, 16);
-		}
-		if (FishShows2Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur2.png"));
-			this.blit(ms, this.leftPos + 75, this.topPos + 79, 0, 0, 16, 16, 16, 16);
-		}
-		if (FishShows5Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur5.png"));
-			this.blit(ms, this.leftPos + 75, this.topPos + 79, 0, 0, 16, 16, 16, 16);
-		}
-		if (FishShows1Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur1.png"));
-			this.blit(ms, this.leftPos + 75, this.topPos + 79, 0, 0, 16, 16, 16, 16);
-		}
-		if (FishShows6Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur6.png"));
-			this.blit(ms, this.leftPos + 75, this.topPos + 79, 0, 0, 16, 16, 16, 16);
-		}
-		if (FishShows3Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur3.png"));
-			this.blit(ms, this.leftPos + 75, this.topPos + 79, 0, 0, 16, 16, 16, 16);
-		}
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/ui.png"));
 		this.blit(ms, this.leftPos + -1, this.topPos + 0, 0, 0, 170, 223, 170, 223);
 
+		if (FishShows1Procedure.execute(entity)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur1.png"));
+			this.blit(ms, this.leftPos + 75, this.topPos + 78, 0, 0, 16, 16, 16, 16);
+		}
+		if (FishShows2Procedure.execute(entity)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur2.png"));
+			this.blit(ms, this.leftPos + 75, this.topPos + 78, 0, 0, 16, 16, 16, 16);
+		}
+		if (FishShows3Procedure.execute(entity)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur3.png"));
+			this.blit(ms, this.leftPos + 76, this.topPos + 78, 0, 0, 16, 16, 16, 16);
+		}
+		if (FishShows4Procedure.execute(entity)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur4.png"));
+			this.blit(ms, this.leftPos + 75, this.topPos + 78, 0, 0, 16, 16, 16, 16);
+		}
+		if (FishShows4Procedure.execute(entity)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur5.png"));
+			this.blit(ms, this.leftPos + 75, this.topPos + 78, 0, 0, 16, 16, 16, 16);
+		}
+		if (FishShows6Procedure.execute(entity)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur6.png"));
+			this.blit(ms, this.leftPos + 75, this.topPos + 78, 0, 0, 16, 16, 16, 16);
+		}
 		RenderSystem.disableBlend();
 	}
 
@@ -109,7 +108,7 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack,
 
-				AltarFishCountTextingProcedure.execute(entity), 78, 120, -12829636);
+				AltarFishCountTextingProcedure.execute(entity), 79, 119, -12829636);
 	}
 
 	@Override

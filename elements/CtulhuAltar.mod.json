@@ -4,7 +4,7 @@
   "definition": {
     "type": 1,
     "width": 170,
-    "height": 223,
+    "height": 221,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 31,
     "renderBgLayer": true,
@@ -23,7 +23,32 @@
             "name": "ButtonIsVisible"
           },
           "x": 199,
-          "y": 32
+          "y": 33
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_12",
+          "text": {
+            "fixedValue": "11",
+            "name": "AltarFishCountTexting"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 208,
+          "y": 129
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ui.png",
+          "use1Xscale": false,
+          "x": 127,
+          "y": 9
         }
       },
       {
@@ -40,17 +65,17 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 204,
-          "y": 102
+          "x": 203,
+          "y": 87
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "fishblur4.png",
+          "image": "fishblur1.png",
           "use1Xscale": false,
           "displayCondition": {
-            "name": "FishShows4"
+            "name": "FishShows1"
           },
           "x": 204,
           "y": 88
@@ -71,10 +96,22 @@
       {
         "type": "image",
         "data": {
-          "image": "fishblur5.png",
+          "image": "fishblur3.png",
           "use1Xscale": false,
           "displayCondition": {
-            "name": "FishShows5"
+            "name": "FishShows3"
+          },
+          "x": 205,
+          "y": 88
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fishblur4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FishShows4"
           },
           "x": 204,
           "y": 88
@@ -83,10 +120,10 @@
       {
         "type": "image",
         "data": {
-          "image": "fishblur1.png",
+          "image": "fishblur5.png",
           "use1Xscale": false,
           "displayCondition": {
-            "name": "FishShows1"
+            "name": "FishShows4"
           },
           "x": 204,
           "y": 88
@@ -102,43 +139,6 @@
           },
           "x": 204,
           "y": 88
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "fishblur3.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "FishShows3"
-          },
-          "x": 204,
-          "y": 88
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_12",
-          "text": {
-            "fixedValue": "11",
-            "name": "AltarFishCountTexting"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 207,
-          "y": 129
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "ui.png",
-          "use1Xscale": false,
-          "x": 127,
-          "y": 8
         }
       }
     ],

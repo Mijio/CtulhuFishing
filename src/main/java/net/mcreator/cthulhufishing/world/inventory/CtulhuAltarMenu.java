@@ -81,13 +81,13 @@ public class CtulhuAltarMenu extends AbstractContainerMenu implements Supplier<M
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 76, 94) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 75, 78) {
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, -3 + 8 + sj * 18, 59 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, -3 + 8 + sj * 18, 58 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, -3 + 8 + si * 18, 59 + 142));
+			this.addSlot(new Slot(inv, si, -3 + 8 + si * 18, 58 + 142));
 		AltarRecipeGenerationProcedure.execute(entity);
 	}
 
