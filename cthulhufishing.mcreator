@@ -1679,6 +1679,44 @@
         ]
       },
       "path": "~/RelicAltarEffect"
+    },
+    {
+      "name": "RelicAltarOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "relic_altar_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/RelicAltarOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "RelicAltar",
+      "type": "animatedblock",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "relic_altar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/blockstates/relic_altar.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/RelicAltarTileEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/RelicAltarBlock.java",
+          "src/main/resources/assets/cthulhufishing/models/item/relic_altar.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/RelicAltarDisplayItemRenderer.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/relic_altar_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/RelicAltarTileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/RelicAltarBlockModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/RelicAltarDisplayItem.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/RelicAltarDisplayModel.java"
+        ]
+      },
+      "path": "~/Relic"
     }
   ],
   "variable_elements": [
@@ -1779,6 +1817,7 @@
     "en_us": {
       "item.cthulhufishing.crimson_fish": "Crimson Fish",
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
+      "block.cthulhufishing.relic_altar": "Relic Altar",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
       "item.cthulhufishing.drip_void": "Drip Void",
       "item.cthulhufishing.cthulhu_grimoire": "Cthulhu Grimoire",
@@ -1863,6 +1902,10 @@
       },
       {
         "name": "RelicAltarEffect",
+        "children": []
+      },
+      {
+        "name": "Relic",
         "children": []
       }
     ]

@@ -31,6 +31,7 @@ import net.mcreator.cthulhufishing.item.CrimsonLureItem;
 import net.mcreator.cthulhufishing.item.CrimsonJellyfishItem;
 import net.mcreator.cthulhufishing.item.CrimsonFishItem;
 import net.mcreator.cthulhufishing.item.CrimsonCrunchItem;
+import net.mcreator.cthulhufishing.block.display.RelicAltarDisplayItem;
 import net.mcreator.cthulhufishing.block.display.BlockOreEyeDisplayItem;
 import net.mcreator.cthulhufishing.CthulhufishingMod;
 
@@ -60,6 +61,8 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> CRIMSON_LURE = REGISTRY.register("crimson_lure", () -> new CrimsonLureItem());
 	public static final RegistryObject<Item> SCULK_LURE = REGISTRY.register("sculk_lure", () -> new SculkLureItem());
 	public static final RegistryObject<Item> TREASURE_LURE = REGISTRY.register("treasure_lure", () -> new TreasureLureItem());
+	public static final RegistryObject<Item> RELIC_ALTAR = REGISTRY.register(CthulhufishingModBlocks.RELIC_ALTAR.getId().getPath(),
+			() -> new RelicAltarDisplayItem(CthulhufishingModBlocks.RELIC_ALTAR.get(), new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

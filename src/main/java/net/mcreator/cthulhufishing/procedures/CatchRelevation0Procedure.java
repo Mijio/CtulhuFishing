@@ -69,6 +69,10 @@ public class CatchRelevation0Procedure {
 						});
 					}
 					RevelationChangeProcedure.execute(entity);
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(CthulhufishingModItems.CRIMSON_LURE.get());
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
 					RandomCrisonFishCatch = Mth.nextInt(RandomSource.create(), 1, 3);
 					if (RandomCrisonFishCatch == 1) {
 						if (entity instanceof Player _player) {

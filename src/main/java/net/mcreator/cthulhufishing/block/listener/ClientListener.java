@@ -7,6 +7,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.cthulhufishing.init.CthulhufishingModBlockEntities;
+import net.mcreator.cthulhufishing.block.renderer.RelicAltarTileRenderer;
 import net.mcreator.cthulhufishing.block.renderer.BlockOreEyeTileRenderer;
 import net.mcreator.cthulhufishing.CthulhufishingMod;
 
@@ -16,5 +17,6 @@ public class ClientListener {
 	@SubscribeEvent
 	public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.BLOCK_ORE_EYE.get(), BlockOreEyeTileRenderer::new);
+		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.RELIC_ALTAR.get(), RelicAltarTileRenderer::new);
 	}
 }

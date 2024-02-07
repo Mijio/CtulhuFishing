@@ -70,6 +70,10 @@ public class CatchSculkProcedure {
 						});
 					}
 					RevelationChangeProcedure.execute(entity);
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(CthulhufishingModItems.SCULK_LURE.get());
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
 					if (RandomCrisonFishCatch == 1) {
 						if (entity instanceof Player _player) {
 							ItemStack _setstack = new ItemStack(CthulhufishingModItems.GLUTON_SCULK_FISH.get());
