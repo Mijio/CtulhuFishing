@@ -1726,6 +1726,66 @@
         ]
       },
       "path": "~/Lures"
+    },
+    {
+      "name": "RunicTablet",
+      "type": "item",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "runic_tablet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/runic_tablet.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/RunicTabletItem.java"
+        ]
+      }
+    },
+    {
+      "name": "FadedRunicTablet",
+      "type": "item",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "faded_runic_tablet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/FadedRunicTabletItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/faded_runic_tablet.json"
+        ]
+      }
+    },
+    {
+      "name": "RunicTabletRightclicked",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "runic_tablet_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/RunicTabletRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RunicTabletUnFade",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "runic_tablet_un_fade",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/recipes/runic_tablet_unfade.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1840,8 +1900,10 @@
       "item.cthulhufishing.necklace_of_flesh_and_bones": "Necklace Of Flesh And Bones",
       "item.cthulhufishing.sculk_lure": "Sculk Lure",
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
+      "item.cthulhufishing.runic_tablet": "Runic Tablet",
       "subtitles.catch_strange_fish": "",
       "subtitles.hood_ablity": "",
+      "item.cthulhufishing.faded_runic_tablet": "Faded Runic Tablet",
       "item.cthulhufishing.sword_of_revelation": "GreatSwordOfRevelation",
       "item.cthulhufishing.crimson_lure": "Crimson Lure",
       "entity.cthulhufishing.grimoire_tentacle": "Grimoire Tentacle",
