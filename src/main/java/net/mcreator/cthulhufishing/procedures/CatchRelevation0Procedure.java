@@ -42,7 +42,8 @@ public class CatchRelevation0Procedure {
 		if (entity == null)
 			return;
 		double RandomCrisonFishCatch = 0;
-		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(CthulhufishingModItems.THIRD_EYE.get())) : false) {
+		if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(CthulhufishingModItems.THIRD_EYE.get())) : false)
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == CthulhufishingModItems.CRIMSON_LURE.get()) {
 			if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(CthulhufishingModMobEffects.RITUAL_BLEEDING.get()) : false) {
 				if (Mth.nextInt(RandomSource.create(), 1, 100) + (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score * 0.5
 						+ EnchantmentHelper.getItemEnchantmentLevel(CthulhufishingModEnchantments.CRIMSON_CATCHER_ENCHANT.get(), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) * 5 > 90) {
@@ -68,6 +69,10 @@ public class CatchRelevation0Procedure {
 						});
 					}
 					RevelationChangeProcedure.execute(entity);
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(CthulhufishingModItems.CRIMSON_LURE.get());
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+					}
 					RandomCrisonFishCatch = Mth.nextInt(RandomSource.create(), 1, 3);
 					if (RandomCrisonFishCatch == 1) {
 						if (entity instanceof Player _player) {

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "cthulhufishing:drip_void"
+    },
+    "1": {
+      "item": "cthulhufishing:drip_void"
+    },
+    "2": {
+      "item": "cthulhufishing:drip_void"
+    },
+    "3": {
+      "item": "cthulhufishing:drip_void"
+    },
+    "4": {
+      "item": "minecraft:blue_dye"
+    },
+    "5": {
+      "item": "cthulhufishing:drip_void"
+    },
+    "6": {
+      "item": "cthulhufishing:drip_void"
+    },
+    "7": {
+      "item": "cthulhufishing:drip_void"
+    },
+    "8": {
+      "item": "cthulhufishing:drip_void"
+    }
+  },
+  "result": {
+    "item": "cthulhufishing:sculk_lure",
+    "count": 4
+  }
+}

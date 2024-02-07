@@ -1548,6 +1548,236 @@
         ]
       },
       "path": "~/CthulhuGrimoire"
+    },
+    {
+      "name": "CrimsonLureRecipe",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_lure_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/recipes/crimson_lure_recipe.json"
+        ]
+      },
+      "path": "~/Lures"
+    },
+    {
+      "name": "SculkLure",
+      "type": "item",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sculk_lure",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/sculk_lure.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/SculkLureItem.java"
+        ]
+      },
+      "path": "~/Lures"
+    },
+    {
+      "name": "Relic",
+      "type": "item",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "relic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/RelicItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/relic.json"
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AncientBlessingEffectExpires",
+      "type": "procedure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_blessing_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AncientBlessingEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/RelicAltarEffect"
+    },
+    {
+      "name": "CrimsonLure",
+      "type": "item",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_lure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/CrimsonLureItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/crimson_lure.json"
+        ]
+      },
+      "path": "~/Lures"
+    },
+    {
+      "name": "SculkLureRecipe",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sculk_lure_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/recipes/sculk_lure_recipe.json"
+        ]
+      },
+      "path": "~/Lures"
+    },
+    {
+      "name": "RelicRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "relic_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/RelicRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "RelicAltarOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "relic_altar_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/RelicAltarOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AncientBlessing",
+      "type": "potioneffect",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_blessing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/potion/AncientBlessingMobEffect.java"
+        ]
+      },
+      "path": "~/RelicAltarEffect"
+    },
+    {
+      "name": "AncientBlessingEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_blessing_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AncientBlessingEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/RelicAltarEffect"
+    },
+    {
+      "name": "TreasureLure",
+      "type": "item",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "treasure_lure",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/treasure_lure.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/TreasureLureItem.java"
+        ]
+      },
+      "path": "~/Lures"
+    },
+    {
+      "name": "RelicAltar",
+      "type": "animatedentity",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "relic_altar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/entity/RelicAltarEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/model/RelicAltarModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/client/renderer/RelicAltarRenderer.java"
+        ]
+      },
+      "path": "~/Relic"
     }
   ],
   "variable_elements": [
@@ -1699,6 +1929,10 @@
         "children": []
       },
       {
+        "name": "RelicAltarEffect",
+        "children": []
+      },
+      {
         "name": "AtionsForDecreaseRevelationScore",
         "children": []
       },
@@ -1707,11 +1941,7 @@
         "children": []
       },
       {
-        "name": "EyeCommands",
-        "children": []
-      },
-      {
-        "name": "Enchantments",
+        "name": "Relic",
         "children": []
       },
       {
@@ -1720,6 +1950,18 @@
       },
       {
         "name": "CthulhuGrimoire",
+        "children": []
+      },
+      {
+        "name": "Lures",
+        "children": []
+      },
+      {
+        "name": "EyeCommands",
+        "children": []
+      },
+      {
+        "name": "Enchantments",
         "children": []
       }
     ]
