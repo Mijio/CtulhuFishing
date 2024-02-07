@@ -4,7 +4,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
-import net.mcreator.cthulhufishing.entity.RelicAltarEntity;
 import net.mcreator.cthulhufishing.entity.ObsessedEyeMobEntity;
 import net.mcreator.cthulhufishing.entity.GrimoireTentacleEntity;
 
@@ -21,13 +20,6 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof GrimoireTentacleEntity syncable) {
-				String animation = syncable.getSyncedAnimation();
-				if (!animation.equals("undefined")) {
-					syncable.setAnimation("undefined");
-					syncable.animationprocedure = animation;
-				}
-			}
-			if (event.getEntity() instanceof RelicAltarEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");
