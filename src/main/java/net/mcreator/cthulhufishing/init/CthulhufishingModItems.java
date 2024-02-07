@@ -19,6 +19,7 @@ import net.mcreator.cthulhufishing.item.ThirdEyeItem;
 import net.mcreator.cthulhufishing.item.TentacleStaffItem;
 import net.mcreator.cthulhufishing.item.SwordOfRevelationItem;
 import net.mcreator.cthulhufishing.item.SculkLureItem;
+import net.mcreator.cthulhufishing.item.RunicTabletItem;
 import net.mcreator.cthulhufishing.item.RelicItem;
 import net.mcreator.cthulhufishing.item.NecklaceOfFleshAndBonesItem;
 import net.mcreator.cthulhufishing.item.KnifeForRitualBleedingItem;
@@ -26,6 +27,7 @@ import net.mcreator.cthulhufishing.item.HorseSculkFishItem;
 import net.mcreator.cthulhufishing.item.HoodOfTheDeepVoidItem;
 import net.mcreator.cthulhufishing.item.HermitSlulkFishItem;
 import net.mcreator.cthulhufishing.item.GlutonSculkFishItem;
+import net.mcreator.cthulhufishing.item.FadedRunicTabletItem;
 import net.mcreator.cthulhufishing.item.DripVoidItem;
 import net.mcreator.cthulhufishing.item.CthulhuGrimoireItem;
 import net.mcreator.cthulhufishing.item.CrimsonLureItem;
@@ -63,8 +65,10 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> SCULK_LURE = REGISTRY.register("sculk_lure", () -> new SculkLureItem());
 	public static final RegistryObject<Item> TREASURE_LURE = REGISTRY.register("treasure_lure", () -> new TreasureLureItem());
 	public static final RegistryObject<Item> RELIC = REGISTRY.register("relic", () -> new RelicItem());
+	public static final RegistryObject<Item> RUNIC_TABLET = REGISTRY.register("runic_tablet", () -> new RunicTabletItem());
 	public static final RegistryObject<Item> ALTAR_RELIC = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC.getId().getPath(),
 			() -> new AltarRelicDisplayItem(CthulhufishingModBlocks.ALTAR_RELIC.get(), new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB)));
+	public static final RegistryObject<Item> FADED_RUNIC_TABLET = REGISTRY.register("faded_runic_tablet", () -> new FadedRunicTabletItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
