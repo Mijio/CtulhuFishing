@@ -26,6 +26,13 @@ public class EntityAnimationFactory {
 					syncable.animationprocedure = animation;
 				}
 			}
+			if (event.getEntity() instanceof RelicAltarEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
 		}
 	}
 }

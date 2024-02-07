@@ -18,5 +18,6 @@ public class CthulhufishingModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(CthulhufishingModEntities.OBSESSED_EYE_MOB.get(), ObsessedEyeMobRenderer::new);
 		event.registerEntityRenderer(CthulhufishingModEntities.GRIMOIRE_TENTACLE.get(), GrimoireTentacleRenderer::new);
+		event.registerEntityRenderer(CthulhufishingModEntities.RELIC_ALTAR.get(), RelicAltarRenderer::new);
 	}
 }
