@@ -1,8 +1,18 @@
 package net.mcreator.cthulhufishing.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffectInstance;
 
-import javax.annotation.Nullable;
+import net.mcreator.cthulhufishing.init.CthulhufishingModMobEffects;
+
+import java.util.stream.Collectors;
+import java.util.List;
+import java.util.Comparator;
 
 public class RelicAltarOnEntityTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -14,7 +24,7 @@ public class RelicAltarOnEntityTickUpdateProcedure {
 			for (Entity entityiterator : _entfound) {
 				if (!(entity instanceof Player)) {
 					if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-						_entity.addEffect(new MobEffectInstance(CthulhufishingModMobEffects.DELETED_MOD_ELEMENT.get(), 200, 1));
+						_entity.addEffect(new MobEffectInstance(CthulhufishingModMobEffects.ANCIENT_BLESSING.get(), 200, 1));
 				}
 			}
 		}
