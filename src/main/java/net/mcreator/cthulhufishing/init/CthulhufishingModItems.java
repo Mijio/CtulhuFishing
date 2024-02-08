@@ -39,7 +39,6 @@ import net.mcreator.cthulhufishing.item.CrimsonFishItem;
 import net.mcreator.cthulhufishing.item.CrimsonCrunchItem;
 import net.mcreator.cthulhufishing.item.AncientCoinItem;
 import net.mcreator.cthulhufishing.block.display.BlockOreEyeDisplayItem;
-import net.mcreator.cthulhufishing.block.display.AltarRelicDisplayItem;
 import net.mcreator.cthulhufishing.CthulhufishingMod;
 
 public class CthulhufishingModItems {
@@ -70,8 +69,6 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> TREASURE_LURE = REGISTRY.register("treasure_lure", () -> new TreasureLureItem());
 	public static final RegistryObject<Item> RELIC = REGISTRY.register("relic", () -> new RelicItem());
 	public static final RegistryObject<Item> RUNIC_TABLET = REGISTRY.register("runic_tablet", () -> new RunicTabletItem());
-	public static final RegistryObject<Item> ALTAR_RELIC = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC.getId().getPath(),
-			() -> new AltarRelicDisplayItem(CthulhufishingModBlocks.ALTAR_RELIC.get(), new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB)));
 	public static final RegistryObject<Item> FADED_RUNIC_TABLET = REGISTRY.register("faded_runic_tablet", () -> new FadedRunicTabletItem());
 	public static final RegistryObject<Item> CRIMSON_RING = REGISTRY.register("crimson_ring", () -> new CrimsonRingItem());
 	public static final RegistryObject<Item> SCULK_RING = REGISTRY.register("sculk_ring", () -> new SculkRingItem());
