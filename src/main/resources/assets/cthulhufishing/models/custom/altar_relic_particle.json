@@ -1,0 +1,6 @@
+{
+  "parent": "cthulhufishing:displaysettings/sealed_relic.animation",
+  "textures": {
+    "particle": "cthulhufishing:blocks/altar_relic_texture"
+  }
+}

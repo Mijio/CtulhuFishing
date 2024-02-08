@@ -1705,6 +1705,61 @@
       "path": "~/Lures"
     },
     {
+      "name": "AltarRelic",
+      "type": "animatedblock",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelicTileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelicTileEntity.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelicBlockModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelicDisplayItemRenderer.java",
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelicBlock.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelicDisplayModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelicDisplayItem.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_particle.json"
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelicUpdateTick",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelicUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
       "name": "RunicTablet",
       "type": "item",
       "sortid": 97,
@@ -1713,22 +1768,21 @@
       "registry_name": "runic_tablet",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/runic_tablet.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/RunicTabletItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/RunicTabletItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/runic_tablet.json"
         ]
       }
     },
     {
-      "name": "FadedRunicTablet",
-      "type": "item",
-      "sortid": 98,
+      "name": "RunicTabletUnFade",
+      "type": "recipe",
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "faded_runic_tablet",
+      "registry_name": "runic_tablet_un_fade",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/FadedRunicTabletItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/faded_runic_tablet.json"
+          "src/main/resources/data/cthulhufishing/recipes/runic_tablet_unfade.json"
         ]
       }
     },
@@ -1752,15 +1806,16 @@
       }
     },
     {
-      "name": "RunicTabletUnFade",
-      "type": "recipe",
-      "sortid": 100,
+      "name": "FadedRunicTablet",
+      "type": "item",
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "runic_tablet_un_fade",
+      "registry_name": "faded_runic_tablet",
       "metadata": {
         "files": [
-          "src/main/resources/data/cthulhufishing/recipes/runic_tablet_unfade.json"
+          "src/main/resources/assets/cthulhufishing/models/item/faded_runic_tablet.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/FadedRunicTabletItem.java"
         ]
       }
     },
@@ -1990,11 +2045,9 @@
       "item.cthulhufishing.necklace_of_flesh_and_bones": "Necklace Of Flesh And Bones",
       "item.cthulhufishing.sculk_lure": "Sculk Lure",
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
-      "item.cthulhufishing.runic_tablet": "Runic Tablet",
       "subtitles.catch_strange_fish": "",
       "item.cthulhufishing.crimson_ring": "Crimson Ring",
       "subtitles.hood_ablity": "",
-      "item.cthulhufishing.faded_runic_tablet": "Faded Runic Tablet",
       "item.cthulhufishing.sword_of_revelation": "GreatSwordOfRevelation",
       "item.cthulhufishing.crimson_lure": "Crimson Lure",
       "entity.cthulhufishing.grimoire_tentacle": "Grimoire Tentacle",
@@ -2027,11 +2080,23 @@
         "children": []
       },
       {
-        "name": "ThirdEyeProcedures",
+        "name": "SculkSet",
         "children": []
       },
       {
-        "name": "SculkSet",
+        "name": "CthulhuGrimoire",
+        "children": []
+      },
+      {
+        "name": "Lures",
+        "children": []
+      },
+      {
+        "name": "EyeCommands",
+        "children": []
+      },
+      {
+        "name": "ThirdEyeProcedures",
         "children": []
       },
       {
@@ -2052,18 +2117,6 @@
       },
       {
         "name": "ObsessedEye",
-        "children": []
-      },
-      {
-        "name": "CthulhuGrimoire",
-        "children": []
-      },
-      {
-        "name": "Lures",
-        "children": []
-      },
-      {
-        "name": "EyeCommands",
         "children": []
       },
       {
