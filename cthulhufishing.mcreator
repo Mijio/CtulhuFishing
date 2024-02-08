@@ -1842,8 +1842,8 @@
       "registry_name": "sculk_ring",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/sculk_ring.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/SculkRingItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/SculkRingItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/sculk_ring.json"
         ]
       }
     },
@@ -1883,8 +1883,8 @@
       "registry_name": "emerald_gold_ring",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/emerald_gold_ring.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/EmeraldGoldRingItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/EmeraldGoldRingItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/emerald_gold_ring.json"
         ]
       }
     },
@@ -1903,10 +1903,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -1921,6 +1917,25 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/EmeraldGoldRingBaubleIsUnequippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmeraldGoldRingWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_gold_ring_while_bauble_is_equipped_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/EmeraldGoldRingWhileBaubleIsEquippedTickProcedure.java"
         ],
         "dependencies": [
           {
@@ -1973,6 +1988,12 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "EmeraldRing",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [

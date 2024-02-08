@@ -73,6 +73,7 @@ public class CthulhufishingModVariables {
 			clone.Revalation_Change = original.Revalation_Change;
 			clone.RC_IsNegative = original.RC_IsNegative;
 			clone.Madness = original.Madness;
+			clone.EmeraldRing = original.EmeraldRing;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -116,6 +117,7 @@ public class CthulhufishingModVariables {
 		public double Revalation_Change = 0;
 		public boolean RC_IsNegative = false;
 		public boolean Madness = false;
+		public double EmeraldRing = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -131,6 +133,7 @@ public class CthulhufishingModVariables {
 			nbt.putDouble("Revalation_Change", Revalation_Change);
 			nbt.putBoolean("RC_IsNegative", RC_IsNegative);
 			nbt.putBoolean("Madness", Madness);
+			nbt.putDouble("EmeraldRing", EmeraldRing);
 			return nbt;
 		}
 
@@ -143,6 +146,7 @@ public class CthulhufishingModVariables {
 			Revalation_Change = nbt.getDouble("Revalation_Change");
 			RC_IsNegative = nbt.getBoolean("RC_IsNegative");
 			Madness = nbt.getBoolean("Madness");
+			EmeraldRing = nbt.getDouble("EmeraldRing");
 		}
 	}
 
@@ -174,6 +178,7 @@ public class CthulhufishingModVariables {
 					variables.Revalation_Change = message.data.Revalation_Change;
 					variables.RC_IsNegative = message.data.RC_IsNegative;
 					variables.Madness = message.data.Madness;
+					variables.EmeraldRing = message.data.EmeraldRing;
 				}
 			});
 			context.setPacketHandled(true);
