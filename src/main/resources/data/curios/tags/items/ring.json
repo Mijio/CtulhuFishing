@@ -1,9 +1,6 @@
 {
   "replace": "false",
   "values": [
-    "minecraft:air",
-    "cthulhufishing:crimson_ring",
-    "cthulhufishing:sculk_ring",
-    "cthulhufishing:emerald_gold_ring"
+    "minecraft:air"
   ]
 }

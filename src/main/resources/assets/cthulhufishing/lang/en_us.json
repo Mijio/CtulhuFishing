@@ -1,9 +1,7 @@
 {
   "item.cthulhufishing.crimson_fish": "Crimson Fish",
   "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
-  "item.cthulhufishing.sculk_ring": "Sculk Ring",
   "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
-  "item.cthulhufishing.emerald_gold_ring": "Experience Ring",
   "item.cthulhufishing.drip_void": "Drip Void",
   "item.cthulhufishing.cthulhu_grimoire": "Cthulhu Grimoire",
   "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
@@ -19,7 +17,6 @@
   "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
   "item.cthulhufishing.runic_tablet": "Runic Tablet",
   "subtitles.catch_strange_fish": "",
-  "item.cthulhufishing.crimson_ring": "Crimson Ring",
   "subtitles.hood_ablity": "",
   "item.cthulhufishing.faded_runic_tablet": "Faded Runic Tablet",
   "item.cthulhufishing.sword_of_revelation": "GreatSwordOfRevelation",
@@ -28,6 +25,7 @@
   "item.cthulhufishing.grimoire_tentacle_spawn_egg": "Grimoire Tentacle Spawn Egg",
   "item.cthulhufishing.relic": "Relic",
   "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
+  "enchantment.cthulhufishing.dark_blade": "Dark Blade",
   "subtitles.obsessed_eye_spawn": "",
   "item.cthulhufishing.third_eye": "Third Eye",
   "entity.cthulhufishing.obsessed_eye_mob": "Obsessed Eye",
@@ -43,6 +41,5 @@
   "block.cthulhufishing.altar_relic": "Altar Relic",
   "item.cthulhufishing.obsessed_eye_mob_spawn_egg": "Obsessed Eye Spawn Egg",
   "gui.cthulhufishing.ctulhu_altar.button_grab": "GRAB",
-  "item.cthulhufishing.ancient_coin": "Ancient Coin",
   "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab"
 }
