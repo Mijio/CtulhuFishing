@@ -4,8 +4,10 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -22,21 +24,49 @@ public class AltarRelicOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		double AnimCnt = 0;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CthulhufishingModItems.REAGENT.get()) {
-			AnimCnt = AnimCnt + 1;
+			if (!world.isClientSide()) {
+				BlockPos _bp = new BlockPos(x, y, z);
+				BlockEntity _blockEntity = world.getBlockEntity(_bp);
+				BlockState _bs = world.getBlockState(_bp);
+				if (_blockEntity != null)
+					_blockEntity.getPersistentData().putDouble("ReagentCnt", (new Object() {
+						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getPersistentData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, new BlockPos(x, y, z), "ReagentCnt") + 1));
+				if (world instanceof Level _level)
+					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+			}
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(CthulhufishingModItems.REAGENT.get());
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 			{
-				int _value = (int) AnimCnt;
+				int _value = (int) (new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, new BlockPos(x, y, z), "ReagentCnt"));
 				BlockPos _pos = new BlockPos(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
 					world.setBlock(_pos, _bs.setValue(_integerProp, _value), 3);
 			}
-			if (AnimCnt == 6) {
+			if (new Object() {
+				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+					BlockEntity blockEntity = world.getBlockEntity(pos);
+					if (blockEntity != null)
+						return blockEntity.getPersistentData().getDouble(tag);
+					return -1;
+				}
+			}.getValue(world, new BlockPos(x, y, z), "ReagentCnt") == 6) {
 				world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
