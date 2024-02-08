@@ -1038,20 +1038,6 @@
       }
     },
     {
-      "name": "DarkBlade",
-      "type": "enchantment",
-      "sortid": 57,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dark_blade",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/enchantment/DarkBladeEnchantment.java"
-        ]
-      },
-      "path": "~/Enchantments"
-    },
-    {
       "name": "CrimsonFishPlayerFinishesUsingItem",
       "type": "procedure",
       "sortid": 56,
@@ -1268,16 +1254,7 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/DarkBladeProcedureProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Enchantments"
     },
@@ -1786,6 +1763,117 @@
           "src/main/resources/data/cthulhufishing/recipes/runic_tablet_unfade.json"
         ]
       }
+    },
+    {
+      "name": "CrimsonRing",
+      "type": "curiosbauble",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/CrimsonRingItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/crimson_ring.json"
+        ]
+      }
+    },
+    {
+      "name": "SculkRing",
+      "type": "curiosbauble",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sculk_ring",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/sculk_ring.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/SculkRingItem.java"
+        ]
+      }
+    },
+    {
+      "name": "AncientCoin",
+      "type": "item",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_coin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/ancient_coin.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/AncientCoinItem.java"
+        ]
+      }
+    },
+    {
+      "name": "AncientDebriesFromCoins",
+      "type": "recipe",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_debries_from_coins",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/recipes/ancient_debries_from_coins.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldGoldRing",
+      "type": "curiosbauble",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_gold_ring",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/emerald_gold_ring.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/EmeraldGoldRingItem.java"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldGoldRingBaubleIsEquipped",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_gold_ring_bauble_is_equipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/EmeraldGoldRingBaubleIsEquippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmeraldGoldRingBaubleIsUnequipped",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_gold_ring_bauble_is_unequipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/EmeraldGoldRingBaubleIsUnequippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -1886,7 +1974,9 @@
     "en_us": {
       "item.cthulhufishing.crimson_fish": "Crimson Fish",
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
+      "item.cthulhufishing.sculk_ring": "Sculk Ring",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
+      "item.cthulhufishing.emerald_gold_ring": "Experience Ring",
       "item.cthulhufishing.drip_void": "Drip Void",
       "item.cthulhufishing.cthulhu_grimoire": "Cthulhu Grimoire",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
@@ -1902,6 +1992,7 @@
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
       "item.cthulhufishing.runic_tablet": "Runic Tablet",
       "subtitles.catch_strange_fish": "",
+      "item.cthulhufishing.crimson_ring": "Crimson Ring",
       "subtitles.hood_ablity": "",
       "item.cthulhufishing.faded_runic_tablet": "Faded Runic Tablet",
       "item.cthulhufishing.sword_of_revelation": "GreatSwordOfRevelation",
@@ -1910,7 +2001,6 @@
       "item.cthulhufishing.grimoire_tentacle_spawn_egg": "Grimoire Tentacle Spawn Egg",
       "item.cthulhufishing.relic": "Relic",
       "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
-      "enchantment.cthulhufishing.dark_blade": "Dark Blade",
       "subtitles.obsessed_eye_spawn": "",
       "item.cthulhufishing.third_eye": "Third Eye",
       "entity.cthulhufishing.obsessed_eye_mob": "Obsessed Eye",
@@ -1925,6 +2015,7 @@
       "item.cthulhufishing.tentacle_staff": "Tentacle Staff",
       "item.cthulhufishing.obsessed_eye_mob_spawn_egg": "Obsessed Eye Spawn Egg",
       "gui.cthulhufishing.ctulhu_altar.button_grab": "GRAB",
+      "item.cthulhufishing.ancient_coin": "Ancient Coin",
       "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab"
     }
   },

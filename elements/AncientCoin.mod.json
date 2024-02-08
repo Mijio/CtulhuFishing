@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "warm2",
+    "texture": "coin",
     "customModelName": "Normal",
-    "name": "Crimson Lure",
-    "rarity": "COMMON",
+    "name": "Ancient Coin",
+    "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:CtulhuFishingTab"
     },
