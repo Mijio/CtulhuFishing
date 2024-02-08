@@ -1,6 +1,23 @@
 package net.mcreator.cthulhufishing.block.display;
 
+import software.bernie.geckolib3.util.GeckoLibUtil;
+import software.bernie.geckolib3.core.manager.AnimationFactory;
+import software.bernie.geckolib3.core.manager.AnimationData;
+import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
+import software.bernie.geckolib3.core.controller.AnimationController;
+import software.bernie.geckolib3.core.PlayState;
+import software.bernie.geckolib3.core.IAnimatable;
+
 import net.minecraftforge.common.property.Properties;
+import net.minecraftforge.client.extensions.common.IClientItemExtensions;
+
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
+
+import net.mcreator.cthulhufishing.block.renderer.AltarRelic1DisplayItemRenderer;
+
+import java.util.function.Consumer;
 
 public class AltarRelic1DisplayItem extends BlockItem implements IAnimatable {
 	public AnimationFactory factory = GeckoLibUtil.createFactory(this);

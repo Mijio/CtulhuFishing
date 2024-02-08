@@ -1,14 +1,20 @@
 package net.mcreator.cthulhufishing.block.model;
 
+import software.bernie.geckolib3.model.AnimatedGeoModel;
+
+import net.minecraft.resources.ResourceLocation;
+
+import net.mcreator.cthulhufishing.block.entity.AltarRelic5TileEntity;
+
 public class AltarRelic5BlockModel extends AnimatedGeoModel<AltarRelic5TileEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(AltarRelic5TileEntity animatable) {
-		return new ResourceLocation("cthulhufishing", "animations/sealed_relic.animation.json");
+		return new ResourceLocation("cthulhufishing", "animations/sealed_relic6.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(AltarRelic5TileEntity animatable) {
-		return new ResourceLocation("cthulhufishing", "geo/sealed_relic.geo.json");
+		return new ResourceLocation("cthulhufishing", "geo/sealed_relic6.geo.json");
 	}
 
 	@Override

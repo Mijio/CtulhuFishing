@@ -141,7 +141,7 @@
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
-    "normal": "sealed_relic.geo.json",
+    "normal": "sealed_relic2.geo.json",
     "displaySettings": "sealed_relic.animation.json"
   }
 }

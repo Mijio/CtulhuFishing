@@ -36,7 +36,7 @@ import java.util.List;
 import java.util.Collections;
 
 public class AltarRelicBlock extends BaseEntityBlock implements EntityBlock {
-	public static final IntegerProperty ANIMATION = IntegerProperty.create("animation", 0, (int) 7);
+	public static final IntegerProperty ANIMATION = IntegerProperty.create("animation", 0, (int) 1);
 
 	public AltarRelicBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.METAL).strength(-1, 3600000).noCollission());

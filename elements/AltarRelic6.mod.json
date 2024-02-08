@@ -74,7 +74,7 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "animationCount": 7.0,
+    "animationCount": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": true,
     "isCustomSoundType": false,
@@ -123,7 +123,7 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
+    "onBlockAdded": {
       "name": "AltarRelic6onBlockClicked"
     },
     "onTickUpdate": {
@@ -141,7 +141,7 @@
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
-    "normal": "sealed_relic.geo.json",
-    "displaySettings": "sealed_relic.animation.json"
+    "normal": "sealed_relic7.geo.json",
+    "displaySettings": "block-itemeye.item.json"
   }
 }
