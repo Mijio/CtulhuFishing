@@ -2011,147 +2011,6 @@
       "path": "~/Relic"
     },
     {
-      "name": "AltarRelic1",
-      "type": "animatedblock",
-      "sortid": 115,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "altar_relic_1",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic1TileRenderer.java",
-          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_1_particle.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic1BlockModel.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_1.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic1DisplayItem.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic1DisplayModel.java",
-          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_1.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic1Block.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic1DisplayItemRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic1TileEntity.java"
-        ]
-      },
-      "path": "~/Relic"
-    },
-    {
-      "name": "AltarRelic1OnBlockRightClick",
-      "type": "procedure",
-      "sortid": 114,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "altar_relic_1_on_block_right_click",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelic1OnBlockRightClickProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Relic"
-    },
-    {
-      "name": "AltarRelic2",
-      "type": "animatedblock",
-      "sortid": 118,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "altar_relic_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic2DisplayItem.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic2TileRenderer.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_2.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic2BlockModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic2DisplayModel.java",
-          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_2_particle.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic2Block.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic2TileEntity.java",
-          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_2.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic2DisplayItemRenderer.java"
-        ]
-      },
-      "path": "~/Relic"
-    },
-    {
-      "name": "AltarRelic2OnBlockClicked",
-      "type": "procedure",
-      "sortid": 116,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "altar_relic_2_on_block_clicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelic2OnBlockClickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Relic"
-    },
-    {
-      "name": "AltarRelic3",
-      "type": "animatedblock",
-      "sortid": 119,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "altar_relic_3",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic3DisplayItemRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic3Block.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic3BlockModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic3TileRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic3DisplayModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic3DisplayItem.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic3TileEntity.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_3.json",
-          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_3.json",
-          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_3_particle.json"
-        ]
-      },
-      "path": "~/Relic"
-    },
-    {
       "name": "AltarRelic3OnBlockRightClicked",
       "type": "procedure",
       "sortid": 117,
@@ -2188,97 +2047,15 @@
       "path": "~/Relic"
     },
     {
-      "name": "AltarRelic4",
-      "type": "animatedblock",
-      "sortid": 123,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "altar_relic_4",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic4DisplayItemRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic4Block.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic4DisplayItem.java",
-          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_4_particle.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic4BlockModel.java",
-          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_4.json",
-          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_4.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic4TileRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic4DisplayModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic4TileEntity.java"
-        ]
-      },
-      "path": "~/Relic"
-    },
-    {
-      "name": "AltarRelic4OnBlockRightClicked",
+      "name": "AltarRelic6onBlockClicked",
       "type": "procedure",
-      "sortid": 120,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "altar_relic_4_on_block_right_clicked",
+      "registry_name": "altar_relic_6on_block_clicked",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelic4OnBlockRightClickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Relic"
-    },
-    {
-      "name": "AltarRelic5",
-      "type": "animatedblock",
-      "sortid": 124,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "altar_relic_5",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic5Block.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic5DisplayItemRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic5DisplayModel.java",
-          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_5.json",
-          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_5.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic5BlockModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic5TileRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic5TileEntity.java",
-          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_5_particle.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic5DisplayItem.java"
-        ]
-      },
-      "path": "~/Relic"
-    },
-    {
-      "name": "AltarRelic5OnBlockRightClicked",
-      "type": "procedure",
-      "sortid": 121,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "altar_relic_5_on_block_right_clicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelic5OnBlockRightClickedProcedure.java"
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelic6onBlockClickedProcedure.java"
         ],
         "dependencies": [
           {
@@ -2329,15 +2106,38 @@
       "path": "~/Relic"
     },
     {
-      "name": "AltarRelic6onBlockClicked",
-      "type": "procedure",
-      "sortid": 122,
+      "name": "AltarRelic5",
+      "type": "animatedblock",
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "altar_relic_6on_block_clicked",
+      "registry_name": "altar_relic_5",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelic6onBlockClickedProcedure.java"
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic5Block.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic5DisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic5DisplayModel.java",
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_5.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_5.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic5BlockModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic5TileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic5TileEntity.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_5_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic5DisplayItem.java"
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic2OnBlockClicked",
+      "type": "procedure",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_2_on_block_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelic2OnBlockClickedProcedure.java"
         ],
         "dependencies": [
           {
@@ -2363,6 +2163,220 @@
         ]
       },
       "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic4",
+      "type": "animatedblock",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic4DisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic4Block.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic4DisplayItem.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_4_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic4BlockModel.java",
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_4.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_4.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic4TileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic4DisplayModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic4TileEntity.java"
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic1OnBlockRightClick",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_1_on_block_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelic1OnBlockRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic3",
+      "type": "animatedblock",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic3DisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic3Block.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic3BlockModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic3TileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic3DisplayModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic3DisplayItem.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic3TileEntity.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_3.json",
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_3.json",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_3_particle.json"
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic2",
+      "type": "animatedblock",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic2DisplayItem.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic2TileRenderer.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_2.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic2BlockModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic2DisplayModel.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_2_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic2Block.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic2TileEntity.java",
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_2.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic2DisplayItemRenderer.java"
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic5OnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_5_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelic5OnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic1",
+      "type": "animatedblock",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic1TileRenderer.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_1_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic1BlockModel.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_1.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic1DisplayItem.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic1DisplayModel.java",
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_1.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic1Block.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic1DisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic1TileEntity.java"
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic4OnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_4_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelic4OnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "WoodCrystallRing",
+      "type": "curiosbauble",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wood_crystall_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/WoodCrystallRingItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/wood_crystall_ring.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2480,13 +2494,7 @@
       "item.cthulhufishing.relic": "Relic",
       "subtitles.catchfishmen": "fishmen",
       "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
-      "block.cthulhufishing.altar_relic_2": "Altar Relic",
       "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
-      "block.cthulhufishing.altar_relic_1": "Altar Relic",
-      "block.cthulhufishing.altar_relic_6": "Altar Relic",
-      "block.cthulhufishing.altar_relic_5": "Altar Relic",
-      "block.cthulhufishing.altar_relic_4": "Altar Relic",
-      "block.cthulhufishing.altar_relic_3": "Altar Relic",
       "item.cthulhufishing.tentacle_staff": "Tentacle Staff",
       "block.cthulhufishing.altar_relic": "Altar Relic",
       "item.cthulhufishing.obsessed_eye_mob_spawn_egg": "Obsessed Eye Spawn Egg",

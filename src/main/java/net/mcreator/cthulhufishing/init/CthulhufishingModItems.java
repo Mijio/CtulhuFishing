@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.cthulhufishing.item.WoodCrystallRingItem;
 import net.mcreator.cthulhufishing.item.TreasureLureItem;
 import net.mcreator.cthulhufishing.item.ThirdEyeItem;
 import net.mcreator.cthulhufishing.item.TentacleStaffItem;
@@ -85,6 +86,7 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> ANCIENT_COIN = REGISTRY.register("ancient_coin", () -> new AncientCoinItem());
 	public static final RegistryObject<Item> EMERALD_GOLD_RING = REGISTRY.register("emerald_gold_ring", () -> new EmeraldGoldRingItem());
 	public static final RegistryObject<Item> REAGENT = REGISTRY.register("reagent", () -> new ReagentItem());
+	public static final RegistryObject<Item> WOOD_CRYSTALL_RING = REGISTRY.register("wood_crystall_ring", () -> new WoodCrystallRingItem());
 	public static final RegistryObject<Item> ALTAR_RELIC_1 = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC_1.getId().getPath(),
 			() -> new AltarRelic1DisplayItem(CthulhufishingModBlocks.ALTAR_RELIC_1.get(), new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB)));
 	public static final RegistryObject<Item> ALTAR_RELIC_2 = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC_2.getId().getPath(),

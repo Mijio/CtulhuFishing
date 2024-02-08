@@ -1,11 +1,5 @@
 package net.mcreator.cthulhufishing.block.model;
 
-import software.bernie.geckolib3.model.AnimatedGeoModel;
-
-import net.minecraft.resources.ResourceLocation;
-
-import net.mcreator.cthulhufishing.block.entity.AltarRelic1TileEntity;
-
 public class AltarRelic1BlockModel extends AnimatedGeoModel<AltarRelic1TileEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(AltarRelic1TileEntity animatable) {
