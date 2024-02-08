@@ -55,7 +55,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 0,
+    "tickRate": 5,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -124,7 +124,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "AltarRelicUpdateTick"
+      "name": "AltarRelicOnBlockRightClicked"
     },
     "onTickUpdate": {
       "name": "AltarRelicUpdateTick"

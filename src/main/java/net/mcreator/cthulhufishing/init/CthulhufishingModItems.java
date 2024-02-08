@@ -22,6 +22,7 @@ import net.mcreator.cthulhufishing.item.SculkRingItem;
 import net.mcreator.cthulhufishing.item.SculkLureItem;
 import net.mcreator.cthulhufishing.item.RunicTabletItem;
 import net.mcreator.cthulhufishing.item.RelicItem;
+import net.mcreator.cthulhufishing.item.ReagentItem;
 import net.mcreator.cthulhufishing.item.NecklaceOfFleshAndBonesItem;
 import net.mcreator.cthulhufishing.item.KnifeForRitualBleedingItem;
 import net.mcreator.cthulhufishing.item.HorseSculkFishItem;
@@ -77,6 +78,7 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> SCULK_RING = REGISTRY.register("sculk_ring", () -> new SculkRingItem());
 	public static final RegistryObject<Item> ANCIENT_COIN = REGISTRY.register("ancient_coin", () -> new AncientCoinItem());
 	public static final RegistryObject<Item> EMERALD_GOLD_RING = REGISTRY.register("emerald_gold_ring", () -> new EmeraldGoldRingItem());
+	public static final RegistryObject<Item> REAGENT = REGISTRY.register("reagent", () -> new ReagentItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

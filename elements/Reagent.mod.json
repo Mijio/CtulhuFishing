@@ -1,19 +1,16 @@
 {
   "_fv": 43,
-  "_type": "curiosbauble",
+  "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "relic2",
+    "texture": "nonetexture",
     "customModelName": "Normal",
-    "name": "Experience Ring",
-    "rarity": "RARE",
-    "slotType": "RING",
-    "baubleModel": "Default",
-    "baubleModelTexture": "",
+    "name": "Reagent",
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:CtulhuFishingTab"
     },
-    "stackSize": 1,
+    "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -26,28 +23,13 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
-    "addSlot": false,
     "damageVsEntity": 0.0,
     "specialInfo": [],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "slotAmount": 1,
-    "curioTick": {
-      "name": "EmeraldGoldRingWhileBaubleIsEquippedTick"
-    },
-    "onEquip": {
-      "name": "EmeraldGoldRingBaubleIsEquipped"
-    },
-    "onUnequip": {
-      "name": "EmeraldGoldRingBaubleIsUnequipped"
-    },
     "isFood": false,
-    "friendlyPigs": false,
-    "enderMask": false,
-    "rotateModel": false,
-    "translateModel": false,
     "nutritionalValue": 4,
     "saturation": 0.3,
     "eatResultItem": {
@@ -55,7 +37,6 @@
     },
     "isMeat": false,
     "isAlwaysEdible": false,
-    "hasModel": false,
     "animation": "none"
   }
 }
