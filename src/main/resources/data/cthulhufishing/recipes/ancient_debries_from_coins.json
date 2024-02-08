@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "cthulhufishing:ancient_coin"
+    },
+    {
+      "item": "cthulhufishing:ancient_coin"
+    },
+    {
+      "item": "cthulhufishing:ancient_coin"
+    },
+    {
+      "item": "cthulhufishing:ancient_coin"
+    },
+    {
+      "item": "cthulhufishing:ancient_coin"
+    },
+    {
+      "item": "cthulhufishing:ancient_coin"
+    },
+    {
+      "item": "cthulhufishing:ancient_coin"
+    },
+    {
+      "item": "cthulhufishing:ancient_coin"
+    },
+    {
+      "item": "cthulhufishing:ancient_coin"
+    }
+  ],
+  "result": {
+    "item": "minecraft:netherite_scrap",
+    "count": 1
+  }
+}

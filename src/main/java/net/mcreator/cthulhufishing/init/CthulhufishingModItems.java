@@ -18,6 +18,7 @@ import net.mcreator.cthulhufishing.item.TreasureLureItem;
 import net.mcreator.cthulhufishing.item.ThirdEyeItem;
 import net.mcreator.cthulhufishing.item.TentacleStaffItem;
 import net.mcreator.cthulhufishing.item.SwordOfRevelationItem;
+import net.mcreator.cthulhufishing.item.SculkRingItem;
 import net.mcreator.cthulhufishing.item.SculkLureItem;
 import net.mcreator.cthulhufishing.item.RunicTabletItem;
 import net.mcreator.cthulhufishing.item.RelicItem;
@@ -28,12 +29,15 @@ import net.mcreator.cthulhufishing.item.HoodOfTheDeepVoidItem;
 import net.mcreator.cthulhufishing.item.HermitSlulkFishItem;
 import net.mcreator.cthulhufishing.item.GlutonSculkFishItem;
 import net.mcreator.cthulhufishing.item.FadedRunicTabletItem;
+import net.mcreator.cthulhufishing.item.EmeraldGoldRingItem;
 import net.mcreator.cthulhufishing.item.DripVoidItem;
 import net.mcreator.cthulhufishing.item.CthulhuGrimoireItem;
+import net.mcreator.cthulhufishing.item.CrimsonRingItem;
 import net.mcreator.cthulhufishing.item.CrimsonLureItem;
 import net.mcreator.cthulhufishing.item.CrimsonJellyfishItem;
 import net.mcreator.cthulhufishing.item.CrimsonFishItem;
 import net.mcreator.cthulhufishing.item.CrimsonCrunchItem;
+import net.mcreator.cthulhufishing.item.AncientCoinItem;
 import net.mcreator.cthulhufishing.block.display.BlockOreEyeDisplayItem;
 import net.mcreator.cthulhufishing.block.display.AltarRelicDisplayItem;
 import net.mcreator.cthulhufishing.CthulhufishingMod;
@@ -69,6 +73,10 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> ALTAR_RELIC = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC.getId().getPath(),
 			() -> new AltarRelicDisplayItem(CthulhufishingModBlocks.ALTAR_RELIC.get(), new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB)));
 	public static final RegistryObject<Item> FADED_RUNIC_TABLET = REGISTRY.register("faded_runic_tablet", () -> new FadedRunicTabletItem());
+	public static final RegistryObject<Item> CRIMSON_RING = REGISTRY.register("crimson_ring", () -> new CrimsonRingItem());
+	public static final RegistryObject<Item> SCULK_RING = REGISTRY.register("sculk_ring", () -> new SculkRingItem());
+	public static final RegistryObject<Item> ANCIENT_COIN = REGISTRY.register("ancient_coin", () -> new AncientCoinItem());
+	public static final RegistryObject<Item> EMERALD_GOLD_RING = REGISTRY.register("emerald_gold_ring", () -> new EmeraldGoldRingItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -1,5 +1,7 @@
 package net.mcreator.cthulhufishing.procedures;
 
+import top.theillusivec4.curios.api.CuriosApi;
+
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.fml.common.Mod;
@@ -69,6 +71,23 @@ public class CatchRelevation0Procedure {
 						});
 					}
 					RevelationChangeProcedure.execute(entity);
+					if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(CthulhufishingModItems.CRIMSON_RING.get(), lv).isPresent() : false) {
+						{
+							boolean _setval = false;
+							entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+								capability.RC_IsNegative = _setval;
+								capability.syncPlayerVariables(entity);
+							});
+						}
+						{
+							double _setval = 1;
+							entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+								capability.Revalation_Change = _setval;
+								capability.syncPlayerVariables(entity);
+							});
+						}
+						RevelationChangeProcedure.execute(entity);
+					}
 					if (entity instanceof Player _player) {
 						ItemStack _stktoremove = new ItemStack(CthulhufishingModItems.CRIMSON_LURE.get());
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
