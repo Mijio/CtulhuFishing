@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.cthulhufishing.item.WoodCrystallRingItem;
 import net.mcreator.cthulhufishing.item.TreasureLureItem;
 import net.mcreator.cthulhufishing.item.ThirdEyeItem;
 import net.mcreator.cthulhufishing.item.TentacleStaffItem;
@@ -79,6 +80,7 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> ANCIENT_COIN = REGISTRY.register("ancient_coin", () -> new AncientCoinItem());
 	public static final RegistryObject<Item> EMERALD_GOLD_RING = REGISTRY.register("emerald_gold_ring", () -> new EmeraldGoldRingItem());
 	public static final RegistryObject<Item> REAGENT = REGISTRY.register("reagent", () -> new ReagentItem());
+	public static final RegistryObject<Item> WOOD_CRYSTALL_RING = REGISTRY.register("wood_crystall_ring", () -> new WoodCrystallRingItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
