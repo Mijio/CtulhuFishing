@@ -1,8 +1,13 @@
 package net.mcreator.cthulhufishing.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.InteractionHand;
 
-import javax.annotation.Nullable;
+import net.mcreator.cthulhufishing.network.CthulhufishingModVariables;
+import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
 
 public class RunicTabletRightclickedProcedure {
 	public static void execute(Entity entity) {
@@ -13,7 +18,7 @@ public class RunicTabletRightclickedProcedure {
 			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 		}
 		if (entity instanceof LivingEntity _entity) {
-			ItemStack _setstack = new ItemStack(CthulhufishingModItems.DELETED_MOD_ELEMENT.get());
+			ItemStack _setstack = new ItemStack(CthulhufishingModItems.FADED_RUNIC_TABLET.get());
 			_setstack.setCount(1);
 			_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 			if (_entity instanceof Player _player)

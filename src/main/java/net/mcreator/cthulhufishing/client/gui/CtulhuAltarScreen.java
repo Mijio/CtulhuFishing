@@ -11,6 +11,7 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.cthulhufishing.world.inventory.CtulhuAltarMenu;
 import net.mcreator.cthulhufishing.procedures.FishShows6Procedure;
+import net.mcreator.cthulhufishing.procedures.FishShows5Procedure;
 import net.mcreator.cthulhufishing.procedures.FishShows4Procedure;
 import net.mcreator.cthulhufishing.procedures.FishShows3Procedure;
 import net.mcreator.cthulhufishing.procedures.FishShows2Procedure;
@@ -79,7 +80,7 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur4.png"));
 			this.blit(ms, this.leftPos + 75, this.topPos + 78, 0, 0, 16, 16, 16, 16);
 		}
-		if (FishShows4Procedure.execute(entity)) {
+		if (FishShows5Procedure.execute(entity)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur5.png"));
 			this.blit(ms, this.leftPos + 75, this.topPos + 78, 0, 0, 16, 16, 16, 16);
 		}
