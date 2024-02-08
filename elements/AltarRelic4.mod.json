@@ -124,7 +124,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "AltarRelicOnBlockRightClicked"
+      "name": "AltarRelic4OnBlockRightClicked"
     },
     "onTickUpdate": {
       "name": "AltarRelicUpdateTick"

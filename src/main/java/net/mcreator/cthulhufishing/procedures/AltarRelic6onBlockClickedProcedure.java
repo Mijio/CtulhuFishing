@@ -19,7 +19,7 @@ import net.minecraft.commands.CommandSource;
 
 import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
 
-public class AltarRelicOnBlockRightClickedProcedure {
+public class AltarRelic6onBlockClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;

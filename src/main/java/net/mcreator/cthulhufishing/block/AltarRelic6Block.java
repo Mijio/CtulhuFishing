@@ -27,7 +27,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.cthulhufishing.procedures.AltarRelicUpdateTickProcedure;
-import net.mcreator.cthulhufishing.procedures.AltarRelicOnBlockRightClickedProcedure;
+import net.mcreator.cthulhufishing.procedures.AltarRelic6onBlockClickedProcedure;
 import net.mcreator.cthulhufishing.init.CthulhufishingModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -35,10 +35,10 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Collections;
 
-public class AltarRelicBlock extends BaseEntityBlock implements EntityBlock {
+public class AltarRelic6Block extends BaseEntityBlock implements EntityBlock {
 	public static final IntegerProperty ANIMATION = IntegerProperty.create("animation", 0, (int) 7);
 
-	public AltarRelicBlock() {
+	public AltarRelic6Block() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.METAL).strength(-1, 3600000).noCollission());
 	}
 
@@ -50,7 +50,7 @@ public class AltarRelicBlock extends BaseEntityBlock implements EntityBlock {
 	@Nullable
 	@Override
 	public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-		return CthulhufishingModBlockEntities.ALTAR_RELIC.get().create(blockPos, blockState);
+		return CthulhufishingModBlockEntities.ALTAR_RELIC_6.get().create(blockPos, blockState);
 	}
 
 	@Override
@@ -109,7 +109,7 @@ public class AltarRelicBlock extends BaseEntityBlock implements EntityBlock {
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
 
-		AltarRelicOnBlockRightClickedProcedure.execute(world, x, y, z, entity);
+		AltarRelic6onBlockClickedProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 }
