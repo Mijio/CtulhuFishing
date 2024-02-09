@@ -1769,8 +1769,8 @@
       "registry_name": "runic_tablet",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/RunicTabletItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/runic_tablet.json"
+          "src/main/resources/assets/cthulhufishing/models/item/runic_tablet.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/RunicTabletItem.java"
         ]
       }
     },
@@ -2374,6 +2374,56 @@
           "src/main/resources/assets/cthulhufishing/models/item/wood_crystall_ring.json"
         ]
       }
+    },
+    {
+      "name": "ReagentDropFromAggro",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reagent_drop_from_aggro",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ReagentDropFromAggroProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "ReagentDrop",
+      "type": "loottable",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reagent_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/loot_tables/entities/reagent_drop.json"
+        ]
+      },
+      "path": "~/Altar"
     }
   ],
   "variable_elements": [
