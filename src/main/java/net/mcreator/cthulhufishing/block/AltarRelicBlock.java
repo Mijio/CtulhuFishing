@@ -28,6 +28,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.cthulhufishing.procedures.AltarRelicUpdateTickProcedure;
 import net.mcreator.cthulhufishing.procedures.AltarRelicOnBlockRightClickedProcedure;
+import net.mcreator.cthulhufishing.procedures.AltarRelicBlockAddedProcedure;
 import net.mcreator.cthulhufishing.init.CthulhufishingModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -85,6 +86,7 @@ public class AltarRelicBlock extends BaseEntityBlock implements EntityBlock {
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		world.scheduleTick(pos, this, 20);
+		AltarRelicBlockAddedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

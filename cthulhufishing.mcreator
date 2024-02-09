@@ -1305,10 +1305,6 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "sourceentity",
             "type": "entity"
           }
@@ -2424,6 +2420,38 @@
         ]
       },
       "path": "~/Altar"
+    },
+    {
+      "name": "AltarRelicBlockAdded",
+      "type": "procedure",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelicBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Relic"
     }
   ],
   "variable_elements": [
@@ -2468,6 +2496,18 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "PlayerHasRelicSpawned",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "RelicTimer",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -2540,6 +2580,7 @@
       "item.cthulhufishing.grimoire_tentacle_spawn_egg": "Grimoire Tentacle Spawn Egg",
       "item.cthulhufishing.relic": "Relic",
       "subtitles.catchfishmen": "fishmen",
+      "effect.cthulhufishing.ancient_curse": "Ancient Curse",
       "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
       "block.cthulhufishing.altar_relic_2": "Altar Relic",
       "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",

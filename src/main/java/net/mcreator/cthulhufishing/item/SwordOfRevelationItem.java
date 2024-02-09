@@ -43,7 +43,7 @@ public class SwordOfRevelationItem extends SwordItem {
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		SwordOfRevelationAbillityProcedure.execute(entity, sourceentity);
+		SwordOfRevelationAbillityProcedure.execute(sourceentity);
 		return retval;
 	}
 }

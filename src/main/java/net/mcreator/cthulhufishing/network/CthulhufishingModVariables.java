@@ -73,6 +73,8 @@ public class CthulhufishingModVariables {
 			clone.Revalation_Change = original.Revalation_Change;
 			clone.RC_IsNegative = original.RC_IsNegative;
 			clone.Madness = original.Madness;
+			clone.PlayerHasRelicSpawned = original.PlayerHasRelicSpawned;
+			clone.RelicTimer = original.RelicTimer;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -116,6 +118,8 @@ public class CthulhufishingModVariables {
 		public double Revalation_Change = 0;
 		public boolean RC_IsNegative = false;
 		public boolean Madness = false;
+		public boolean PlayerHasRelicSpawned = false;
+		public double RelicTimer = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -131,6 +135,8 @@ public class CthulhufishingModVariables {
 			nbt.putDouble("Revalation_Change", Revalation_Change);
 			nbt.putBoolean("RC_IsNegative", RC_IsNegative);
 			nbt.putBoolean("Madness", Madness);
+			nbt.putBoolean("PlayerHasRelicSpawned", PlayerHasRelicSpawned);
+			nbt.putDouble("RelicTimer", RelicTimer);
 			return nbt;
 		}
 
@@ -143,6 +149,8 @@ public class CthulhufishingModVariables {
 			Revalation_Change = nbt.getDouble("Revalation_Change");
 			RC_IsNegative = nbt.getBoolean("RC_IsNegative");
 			Madness = nbt.getBoolean("Madness");
+			PlayerHasRelicSpawned = nbt.getBoolean("PlayerHasRelicSpawned");
+			RelicTimer = nbt.getDouble("RelicTimer");
 		}
 	}
 
@@ -174,6 +182,8 @@ public class CthulhufishingModVariables {
 					variables.Revalation_Change = message.data.Revalation_Change;
 					variables.RC_IsNegative = message.data.RC_IsNegative;
 					variables.Madness = message.data.Madness;
+					variables.PlayerHasRelicSpawned = message.data.PlayerHasRelicSpawned;
+					variables.RelicTimer = message.data.RelicTimer;
 				}
 			});
 			context.setPacketHandled(true);
