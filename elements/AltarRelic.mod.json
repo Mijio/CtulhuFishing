@@ -2,7 +2,7 @@
   "_fv": 43,
   "_type": "animatedblock",
   "definition": {
-    "texture": "altar_relic_texture",
+    "texture": "texture_relic",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -39,7 +39,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:CtulhuFishingTab"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -55,7 +55,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 20,
+    "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -74,7 +74,7 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "animationCount": 1.0,
+    "animationCount": 7.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": true,
     "isCustomSoundType": false,
@@ -124,10 +124,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "AltarRelicOnBlockRightClicked"
-    },
-    "onBlockAdded": {
-      "name": "AltarRelicBlockAdded"
+      "name": "AltarRelicUpdateTick"
     },
     "onTickUpdate": {
       "name": "AltarRelicUpdateTick"

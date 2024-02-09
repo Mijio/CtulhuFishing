@@ -17,6 +17,5 @@ import net.mcreator.cthulhufishing.CthulhufishingMod;
 public class CthulhufishingModEnchantments {
 	public static final DeferredRegister<Enchantment> REGISTRY = DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, CthulhufishingMod.MODID);
 	public static final RegistryObject<Enchantment> SCULK_CATCHER_ENCHANTMENT = REGISTRY.register("sculk_catcher_enchantment", () -> new SculkCatcherEnchantmentEnchantment());
-	public static final RegistryObject<Enchantment> DARK_BLADE = REGISTRY.register("dark_blade", () -> new DarkBladeEnchantment());
 	public static final RegistryObject<Enchantment> CRIMSON_CATCHER_ENCHANT = REGISTRY.register("crimson_catcher_enchant", () -> new CrimsonCatcherEnchantEnchantment());
 }

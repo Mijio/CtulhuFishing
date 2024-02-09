@@ -2,6 +2,6 @@
 {
   "parent": "cthulhufishing:displaysettings/block-itemeye.item",
   "textures": {
-    "particle": "cthulhufishing:blocks/altar_relic_texture"
+    "particle": "cthulhufishing:blocks/texture_relic"
   }
 }

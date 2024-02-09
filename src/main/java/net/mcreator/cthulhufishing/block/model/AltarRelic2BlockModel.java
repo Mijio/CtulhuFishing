@@ -19,6 +19,6 @@ public class AltarRelic2BlockModel extends AnimatedGeoModel<AltarRelic2TileEntit
 
 	@Override
 	public ResourceLocation getTextureResource(AltarRelic2TileEntity entity) {
-		return new ResourceLocation("cthulhufishing", "textures/blocks/altar_relic_texture.png");
+		return new ResourceLocation("cthulhufishing", "textures/blocks/texture_relic.png");
 	}
 }
