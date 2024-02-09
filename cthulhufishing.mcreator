@@ -194,8 +194,8 @@
       "registry_name": "third_eye",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json"
+          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java"
         ]
       }
     },
@@ -318,9 +318,9 @@
       "registry_name": "ctulhu_altar",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/world/inventory/CtulhuAltarMenu.java",
           "src/main/java/net/mcreator/cthulhufishing/client/gui/CtulhuAltarScreen.java",
-          "src/main/java/net/mcreator/cthulhufishing/network/CtulhuAltarButtonMessage.java"
+          "src/main/java/net/mcreator/cthulhufishing/network/CtulhuAltarButtonMessage.java",
+          "src/main/java/net/mcreator/cthulhufishing/world/inventory/CtulhuAltarMenu.java"
         ]
       },
       "path": "~/Altar"
@@ -335,11 +335,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/block/DeepOilBlock.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/deep_oil.json",
-          "src/main/resources/assets/cthulhufishing/models/item/deep_oil.json",
           "src/main/java/net/mcreator/cthulhufishing/world/features/ores/DeepOilFeature.java",
+          "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json",
           "src/main/resources/data/cthulhufishing/forge/biome_modifier/deep_oil_biome_modifier.json",
-          "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json"
+          "src/main/resources/assets/cthulhufishing/models/item/deep_oil.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/deep_oil.json"
         ]
       }
     },
@@ -352,10 +352,10 @@
       "registry_name": "ctulhu_altar_fish",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/block/ctulhu_altar_fish.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/CtulhuAltarFishBlock.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/ctulhu_altar_fish.json",
           "src/main/resources/assets/cthulhufishing/models/item/ctulhu_altar_fish.json",
-          "src/main/resources/assets/cthulhufishing/blockstates/ctulhu_altar_fish.json"
+          "src/main/java/net/mcreator/cthulhufishing/block/CtulhuAltarFishBlock.java",
+          "src/main/resources/assets/cthulhufishing/models/block/ctulhu_altar_fish.json"
         ]
       }
     },
@@ -370,7 +370,8 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/enchantment/CrimsonCatcherEnchantEnchantment.java"
         ]
-      }
+      },
+      "path": "~/Enchantments"
     },
     {
       "name": "AltarRecipeGeneration",
@@ -898,8 +899,8 @@
       "registry_name": "gluton_sculk_fish",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/gluton_sculk_fish.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/GlutonSculkFishItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/GlutonSculkFishItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/gluton_sculk_fish.json"
         ]
       },
       "path": "~/SculkSet"
@@ -993,15 +994,15 @@
       "registry_name": "block_ore_eye",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/block/BlockOreEyeBlock.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/display/BlockOreEyeDisplayItem.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/entity/BlockOreEyeTileEntity.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeBlockModel.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/block_ore_eye.json",
-          "src/main/resources/assets/cthulhufishing/models/custom/block_ore_eye_particle.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeDisplayItemRenderer.java",
           "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeTileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/BlockOreEyeDisplayItem.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeBlockModel.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/block_ore_eye_particle.json",
           "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeDisplayModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/BlockOreEyeBlock.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/block_ore_eye.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/BlockOreEyeTileEntity.java",
           "src/main/resources/assets/cthulhufishing/models/item/block_ore_eye.json"
         ]
       }
@@ -1036,20 +1037,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "DarkBlade",
-      "type": "enchantment",
-      "sortid": 57,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dark_blade",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/enchantment/DarkBladeEnchantment.java"
-        ]
-      },
-      "path": "~/Enchantments"
     },
     {
       "name": "CrimsonFishPlayerFinishesUsingItem",
@@ -1129,8 +1116,8 @@
       "registry_name": "drip_void",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/drip_void.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/DripVoidItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/DripVoidItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/drip_void.json"
         ]
       }
     },
@@ -1177,10 +1164,10 @@
       "registry_name": "tentacle_staff",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/renderer/TentacleStaffItemRenderer.java",
           "src/main/java/net/mcreator/cthulhufishing/item/model/TentacleStaffItemModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/item/TentacleStaffItem.java",
           "src/main/resources/assets/cthulhufishing/models/item/tentacle_staff.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/renderer/TentacleStaffItemRenderer.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/TentacleStaffItem.java"
         ]
       }
     },
@@ -1268,16 +1255,7 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/procedures/DarkBladeProcedureProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/Enchantments"
     },
@@ -1326,10 +1304,6 @@
           "src/main/java/net/mcreator/cthulhufishing/procedures/SwordOfRevelationAbillityProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "sourceentity",
             "type": "entity"
@@ -1406,9 +1380,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/client/renderer/ObsessedEyeMobRenderer.java",
-          "src/main/resources/assets/cthulhufishing/models/item/obsessed_eye_mob_spawn_egg.json",
+          "src/main/java/net/mcreator/cthulhufishing/entity/ObsessedEyeMobEntity.java",
           "src/main/java/net/mcreator/cthulhufishing/entity/model/ObsessedEyeMobModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/entity/ObsessedEyeMobEntity.java"
+          "src/main/resources/assets/cthulhufishing/models/item/obsessed_eye_mob_spawn_egg.json"
         ]
       },
       "path": "~/ObsessedEye"
@@ -1450,10 +1424,10 @@
       "registry_name": "cthulhu_grimoire",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/model/CthulhuGrimoireItemModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/item/CthulhuGrimoireItem.java",
           "src/main/java/net/mcreator/cthulhufishing/item/renderer/CthulhuGrimoireItemRenderer.java",
-          "src/main/resources/assets/cthulhufishing/models/item/cthulhu_grimoire.json"
+          "src/main/java/net/mcreator/cthulhufishing/item/CthulhuGrimoireItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/cthulhu_grimoire.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/model/CthulhuGrimoireItemModel.java"
         ]
       },
       "path": "~/CthulhuGrimoire"
@@ -1527,10 +1501,10 @@
       "registry_name": "grimoire_tentacle",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/grimoire_tentacle_spawn_egg.json",
           "src/main/java/net/mcreator/cthulhufishing/client/renderer/GrimoireTentacleRenderer.java",
           "src/main/java/net/mcreator/cthulhufishing/entity/model/GrimoireTentacleModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/entity/GrimoireTentacleEntity.java"
+          "src/main/java/net/mcreator/cthulhufishing/entity/GrimoireTentacleEntity.java",
+          "src/main/resources/assets/cthulhufishing/models/item/grimoire_tentacle_spawn_egg.json"
         ]
       },
       "path": "~/CthulhuGrimoire"
@@ -1587,8 +1561,8 @@
       "registry_name": "relic",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/RelicItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/relic.json"
+          "src/main/resources/assets/cthulhufishing/models/item/relic.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/RelicItem.java"
         ]
       },
       "path": "~/Relic"
@@ -1622,8 +1596,8 @@
       "registry_name": "crimson_lure",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/CrimsonLureItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/crimson_lure.json"
+          "src/main/resources/assets/cthulhufishing/models/item/crimson_lure.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/CrimsonLureItem.java"
         ]
       },
       "path": "~/Lures"
@@ -1677,20 +1651,6 @@
         ]
       },
       "path": "~/Relic"
-    },
-    {
-      "name": "AncientBlessing",
-      "type": "potioneffect",
-      "sortid": 86,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ancient_blessing",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/potion/AncientBlessingMobEffect.java"
-        ]
-      },
-      "path": "~/RelicAltarEffect"
     },
     {
       "name": "AncientBlessingEffectStartedapplied",
@@ -1841,6 +1801,657 @@
           "src/main/java/net/mcreator/cthulhufishing/item/FadedRunicTabletItem.java"
         ]
       }
+    },
+    {
+      "name": "CrimsonRing",
+      "type": "curiosbauble",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/CrimsonRingItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/crimson_ring.json"
+        ]
+      }
+    },
+    {
+      "name": "SculkRing",
+      "type": "curiosbauble",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sculk_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/SculkRingItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/sculk_ring.json"
+        ]
+      }
+    },
+    {
+      "name": "AncientCoin",
+      "type": "item",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_coin",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/ancient_coin.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/AncientCoinItem.java"
+        ]
+      }
+    },
+    {
+      "name": "AncientDebriesFromCoins",
+      "type": "recipe",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_debries_from_coins",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/recipes/ancient_debries_from_coins.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldGoldRing",
+      "type": "curiosbauble",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_gold_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/EmeraldGoldRingItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/emerald_gold_ring.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldGoldRingBaubleIsEquipped",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_gold_ring_bauble_is_equipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/EmeraldGoldRingBaubleIsEquippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmeraldGoldRingBaubleIsUnequipped",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_gold_ring_bauble_is_unequipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/EmeraldGoldRingBaubleIsUnequippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmeraldGoldRingWhileBaubleIsEquippedTick",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emerald_gold_ring_while_bauble_is_equipped_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/EmeraldGoldRingWhileBaubleIsEquippedTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Reagent",
+      "type": "item",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reagent",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/ReagentItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/reagent.json"
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelicOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelicOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "Copperrelic",
+      "type": "loottable",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperrelic",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/loot_tables/blocks/copper_relic.json"
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic3OnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_3_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelic3OnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic6onBlockClicked",
+      "type": "procedure",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_6on_block_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelic6onBlockClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic6",
+      "type": "animatedblock",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_6",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic6DisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic6Block.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic6TileRenderer.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_6_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic6TileEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic6BlockModel.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_6.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic6DisplayModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic6DisplayItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_6.json"
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic5",
+      "type": "animatedblock",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic5Block.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic5DisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic5DisplayModel.java",
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_5.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_5.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic5BlockModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic5TileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic5TileEntity.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_5_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic5DisplayItem.java"
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic2OnBlockClicked",
+      "type": "procedure",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_2_on_block_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelic2OnBlockClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic4",
+      "type": "animatedblock",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic4DisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic4Block.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic4DisplayItem.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_4_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic4BlockModel.java",
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_4.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_4.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic4TileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic4DisplayModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic4TileEntity.java"
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic1OnBlockRightClick",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_1_on_block_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelic1OnBlockRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic3",
+      "type": "animatedblock",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic3DisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic3Block.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic3BlockModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic3TileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic3DisplayModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic3DisplayItem.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic3TileEntity.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_3.json",
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_3.json",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_3_particle.json"
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic2",
+      "type": "animatedblock",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic2DisplayItem.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic2TileRenderer.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_2.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic2BlockModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic2DisplayModel.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_2_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic2Block.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic2TileEntity.java",
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_2.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic2DisplayItemRenderer.java"
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic5OnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_5_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelic5OnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic1",
+      "type": "animatedblock",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic1TileRenderer.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_1_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic1BlockModel.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_1.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic1DisplayItem.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic1DisplayModel.java",
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_1.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic1Block.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic1DisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic1TileEntity.java"
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "AltarRelic4OnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_4_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelic4OnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "WoodCrystallRing",
+      "type": "curiosbauble",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wood_crystall_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/WoodCrystallRingItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/wood_crystall_ring.json"
+        ]
+      }
+    },
+    {
+      "name": "AncientCurse",
+      "type": "potioneffect",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_curse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/potion/AncientCurseMobEffect.java"
+        ]
+      },
+      "path": "~/RelicAltarEffect"
+    },
+    {
+      "name": "ReagentDropFromAggro",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reagent_drop_from_aggro",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ReagentDropFromAggroProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "ReagentDrop",
+      "type": "loottable",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reagent_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/loot_tables/entities/reagent_drop.json"
+        ]
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "AltarRelicBlockAdded",
+      "type": "procedure",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelicBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Relic"
     }
   ],
   "variable_elements": [
@@ -1885,6 +2496,18 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "PlayerHasRelicSpawned",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "RelicTimer",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -1939,46 +2562,60 @@
   ],
   "language_map": {
     "en_us": {
-      "item.cthulhufishing.crimson_fish": "Crimson Fish",
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
+      "item.cthulhufishing.sculk_ring": "Sculk Ring",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
-      "item.cthulhufishing.drip_void": "Drip Void",
       "item.cthulhufishing.cthulhu_grimoire": "Cthulhu Grimoire",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
-      "subtitles.obsessed_eye_damage": "",
-      "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
       "item.cthulhufishing.knife_for_ritual_bleeding": "Knife For Ritual Bleeding",
-      "effect.cthulhufishing.ancient_blessing": "Ancient Curse",
+      "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
+      "subtitles.obsessed_eye_damage": "",
       "item.cthulhufishing.treasure_lure": "Treasure Lure",
       "subtitles.ritual_bleeding_knife": "",
-      "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
-      "item.cthulhufishing.necklace_of_flesh_and_bones": "Necklace Of Flesh And Bones",
-      "item.cthulhufishing.sculk_lure": "Sculk Lure",
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
-      "subtitles.catch_strange_fish": "",
-      "subtitles.hood_ablity": "",
-      "item.cthulhufishing.sword_of_revelation": "GreatSwordOfRevelation",
+      "item.cthulhufishing.crimson_ring": "Crimson Ring",
+      "item.cthulhufishing.faded_runic_tablet": "Faded Runic Tablet",
       "item.cthulhufishing.crimson_lure": "Crimson Lure",
       "entity.cthulhufishing.grimoire_tentacle": "Grimoire Tentacle",
       "item.cthulhufishing.grimoire_tentacle_spawn_egg": "Grimoire Tentacle Spawn Egg",
       "item.cthulhufishing.relic": "Relic",
+      "subtitles.catchfishmen": "fishmen",
+      "effect.cthulhufishing.ancient_curse": "Ancient Curse",
+      "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
+      "block.cthulhufishing.altar_relic_2": "Altar Relic",
+      "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
+      "block.cthulhufishing.altar_relic_1": "Altar Relic",
+      "block.cthulhufishing.altar_relic_6": "Altar Relic",
+      "block.cthulhufishing.altar_relic_5": "Altar Relic",
+      "block.cthulhufishing.altar_relic_4": "Altar Relic",
+      "block.cthulhufishing.altar_relic_3": "Altar Relic",
+      "item.cthulhufishing.tentacle_staff": "Tentacle Staff",
+      "block.cthulhufishing.altar_relic": "Altar Relic",
+      "item.cthulhufishing.obsessed_eye_mob_spawn_egg": "Obsessed Eye Spawn Egg",
+      "gui.cthulhufishing.ctulhu_altar.button_grab": "GRAB",
+      "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab",
+      "item.cthulhufishing.crimson_fish": "Crimson Fish",
+      "item.cthulhufishing.emerald_gold_ring": "Experience Ring",
+      "item.cthulhufishing.drip_void": "Drip Void",
+      "item.cthulhufishing.reagent": "Reagent",
+      "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
+      "item.cthulhufishing.necklace_of_flesh_and_bones": "Necklace Of Flesh And Bones",
+      "item.cthulhufishing.sculk_lure": "Sculk Lure",
+      "item.cthulhufishing.runic_tablet": "Runic Tablet",
+      "subtitles.catch_strange_fish": "",
+      "subtitles.hood_ablity": "",
+      "item.cthulhufishing.sword_of_revelation": "GreatSwordOfRevelation",
       "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
-      "enchantment.cthulhufishing.dark_blade": "Dark Blade",
       "subtitles.obsessed_eye_spawn": "",
       "item.cthulhufishing.third_eye": "Third Eye",
       "entity.cthulhufishing.obsessed_eye_mob": "Obsessed Eye",
-      "subtitles.catchfishmen": "fishmen",
       "block.cthulhufishing.block_ore_eye": "Block Ore Eye",
       "gui.cthulhufishing.ctulhu_altar.label_12": "11",
       "effect.cthulhufishing.madness": "Madness",
-      "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
-      "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
+      "item.cthulhufishing.wood_crystall_ring": "Wood Crystall Ring",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "block.cthulhufishing.deep_oil": "Deep Oil",
-      "item.cthulhufishing.tentacle_staff": "Tentacle Staff",
-      "item.cthulhufishing.obsessed_eye_mob_spawn_egg": "Obsessed Eye Spawn Egg",
-      "gui.cthulhufishing.ctulhu_altar.button_grab": "GRAB",
-      "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab"
+      "item.cthulhufishing.ancient_coin": "Ancient Coin"
     }
   },
   "foldersRoot": {

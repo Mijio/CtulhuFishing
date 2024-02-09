@@ -12,7 +12,6 @@ import net.minecraft.world.effect.MobEffect;
 
 import net.mcreator.cthulhufishing.potion.RitualBleedingMobEffect;
 import net.mcreator.cthulhufishing.potion.MadnessMobEffect;
-import net.mcreator.cthulhufishing.potion.AncientBlessingMobEffect;
 import net.mcreator.cthulhufishing.CthulhufishingMod;
 
 public class CthulhufishingModMobEffects {

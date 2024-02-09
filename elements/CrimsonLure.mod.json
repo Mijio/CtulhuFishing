@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "nonetexture",
+    "texture": "warm2",
     "customModelName": "Normal",
     "name": "Crimson Lure",
     "rarity": "COMMON",

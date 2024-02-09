@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "nonetexture",
+    "texture": "warm1",
     "customModelName": "Normal",
     "name": "Sculk Lure",
     "rarity": "COMMON",

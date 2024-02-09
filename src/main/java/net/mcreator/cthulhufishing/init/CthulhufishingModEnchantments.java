@@ -11,7 +11,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.item.enchantment.Enchantment;
 
 import net.mcreator.cthulhufishing.enchantment.SculkCatcherEnchantmentEnchantment;
-import net.mcreator.cthulhufishing.enchantment.DarkBladeEnchantment;
 import net.mcreator.cthulhufishing.enchantment.CrimsonCatcherEnchantEnchantment;
 import net.mcreator.cthulhufishing.CthulhufishingMod;
 

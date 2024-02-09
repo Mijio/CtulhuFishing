@@ -39,7 +39,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:CtulhuFishingTab"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -55,7 +55,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 0,
+    "tickRate": 20,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -74,7 +74,7 @@
     "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
-    "animationCount": 7.0,
+    "animationCount": 1.0,
     "reactionToPushing": "NORMAL",
     "isNotColidable": true,
     "isCustomSoundType": false,
@@ -124,7 +124,10 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "AltarRelicUpdateTick"
+      "name": "AltarRelicOnBlockRightClicked"
+    },
+    "onBlockAdded": {
+      "name": "AltarRelicBlockAdded"
     },
     "onTickUpdate": {
       "name": "AltarRelicUpdateTick"
@@ -141,7 +144,7 @@
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
-    "normal": "sealed_relic.geo.json",
-    "displaySettings": "sealed_relic.animation.json"
+    "normal": "sealed_relic1.geo.json",
+    "displaySettings": "block-itemeye.item.json"
   }
 }
