@@ -1657,20 +1657,6 @@
       "path": "~/Relic"
     },
     {
-      "name": "AncientBlessing",
-      "type": "potioneffect",
-      "sortid": 86,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ancient_blessing",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/potion/AncientBlessingMobEffect.java"
-        ]
-      },
-      "path": "~/RelicAltarEffect"
-    },
-    {
       "name": "AncientBlessingEffectStartedapplied",
       "type": "procedure",
       "sortid": 87,
@@ -2374,6 +2360,20 @@
           "src/main/resources/assets/cthulhufishing/models/item/wood_crystall_ring.json"
         ]
       }
+    },
+    {
+      "name": "AncientCurse",
+      "type": "potioneffect",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_curse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/potion/AncientCurseMobEffect.java"
+        ]
+      },
+      "path": "~/RelicAltarEffect"
     }
   ],
   "variable_elements": [
@@ -2490,6 +2490,7 @@
       "item.cthulhufishing.grimoire_tentacle_spawn_egg": "Grimoire Tentacle Spawn Egg",
       "item.cthulhufishing.relic": "Relic",
       "subtitles.catchfishmen": "fishmen",
+      "effect.cthulhufishing.ancient_curse": "Ancient Curse",
       "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
       "block.cthulhufishing.altar_relic_2": "Altar Relic",
       "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
@@ -2507,7 +2508,6 @@
       "item.cthulhufishing.emerald_gold_ring": "Experience Ring",
       "item.cthulhufishing.drip_void": "Drip Void",
       "item.cthulhufishing.reagent": "Reagent",
-      "effect.cthulhufishing.ancient_blessing": "Ancient Curse",
       "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
       "item.cthulhufishing.necklace_of_flesh_and_bones": "Necklace Of Flesh And Bones",
       "item.cthulhufishing.sculk_lure": "Sculk Lure",
