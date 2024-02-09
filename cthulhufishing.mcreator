@@ -2374,6 +2374,56 @@
         ]
       },
       "path": "~/RelicAltarEffect"
+    },
+    {
+      "name": "ReagentDropFromAggro",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reagent_drop_from_aggro",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ReagentDropFromAggroProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "ReagentDrop",
+      "type": "loottable",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reagent_drop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/loot_tables/entities/reagent_drop.json"
+        ]
+      },
+      "path": "~/Altar"
     }
   ],
   "variable_elements": [
@@ -2477,9 +2527,9 @@
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
       "item.cthulhufishing.cthulhu_grimoire": "Cthulhu Grimoire",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
-      "subtitles.obsessed_eye_damage": "",
-      "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
       "item.cthulhufishing.knife_for_ritual_bleeding": "Knife For Ritual Bleeding",
+      "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
+      "subtitles.obsessed_eye_damage": "",
       "item.cthulhufishing.treasure_lure": "Treasure Lure",
       "subtitles.ritual_bleeding_knife": "",
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
@@ -2490,7 +2540,6 @@
       "item.cthulhufishing.grimoire_tentacle_spawn_egg": "Grimoire Tentacle Spawn Egg",
       "item.cthulhufishing.relic": "Relic",
       "subtitles.catchfishmen": "fishmen",
-      "effect.cthulhufishing.ancient_curse": "Ancient Curse",
       "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
       "block.cthulhufishing.altar_relic_2": "Altar Relic",
       "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
