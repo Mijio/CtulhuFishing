@@ -78,8 +78,7 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> TREASURE_LURE = REGISTRY.register("treasure_lure", () -> new TreasureLureItem());
 	public static final RegistryObject<Item> RELIC = REGISTRY.register("relic", () -> new RelicItem());
 	public static final RegistryObject<Item> RUNIC_TABLET = REGISTRY.register("runic_tablet", () -> new RunicTabletItem());
-	public static final RegistryObject<Item> ALTAR_RELIC = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC.getId().getPath(),
-			() -> new AltarRelicDisplayItem(CthulhufishingModBlocks.ALTAR_RELIC.get(), new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB)));
+	public static final RegistryObject<Item> ALTAR_RELIC = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC.getId().getPath(), () -> new AltarRelicDisplayItem(CthulhufishingModBlocks.ALTAR_RELIC.get(), new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> FADED_RUNIC_TABLET = REGISTRY.register("faded_runic_tablet", () -> new FadedRunicTabletItem());
 	public static final RegistryObject<Item> CRIMSON_RING = REGISTRY.register("crimson_ring", () -> new CrimsonRingItem());
 	public static final RegistryObject<Item> SCULK_RING = REGISTRY.register("sculk_ring", () -> new SculkRingItem());
@@ -92,8 +91,7 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> ALTAR_RELIC_3 = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC_3.getId().getPath(), () -> new AltarRelic3DisplayItem(CthulhufishingModBlocks.ALTAR_RELIC_3.get(), new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> ALTAR_RELIC_4 = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC_4.getId().getPath(), () -> new AltarRelic4DisplayItem(CthulhufishingModBlocks.ALTAR_RELIC_4.get(), new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> ALTAR_RELIC_5 = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC_5.getId().getPath(), () -> new AltarRelic5DisplayItem(CthulhufishingModBlocks.ALTAR_RELIC_5.get(), new Item.Properties().tab(null)));
-	public static final RegistryObject<Item> ALTAR_RELIC_6 = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC_6.getId().getPath(),
-			() -> new AltarRelic6DisplayItem(CthulhufishingModBlocks.ALTAR_RELIC_6.get(), new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB)));
+	public static final RegistryObject<Item> ALTAR_RELIC_6 = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC_6.getId().getPath(), () -> new AltarRelic6DisplayItem(CthulhufishingModBlocks.ALTAR_RELIC_6.get(), new Item.Properties().tab(null)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

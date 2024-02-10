@@ -1,14 +1,15 @@
 
 package net.mcreator.cthulhufishing.item;
 
+import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
 
-import net.mcreator.cthulhufishing.procedures.SwordOfRevelationAbillityProcedure;
+import net.mcreator.cthulhufishing.procedures.SwordOfRevelationToolInInventoryTickProcedure;
 import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 
 public class SwordOfRevelationItem extends SwordItem {
@@ -41,9 +42,8 @@ public class SwordOfRevelationItem extends SwordItem {
 	}
 
 	@Override
-	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		SwordOfRevelationAbillityProcedure.execute(sourceentity);
-		return retval;
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		SwordOfRevelationToolInInventoryTickProcedure.execute();
 	}
 }

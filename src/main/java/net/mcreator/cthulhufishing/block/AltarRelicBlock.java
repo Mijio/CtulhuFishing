@@ -27,6 +27,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.cthulhufishing.procedures.AltarRelicUpdateTickProcedure;
+import net.mcreator.cthulhufishing.procedures.AltarRelicOnBlockRightClickedProcedure;
 import net.mcreator.cthulhufishing.init.CthulhufishingModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -81,6 +82,12 @@ public class AltarRelicBlock extends BaseEntityBlock implements EntityBlock {
 	}
 
 	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.scheduleTick(pos, this, 20);
+	}
+
+	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
@@ -88,6 +95,7 @@ public class AltarRelicBlock extends BaseEntityBlock implements EntityBlock {
 		int z = pos.getZ();
 
 		AltarRelicUpdateTickProcedure.execute(world, x, y, z);
+		world.scheduleTick(pos, this, 20);
 	}
 
 	@Override
@@ -101,7 +109,7 @@ public class AltarRelicBlock extends BaseEntityBlock implements EntityBlock {
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
 
-		AltarRelicUpdateTickProcedure.execute(world, x, y, z);
+		AltarRelicOnBlockRightClickedProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
 }
