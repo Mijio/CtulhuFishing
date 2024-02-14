@@ -1,0 +1,48 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.CANDLE#0"
+      },
+      {
+        "value": "CUSTOM:RunicTablet"
+      },
+      {
+        "value": "Blocks.CANDLE#0"
+      },
+      {
+        "value": "Blocks.WOODEN_SLAB"
+      },
+      {
+        "value": "Blocks.WOODEN_SLAB"
+      },
+      {
+        "value": "Blocks.WOODEN_SLAB"
+      },
+      {
+        "value": "Blocks.STONE_SLAB#0"
+      },
+      {
+        "value": "Blocks.LODESTONE"
+      },
+      {
+        "value": "Blocks.STONE_SLAB#0"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CtulhuAltarFish"
+    },
+    "name": "altar_recipe",
+    "namespace": "mod"
+  }
+}

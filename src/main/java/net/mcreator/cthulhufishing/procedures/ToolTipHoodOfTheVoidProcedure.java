@@ -35,7 +35,7 @@ public class ToolTipHoodOfTheVoidProcedure {
 		if (itemstack.getItem() == CthulhufishingModItems.TENTACLE_STAFF.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bTentacle staff"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bBy expending the power of your revelation, your attacks return part of the creature's damage"));
+				tooltip.add(Component.literal("\u00A7bBy expending the power of your revelation, your attacks are enhanced by the creature's power"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
@@ -49,14 +49,14 @@ public class ToolTipHoodOfTheVoidProcedure {
 		} else if (itemstack.getItem() == CthulhufishingModItems.THIRD_EYE.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bThird eye"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bNow you can see what live in the deep void"));
+				tooltip.add(Component.literal("\u00A7bAccompanying you, the eye opens up the opportunity for you to catch creatures of the deep and grant revelation for their capture"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
 		} else if (itemstack.getItem() == CthulhufishingModItems.SWORD_OF_REVELATION.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bGreatsword of Revelation"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bRevelation power give additions "));
+				tooltip.add(Component.literal("\u00A7bThis blade deals additional magic damage from your armor, this damage can be increased by the power of your revelation"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
@@ -64,6 +64,34 @@ public class ToolTipHoodOfTheVoidProcedure {
 			(itemstack).setHoverName(Component.literal("\u00A7bDormant eye"));
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A7bNeed to be awake"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.CRIMSON_RING.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bCrimson fish ring"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bAdditionally enhances your revelation from catching the Crimson Fish"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.SCULK_RING.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bSculk fish ring"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bAdditionally enhances your revelation from catching sculk fish"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.EMERALD_GOLD_RING.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bRing of the King of Experience"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bQuickly consuming your experience increases your damage dealt based on the amount of experience"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.CTHULHU_GRIMOIRE.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bCthulhu grimoire"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bGrimoire of Cthulhu, use cam summon part of the power of cthulhu "));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}

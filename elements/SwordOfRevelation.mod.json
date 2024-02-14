@@ -23,8 +23,8 @@
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
-    "onItemInInventoryTick": {
-      "name": "SwordOfRevelationToolInInventoryTick"
+    "onEntityHitWith": {
+      "name": "SwordOfRevelationLivingEntityIsHitWithTool"
     }
   }
 }

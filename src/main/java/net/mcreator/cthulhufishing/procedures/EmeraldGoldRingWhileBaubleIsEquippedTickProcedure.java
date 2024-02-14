@@ -20,8 +20,8 @@ public class EmeraldGoldRingWhileBaubleIsEquippedTickProcedure {
 			_player.giveExperiencePoints(-(entity instanceof Player _plr ? _plr.experienceLevel : 0));
 		if (CurrentXP != (entity instanceof Player _plr ? _plr.experienceLevel : 0)) {
 			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).removeModifier(UUID.fromString("cd74d4b6-9b58-473d-acad-c0edd0d62d83"));
-			Modifier = new AttributeModifier(UUID.fromString("cd74d4b6-9b58-473d-acad-c0edd0d62d83"), ((entity instanceof Player _plr ? _plr.experienceLevel : 0) + ""), (entity instanceof Player _plr ? _plr.experienceLevel : 0),
-					AttributeModifier.Operation.ADDITION);
+			Modifier = new AttributeModifier(UUID.fromString("cd74d4b6-9b58-473d-acad-c0edd0d62d83"), ((entity instanceof Player _plr ? _plr.experienceLevel : 0) + ""), ((entity instanceof Player _plr ? _plr.experienceLevel : 0) * 0.01),
+					AttributeModifier.Operation.MULTIPLY_TOTAL);
 			if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).hasModifier(Modifier)))
 				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).addTransientModifier(Modifier);
 		}

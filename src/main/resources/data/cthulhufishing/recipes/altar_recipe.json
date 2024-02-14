@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:candle"
+    },
+    "1": {
+      "item": "cthulhufishing:runic_tablet"
+    },
+    "2": {
+      "item": "minecraft:candle"
+    },
+    "3": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "4": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "5": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "6": {
+      "item": "minecraft:smooth_stone_slab"
+    },
+    "7": {
+      "item": "minecraft:lodestone"
+    },
+    "8": {
+      "item": "minecraft:smooth_stone_slab"
+    }
+  },
+  "result": {
+    "item": "cthulhufishing:ctulhu_altar_fish",
+    "count": 1
+  }
+}

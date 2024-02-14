@@ -1060,55 +1060,6 @@
       "path": "~/CrimsonSet"
     },
     {
-      "name": "NecklaceOfFleshAndBounceProc",
-      "type": "procedure",
-      "sortid": 60,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "necklace_of_flesh_and_bounce_proc",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/NecklaceOfFleshAndBounceProcProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "NecklaceOfFleshAndBones",
-      "type": "curiosbauble",
-      "sortid": 59,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "necklace_of_flesh_and_bones",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/NecklaceOfFleshAndBonesItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/necklace_of_flesh_and_bones.json"
-        ]
-      }
-    },
-    {
       "name": "DripVoid",
       "type": "item",
       "sortid": 59,
@@ -2311,20 +2262,6 @@
       "path": "~/Relic"
     },
     {
-      "name": "WoodCrystallRing",
-      "type": "curiosbauble",
-      "sortid": 112,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wood_crystall_ring",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/WoodCrystallRingItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/wood_crystall_ring.json"
-        ]
-      }
-    },
-    {
       "name": "ReagentDropFromAggro",
       "type": "procedure",
       "sortid": 126,
@@ -2523,20 +2460,6 @@
       "path": "~/Relic"
     },
     {
-      "name": "SwordOfRevelationToolInInventoryTick",
-      "type": "procedure",
-      "sortid": 129,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sword_of_revelation_tool_in_inventory_tick",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/SwordOfRevelationToolInInventoryTickProcedure.java"
-        ],
-        "dependencies": []
-      }
-    },
-    {
       "name": "AncientCurse",
       "type": "potioneffect",
       "sortid": 126,
@@ -2549,6 +2472,42 @@
         ]
       },
       "path": "~/RelicAltarEffect"
+    },
+    {
+      "name": "SwordOfRevelationLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_of_revelation_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/SwordOfRevelationLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AltarRecipe",
+      "type": "recipe",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/recipes/altar_recipe.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2698,7 +2657,6 @@
       "item.cthulhufishing.drip_void": "Drip Void",
       "item.cthulhufishing.reagent": "Reagent",
       "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
-      "item.cthulhufishing.necklace_of_flesh_and_bones": "Necklace Of Flesh And Bones",
       "item.cthulhufishing.sculk_lure": "Sculk Lure",
       "item.cthulhufishing.runic_tablet": "Runic Tablet",
       "subtitles.catch_strange_fish": "",
@@ -2711,7 +2669,6 @@
       "block.cthulhufishing.block_ore_eye": "Block Ore Eye",
       "gui.cthulhufishing.ctulhu_altar.label_12": "11",
       "effect.cthulhufishing.madness": "Madness",
-      "item.cthulhufishing.wood_crystall_ring": "Wood Crystall Ring",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "block.cthulhufishing.deep_oil": "Deep Oil",
       "item.cthulhufishing.ancient_coin": "Ancient Coin"

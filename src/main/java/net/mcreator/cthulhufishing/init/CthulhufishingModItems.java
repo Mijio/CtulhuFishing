@@ -14,7 +14,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.cthulhufishing.item.WoodCrystallRingItem;
 import net.mcreator.cthulhufishing.item.TreasureLureItem;
 import net.mcreator.cthulhufishing.item.TreasureBagItem;
 import net.mcreator.cthulhufishing.item.ThirdEyeItem;
@@ -25,7 +24,6 @@ import net.mcreator.cthulhufishing.item.SculkLureItem;
 import net.mcreator.cthulhufishing.item.RunicTabletItem;
 import net.mcreator.cthulhufishing.item.RelicItem;
 import net.mcreator.cthulhufishing.item.ReagentItem;
-import net.mcreator.cthulhufishing.item.NecklaceOfFleshAndBonesItem;
 import net.mcreator.cthulhufishing.item.KnifeForRitualBleedingItem;
 import net.mcreator.cthulhufishing.item.HorseSculkFishItem;
 import net.mcreator.cthulhufishing.item.HoodOfTheDeepVoidItem;
@@ -66,7 +64,6 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> GLUTON_SCULK_FISH = REGISTRY.register("gluton_sculk_fish", () -> new GlutonSculkFishItem());
 	public static final RegistryObject<Item> BLOCK_ORE_EYE = REGISTRY.register(CthulhufishingModBlocks.BLOCK_ORE_EYE.getId().getPath(),
 			() -> new BlockOreEyeDisplayItem(CthulhufishingModBlocks.BLOCK_ORE_EYE.get(), new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB)));
-	public static final RegistryObject<Item> NECKLACE_OF_FLESH_AND_BONES = REGISTRY.register("necklace_of_flesh_and_bones", () -> new NecklaceOfFleshAndBonesItem());
 	public static final RegistryObject<Item> DRIP_VOID = REGISTRY.register("drip_void", () -> new DripVoidItem());
 	public static final RegistryObject<Item> SWORD_OF_REVELATION = REGISTRY.register("sword_of_revelation", () -> new SwordOfRevelationItem());
 	public static final RegistryObject<Item> TENTACLE_STAFF = REGISTRY.register("tentacle_staff", () -> new TentacleStaffItem());
@@ -86,7 +83,6 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> ANCIENT_COIN = REGISTRY.register("ancient_coin", () -> new AncientCoinItem());
 	public static final RegistryObject<Item> EMERALD_GOLD_RING = REGISTRY.register("emerald_gold_ring", () -> new EmeraldGoldRingItem());
 	public static final RegistryObject<Item> REAGENT = REGISTRY.register("reagent", () -> new ReagentItem());
-	public static final RegistryObject<Item> WOOD_CRYSTALL_RING = REGISTRY.register("wood_crystall_ring", () -> new WoodCrystallRingItem());
 	public static final RegistryObject<Item> ALTAR_RELIC_1 = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC_1.getId().getPath(), () -> new AltarRelic1DisplayItem(CthulhufishingModBlocks.ALTAR_RELIC_1.get(), new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> ALTAR_RELIC_2 = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC_2.getId().getPath(), () -> new AltarRelic2DisplayItem(CthulhufishingModBlocks.ALTAR_RELIC_2.get(), new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> ALTAR_RELIC_3 = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC_3.getId().getPath(), () -> new AltarRelic3DisplayItem(CthulhufishingModBlocks.ALTAR_RELIC_3.get(), new Item.Properties().tab(null)));
