@@ -1,11 +1,18 @@
 
 package net.mcreator.cthulhufishing.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import javax.annotation.Nullable;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionHand;
+
+import net.mcreator.cthulhufishing.procedures.TreasureBagRightclickedProcedure;
+import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 
 public class TreasureBagItem extends Item {
-
 	public TreasureBagItem() {
 		super(new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB).stacksTo(16).rarity(Rarity.COMMON));
 	}
@@ -18,8 +25,7 @@ public class TreasureBagItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		TreasureBagRightclickedProcedure.execute();
+		TreasureBagRightclickedProcedure.execute(world, x, y, z, entity);
 		return ar;
 	}
-
 }

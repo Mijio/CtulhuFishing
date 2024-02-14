@@ -1,8 +1,15 @@
 
 package net.mcreator.cthulhufishing.potion;
 
-public class AncientCurseMobEffect extends MobEffect {
+import net.minecraft.world.entity.ai.attributes.AttributeMap;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.effect.MobEffectCategory;
+import net.minecraft.world.effect.MobEffect;
 
+import net.mcreator.cthulhufishing.procedures.AncientBlessingEffectStartedappliedProcedure;
+import net.mcreator.cthulhufishing.procedures.AncientBlessingEffectExpiresProcedure;
+
+public class AncientCurseMobEffect extends MobEffect {
 	public AncientCurseMobEffect() {
 		super(MobEffectCategory.HARMFUL, -10092544);
 	}
@@ -27,5 +34,4 @@ public class AncientCurseMobEffect extends MobEffect {
 	public boolean isDurationEffectTick(int duration, int amplifier) {
 		return true;
 	}
-
 }
