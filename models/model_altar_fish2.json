@@ -2,15 +2,15 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [128, 128],
 	"textures": {
-		"0": "texture",
-		"particle": "texture"
+		"0": "texture_altar_fish (1)",
+		"particle": "texture_altar_fish (1)"
 	},
 	"elements": [
 		{
 			"name": "candle1",
 			"from": [11, 11, 8],
 			"to": [13, 15, 10],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 8]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
 			"faces": {
 				"north": {"uv": [1, 0.875, 1.25, 1.375], "texture": "#0"},
 				"east": {"uv": [0.75, 0.875, 1, 1.375], "texture": "#0"},
@@ -24,7 +24,7 @@
 			"name": "candle2",
 			"from": [8, 11, 7],
 			"to": [10, 16, 9],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 8]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
 			"faces": {
 				"north": {"uv": [0.25, 0.25, 0.5, 0.875], "texture": "#0"},
 				"east": {"uv": [0, 0.25, 0.25, 0.875], "texture": "#0"},
@@ -38,7 +38,7 @@
 			"name": "candle3",
 			"from": [2, 11, 8],
 			"to": [4, 13, 10],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 8]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
 			"faces": {
 				"north": {"uv": [0.25, 1.375, 0.5, 1.625], "texture": "#0"},
 				"east": {"uv": [0, 1.375, 0.25, 1.625], "texture": "#0"},
@@ -52,7 +52,7 @@
 			"name": "candle4",
 			"from": [11, 11, 4],
 			"to": [13, 13, 6],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 8]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
 			"faces": {
 				"north": {"uv": [1.25, 0.25, 1.5, 0.5], "texture": "#0"},
 				"east": {"uv": [1, 0.25, 1.25, 0.5], "texture": "#0"},
@@ -65,7 +65,7 @@
 		{
 			"from": [1, 2, 1],
 			"to": [15, 10, 15],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 8]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
 			"faces": {
 				"north": {"uv": [1.75, 6.25, 3.5, 7.25], "texture": "#0"},
 				"east": {"uv": [0, 6.25, 1.75, 7.25], "texture": "#0"},
@@ -78,7 +78,7 @@
 		{
 			"from": [0, 0, 0],
 			"to": [16, 2, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 8]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
 			"faces": {
 				"north": {"uv": [2, 4.25, 4, 4.5], "texture": "#0"},
 				"east": {"uv": [0, 4.25, 2, 4.5], "texture": "#0"},
@@ -91,7 +91,7 @@
 		{
 			"from": [0, 9, 0],
 			"to": [16, 11, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 8]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
 			"faces": {
 				"north": {"uv": [2, 2, 4, 2.25], "texture": "#0"},
 				"east": {"uv": [0, 2, 2, 2.25], "texture": "#0"},
@@ -104,30 +104,68 @@
 		{
 			"from": [3, 24, 12],
 			"to": [13, 26, 14],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 8]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
 			"faces": {
-				"north": {"uv": [6.25, 0.25, 7.5, 0.5], "texture": "#0"},
-				"east": {"uv": [6, 0.25, 6.25, 0.5], "texture": "#0"},
-				"south": {"uv": [7.75, 0.25, 9, 0.5], "texture": "#0"},
-				"west": {"uv": [7.5, 0.25, 7.75, 0.5], "texture": "#0"},
-				"up": {"uv": [7.5, 0.25, 6.25, 0], "texture": "#0"},
-				"down": {"uv": [8.75, 0, 7.5, 0.25], "texture": "#0"}
+				"north": {"uv": [4.125, 8, 5.375, 8.25], "texture": "#0"},
+				"east": {"uv": [3.875, 8, 4.125, 8.25], "texture": "#0"},
+				"south": {"uv": [5.625, 8, 6.875, 8.25], "texture": "#0"},
+				"west": {"uv": [5.375, 8, 5.625, 8.25], "texture": "#0"},
+				"up": {"uv": [5.375, 8, 4.125, 7.75], "texture": "#0"},
+				"down": {"uv": [6.625, 7.75, 5.375, 8], "texture": "#0"}
 			}
 		},
 		{
 			"from": [2, 11, 12],
 			"to": [14, 24, 14],
-			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 8]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 0, 8]},
 			"faces": {
-				"north": {"uv": [5.75, 6, 7.25, 7.625], "texture": "#0"},
-				"east": {"uv": [5.5, 6, 5.75, 7.625], "texture": "#0"},
-				"south": {"uv": [7.5, 6, 9, 7.625], "texture": "#0"},
-				"west": {"uv": [7.25, 6, 7.5, 7.625], "texture": "#0"},
-				"up": {"uv": [7.25, 6, 5.75, 5.75], "texture": "#0"},
-				"down": {"uv": [8.75, 5.75, 7.25, 6], "texture": "#0"}
+				"north": {"uv": [4, 8.5, 5.5, 10.125], "texture": "#0"},
+				"east": {"uv": [3.75, 8.5, 4, 10.125], "texture": "#0"},
+				"south": {"uv": [5.75, 8.5, 7.25, 10.125], "texture": "#0"},
+				"west": {"uv": [5.5, 8.5, 5.75, 10.125], "texture": "#0"},
+				"up": {"uv": [5.5, 8.5, 4, 8.25], "texture": "#0"},
+				"down": {"uv": [7, 8.25, 5.5, 8.5], "texture": "#0"}
 			}
 		}
 	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [75, 45, 0],
+			"translation": [0, 2.5, 0],
+			"scale": [0.375, 0.375, 0.375]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 45, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 225, 0],
+			"scale": [0.4, 0.4, 0.4]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.25, 0.25, 0.25]
+		},
+		"gui": {
+			"rotation": [27, 133, 0],
+			"translation": [0, -1.78, 0],
+			"scale": [0.49, 0.49, 0.49]
+		},
+		"head": {
+			"rotation": [0, -90, 0],
+			"translation": [0, 10, 0],
+			"scale": [0.49, 0.49, 0.49]
+		},
+		"fixed": {
+			"translation": [0, 0, -1.75],
+			"scale": [0.5, 0.5, 0.5]
+		}
+	},
 	"groups": [
 		{
 			"name": "CtulhuAltar",

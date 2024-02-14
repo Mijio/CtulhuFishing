@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "texture_altar_fish"
+        "0": "texture_altar_fish_1"
       },
       "name": "default"
     }
