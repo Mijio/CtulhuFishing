@@ -14,7 +14,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.cthulhufishing.item.TreasureLureItem;
 import net.mcreator.cthulhufishing.item.TreasureBagItem;
 import net.mcreator.cthulhufishing.item.ThirdEyeItem;
 import net.mcreator.cthulhufishing.item.TentacleStaffItem;
@@ -73,7 +72,6 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> GRIMOIRE_TENTACLE_SPAWN_EGG = REGISTRY.register("grimoire_tentacle_spawn_egg", () -> new ForgeSpawnEggItem(CthulhufishingModEntities.GRIMOIRE_TENTACLE, -1, -1, new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> CRIMSON_LURE = REGISTRY.register("crimson_lure", () -> new CrimsonLureItem());
 	public static final RegistryObject<Item> SCULK_LURE = REGISTRY.register("sculk_lure", () -> new SculkLureItem());
-	public static final RegistryObject<Item> TREASURE_LURE = REGISTRY.register("treasure_lure", () -> new TreasureLureItem());
 	public static final RegistryObject<Item> RELIC = REGISTRY.register("relic", () -> new RelicItem());
 	public static final RegistryObject<Item> RUNIC_TABLET = REGISTRY.register("runic_tablet", () -> new RunicTabletItem());
 	public static final RegistryObject<Item> ALTAR_RELIC = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC.getId().getPath(), () -> new AltarRelicDisplayItem(CthulhufishingModBlocks.ALTAR_RELIC.get(), new Item.Properties().tab(null)));

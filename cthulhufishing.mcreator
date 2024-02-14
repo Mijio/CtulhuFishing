@@ -1591,21 +1591,6 @@
       "path": "~/RelicAltarEffect"
     },
     {
-      "name": "TreasureLure",
-      "type": "item",
-      "sortid": 85,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "treasure_lure",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/treasure_lure.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/TreasureLureItem.java"
-        ]
-      },
-      "path": "~/Lures"
-    },
-    {
       "name": "AltarRelic",
       "type": "animatedblock",
       "sortid": 98,
@@ -2627,7 +2612,6 @@
       "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
       "subtitles.obsessed_eye_damage": "",
       "item.cthulhufishing.treasure_bag": "Treasure Bag",
-      "item.cthulhufishing.treasure_lure": "Treasure Lure",
       "subtitles.ritual_bleeding_knife": "",
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
       "item.cthulhufishing.crimson_ring": "Crimson Ring",
