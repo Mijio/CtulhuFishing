@@ -132,17 +132,17 @@
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE"
+        "value": "Blocks.DEEPSLATE"
       },
       {
-        "value": "Blocks.STONE#0"
+        "value": "Blocks.COBBLED_DEEPSLATE"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 5,
+    "frequencyPerChunks": 3,
+    "frequencyOnChunk": 3,
     "minGenerateHeight": -40,
-    "maxGenerateHeight": 80,
+    "maxGenerateHeight": 0,
     "normal": "block_eye.geo.json",
     "displaySettings": "block-itemeye.item.json"
   }

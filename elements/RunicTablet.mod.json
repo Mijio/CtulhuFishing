@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "runic_tablet",
+    "texture": "runic_tablet1",
     "customModelName": "Normal",
     "name": "Runic Tablet",
     "rarity": "UNCOMMON",

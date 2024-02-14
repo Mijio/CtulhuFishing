@@ -34,10 +34,10 @@ public class BlockOreEyeFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new BlockOreEyeFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("cthulhufishing:block_ore_eye", FEATURE,
-				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), CthulhufishingModBlocks.BLOCK_ORE_EYE.get().defaultBlockState()),
-						OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), CthulhufishingModBlocks.BLOCK_ORE_EYE.get().defaultBlockState())), 5));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.DEEPSLATE.defaultBlockState()), CthulhufishingModBlocks.BLOCK_ORE_EYE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.COBBLED_DEEPSLATE.defaultBlockState()), CthulhufishingModBlocks.BLOCK_ORE_EYE.get().defaultBlockState())), 3));
 		PLACED_FEATURE = PlacementUtils.register("cthulhufishing:block_ore_eye", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(10), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(-40), VerticalAnchor.absolute(80)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(3), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(-40), VerticalAnchor.absolute(0)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
