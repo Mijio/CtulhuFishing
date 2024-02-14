@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "faded_runic_tablet",
+    "texture": "runic_tablet2",
     "customModelName": "Normal",
     "name": "Faded Runic Tablet",
     "rarity": "UNCOMMON",

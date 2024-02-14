@@ -1452,8 +1452,7 @@
         "files": [
           "src/main/resources/data/cthulhufishing/recipes/crimson_lure_recipe.json"
         ]
-      },
-      "path": "~/Lures"
+      }
     },
     {
       "name": "SculkLure",
@@ -1467,8 +1466,7 @@
           "src/main/resources/assets/cthulhufishing/models/item/sculk_lure.json",
           "src/main/java/net/mcreator/cthulhufishing/item/SculkLureItem.java"
         ]
-      },
-      "path": "~/Lures"
+      }
     },
     {
       "name": "Relic",
@@ -1482,8 +1480,7 @@
           "src/main/java/net/mcreator/cthulhufishing/item/RelicItem.java",
           "src/main/resources/assets/cthulhufishing/models/item/relic.json"
         ]
-      },
-      "path": "~/Relic"
+      }
     },
     {
       "name": "AncientBlessingEffectExpires",
@@ -1517,8 +1514,7 @@
           "src/main/java/net/mcreator/cthulhufishing/item/CrimsonLureItem.java",
           "src/main/resources/assets/cthulhufishing/models/item/crimson_lure.json"
         ]
-      },
-      "path": "~/Lures"
+      }
     },
     {
       "name": "SculkLureRecipe",
@@ -1531,8 +1527,7 @@
         "files": [
           "src/main/resources/data/cthulhufishing/recipes/sculk_lure_recipe.json"
         ]
-      },
-      "path": "~/Lures"
+      }
     },
     {
       "name": "RelicRightclickedOnBlock",
@@ -1843,8 +1838,7 @@
           "src/main/java/net/mcreator/cthulhufishing/item/ReagentItem.java",
           "src/main/resources/assets/cthulhufishing/models/item/reagent.json"
         ]
-      },
-      "path": "~/Relic"
+      }
     },
     {
       "name": "AltarRelicOnBlockRightClicked",
@@ -2671,10 +2665,6 @@
       },
       {
         "name": "CthulhuGrimoire",
-        "children": []
-      },
-      {
-        "name": "Lures",
         "children": []
       },
       {

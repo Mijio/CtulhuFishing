@@ -42,7 +42,7 @@ public class ToolTipHoodOfTheVoidProcedure {
 		} else if (itemstack.getItem() == CthulhufishingModItems.KNIFE_FOR_RITUAL_BLEEDING.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bSacrificial knife"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bLeft-click to apply Ritual bleeeding"));
+				tooltip.add(Component.literal("\u00A7bRight click to apply Ritual bleeeding"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
@@ -92,6 +92,48 @@ public class ToolTipHoodOfTheVoidProcedure {
 			(itemstack).setHoverName(Component.literal("\u00A7bCthulhu grimoire"));
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A7bGrimoire of Cthulhu, use cam summon part of the power of cthulhu "));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.REAGENT.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bAbyss reagent"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bIf you do not place it in the relic in time, the relic may explode"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.RELIC.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bAbyss relic"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bGrimoire of By placing it on the ground it drives aggressive creatures into madness, if you defeat them you can get abyss reagent"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.FADED_RUNIC_TABLET.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bFaded runic tablet"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bCan be activated again using the third eye"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.RUNIC_TABLET.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bRunic tablet"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bRight click gives you 10 revelation ponts"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.SCULK_LURE.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bSculk lure"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bHold in your left hand when fishing in the deep dark, then you can catch sculk fish "));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.CRIMSON_LURE.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bCrimson lure"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bHold in your left hand when fishing with the effect of ritual bleeding, then you can catch crimson fish"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
