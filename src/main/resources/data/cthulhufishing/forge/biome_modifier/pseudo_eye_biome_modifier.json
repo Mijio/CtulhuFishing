@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "cthulhufishing:pseudo_eye",
+  "step": "underground_ores"
+}

@@ -1477,8 +1477,8 @@
       "registry_name": "relic",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/RelicItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/relic.json"
+          "src/main/resources/assets/cthulhufishing/models/item/relic.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/RelicItem.java"
         ]
       }
     },
@@ -2519,6 +2519,56 @@
           }
         ]
       }
+    },
+    {
+      "name": "PseudoEye",
+      "type": "block",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pseudo_eye",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/PseudoEyeFeature.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/PseudoEyeBlock.java",
+          "src/main/resources/assets/cthulhufishing/models/item/pseudo_eye.json",
+          "src/main/resources/assets/cthulhufishing/models/block/pseudo_eye.json",
+          "src/main/resources/data/cthulhufishing/forge/biome_modifier/pseudo_eye_biome_modifier.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/pseudo_eye.json"
+        ]
+      }
+    },
+    {
+      "name": "PseudoEyeAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pseudo_eye_additional_generation_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/PseudoEyeAdditionalGenerationConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2681,7 +2731,8 @@
       "effect.cthulhufishing.madness": "Madness",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "block.cthulhufishing.deep_oil": "Deep Oil",
-      "item.cthulhufishing.ancient_coin": "Ancient Coin"
+      "item.cthulhufishing.ancient_coin": "Ancient Coin",
+      "block.cthulhufishing.pseudo_eye": "Pseudo Eye"
     }
   },
   "foldersRoot": {

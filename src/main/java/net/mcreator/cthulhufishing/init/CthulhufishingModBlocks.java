@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.cthulhufishing.block.PseudoEyeBlock;
 import net.mcreator.cthulhufishing.block.DeepOilBlock;
 import net.mcreator.cthulhufishing.block.CtulhuAltarFishBlock;
 import net.mcreator.cthulhufishing.block.BlockOreEyeBlock;
@@ -34,4 +35,5 @@ public class CthulhufishingModBlocks {
 	public static final RegistryObject<Block> ALTAR_RELIC_4 = REGISTRY.register("altar_relic_4", () -> new AltarRelic4Block());
 	public static final RegistryObject<Block> ALTAR_RELIC_5 = REGISTRY.register("altar_relic_5", () -> new AltarRelic5Block());
 	public static final RegistryObject<Block> ALTAR_RELIC_6 = REGISTRY.register("altar_relic_6", () -> new AltarRelic6Block());
+	public static final RegistryObject<Block> PSEUDO_EYE = REGISTRY.register("pseudo_eye", () -> new PseudoEyeBlock());
 }
