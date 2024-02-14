@@ -133,6 +133,9 @@
     "frequencyPerChunks": 3,
     "frequencyOnChunk": 3,
     "minGenerateHeight": -44,
-    "maxGenerateHeight": 0
+    "maxGenerateHeight": 0,
+    "generateCondition": {
+      "name": "DeepOilAdditionalGenerationCondition"
+    }
   }
 }

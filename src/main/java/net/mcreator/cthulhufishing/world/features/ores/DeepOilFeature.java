@@ -21,6 +21,7 @@ import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.core.Holder;
 
+import net.mcreator.cthulhufishing.procedures.DeepOilAdditionalGenerationConditionProcedure;
 import net.mcreator.cthulhufishing.init.CthulhufishingModBlocks;
 
 import java.util.Set;
@@ -50,6 +51,11 @@ public class DeepOilFeature extends OreFeature {
 	public boolean place(FeaturePlaceContext<OreConfiguration> context) {
 		WorldGenLevel world = context.level();
 		if (!generate_dimensions.contains(world.getLevel().dimension()))
+			return false;
+		int x = context.origin().getX();
+		int y = context.origin().getY();
+		int z = context.origin().getZ();
+		if (!DeepOilAdditionalGenerationConditionProcedure.execute(world, x, y, z))
 			return false;
 		return super.place(context);
 	}
