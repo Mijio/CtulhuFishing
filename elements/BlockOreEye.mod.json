@@ -126,7 +126,9 @@
     "onDestroyedByPlayer": {
       "name": "BlockOreEyeBlockDestroyedByPlayer"
     },
-    "spawnWorldTypes": [],
+    "spawnWorldTypes": [
+      "Surface"
+    ],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
@@ -135,8 +137,8 @@
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
-    "minGenerateHeight": 0,
+    "frequencyOnChunk": 5,
+    "minGenerateHeight": -40,
     "maxGenerateHeight": 64,
     "normal": "block_eye.geo.json",
     "displaySettings": "block-itemeye.item.json"

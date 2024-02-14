@@ -16,6 +16,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.cthulhufishing.item.WoodCrystallRingItem;
 import net.mcreator.cthulhufishing.item.TreasureLureItem;
+import net.mcreator.cthulhufishing.item.TreasureBagItem;
 import net.mcreator.cthulhufishing.item.ThirdEyeItem;
 import net.mcreator.cthulhufishing.item.TentacleStaffItem;
 import net.mcreator.cthulhufishing.item.SwordOfRevelationItem;
@@ -99,6 +100,7 @@ public class CthulhufishingModItems {
 			() -> new AltarRelic5DisplayItem(CthulhufishingModBlocks.ALTAR_RELIC_5.get(), new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB)));
 	public static final RegistryObject<Item> ALTAR_RELIC_6 = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC_6.getId().getPath(),
 			() -> new AltarRelic6DisplayItem(CthulhufishingModBlocks.ALTAR_RELIC_6.get(), new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB)));
+	public static final RegistryObject<Item> TREASURE_BAG = REGISTRY.register("treasure_bag", () -> new TreasureBagItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

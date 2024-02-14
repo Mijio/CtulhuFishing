@@ -12,10 +12,12 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraft.world.level.levelgen.feature.Feature;
 
 import net.mcreator.cthulhufishing.world.features.ores.DeepOilFeature;
+import net.mcreator.cthulhufishing.world.features.ores.BlockOreEyeFeature;
 import net.mcreator.cthulhufishing.CthulhufishingMod;
 
 @Mod.EventBusSubscriber
 public class CthulhufishingModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, CthulhufishingMod.MODID);
 	public static final RegistryObject<Feature<?>> DEEP_OIL = REGISTRY.register("deep_oil", DeepOilFeature::feature);
+	public static final RegistryObject<Feature<?>> BLOCK_ORE_EYE = REGISTRY.register("block_ore_eye", BlockOreEyeFeature::feature);
 }

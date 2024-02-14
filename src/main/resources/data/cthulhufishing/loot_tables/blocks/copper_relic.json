@@ -6,13 +6,27 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_block",
-          "weight": 30,
+          "name": "cthulhufishing:treasure_bag",
+          "weight": 12,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cthulhufishing:sculk_ring",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
                 "max": 1
               }
             }
@@ -20,13 +34,69 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:carved_pumpkin",
-          "weight": 70,
+          "name": "cthulhufishing:crimson_ring",
+          "weight": 4,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cthulhufishing:emerald_gold_ring",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cthulhufishing:hood_of_the_deep_void_helmet",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cthulhufishing:sword_of_revelation",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 1
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cthulhufishing:tentacle_staff",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
                 "max": 1
               }
             }
