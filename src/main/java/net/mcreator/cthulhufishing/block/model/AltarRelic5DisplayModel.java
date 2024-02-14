@@ -19,6 +19,6 @@ public class AltarRelic5DisplayModel extends AnimatedGeoModel<AltarRelic5Display
 
 	@Override
 	public ResourceLocation getTextureResource(AltarRelic5DisplayItem entity) {
-		return new ResourceLocation("cthulhufishing", "textures/blocks/altar_relic_texture.png");
+		return new ResourceLocation("cthulhufishing", "textures/blocks/texture_relic.png");
 	}
 }

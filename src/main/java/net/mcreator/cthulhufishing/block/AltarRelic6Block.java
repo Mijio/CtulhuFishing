@@ -17,11 +17,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.util.RandomSource;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.cthulhufishing.procedures.AltarRelicUpdateTickProcedure;
 import net.mcreator.cthulhufishing.procedures.AltarRelic6onBlockClickedProcedure;
 import net.mcreator.cthulhufishing.init.CthulhufishingModBlockEntities;
 
@@ -79,18 +76,6 @@ public class AltarRelic6Block extends BaseEntityBlock implements EntityBlock {
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.scheduleTick(pos, this, 20);
 		AltarRelic6onBlockClickedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-	}
-
-	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
-		super.tick(blockstate, world, pos, random);
-		int x = pos.getX();
-		int y = pos.getY();
-		int z = pos.getZ();
-
-		AltarRelicUpdateTickProcedure.execute(world, x, y, z);
-		world.scheduleTick(pos, this, 20);
 	}
 }

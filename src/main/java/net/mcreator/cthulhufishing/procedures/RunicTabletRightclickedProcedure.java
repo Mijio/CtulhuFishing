@@ -34,7 +34,7 @@ public class RunicTabletRightclickedProcedure {
 		{
 			double _setval = 10;
 			entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.Revelation_Score = _setval;
+				capability.Revalation_Change = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}

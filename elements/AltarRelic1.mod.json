@@ -2,7 +2,7 @@
   "_fv": 43,
   "_type": "animatedblock",
   "definition": {
-    "texture": "altar_relic_texture",
+    "texture": "texture_relic",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -39,7 +39,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:CtulhuFishingTab"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -142,6 +142,6 @@
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
     "normal": "sealed_relic2.geo.json",
-    "displaySettings": "sealed_relic.animation.json"
+    "displaySettings": "block-itemeye.item.json"
   }
 }

@@ -335,11 +335,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/block/DeepOilBlock.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/deep_oil.json",
-          "src/main/resources/assets/cthulhufishing/models/item/deep_oil.json",
           "src/main/java/net/mcreator/cthulhufishing/world/features/ores/DeepOilFeature.java",
+          "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json",
           "src/main/resources/data/cthulhufishing/forge/biome_modifier/deep_oil_biome_modifier.json",
-          "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json"
+          "src/main/resources/assets/cthulhufishing/models/item/deep_oil.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/deep_oil.json"
         ]
       }
     },
@@ -994,16 +994,15 @@
       "registry_name": "block_ore_eye",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/block/BlockOreEyeBlock.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/display/BlockOreEyeDisplayItem.java",
-          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/BlockOreEyeFeature.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/entity/BlockOreEyeTileEntity.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeBlockModel.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/block_ore_eye.json",
-          "src/main/resources/assets/cthulhufishing/models/custom/block_ore_eye_particle.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeDisplayItemRenderer.java",
           "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeTileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/BlockOreEyeDisplayItem.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeBlockModel.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/block_ore_eye_particle.json",
           "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeDisplayModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/BlockOreEyeBlock.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/block_ore_eye.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/BlockOreEyeTileEntity.java",
           "src/main/resources/assets/cthulhufishing/models/item/block_ore_eye.json"
         ]
       }
@@ -1277,29 +1276,6 @@
         ]
       },
       "path": "~/AtionsForDecreaseRevelationScore"
-    },
-    {
-      "name": "SwordOfRevelationAbillity",
-      "type": "procedure",
-      "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sword_of_revelation_abillity",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/SwordOfRevelationAbillityProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          }
-        ]
-      }
     },
     {
       "name": "CurseOfObsessedEye",
@@ -1641,20 +1617,6 @@
         ]
       },
       "path": "~/Relic"
-    },
-    {
-      "name": "AncientBlessing",
-      "type": "potioneffect",
-      "sortid": 86,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ancient_blessing",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/potion/AncientBlessingMobEffect.java"
-        ]
-      },
-      "path": "~/RelicAltarEffect"
     },
     {
       "name": "AncientBlessingEffectStartedapplied",
@@ -2412,19 +2374,6 @@
       "path": "~/Altar"
     },
     {
-      "name": "TreasureBagLootTable",
-      "type": "loottable",
-      "sortid": 128,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "treasure_bag_loot_table",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/cthulhufishing/loot_tables/gameplay/treasure_bag_loot_table.json"
-        ]
-      }
-    },
-    {
       "name": "TreasureBag",
       "type": "item",
       "sortid": 129,
@@ -2435,41 +2384,6 @@
         "files": [
           "src/main/resources/assets/cthulhufishing/models/item/treasure_bag.json",
           "src/main/java/net/mcreator/cthulhufishing/item/TreasureBagItem.java"
-        ]
-      }
-    },
-    {
-      "name": "TreasureBagRightclicked",
-      "type": "procedure",
-      "sortid": 130,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "treasure_bag_rightclicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/TreasureBagRightclickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       }
     },
@@ -2526,6 +2440,114 @@
         ]
       },
       "path": "~/Enchantments"
+    },
+    {
+      "name": "TreasureBagLootTable",
+      "type": "loottable",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "treasure_bag_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/loot_tables/gameplay/treasure_bag_loot_table.json"
+        ]
+      }
+    },
+    {
+      "name": "TreasureBagRightclicked",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "treasure_bag_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/TreasureBagRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AltarRelicBlockAdded",
+      "type": "procedure",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "altar_relic_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/AltarRelicBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "SwordOfRevelationToolInInventoryTick",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_of_revelation_tool_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/SwordOfRevelationToolInInventoryTickProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "AncientCurse",
+      "type": "potioneffect",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancient_curse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/potion/AncientCurseMobEffect.java"
+        ]
+      },
+      "path": "~/RelicAltarEffect"
     }
   ],
   "variable_elements": [
@@ -2570,6 +2592,18 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "PlayerHasRelicSpawned",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "RelicTimer",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -2632,7 +2666,6 @@
       "item.cthulhufishing.knife_for_ritual_bleeding": "Knife For Ritual Bleeding",
       "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
       "subtitles.obsessed_eye_damage": "",
-      "item.cthulhufishing.treasure_bag": "Treasure Bag",
       "item.cthulhufishing.treasure_lure": "Treasure Lure",
       "subtitles.ritual_bleeding_knife": "",
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
@@ -2653,7 +2686,6 @@
       "block.cthulhufishing.altar_relic_3": "Altar Relic",
       "item.cthulhufishing.tentacle_staff": "Tentacle Staff",
       "block.cthulhufishing.altar_relic": "Altar Relic",
-      "enchantment.cthulhufishing.power_of_the_extinct": "Power Of The Extinct",
       "item.cthulhufishing.obsessed_eye_mob_spawn_egg": "Obsessed Eye Spawn Egg",
       "gui.cthulhufishing.ctulhu_altar.button_grab": "GRAB",
       "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab",
@@ -2661,7 +2693,6 @@
       "item.cthulhufishing.emerald_gold_ring": "Experience Ring",
       "item.cthulhufishing.drip_void": "Drip Void",
       "item.cthulhufishing.reagent": "Reagent",
-      "effect.cthulhufishing.ancient_blessing": "Ancient Curse",
       "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
       "item.cthulhufishing.necklace_of_flesh_and_bones": "Necklace Of Flesh And Bones",
       "item.cthulhufishing.sculk_lure": "Sculk Lure",
