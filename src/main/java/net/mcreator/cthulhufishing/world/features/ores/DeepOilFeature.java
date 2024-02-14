@@ -34,7 +34,8 @@ public class DeepOilFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new DeepOilFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("cthulhufishing:deep_oil", FEATURE,
-				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.COBBLED_DEEPSLATE.defaultBlockState()), CthulhufishingModBlocks.DEEP_OIL.get().defaultBlockState())), 3));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.COBBLED_DEEPSLATE.defaultBlockState()), CthulhufishingModBlocks.DEEP_OIL.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.DEEPSLATE.defaultBlockState()), CthulhufishingModBlocks.DEEP_OIL.get().defaultBlockState())), 3));
 		PLACED_FEATURE = PlacementUtils.register("cthulhufishing:deep_oil", CONFIGURED_FEATURE,
 				List.of(CountPlacement.of(3), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(-44), VerticalAnchor.absolute(0)), BiomeFilter.biome()));
 		return FEATURE;

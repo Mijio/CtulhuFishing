@@ -124,6 +124,9 @@
     "blocksToReplace": [
       {
         "value": "Blocks.COBBLED_DEEPSLATE"
+      },
+      {
+        "value": "Blocks.DEEPSLATE"
       }
     ],
     "generationShape": "UNIFORM",

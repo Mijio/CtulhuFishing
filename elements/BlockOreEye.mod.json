@@ -133,13 +133,16 @@
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
+      },
+      {
+        "value": "Blocks.STONE#0"
       }
     ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 5,
     "minGenerateHeight": -40,
-    "maxGenerateHeight": 64,
+    "maxGenerateHeight": 80,
     "normal": "block_eye.geo.json",
     "displaySettings": "block-itemeye.item.json"
   }
