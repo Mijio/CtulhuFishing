@@ -22,6 +22,7 @@ import net.mcreator.cthulhufishing.item.StepToAbyssItem;
 import net.mcreator.cthulhufishing.item.SculkRingItem;
 import net.mcreator.cthulhufishing.item.SculkLureItem;
 import net.mcreator.cthulhufishing.item.RunicTabletItem;
+import net.mcreator.cthulhufishing.item.RevelationSteelItem;
 import net.mcreator.cthulhufishing.item.RevelationFabricItem;
 import net.mcreator.cthulhufishing.item.RelicItem;
 import net.mcreator.cthulhufishing.item.ReagentItem;
@@ -95,6 +96,7 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> CRIMSON_FINGER = REGISTRY.register("crimson_finger", () -> new CrimsonFingerItem());
 	public static final RegistryObject<Item> REVELATION_FABRIC = REGISTRY.register("revelation_fabric", () -> new RevelationFabricItem());
 	public static final RegistryObject<Item> STEP_TO_ABYSS = REGISTRY.register("step_to_abyss", () -> new StepToAbyssItem());
+	public static final RegistryObject<Item> REVELATION_STEEL = REGISTRY.register("revelation_steel", () -> new RevelationSteelItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
