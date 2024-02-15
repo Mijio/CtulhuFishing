@@ -140,7 +140,19 @@ public class ToolTipHoodOfTheVoidProcedure {
 		} else if (itemstack.getItem() == CthulhufishingModItems.HOOD_OF_THE_DEEP_VOID_HELMET.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bHood of the deep void"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bDoesn't let you go hungry till you have saturation"));
+				tooltip.add(Component.literal("\u00A7bDoesn't let you go hungry till you have revelation"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.CRIMSON_FINGER.get()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bUsed to improve equipment"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.REVELATION_FABRIC.get()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bused to improve equipment"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}

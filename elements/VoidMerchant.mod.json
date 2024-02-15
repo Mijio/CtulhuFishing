@@ -10,7 +10,7 @@
       "value": "CUSTOM:void_merchant"
     },
     "hat": "None",
-    "professionTextureFile": "texture_obsessed_eye.png",
-    "zombifiedProfessionTextureFile": "texture_obsessed_eye.png"
+    "professionTextureFile": "armorer.png",
+    "zombifiedProfessionTextureFile": "armorer.png"
   }
 }
