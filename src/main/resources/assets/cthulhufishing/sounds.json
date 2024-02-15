@@ -64,18 +64,18 @@
       }
     ]
   },
-  "relic_idle": {
-    "sounds": [
-      {
-        "name": "cthulhufishing:relic_idle",
-        "stream": false
-      }
-    ]
-  },
   "relic_loot": {
     "sounds": [
       {
         "name": "cthulhufishing:relic_loot",
+        "stream": false
+      }
+    ]
+  },
+  "relic_idle": {
+    "sounds": [
+      {
+        "name": "cthulhufishing:relic_idle",
         "stream": false
       }
     ]
