@@ -44,7 +44,8 @@ public class PowerOfTheExtinctProcedProcedure {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.underwater.enter")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
-				entity.hurt(DamageSource.MAGIC, (float) ((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).getValue());
+				entity.hurt(DamageSource.MAGIC, (float) (((LivingEntity) sourceentity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).getValue()
+						* EnchantmentHelper.getItemEnchantmentLevel(CthulhufishingModEnchantments.POWER_OF_THE_EXTINCT.get(), (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) * 0.2));
 				entity.clearFire();
 			}
 		}
