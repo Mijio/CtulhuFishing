@@ -20,15 +20,15 @@ public class CthulhufishingModTrades {
 		if (event.getType() == CthulhufishingModVillagerProfessions.VOID_MERCHANT.get()) {
 			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(Items.EMERALD, 8), new ItemStack(CthulhufishingModItems.REAGENT.get(), 6), new ItemStack(CthulhufishingModItems.CRIMSON_RING.get()), 1, 20, 0.05f));
 			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(Items.EMERALD, 8), new ItemStack(CthulhufishingModItems.REAGENT.get(), 6), new ItemStack(CthulhufishingModItems.SCULK_RING.get()), 1, 20, 0.05f));
-			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(Items.EMERALD, 32), new ItemStack(CthulhufishingModItems.REAGENT.get(), 14), new ItemStack(CthulhufishingModItems.CRIMSON_FINGER.get()), 2, 10, 0.05f));
-			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(Items.EMERALD, 32), new ItemStack(CthulhufishingModItems.REAGENT.get(), 14), new ItemStack(CthulhufishingModItems.REVELATION_FABRIC.get()), 2, 10, 0.05f));
-			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(Items.EMERALD, 6), new ItemStack(CthulhufishingModItems.REAGENT.get()), new ItemStack(CthulhufishingModItems.TREASURE_BAG.get(), 2), 16, 5, 0.05f));
-			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.STONE_SWORD), new ItemStack(Items.NETHER_WART, 8), new ItemStack(CthulhufishingModItems.KNIFE_FOR_RITUAL_BLEEDING.get()), 1, 15, 0.05f));
-			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(CthulhufishingModItems.THIRD_EYE.get()), new ItemStack(Blocks.STONE), new ItemStack(CthulhufishingModItems.FADED_RUNIC_TABLET.get()), 1, 15, 0.05f));
-			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Blocks.EMERALD_BLOCK, 10), new ItemStack(CthulhufishingModItems.REAGENT.get(), 8), new ItemStack(CthulhufishingModItems.RELIC.get()), 10, 25, 0.05f));
-			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Items.WRITABLE_BOOK), new ItemStack(CthulhufishingModItems.REAGENT.get(), 30), new ItemStack(CthulhufishingModItems.CTHULHU_GRIMOIRE.get()), 1, 20, 0.05f));
-			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.EMERALD, 28), new ItemStack(CthulhufishingModItems.REAGENT.get(), 12), new ItemStack(CthulhufishingModItems.TENTACLE_STAFF.get()), 1, 20, 0.05f));
-			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD, 28), new ItemStack(CthulhufishingModItems.REAGENT.get(), 20), new ItemStack(CthulhufishingModItems.SWORD_OF_REVELATION.get()), 1, 20, 0.05f));
+			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(Items.EMERALD, 32), new ItemStack(CthulhufishingModItems.REAGENT.get(), 14), new ItemStack(CthulhufishingModItems.CRIMSON_FINGER.get()), 10, 10, 0.05f));
+			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(Items.EMERALD, 32), new ItemStack(CthulhufishingModItems.REAGENT.get(), 14), new ItemStack(CthulhufishingModItems.REVELATION_FABRIC.get()), 10, 10, 0.05f));
+			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(Items.EMERALD, 6), new ItemStack(CthulhufishingModItems.REAGENT.get()), new ItemStack(CthulhufishingModItems.TREASURE_BAG.get(), 2), 10, 5, 0.05f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.STONE_SWORD), new ItemStack(Items.NETHER_WART, 8), new ItemStack(CthulhufishingModItems.KNIFE_FOR_RITUAL_BLEEDING.get()), 10, 15, 0.05f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(CthulhufishingModItems.THIRD_EYE.get()), new ItemStack(Blocks.STONE), new ItemStack(CthulhufishingModItems.FADED_RUNIC_TABLET.get()), 10, 15, 0.05f));
+			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Blocks.EMERALD_BLOCK, 10), new ItemStack(CthulhufishingModItems.REAGENT.get(), 8), new ItemStack(CthulhufishingModItems.RELIC.get()), 10, 20, 0.05f));
+			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Items.WRITABLE_BOOK), new ItemStack(CthulhufishingModItems.REAGENT.get(), 30), new ItemStack(CthulhufishingModItems.CTHULHU_GRIMOIRE.get()), 10, 15, 0.05f));
+			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.EMERALD, 28), new ItemStack(CthulhufishingModItems.REAGENT.get(), 12), new ItemStack(CthulhufishingModItems.TENTACLE_STAFF.get()), 10, 15, 0.05f));
+			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.EMERALD, 28), new ItemStack(CthulhufishingModItems.REAGENT.get(), 20), new ItemStack(CthulhufishingModItems.SWORD_OF_REVELATION.get()), 10, 15, 0.05f));
 		}
 	}
 }
