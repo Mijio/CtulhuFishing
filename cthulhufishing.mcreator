@@ -822,6 +822,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -2569,6 +2581,33 @@
           }
         ]
       }
+    },
+    {
+      "name": "RelicReagent",
+      "type": "loottable",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "relic_reagent",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/loot_tables/blocks/relic_reagent.json"
+        ]
+      },
+      "path": "~/Relic"
+    },
+    {
+      "name": "CthulhuChest",
+      "type": "loottable",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cthulhu_chest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/loot_tables/chests/cthulhu_chest.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2693,17 +2732,17 @@
       "subtitle": ""
     },
     {
-      "name": "relic_idle",
+      "name": "relic_loot",
       "files": [
-        "relic_idle"
+        "relic_loot"
       ],
       "category": "block",
       "subtitle": ""
     },
     {
-      "name": "relic_loot",
+      "name": "relic_idle",
       "files": [
-        "relic_loot"
+        "relic_idle"
       ],
       "category": "block",
       "subtitle": ""

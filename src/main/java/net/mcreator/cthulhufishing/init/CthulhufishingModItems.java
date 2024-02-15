@@ -88,7 +88,7 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> ALTAR_RELIC_5 = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC_5.getId().getPath(), () -> new AltarRelic5DisplayItem(CthulhufishingModBlocks.ALTAR_RELIC_5.get(), new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> ALTAR_RELIC_6 = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC_6.getId().getPath(), () -> new AltarRelic6DisplayItem(CthulhufishingModBlocks.ALTAR_RELIC_6.get(), new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> TREASURE_BAG = REGISTRY.register("treasure_bag", () -> new TreasureBagItem());
-	public static final RegistryObject<Item> PSEUDO_EYE = block(CthulhufishingModBlocks.PSEUDO_EYE, CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB);
+	public static final RegistryObject<Item> PSEUDO_EYE = block(CthulhufishingModBlocks.PSEUDO_EYE, null);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

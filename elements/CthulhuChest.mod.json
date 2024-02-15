@@ -2,7 +2,7 @@
   "_fv": 43,
   "_type": "loottable",
   "definition": {
-    "type": "Block",
+    "type": "Chest",
     "pools": [
       {
         "minrolls": 1,
@@ -14,7 +14,21 @@
           {
             "type": "item",
             "item": {
-              "value": "CUSTOM:Relic"
+              "value": "CUSTOM:KnifeForRitualBleeding"
+            },
+            "weight": 1,
+            "minCount": 1,
+            "maxCount": 1,
+            "minEnchantmentLevel": 0,
+            "maxEnchantmentLevel": 0,
+            "affectedByFortune": false,
+            "explosionDecay": false,
+            "silkTouchMode": 0
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:RunicTablet"
             },
             "weight": 1,
             "minCount": 1,
@@ -28,7 +42,7 @@
         ]
       }
     ],
-    "name": "blocks/altar_loot",
+    "name": "chests/cthulhu_chest",
     "namespace": "mod"
   }
 }

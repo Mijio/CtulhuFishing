@@ -22,9 +22,5 @@ public class AncientBlessingEffectStartedappliedProcedure {
 				.hasModifier((new AttributeModifier(UUID.fromString("f4991cc1-a369-43e3-8fae-b0b5495e9d1d"), "3", (-0.5), AttributeModifier.Operation.MULTIPLY_TOTAL)))))
 			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED)
 					.addPermanentModifier((new AttributeModifier(UUID.fromString("f4991cc1-a369-43e3-8fae-b0b5495e9d1d"), "3", (-0.5), AttributeModifier.Operation.MULTIPLY_TOTAL)));
-		if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
-				.hasModifier((new AttributeModifier(UUID.fromString("f4991cc1-a369-43e3-8fae-b0b5495e9d1d"), "4", (-0.5), AttributeModifier.Operation.MULTIPLY_TOTAL)))))
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE)
-					.addPermanentModifier((new AttributeModifier(UUID.fromString("f4991cc1-a369-43e3-8fae-b0b5495e9d1d"), "4", (-0.5), AttributeModifier.Operation.MULTIPLY_TOTAL)));
 	}
 }
