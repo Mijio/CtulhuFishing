@@ -21,6 +21,7 @@ import net.mcreator.cthulhufishing.item.SwordOfRevelationItem;
 import net.mcreator.cthulhufishing.item.SculkRingItem;
 import net.mcreator.cthulhufishing.item.SculkLureItem;
 import net.mcreator.cthulhufishing.item.RunicTabletItem;
+import net.mcreator.cthulhufishing.item.RevelationFabricItem;
 import net.mcreator.cthulhufishing.item.RelicItem;
 import net.mcreator.cthulhufishing.item.ReagentItem;
 import net.mcreator.cthulhufishing.item.KnifeForRitualBleedingItem;
@@ -36,6 +37,7 @@ import net.mcreator.cthulhufishing.item.CrimsonRingItem;
 import net.mcreator.cthulhufishing.item.CrimsonLureItem;
 import net.mcreator.cthulhufishing.item.CrimsonJellyfishItem;
 import net.mcreator.cthulhufishing.item.CrimsonFishItem;
+import net.mcreator.cthulhufishing.item.CrimsonFingerItem;
 import net.mcreator.cthulhufishing.item.CrimsonCrunchItem;
 import net.mcreator.cthulhufishing.item.AncientCoinItem;
 import net.mcreator.cthulhufishing.block.display.BlockOreEyeDisplayItem;
@@ -89,6 +91,8 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> ALTAR_RELIC_6 = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC_6.getId().getPath(), () -> new AltarRelic6DisplayItem(CthulhufishingModBlocks.ALTAR_RELIC_6.get(), new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> TREASURE_BAG = REGISTRY.register("treasure_bag", () -> new TreasureBagItem());
 	public static final RegistryObject<Item> PSEUDO_EYE = block(CthulhufishingModBlocks.PSEUDO_EYE, CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB);
+	public static final RegistryObject<Item> CRIMSON_FINGER = REGISTRY.register("crimson_finger", () -> new CrimsonFingerItem());
+	public static final RegistryObject<Item> REVELATION_FABRIC = REGISTRY.register("revelation_fabric", () -> new RevelationFabricItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -2569,6 +2569,60 @@
           }
         ]
       }
+    },
+    {
+      "name": "CrimsonFinger",
+      "type": "item",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_finger",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/crimson_finger.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/CrimsonFingerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TentacleStaffrecipe",
+      "type": "recipe",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tentacle_staffrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/recipes/tentacle_staffrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "RevelationFabric",
+      "type": "item",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revelation_fabric",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/revelation_fabric.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/RevelationFabricItem.java"
+        ]
+      }
+    },
+    {
+      "name": "HoodDeepVoidCraft",
+      "type": "recipe",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hood_deep_void_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/recipes/hood_deep_void_craft.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2724,6 +2778,7 @@
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
       "item.cthulhufishing.crimson_ring": "Crimson Ring",
       "subtitles.altar_loot": "",
+      "item.cthulhufishing.revelation_fabric": "Revelation Fabric",
       "subtitles.reagent_input": "",
       "item.cthulhufishing.faded_runic_tablet": "Faded Runic Tablet",
       "item.cthulhufishing.crimson_lure": "Crimson Lure",
@@ -2765,6 +2820,7 @@
       "block.cthulhufishing.block_ore_eye": "Block Ore Eye",
       "gui.cthulhufishing.ctulhu_altar.label_12": "11",
       "effect.cthulhufishing.madness": "Madness",
+      "item.cthulhufishing.crimson_finger": "Crimson Finger",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "block.cthulhufishing.deep_oil": "Deep Oil",
       "item.cthulhufishing.ancient_coin": "Ancient Coin",
