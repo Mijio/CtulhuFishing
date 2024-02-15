@@ -201,7 +201,79 @@
               "value": "CUSTOM:SwordOfRevelation"
             },
             "countOffer": 1,
-            "level": 1,
+            "level": 3,
+            "maxTrades": 1,
+            "xp": 20,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 32,
+            "price2": {
+              "value": "CUSTOM:Reagent"
+            },
+            "countPrice2": 14,
+            "offer": {
+              "value": "CUSTOM:RevelationSteel"
+            },
+            "countOffer": 1,
+            "level": 4,
+            "maxTrades": 2,
+            "xp": 10,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Blocks.EMERALD_BLOCK"
+            },
+            "countPrice1": 5,
+            "price2": {
+              "value": "CUSTOM:Reagent"
+            },
+            "countPrice2": 16,
+            "offer": {
+              "value": "CUSTOM:EmeraldGoldRing"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 1,
+            "xp": 20,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 26,
+            "price2": {
+              "value": "CUSTOM:Reagent"
+            },
+            "countPrice2": 14,
+            "offer": {
+              "value": "CUSTOM:MaskOfRevelation.helmet"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 1,
+            "xp": 20,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 26,
+            "price2": {
+              "value": "CUSTOM:Reagent"
+            },
+            "countPrice2": 16,
+            "offer": {
+              "value": "CUSTOM:HoodOfTheDeepVoid.helmet"
+            },
+            "countOffer": 1,
+            "level": 3,
             "maxTrades": 1,
             "xp": 20,
             "priceMultiplier": 0.05

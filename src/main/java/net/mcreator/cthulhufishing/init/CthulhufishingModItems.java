@@ -26,6 +26,7 @@ import net.mcreator.cthulhufishing.item.RevelationSteelItem;
 import net.mcreator.cthulhufishing.item.RevelationFabricItem;
 import net.mcreator.cthulhufishing.item.RelicItem;
 import net.mcreator.cthulhufishing.item.ReagentItem;
+import net.mcreator.cthulhufishing.item.MaskOfRevelationItem;
 import net.mcreator.cthulhufishing.item.KnifeForRitualBleedingItem;
 import net.mcreator.cthulhufishing.item.HorseSculkFishItem;
 import net.mcreator.cthulhufishing.item.HoodOfTheDeepVoidItem;
@@ -97,6 +98,7 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> REVELATION_FABRIC = REGISTRY.register("revelation_fabric", () -> new RevelationFabricItem());
 	public static final RegistryObject<Item> STEP_TO_ABYSS = REGISTRY.register("step_to_abyss", () -> new StepToAbyssItem());
 	public static final RegistryObject<Item> REVELATION_STEEL = REGISTRY.register("revelation_steel", () -> new RevelationSteelItem());
+	public static final RegistryObject<Item> MASK_OF_REVELATION_HELMET = REGISTRY.register("mask_of_revelation_helmet", () -> new MaskOfRevelationItem.Helmet());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

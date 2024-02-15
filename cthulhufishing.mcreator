@@ -1128,10 +1128,10 @@
       "registry_name": "tentacle_staff",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/renderer/TentacleStaffItemRenderer.java",
           "src/main/java/net/mcreator/cthulhufishing/item/model/TentacleStaffItemModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/item/TentacleStaffItem.java",
           "src/main/resources/assets/cthulhufishing/models/item/tentacle_staff.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/TentacleStaffItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/renderer/TentacleStaffItemRenderer.java"
         ]
       }
     },
@@ -2707,6 +2707,33 @@
             "name": "itemstack",
             "type": "itemstack"
           }
+        ]
+      }
+    },
+    {
+      "name": "MaskOfRevelationCraft",
+      "type": "recipe",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mask_of_revelation_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/recipes/mask_of_revelation_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "MaskOfRevelation",
+      "type": "armor",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mask_of_revelation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/MaskOfRevelationItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/mask_of_revelation_helmet.json"
         ]
       }
     }
