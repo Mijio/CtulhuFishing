@@ -1128,10 +1128,10 @@
       "registry_name": "tentacle_staff",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/renderer/TentacleStaffItemRenderer.java",
           "src/main/java/net/mcreator/cthulhufishing/item/model/TentacleStaffItemModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/item/TentacleStaffItem.java",
           "src/main/resources/assets/cthulhufishing/models/item/tentacle_staff.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/renderer/TentacleStaffItemRenderer.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/TentacleStaffItem.java"
         ]
       }
     },
@@ -2690,6 +2690,25 @@
           "src/main/resources/data/cthulhufishing/recipes/great_sword_revelation_craft.json"
         ]
       }
+    },
+    {
+      "name": "TentacleStaffLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tentacle_staff_living_entity_is_hit_with_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/TentacleStaffLivingEntityIsHitWithItemProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2849,8 +2868,8 @@
   "language_map": {
     "en_us": {
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
-      "item.cthulhufishing.sculk_ring": "Sculk Ring",
       "item.cthulhufishing.step_to_abyss": "Music disc - Step To Abyss ",
+      "item.cthulhufishing.sculk_ring": "Sculk Ring",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
       "item.cthulhufishing.cthulhu_grimoire": "Cthulhu Grimoire",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",

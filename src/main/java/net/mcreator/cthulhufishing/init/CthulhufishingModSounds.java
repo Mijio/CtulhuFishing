@@ -25,4 +25,6 @@ public class CthulhufishingModSounds {
 	public static final RegistryObject<SoundEvent> REAGENT_INPUT = REGISTRY.register("reagent_input", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "reagent_input")));
 	public static final RegistryObject<SoundEvent> RELIC_IDLE = REGISTRY.register("relic_idle", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "relic_idle")));
 	public static final RegistryObject<SoundEvent> RELIC_LOOT = REGISTRY.register("relic_loot", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "relic_loot")));
+	public static final RegistryObject<SoundEvent> VOID_MERCHANT = REGISTRY.register("void_merchant", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "void_merchant")));
+	public static final RegistryObject<SoundEvent> STEP_TO_ABYSS_XYTHE = REGISTRY.register("step_to_abyss_xythe", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "step_to_abyss_xythe")));
 }

@@ -79,5 +79,21 @@
         "stream": false
       }
     ]
+  },
+  "void_merchant": {
+    "sounds": [
+      {
+        "name": "cthulhufishing:411086__iceofdoom__hm-huh-type-sound-bewildered-male",
+        "stream": false
+      }
+    ]
+  },
+  "step_to_abyss_xythe": {
+    "sounds": [
+      {
+        "name": "cthulhufishing:115831__xythe__hmm_1",
+        "stream": false
+      }
+    ]
   }
 }

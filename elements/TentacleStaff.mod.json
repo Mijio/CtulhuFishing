@@ -15,7 +15,7 @@
       "value": "CUSTOM:CtulhuFishingTab"
     },
     "firstPersonArms": false,
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 15,
     "useDuration": 0,
     "toolType": 1.3,
@@ -34,6 +34,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onEntityHitWith": {
+      "name": "TentacleStaffLivingEntityIsHitWithItem"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

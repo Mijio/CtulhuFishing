@@ -34,7 +34,7 @@ public class CthulhufishingModVillagerProfessions {
 	private static final Map<String, ProfessionPoiType> POI_TYPES = new HashMap<>();
 	public static final DeferredRegister<VillagerProfession> PROFESSIONS = DeferredRegister.create(ForgeRegistries.VILLAGER_PROFESSIONS, CthulhufishingMod.MODID);
 	public static final RegistryObject<VillagerProfession> VOID_MERCHANT = registerProfession("void_merchant", () -> CthulhufishingModBlocks.CTULHU_ALTAR_FISH.get(),
-			() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:catchfishmen")));
+			() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:void_merchant")));
 
 	private static RegistryObject<VillagerProfession> registerProfession(String name, Supplier<Block> block, Supplier<SoundEvent> soundEvent) {
 		POI_TYPES.put(name, new ProfessionPoiType(block, null));
