@@ -1776,8 +1776,8 @@
       "registry_name": "emerald_gold_ring",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/EmeraldGoldRingItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/emerald_gold_ring.json"
+          "src/main/resources/assets/cthulhufishing/models/item/emerald_gold_ring.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/EmeraldGoldRingItem.java"
         ]
       }
     },
@@ -2558,8 +2558,8 @@
       "registry_name": "revelation_fabric",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/RevelationFabricItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/revelation_fabric.json"
+          "src/main/resources/assets/cthulhufishing/models/item/revelation_fabric.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/RevelationFabricItem.java"
         ]
       }
     },
@@ -2894,10 +2894,10 @@
   ],
   "language_map": {
     "en_us": {
-      "item.cthulhufishing.mask_of_revelation_helmet": "Mask Of Revelation Helmet",
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
-      "item.cthulhufishing.step_to_abyss": "Music disc - Step To Abyss ",
+      "item.cthulhufishing.mask_of_revelation_helmet": "Mask Of Revelation Helmet",
       "item.cthulhufishing.sculk_ring": "Sculk Ring",
+      "item.cthulhufishing.step_to_abyss": "Music disc - Step To Abyss ",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
       "item.cthulhufishing.cthulhu_grimoire": "Cthulhu Grimoire",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
