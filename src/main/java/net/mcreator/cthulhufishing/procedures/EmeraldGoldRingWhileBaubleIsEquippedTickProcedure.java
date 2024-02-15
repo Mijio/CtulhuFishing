@@ -17,13 +17,20 @@ public class EmeraldGoldRingWhileBaubleIsEquippedTickProcedure {
 		double CurrentXP = 0;
 		CurrentXP = entity instanceof Player _plr ? _plr.experienceLevel : 0;
 		if (entity instanceof Player _player)
-			_player.giveExperiencePoints(-(entity instanceof Player _plr ? _plr.experienceLevel : 0));
+			_player.giveExperiencePoints(-((int) ((entity instanceof Player _plr ? _plr.experienceLevel : 0) / 10)));
 		if (CurrentXP != (entity instanceof Player _plr ? _plr.experienceLevel : 0)) {
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).removeModifier(UUID.fromString("cd74d4b6-9b58-473d-acad-c0edd0d62d83"));
-			Modifier = new AttributeModifier(UUID.fromString("cd74d4b6-9b58-473d-acad-c0edd0d62d83"), ((entity instanceof Player _plr ? _plr.experienceLevel : 0) + ""), ((entity instanceof Player _plr ? _plr.experienceLevel : 0) * 0.01),
-					AttributeModifier.Operation.MULTIPLY_TOTAL);
-			if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).hasModifier(Modifier)))
-				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).addTransientModifier(Modifier);
+			if (CurrentXP <= 25) {
+				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).removeModifier(UUID.fromString("cd74d4b6-9b58-473d-acad-c0edd0d62d83"));
+				Modifier = new AttributeModifier(UUID.fromString("cd74d4b6-9b58-473d-acad-c0edd0d62d83"), ((entity instanceof Player _plr ? _plr.experienceLevel : 0) + ""), ((entity instanceof Player _plr ? _plr.experienceLevel : 0) * 0.01 + 1),
+						AttributeModifier.Operation.MULTIPLY_TOTAL);
+				if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).hasModifier(Modifier)))
+					((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).addTransientModifier(Modifier);
+			} else {
+				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).removeModifier(UUID.fromString("cd74d4b6-9b58-473d-acad-c0edd0d62d83"));
+				Modifier = new AttributeModifier(UUID.fromString("cd74d4b6-9b58-473d-acad-c0edd0d62d83"), ((entity instanceof Player _plr ? _plr.experienceLevel : 0) + ""), (25 * 0.01 + 1), AttributeModifier.Operation.MULTIPLY_TOTAL);
+				if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).hasModifier(Modifier)))
+					((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).addTransientModifier(Modifier);
+			}
 		}
 	}
 }

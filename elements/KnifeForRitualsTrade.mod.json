@@ -58,7 +58,7 @@
             },
             "countOffer": 1,
             "level": 4,
-            "maxTrades": 10,
+            "maxTrades": 2,
             "xp": 10,
             "priceMultiplier": 0.05
           },
@@ -76,7 +76,7 @@
             },
             "countOffer": 1,
             "level": 4,
-            "maxTrades": 10,
+            "maxTrades": 2,
             "xp": 10,
             "priceMultiplier": 0.05
           },
@@ -94,7 +94,7 @@
             },
             "countOffer": 2,
             "level": 2,
-            "maxTrades": 10,
+            "maxTrades": 16,
             "xp": 5,
             "priceMultiplier": 0.05
           },
@@ -112,7 +112,7 @@
             },
             "countOffer": 1,
             "level": 1,
-            "maxTrades": 10,
+            "maxTrades": 1,
             "xp": 15,
             "priceMultiplier": 0.05
           },
@@ -130,7 +130,7 @@
             },
             "countOffer": 1,
             "level": 1,
-            "maxTrades": 10,
+            "maxTrades": 1,
             "xp": 15,
             "priceMultiplier": 0.05
           },
@@ -149,7 +149,7 @@
             "countOffer": 1,
             "level": 5,
             "maxTrades": 10,
-            "xp": 20,
+            "xp": 25,
             "priceMultiplier": 0.05
           },
           {
@@ -166,8 +166,8 @@
             },
             "countOffer": 1,
             "level": 5,
-            "maxTrades": 10,
-            "xp": 15,
+            "maxTrades": 1,
+            "xp": 20,
             "priceMultiplier": 0.05
           },
           {
@@ -184,8 +184,8 @@
             },
             "countOffer": 1,
             "level": 3,
-            "maxTrades": 10,
-            "xp": 15,
+            "maxTrades": 1,
+            "xp": 20,
             "priceMultiplier": 0.05
           },
           {
@@ -201,9 +201,9 @@
               "value": "CUSTOM:SwordOfRevelation"
             },
             "countOffer": 1,
-            "level": 3,
-            "maxTrades": 10,
-            "xp": 15,
+            "level": 1,
+            "maxTrades": 1,
+            "xp": 20,
             "priceMultiplier": 0.05
           }
         ]

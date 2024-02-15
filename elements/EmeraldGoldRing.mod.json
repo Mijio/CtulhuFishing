@@ -37,9 +37,6 @@
     "curioTick": {
       "name": "EmeraldGoldRingWhileBaubleIsEquippedTick"
     },
-    "onEquip": {
-      "name": "EmeraldGoldRingBaubleIsEquipped"
-    },
     "onUnequip": {
       "name": "EmeraldGoldRingBaubleIsUnequipped"
     },
