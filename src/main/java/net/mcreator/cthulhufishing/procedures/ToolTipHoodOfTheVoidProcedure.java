@@ -150,6 +150,12 @@ public class ToolTipHoodOfTheVoidProcedure {
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.MASK_OF_REVELATION_HELMET.get()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bWhen equip revelation costs you spend half as much "));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
 		} else if (itemstack.getItem() == CthulhufishingModItems.REVELATION_FABRIC.get()) {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A7bused to improve equipment"));
