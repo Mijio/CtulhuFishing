@@ -31,6 +31,8 @@ public class CthulhufishingModTrades {
 			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.EMERALD, 28), new ItemStack(CthulhufishingModItems.REAGENT.get(), 20), new ItemStack(CthulhufishingModItems.SWORD_OF_REVELATION.get()), 1, 20, 0.05f));
 			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(Items.EMERALD, 32), new ItemStack(CthulhufishingModItems.REAGENT.get(), 14), new ItemStack(CthulhufishingModItems.REVELATION_STEEL.get()), 2, 10, 0.05f));
 			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Blocks.EMERALD_BLOCK, 5), new ItemStack(CthulhufishingModItems.REAGENT.get(), 16), new ItemStack(CthulhufishingModItems.EMERALD_GOLD_RING.get()), 1, 20, 0.05f));
+			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.EMERALD, 26), new ItemStack(CthulhufishingModItems.REAGENT.get(), 14), new ItemStack(CthulhufishingModItems.MASK_OF_REVELATION_HELMET.get()), 1, 20, 0.05f));
+			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.EMERALD, 26), new ItemStack(CthulhufishingModItems.REAGENT.get(), 16), new ItemStack(CthulhufishingModItems.HOOD_OF_THE_DEEP_VOID_HELMET.get()), 1, 20, 0.05f));
 		}
 	}
 }
