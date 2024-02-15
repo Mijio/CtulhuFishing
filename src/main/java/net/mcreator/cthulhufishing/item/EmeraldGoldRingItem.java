@@ -10,7 +10,6 @@ import net.minecraft.world.item.Item;
 
 import net.mcreator.cthulhufishing.procedures.EmeraldGoldRingWhileBaubleIsEquippedTickProcedure;
 import net.mcreator.cthulhufishing.procedures.EmeraldGoldRingBaubleIsUnequippedProcedure;
-import net.mcreator.cthulhufishing.procedures.EmeraldGoldRingBaubleIsEquippedProcedure;
 import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 
 public class EmeraldGoldRingItem extends Item implements ICurioItem {
@@ -21,11 +20,6 @@ public class EmeraldGoldRingItem extends Item implements ICurioItem {
 	@Override
 	public void curioTick(SlotContext slotContext, ItemStack stack) {
 		EmeraldGoldRingWhileBaubleIsEquippedTickProcedure.execute(slotContext.entity());
-	}
-
-	@Override
-	public void onEquip(SlotContext slotContext, ItemStack prevStack, ItemStack stack) {
-		EmeraldGoldRingBaubleIsEquippedProcedure.execute(slotContext.entity());
 	}
 
 	@Override
