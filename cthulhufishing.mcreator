@@ -335,11 +335,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/block/DeepOilBlock.java",
-          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/DeepOilFeature.java",
-          "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json",
-          "src/main/resources/data/cthulhufishing/forge/biome_modifier/deep_oil_biome_modifier.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/deep_oil.json",
           "src/main/resources/assets/cthulhufishing/models/item/deep_oil.json",
-          "src/main/resources/assets/cthulhufishing/blockstates/deep_oil.json"
+          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/DeepOilFeature.java",
+          "src/main/resources/data/cthulhufishing/forge/biome_modifier/deep_oil_biome_modifier.json",
+          "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json"
         ]
       }
     },
@@ -822,6 +822,18 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -994,16 +1006,16 @@
       "registry_name": "block_ore_eye",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeTileRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/display/BlockOreEyeDisplayItem.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeBlockModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/BlockOreEyeFeature.java",
-          "src/main/resources/assets/cthulhufishing/models/custom/block_ore_eye_particle.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeDisplayModel.java",
           "src/main/java/net/mcreator/cthulhufishing/block/BlockOreEyeBlock.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/block_ore_eye.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/BlockOreEyeDisplayItem.java",
+          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/BlockOreEyeFeature.java",
           "src/main/java/net/mcreator/cthulhufishing/block/entity/BlockOreEyeTileEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeBlockModel.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/block_ore_eye.json",
+          "src/main/resources/assets/cthulhufishing/models/custom/block_ore_eye_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeTileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeDisplayModel.java",
           "src/main/resources/assets/cthulhufishing/models/item/block_ore_eye.json"
         ]
       }
@@ -1477,8 +1489,8 @@
       "registry_name": "relic",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/relic.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/RelicItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/RelicItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/relic.json"
         ]
       }
     },
@@ -2299,8 +2311,8 @@
       "registry_name": "treasure_bag",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/TreasureBagItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/treasure_bag.json"
+          "src/main/resources/assets/cthulhufishing/models/item/treasure_bag.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/TreasureBagItem.java"
         ]
       }
     },
@@ -2529,11 +2541,11 @@
       "registry_name": "pseudo_eye",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/PseudoEyeFeature.java",
           "src/main/java/net/mcreator/cthulhufishing/block/PseudoEyeBlock.java",
           "src/main/resources/assets/cthulhufishing/models/item/pseudo_eye.json",
-          "src/main/resources/assets/cthulhufishing/models/block/pseudo_eye.json",
           "src/main/resources/data/cthulhufishing/forge/biome_modifier/pseudo_eye_biome_modifier.json",
+          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/PseudoEyeFeature.java",
+          "src/main/resources/assets/cthulhufishing/models/block/pseudo_eye.json",
           "src/main/resources/assets/cthulhufishing/blockstates/pseudo_eye.json"
         ]
       }
