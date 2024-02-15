@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:stone"
+    },
+    "1": {
+      "item": "cthulhufishing:drip_void"
+    },
+    "2": {
+      "tag": "forge:stone"
+    },
+    "3": {
+      "item": "cthulhufishing:drip_void"
+    },
+    "4": {
+      "item": "cthulhufishing:third_eye"
+    },
+    "5": {
+      "item": "cthulhufishing:drip_void"
+    },
+    "6": {
+      "tag": "forge:stone"
+    },
+    "7": {
+      "tag": "forge:stone"
+    },
+    "8": {
+      "tag": "forge:stone"
+    }
+  },
+  "result": {
+    "item": "cthulhufishing:runic_tablet",
+    "count": 1
+  }
+}

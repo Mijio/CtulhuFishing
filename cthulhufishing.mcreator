@@ -2643,6 +2643,39 @@
         ]
       },
       "path": "~/Relic"
+    },
+    {
+      "name": "VoidMerchant",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_merchant",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "RunicTabletRecipe",
+      "type": "recipe",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "runic_tablet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/recipes/runic_tablet_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "KnifeForRitualsTrade",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "knife_for_rituals_trade",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [
@@ -2843,6 +2876,7 @@
       "item.cthulhufishing.crimson_finger": "Crimson Finger",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "block.cthulhufishing.deep_oil": "Deep Oil",
+      "entity.minecraft.villager.cthulhufishing.void_merchant": "Void Merchant",
       "item.cthulhufishing.ancient_coin": "Ancient Coin",
       "block.cthulhufishing.pseudo_eye": "Pseudo Eye"
     }

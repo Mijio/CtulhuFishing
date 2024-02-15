@@ -1,0 +1,16 @@
+{
+  "_fv": 43,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Void Merchant",
+    "pointOfInterest": {
+      "value": "CUSTOM:CtulhuAltarFish"
+    },
+    "actionSound": {
+      "value": "CUSTOM:catchfishmen"
+    },
+    "hat": "None",
+    "professionTextureFile": "texture_obsessed_eye.png",
+    "zombifiedProfessionTextureFile": "texture_obsessed_eye.png"
+  }
+}
