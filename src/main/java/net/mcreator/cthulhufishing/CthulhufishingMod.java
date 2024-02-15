@@ -31,6 +31,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.cthulhufishing.init.CthulhufishingModVillagerProfessions;
 import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 import net.mcreator.cthulhufishing.init.CthulhufishingModSounds;
 import net.mcreator.cthulhufishing.init.CthulhufishingModParticleTypes;
@@ -74,6 +75,7 @@ public class CthulhufishingMod {
 		CthulhufishingModParticleTypes.REGISTRY.register(bus);
 		CthulhufishingModMenus.REGISTRY.register(bus);
 
+		CthulhufishingModVillagerProfessions.PROFESSIONS.register(bus);
 		GeckoLib.initialize();
 	}
 

@@ -98,7 +98,7 @@ public class ToolTipHoodOfTheVoidProcedure {
 		} else if (itemstack.getItem() == CthulhufishingModItems.REAGENT.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bAbyss reagent"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bIf you do not place it in the relic in time, the relic may explode"));
+				tooltip.add(Component.literal("\u00A7bIf you do not place it in the relic in time, then the relic may explode"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
