@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:chainmail_helmet"
+  },
+  "addition": {
+    "item": "cthulhufishing:revelation_steel"
+  },
+  "result": {
+    "item": "cthulhufishing:mask_of_revelation_helmet"
+  }
+}
