@@ -1,0 +1,213 @@
+{
+  "_fv": 43,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "CUSTOM:VoidMerchant"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 8,
+            "price2": {
+              "value": "CUSTOM:Reagent"
+            },
+            "countPrice2": 6,
+            "offer": {
+              "value": "CUSTOM:CrimsonRing"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 1,
+            "xp": 20,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 8,
+            "price2": {
+              "value": "CUSTOM:Reagent"
+            },
+            "countPrice2": 6,
+            "offer": {
+              "value": "CUSTOM:SculkRing"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 1,
+            "xp": 20,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 32,
+            "price2": {
+              "value": "CUSTOM:Reagent"
+            },
+            "countPrice2": 14,
+            "offer": {
+              "value": "CUSTOM:CrimsonFinger"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 10,
+            "xp": 10,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 32,
+            "price2": {
+              "value": "CUSTOM:Reagent"
+            },
+            "countPrice2": 14,
+            "offer": {
+              "value": "CUSTOM:RevelationFabric"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 10,
+            "xp": 10,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 6,
+            "price2": {
+              "value": "CUSTOM:Reagent"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:TreasureBag"
+            },
+            "countOffer": 2,
+            "level": 2,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.STONE_SWORD"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Items.NETHER_WART"
+            },
+            "countPrice2": 8,
+            "offer": {
+              "value": "CUSTOM:KnifeForRitualBleeding"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 15,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:ThirdEye"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "Blocks.STONE#0"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:FadedRunicTablet"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 15,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Blocks.EMERALD_BLOCK"
+            },
+            "countPrice1": 10,
+            "price2": {
+              "value": "CUSTOM:Reagent"
+            },
+            "countPrice2": 8,
+            "offer": {
+              "value": "CUSTOM:Relic"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 10,
+            "xp": 20,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.WRITABLE_BOOK"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": "CUSTOM:Reagent"
+            },
+            "countPrice2": 30,
+            "offer": {
+              "value": "CUSTOM:CthulhuGrimoire"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 10,
+            "xp": 15,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 28,
+            "price2": {
+              "value": "CUSTOM:Reagent"
+            },
+            "countPrice2": 12,
+            "offer": {
+              "value": "CUSTOM:TentacleStaff"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 10,
+            "xp": 15,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 28,
+            "price2": {
+              "value": "CUSTOM:Reagent"
+            },
+            "countPrice2": 20,
+            "offer": {
+              "value": "CUSTOM:SwordOfRevelation"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 15,
+            "priceMultiplier": 0.05
+          }
+        ]
+      }
+    ]
+  }
+}
