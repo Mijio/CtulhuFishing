@@ -57,8 +57,8 @@
               "value": "CUSTOM:CrimsonFinger"
             },
             "countOffer": 1,
-            "level": 5,
-            "maxTrades": 10,
+            "level": 4,
+            "maxTrades": 2,
             "xp": 10,
             "priceMultiplier": 0.05
           },
@@ -75,8 +75,8 @@
               "value": "CUSTOM:RevelationFabric"
             },
             "countOffer": 1,
-            "level": 5,
-            "maxTrades": 10,
+            "level": 4,
+            "maxTrades": 2,
             "xp": 10,
             "priceMultiplier": 0.05
           },
@@ -94,7 +94,7 @@
             },
             "countOffer": 2,
             "level": 2,
-            "maxTrades": 10,
+            "maxTrades": 16,
             "xp": 5,
             "priceMultiplier": 0.05
           },
