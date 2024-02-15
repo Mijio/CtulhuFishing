@@ -90,7 +90,7 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> ALTAR_RELIC_5 = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC_5.getId().getPath(), () -> new AltarRelic5DisplayItem(CthulhufishingModBlocks.ALTAR_RELIC_5.get(), new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> ALTAR_RELIC_6 = REGISTRY.register(CthulhufishingModBlocks.ALTAR_RELIC_6.getId().getPath(), () -> new AltarRelic6DisplayItem(CthulhufishingModBlocks.ALTAR_RELIC_6.get(), new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> TREASURE_BAG = REGISTRY.register("treasure_bag", () -> new TreasureBagItem());
-	public static final RegistryObject<Item> PSEUDO_EYE = block(CthulhufishingModBlocks.PSEUDO_EYE, CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB);
+	public static final RegistryObject<Item> PSEUDO_EYE = block(CthulhufishingModBlocks.PSEUDO_EYE, null);
 	public static final RegistryObject<Item> CRIMSON_FINGER = REGISTRY.register("crimson_finger", () -> new CrimsonFingerItem());
 	public static final RegistryObject<Item> REVELATION_FABRIC = REGISTRY.register("revelation_fabric", () -> new RevelationFabricItem());
 

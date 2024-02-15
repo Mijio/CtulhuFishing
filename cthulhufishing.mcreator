@@ -2571,33 +2571,6 @@
       }
     },
     {
-      "name": "CrimsonFinger",
-      "type": "item",
-      "sortid": 139,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crimson_finger",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/crimson_finger.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/CrimsonFingerItem.java"
-        ]
-      }
-    },
-    {
-      "name": "TentacleStaffrecipe",
-      "type": "recipe",
-      "sortid": 140,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "tentacle_staffrecipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/cthulhufishing/recipes/tentacle_staffrecipe.json"
-        ]
-      }
-    },
-    {
       "name": "RevelationFabric",
       "type": "item",
       "sortid": 141,
@@ -2623,6 +2596,60 @@
           "src/main/resources/data/cthulhufishing/recipes/hood_deep_void_craft.json"
         ]
       }
+    },
+    {
+      "name": "TentacleStaffrecipe",
+      "type": "recipe",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tentacle_staffrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/recipes/tentacle_staffrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CrimsonFinger",
+      "type": "item",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crimson_finger",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/crimson_finger.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/CrimsonFingerItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CthulhuChest",
+      "type": "loottable",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cthulhu_chest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/loot_tables/chests/cthulhu_chest.json"
+        ]
+      }
+    },
+    {
+      "name": "RelicReagent",
+      "type": "loottable",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "relic_reagent",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/loot_tables/blocks/relic_reagent.json"
+        ]
+      },
+      "path": "~/Relic"
     }
   ],
   "variable_elements": [
@@ -2835,19 +2862,11 @@
         "children": []
       },
       {
-        "name": "SculkSet",
-        "children": []
-      },
-      {
-        "name": "CthulhuGrimoire",
-        "children": []
-      },
-      {
-        "name": "EyeCommands",
-        "children": []
-      },
-      {
         "name": "ThirdEyeProcedures",
+        "children": []
+      },
+      {
+        "name": "SculkSet",
         "children": []
       },
       {
@@ -2867,7 +2886,15 @@
         "children": []
       },
       {
+        "name": "CthulhuGrimoire",
+        "children": []
+      },
+      {
         "name": "ObsessedEye",
+        "children": []
+      },
+      {
+        "name": "EyeCommands",
         "children": []
       },
       {
