@@ -21,4 +21,8 @@ public class CthulhufishingModSounds {
 	public static final RegistryObject<SoundEvent> HOOD_ABLITY = REGISTRY.register("hood_ablity", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "hood_ablity")));
 	public static final RegistryObject<SoundEvent> OBSESSED_EYE_SPAWN = REGISTRY.register("obsessed_eye_spawn", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "obsessed_eye_spawn")));
 	public static final RegistryObject<SoundEvent> OBSESSED_EYE_DAMAGE = REGISTRY.register("obsessed_eye_damage", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "obsessed_eye_damage")));
+	public static final RegistryObject<SoundEvent> ALTAR_LOOT = REGISTRY.register("altar_loot", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "altar_loot")));
+	public static final RegistryObject<SoundEvent> REAGENT_INPUT = REGISTRY.register("reagent_input", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "reagent_input")));
+	public static final RegistryObject<SoundEvent> RELIC_IDLE = REGISTRY.register("relic_idle", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "relic_idle")));
+	public static final RegistryObject<SoundEvent> RELIC_LOOT = REGISTRY.register("relic_loot", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "relic_loot")));
 }

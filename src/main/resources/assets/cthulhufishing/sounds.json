@@ -47,5 +47,37 @@
         "stream": false
       }
     ]
+  },
+  "altar_loot": {
+    "sounds": [
+      {
+        "name": "cthulhufishing:altar_loot",
+        "stream": false
+      }
+    ]
+  },
+  "reagent_input": {
+    "sounds": [
+      {
+        "name": "cthulhufishing:reagent_input",
+        "stream": false
+      }
+    ]
+  },
+  "relic_idle": {
+    "sounds": [
+      {
+        "name": "cthulhufishing:relic_idle",
+        "stream": false
+      }
+    ]
+  },
+  "relic_loot": {
+    "sounds": [
+      {
+        "name": "cthulhufishing:relic_loot",
+        "stream": false
+      }
+    ]
   }
 }

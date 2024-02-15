@@ -2675,6 +2675,38 @@
       ],
       "category": "hostile",
       "subtitle": ""
+    },
+    {
+      "name": "altar_loot",
+      "files": [
+        "altar_loot"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "reagent_input",
+      "files": [
+        "reagent_input"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "relic_idle",
+      "files": [
+        "relic_idle"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "relic_loot",
+      "files": [
+        "relic_loot"
+      ],
+      "category": "block",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -2691,6 +2723,8 @@
       "subtitles.ritual_bleeding_knife": "",
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
       "item.cthulhufishing.crimson_ring": "Crimson Ring",
+      "subtitles.altar_loot": "",
+      "subtitles.reagent_input": "",
       "item.cthulhufishing.faded_runic_tablet": "Faded Runic Tablet",
       "item.cthulhufishing.crimson_lure": "Crimson Lure",
       "entity.cthulhufishing.grimoire_tentacle": "Grimoire Tentacle",
@@ -2698,6 +2732,7 @@
       "item.cthulhufishing.relic": "Relic",
       "subtitles.catchfishmen": "fishmen",
       "effect.cthulhufishing.ancient_curse": "Ancient Curse",
+      "subtitles.relic_loot": "",
       "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
       "block.cthulhufishing.altar_relic_2": "Altar Relic",
       "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
@@ -2720,6 +2755,7 @@
       "item.cthulhufishing.sculk_lure": "Sculk Lure",
       "item.cthulhufishing.runic_tablet": "Runic Tablet",
       "subtitles.catch_strange_fish": "",
+      "subtitles.relic_idle": "",
       "subtitles.hood_ablity": "",
       "item.cthulhufishing.sword_of_revelation": "GreatSwordOfRevelation",
       "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
