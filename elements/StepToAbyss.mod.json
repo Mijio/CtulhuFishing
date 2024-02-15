@@ -1,0 +1,19 @@
+{
+  "_fv": 43,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music disc - Step To Abyss ",
+    "texture": "steptoabyss_-_iceofdoom",
+    "description": "Author - Xythe",
+    "creativeTab": {
+      "value": "CUSTOM:CtulhuFishingTab"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:step_to_abyss_xythe"
+    },
+    "lengthInTicks": 1920,
+    "analogOutput": 0
+  }
+}

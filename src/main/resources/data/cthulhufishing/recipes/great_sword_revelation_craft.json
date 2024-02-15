@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:iron_sword"
+  },
+  "addition": {
+    "item": "cthulhufishing:revelation_steel"
+  },
+  "result": {
+    "item": "cthulhufishing:sword_of_revelation"
+  }
+}

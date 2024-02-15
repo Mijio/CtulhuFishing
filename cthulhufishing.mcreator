@@ -1870,20 +1870,6 @@
       "path": "~/Relic"
     },
     {
-      "name": "Copperrelic",
-      "type": "loottable",
-      "sortid": 111,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "copperrelic",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/cthulhufishing/loot_tables/blocks/copper_relic.json"
-        ]
-      },
-      "path": "~/Relic"
-    },
-    {
       "name": "AltarRelic3OnBlockRightClicked",
       "type": "procedure",
       "sortid": 117,
@@ -2618,19 +2604,6 @@
       }
     },
     {
-      "name": "CthulhuChest",
-      "type": "loottable",
-      "sortid": 140,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "cthulhu_chest",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/cthulhufishing/loot_tables/chests/cthulhu_chest.json"
-        ]
-      }
-    },
-    {
       "name": "RelicReagent",
       "type": "loottable",
       "sortid": 139,
@@ -2675,6 +2648,47 @@
       "registry_name": "knife_for_rituals_trade",
       "metadata": {
         "files": []
+      }
+    },
+    {
+      "name": "StepToAbyss",
+      "type": "musicdisc",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "step_to_abyss",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/StepToAbyssItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/step_to_abyss.json"
+        ]
+      }
+    },
+    {
+      "name": "RevelationSteel",
+      "type": "item",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revelation_steel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/revelation_steel.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/RevelationSteelItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GreatSwordRevelationCraft",
+      "type": "recipe",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "great_sword_revelation_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/recipes/great_sword_revelation_craft.json"
+        ]
       }
     }
   ],
@@ -2814,15 +2828,33 @@
       ],
       "category": "block",
       "subtitle": ""
+    },
+    {
+      "name": "void_merchant",
+      "files": [
+        "411086__iceofdoom__hm-huh-type-sound-bewildered-male"
+      ],
+      "category": "neutral",
+      "subtitle": ""
+    },
+    {
+      "name": "step_to_abyss_xythe",
+      "files": [
+        "115831__xythe__hmm_1"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
       "item.cthulhufishing.sculk_ring": "Sculk Ring",
+      "item.cthulhufishing.step_to_abyss": "Music disc - Step To Abyss ",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
       "item.cthulhufishing.cthulhu_grimoire": "Cthulhu Grimoire",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
+      "subtitles.step_to_abyss_xythe": "",
       "item.cthulhufishing.knife_for_ritual_bleeding": "Knife For Ritual Bleeding",
       "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
       "subtitles.obsessed_eye_damage": "",
@@ -2838,9 +2870,11 @@
       "entity.cthulhufishing.grimoire_tentacle": "Grimoire Tentacle",
       "item.cthulhufishing.grimoire_tentacle_spawn_egg": "Grimoire Tentacle Spawn Egg",
       "item.cthulhufishing.relic": "Relic",
+      "item.cthulhufishing.revelation_steel": "Revelation Steel",
       "subtitles.catchfishmen": "fishmen",
       "effect.cthulhufishing.ancient_curse": "Ancient Curse",
       "subtitles.relic_loot": "",
+      "item.cthulhufishing.step_to_abyss.desc": "Author - Xythe",
       "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
       "block.cthulhufishing.altar_relic_2": "Altar Relic",
       "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
@@ -2863,6 +2897,7 @@
       "item.cthulhufishing.sculk_lure": "Sculk Lure",
       "item.cthulhufishing.runic_tablet": "Runic Tablet",
       "subtitles.catch_strange_fish": "",
+      "subtitles.void_merchant": "",
       "subtitles.relic_idle": "",
       "subtitles.hood_ablity": "",
       "item.cthulhufishing.sword_of_revelation": "GreatSwordOfRevelation",

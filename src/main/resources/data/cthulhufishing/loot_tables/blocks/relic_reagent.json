@@ -7,7 +7,7 @@
         {
           "type": "minecraft:item",
           "name": "cthulhufishing:reagent",
-          "weight": 12,
+          "weight": 24,
           "functions": [
             {
               "function": "set_count",
@@ -21,7 +21,7 @@
         {
           "type": "minecraft:item",
           "name": "cthulhufishing:reagent",
-          "weight": 8,
+          "weight": 16,
           "functions": [
             {
               "function": "set_count",
@@ -35,7 +35,21 @@
         {
           "type": "minecraft:item",
           "name": "cthulhufishing:reagent",
-          "weight": 6,
+          "weight": 12,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 0,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "cthulhufishing:reagent",
+          "weight": 8,
           "functions": [
             {
               "function": "set_count",
@@ -55,21 +69,21 @@
               "function": "set_count",
               "count": {
                 "min": 0,
-                "max": 4
+                "max": 5
               }
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "cthulhufishing:reagent",
-          "weight": 2,
+          "name": "cthulhufishing:step_to_abyss",
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
               "count": {
                 "min": 0,
-                "max": 5
+                "max": 1
               }
             }
           ]
