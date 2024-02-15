@@ -20,10 +20,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.client.renderer.block.model.ItemTransforms;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 
+import net.mcreator.cthulhufishing.procedures.TentacleStaffLivingEntityIsHitWithItemProcedure;
 import net.mcreator.cthulhufishing.item.renderer.TentacleStaffItemRenderer;
 import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 
@@ -145,5 +147,12 @@ public class TentacleStaffItem extends Item implements IAnimatable {
 			return builder.build();
 		}
 		return super.getDefaultAttributeModifiers(equipmentSlot);
+	}
+
+	@Override
+	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
+		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
+		TentacleStaffLivingEntityIsHitWithItemProcedure.execute(itemstack);
+		return retval;
 	}
 }

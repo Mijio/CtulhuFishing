@@ -15,7 +15,7 @@ public class SwordOfRevelationItem extends SwordItem {
 	public SwordOfRevelationItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 65;
+				return 1000;
 			}
 
 			public float getSpeed() {
