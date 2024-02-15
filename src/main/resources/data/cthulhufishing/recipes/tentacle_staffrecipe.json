@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:wooden_sword"
+  },
+  "addition": {
+    "item": "cthulhufishing:crimson_finger"
+  },
+  "result": {
+    "item": "cthulhufishing:tentacle_staff"
+  }
+}

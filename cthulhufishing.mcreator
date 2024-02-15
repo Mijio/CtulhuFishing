@@ -335,11 +335,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/block/DeepOilBlock.java",
-          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/DeepOilFeature.java",
-          "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json",
-          "src/main/resources/data/cthulhufishing/forge/biome_modifier/deep_oil_biome_modifier.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/deep_oil.json",
           "src/main/resources/assets/cthulhufishing/models/item/deep_oil.json",
-          "src/main/resources/assets/cthulhufishing/blockstates/deep_oil.json"
+          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/DeepOilFeature.java",
+          "src/main/resources/data/cthulhufishing/forge/biome_modifier/deep_oil_biome_modifier.json",
+          "src/main/resources/assets/cthulhufishing/models/block/deep_oil.json"
         ]
       }
     },
@@ -1006,16 +1006,16 @@
       "registry_name": "block_ore_eye",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeTileRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/display/BlockOreEyeDisplayItem.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeBlockModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/BlockOreEyeFeature.java",
-          "src/main/resources/assets/cthulhufishing/models/custom/block_ore_eye_particle.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeDisplayModel.java",
           "src/main/java/net/mcreator/cthulhufishing/block/BlockOreEyeBlock.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/block_ore_eye.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/BlockOreEyeDisplayItem.java",
+          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/BlockOreEyeFeature.java",
           "src/main/java/net/mcreator/cthulhufishing/block/entity/BlockOreEyeTileEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeBlockModel.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/block_ore_eye.json",
+          "src/main/resources/assets/cthulhufishing/models/custom/block_ore_eye_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeTileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeDisplayModel.java",
           "src/main/resources/assets/cthulhufishing/models/item/block_ore_eye.json"
         ]
       }
@@ -1489,8 +1489,8 @@
       "registry_name": "relic",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/relic.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/RelicItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/RelicItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/relic.json"
         ]
       }
     },
@@ -2311,8 +2311,8 @@
       "registry_name": "treasure_bag",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/TreasureBagItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/treasure_bag.json"
+          "src/main/resources/assets/cthulhufishing/models/item/treasure_bag.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/TreasureBagItem.java"
         ]
       }
     },
@@ -2541,11 +2541,11 @@
       "registry_name": "pseudo_eye",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/PseudoEyeFeature.java",
           "src/main/java/net/mcreator/cthulhufishing/block/PseudoEyeBlock.java",
           "src/main/resources/assets/cthulhufishing/models/item/pseudo_eye.json",
-          "src/main/resources/assets/cthulhufishing/models/block/pseudo_eye.json",
           "src/main/resources/data/cthulhufishing/forge/biome_modifier/pseudo_eye_biome_modifier.json",
+          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/PseudoEyeFeature.java",
+          "src/main/resources/assets/cthulhufishing/models/block/pseudo_eye.json",
           "src/main/resources/assets/cthulhufishing/blockstates/pseudo_eye.json"
         ]
       }
@@ -2583,18 +2583,58 @@
       }
     },
     {
-      "name": "RelicReagent",
-      "type": "loottable",
+      "name": "RevelationFabric",
+      "type": "item",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "revelation_fabric",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/revelation_fabric.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/RevelationFabricItem.java"
+        ]
+      }
+    },
+    {
+      "name": "HoodDeepVoidCraft",
+      "type": "recipe",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hood_deep_void_craft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/recipes/hood_deep_void_craft.json"
+        ]
+      }
+    },
+    {
+      "name": "TentacleStaffrecipe",
+      "type": "recipe",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tentacle_staffrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/recipes/tentacle_staffrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "CrimsonFinger",
+      "type": "item",
       "sortid": 139,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "relic_reagent",
+      "registry_name": "crimson_finger",
       "metadata": {
         "files": [
-          "src/main/resources/data/cthulhufishing/loot_tables/blocks/relic_reagent.json"
+          "src/main/resources/assets/cthulhufishing/models/item/crimson_finger.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/CrimsonFingerItem.java"
         ]
-      },
-      "path": "~/Relic"
+      }
     },
     {
       "name": "CthulhuChest",
@@ -2608,6 +2648,20 @@
           "src/main/resources/data/cthulhufishing/loot_tables/chests/cthulhu_chest.json"
         ]
       }
+    },
+    {
+      "name": "RelicReagent",
+      "type": "loottable",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "relic_reagent",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/loot_tables/blocks/relic_reagent.json"
+        ]
+      },
+      "path": "~/Relic"
     }
   ],
   "variable_elements": [
@@ -2732,17 +2786,17 @@
       "subtitle": ""
     },
     {
-      "name": "relic_loot",
+      "name": "relic_idle",
       "files": [
-        "relic_loot"
+        "relic_idle"
       ],
       "category": "block",
       "subtitle": ""
     },
     {
-      "name": "relic_idle",
+      "name": "relic_loot",
       "files": [
-        "relic_idle"
+        "relic_loot"
       ],
       "category": "block",
       "subtitle": ""
@@ -2763,6 +2817,7 @@
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
       "item.cthulhufishing.crimson_ring": "Crimson Ring",
       "subtitles.altar_loot": "",
+      "item.cthulhufishing.revelation_fabric": "Revelation Fabric",
       "subtitles.reagent_input": "",
       "item.cthulhufishing.faded_runic_tablet": "Faded Runic Tablet",
       "item.cthulhufishing.crimson_lure": "Crimson Lure",
@@ -2804,6 +2859,7 @@
       "block.cthulhufishing.block_ore_eye": "Block Ore Eye",
       "gui.cthulhufishing.ctulhu_altar.label_12": "11",
       "effect.cthulhufishing.madness": "Madness",
+      "item.cthulhufishing.crimson_finger": "Crimson Finger",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "block.cthulhufishing.deep_oil": "Deep Oil",
       "item.cthulhufishing.ancient_coin": "Ancient Coin",
@@ -2818,19 +2874,11 @@
         "children": []
       },
       {
-        "name": "SculkSet",
-        "children": []
-      },
-      {
-        "name": "CthulhuGrimoire",
-        "children": []
-      },
-      {
-        "name": "EyeCommands",
-        "children": []
-      },
-      {
         "name": "ThirdEyeProcedures",
+        "children": []
+      },
+      {
+        "name": "SculkSet",
         "children": []
       },
       {
@@ -2850,7 +2898,15 @@
         "children": []
       },
       {
+        "name": "CthulhuGrimoire",
+        "children": []
+      },
+      {
         "name": "ObsessedEye",
+        "children": []
+      },
+      {
+        "name": "EyeCommands",
         "children": []
       },
       {
