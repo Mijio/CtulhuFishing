@@ -28,8 +28,8 @@
       "thirdperson_lefthand": {
         "translation": [
           0,
-          0,
-          0
+          -2.75,
+          -0.25
         ],
         "scale": [
           1,
