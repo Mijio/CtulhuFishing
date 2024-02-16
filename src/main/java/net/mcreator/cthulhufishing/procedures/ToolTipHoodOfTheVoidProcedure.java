@@ -1,8 +1,21 @@
 package net.mcreator.cthulhufishing.procedures;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
+import net.minecraftforge.event.entity.player.ItemTooltipEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.Screen;
+
+import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
 
 import javax.annotation.Nullable;
+
+import java.util.List;
 
 @Mod.EventBusSubscriber
 public class ToolTipHoodOfTheVoidProcedure {
@@ -137,7 +150,7 @@ public class ToolTipHoodOfTheVoidProcedure {
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
-		} else if (itemstack.getItem() == CthulhufishingModItems.DELETED_MOD_ELEMENT_HELMET.get()) {
+		} else if (itemstack.getItem() == CthulhufishingModItems.MASK_OF_REVELATION_HELMET.get()) {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A7bWhen equip revelation costs you spend half as much "));
 			} else {

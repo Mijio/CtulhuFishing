@@ -1,8 +1,7 @@
 package net.mcreator.cthulhufishing.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
-
-import javax.annotation.Nullable;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.util.RandomSource;
 
 public class TentacleStaffLivingEntityIsHitWithItemProcedure {
 	public static void execute(ItemStack itemstack) {
