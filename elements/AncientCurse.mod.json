@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Ancient Curse",
-    "icon": "madness.png",
+    "icon": "eye-3_1.png",
     "color": {
       "value": -10092544,
       "falpha": 0.0

@@ -31,6 +31,7 @@ import net.mcreator.cthulhufishing.item.KnifeForRitualBleedingItem;
 import net.mcreator.cthulhufishing.item.HorseSculkFishItem;
 import net.mcreator.cthulhufishing.item.HoodOfTheDeepVoidItem;
 import net.mcreator.cthulhufishing.item.HermitSlulkFishItem;
+import net.mcreator.cthulhufishing.item.HeavyFishingRoadItem;
 import net.mcreator.cthulhufishing.item.GlutonSculkFishItem;
 import net.mcreator.cthulhufishing.item.FadedRunicTabletItem;
 import net.mcreator.cthulhufishing.item.EmeraldGoldRingItem;
@@ -99,6 +100,7 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> STEP_TO_ABYSS = REGISTRY.register("step_to_abyss", () -> new StepToAbyssItem());
 	public static final RegistryObject<Item> REVELATION_STEEL = REGISTRY.register("revelation_steel", () -> new RevelationSteelItem());
 	public static final RegistryObject<Item> MASK_OF_REVELATION_HELMET = REGISTRY.register("mask_of_revelation_helmet", () -> new MaskOfRevelationItem.Helmet());
+	public static final RegistryObject<Item> HEAVY_FISHING_ROAD = REGISTRY.register("heavy_fishing_road", () -> new HeavyFishingRoadItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

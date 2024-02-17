@@ -2736,6 +2736,40 @@
           }
         ]
       }
+    },
+    {
+      "name": "HeavyFishingRoad",
+      "type": "tool",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "heavy_fishing_road",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/HeavyFishingRoadItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/heavy_fishing_road.json"
+        ]
+      }
+    },
+    {
+      "name": "SculkFishBuff",
+      "type": "procedure",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sculk_fish_buff",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/SculkFishBuffProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/SculkSet"
     }
   ],
   "variable_elements": [
@@ -2955,6 +2989,7 @@
       "block.cthulhufishing.block_ore_eye": "Block Ore Eye",
       "gui.cthulhufishing.ctulhu_altar.label_12": "11",
       "effect.cthulhufishing.madness": "Madness",
+      "item.cthulhufishing.heavy_fishing_road": "Heavy Fishing Road",
       "item.cthulhufishing.crimson_finger": "Crimson Finger",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "block.cthulhufishing.deep_oil": "Deep Oil",
