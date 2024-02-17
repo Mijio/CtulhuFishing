@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Obsessed Eye",
     "mobLabel": "",
-    "mobModelTexture": "texture_obsessed_eye.png",
+    "mobModelTexture": "texture_obsessed_eye_r.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 2.0

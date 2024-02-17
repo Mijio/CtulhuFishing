@@ -82,7 +82,7 @@ public class ObsessedEyeMobEntity extends Monster implements IAnimatable {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "texture_obsessed_eye");
+		this.entityData.define(TEXTURE, "texture_obsessed_eye_r");
 	}
 
 	public void setTexture(String texture) {
