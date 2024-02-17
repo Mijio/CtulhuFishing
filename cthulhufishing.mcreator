@@ -2770,6 +2770,24 @@
         ]
       },
       "path": "~/SculkSet"
+    },
+    {
+      "name": "FossilFish",
+      "type": "animatedentity",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossil_fish",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/forge/biome_modifier/fossil_fish_biome_modifier.json",
+          "src/main/resources/assets/cthulhufishing/models/item/fossil_fish_spawn_egg.json",
+          "src/main/java/net/mcreator/cthulhufishing/entity/FossilFishEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/client/renderer/FossilFishRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/model/FossilFishModel.java"
+        ]
+      },
+      "path": "~/FossilFishBoss"
     }
   ],
   "variable_elements": [
@@ -2928,10 +2946,10 @@
   ],
   "language_map": {
     "en_us": {
-      "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
       "item.cthulhufishing.mask_of_revelation_helmet": "Mask Of Revelation Helmet",
-      "item.cthulhufishing.sculk_ring": "Sculk Ring",
+      "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
       "item.cthulhufishing.step_to_abyss": "Music disc - Step To Abyss ",
+      "item.cthulhufishing.sculk_ring": "Sculk Ring",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
       "item.cthulhufishing.cthulhu_grimoire": "Cthulhu Grimoire",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
@@ -2940,6 +2958,7 @@
       "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
       "subtitles.obsessed_eye_damage": "",
       "item.cthulhufishing.treasure_bag": "Treasure Bag",
+      "item.cthulhufishing.fossil_fish_spawn_egg": "Fossil Fish Spawn Egg",
       "subtitles.ritual_bleeding_knife": "",
       "item.cthulhufishing.crimson_crunch": "Crimson Crunch",
       "item.cthulhufishing.crimson_ring": "Crimson Ring",
@@ -2952,6 +2971,7 @@
       "item.cthulhufishing.grimoire_tentacle_spawn_egg": "Grimoire Tentacle Spawn Egg",
       "item.cthulhufishing.relic": "Relic",
       "item.cthulhufishing.revelation_steel": "Revelation Steel",
+      "entity.cthulhufishing.fossil_fish": "Fossil Fish",
       "subtitles.catchfishmen": "fishmen",
       "effect.cthulhufishing.ancient_curse": "Ancient Curse",
       "subtitles.relic_loot": "",
@@ -3043,6 +3063,10 @@
       },
       {
         "name": "Enchantments",
+        "children": []
+      },
+      {
+        "name": "FossilFishBoss",
         "children": []
       }
     ]

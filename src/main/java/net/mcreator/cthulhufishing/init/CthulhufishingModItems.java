@@ -101,6 +101,7 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> REVELATION_STEEL = REGISTRY.register("revelation_steel", () -> new RevelationSteelItem());
 	public static final RegistryObject<Item> MASK_OF_REVELATION_HELMET = REGISTRY.register("mask_of_revelation_helmet", () -> new MaskOfRevelationItem.Helmet());
 	public static final RegistryObject<Item> HEAVY_FISHING_ROAD = REGISTRY.register("heavy_fishing_road", () -> new HeavyFishingRoadItem());
+	public static final RegistryObject<Item> FOSSIL_FISH_SPAWN_EGG = REGISTRY.register("fossil_fish_spawn_egg", () -> new ForgeSpawnEggItem(CthulhufishingModEntities.FOSSIL_FISH, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

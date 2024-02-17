@@ -6,6 +6,7 @@ import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.mcreator.cthulhufishing.entity.ObsessedEyeMobEntity;
 import net.mcreator.cthulhufishing.entity.GrimoireTentacleEntity;
+import net.mcreator.cthulhufishing.entity.FossilFishEntity;
 
 @Mod.EventBusSubscriber
 public class EntityAnimationFactory {
@@ -20,6 +21,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof GrimoireTentacleEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof FossilFishEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

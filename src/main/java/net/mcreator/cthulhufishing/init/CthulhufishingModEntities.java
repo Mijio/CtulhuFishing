@@ -18,6 +18,7 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.cthulhufishing.entity.ObsessedEyeMobEntity;
 import net.mcreator.cthulhufishing.entity.GrimoireTentacleEntity;
+import net.mcreator.cthulhufishing.entity.FossilFishEntity;
 import net.mcreator.cthulhufishing.CthulhufishingMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -29,6 +30,10 @@ public class CthulhufishingModEntities {
 					.sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<GrimoireTentacleEntity>> GRIMOIRE_TENTACLE = register("grimoire_tentacle", EntityType.Builder.<GrimoireTentacleEntity>of(GrimoireTentacleEntity::new, MobCategory.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GrimoireTentacleEntity::new).fireImmune().sized(1f, 2.5f));
+	public static final RegistryObject<EntityType<FossilFishEntity>> FOSSIL_FISH = register("fossil_fish",
+			EntityType.Builder.<FossilFishEntity>of(FossilFishEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(FossilFishEntity::new)
+
+					.sized(0.9f, 0.7f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -39,6 +44,7 @@ public class CthulhufishingModEntities {
 		event.enqueueWork(() -> {
 			ObsessedEyeMobEntity.init();
 			GrimoireTentacleEntity.init();
+			FossilFishEntity.init();
 		});
 	}
 
@@ -46,5 +52,6 @@ public class CthulhufishingModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(OBSESSED_EYE_MOB.get(), ObsessedEyeMobEntity.createAttributes().build());
 		event.put(GRIMOIRE_TENTACLE.get(), GrimoireTentacleEntity.createAttributes().build());
+		event.put(FOSSIL_FISH.get(), FossilFishEntity.createAttributes().build());
 	}
 }

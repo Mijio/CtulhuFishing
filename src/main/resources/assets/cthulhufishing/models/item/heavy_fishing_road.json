@@ -1,6 +1,7 @@
 {
-  "parent": "item/handheld_rod",
+  "parent": "cthulhufishing:custom/heavy_fishing_road",
   "textures": {
-    "layer0": "cthulhufishing:items/nonetexture"
+    "0": "cthulhufishing:blocks/texture_fishing_road",
+    "particle": "cthulhufishing:items/texture_fishing_road"
   }
 }

@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.cthulhufishing.client.renderer.ObsessedEyeMobRenderer;
 import net.mcreator.cthulhufishing.client.renderer.GrimoireTentacleRenderer;
+import net.mcreator.cthulhufishing.client.renderer.FossilFishRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class CthulhufishingModEntityRenderers {
@@ -18,5 +19,6 @@ public class CthulhufishingModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(CthulhufishingModEntities.OBSESSED_EYE_MOB.get(), ObsessedEyeMobRenderer::new);
 		event.registerEntityRenderer(CthulhufishingModEntities.GRIMOIRE_TENTACLE.get(), GrimoireTentacleRenderer::new);
+		event.registerEntityRenderer(CthulhufishingModEntities.FOSSIL_FISH.get(), FossilFishRenderer::new);
 	}
 }

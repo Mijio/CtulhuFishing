@@ -2,9 +2,9 @@
   "_fv": 43,
   "_type": "tool",
   "definition": {
-    "renderType": 0,
-    "texture": "nonetexture",
-    "customModelName": "Normal",
+    "renderType": 1,
+    "texture": "texture_fishing_road",
+    "customModelName": "heavy_fishing_road:default",
     "name": "Heavy Fishing Road",
     "specialInfo": [],
     "creativeTab": {
