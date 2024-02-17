@@ -18,8 +18,11 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
+import net.mcreator.cthulhufishing.init.CthulhufishingModBlocks;
+
 public class AltarRelicUpdateTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
+		double amplifier_curse = 0;
 		if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -55,29 +58,41 @@ public class AltarRelicUpdateTickProcedure {
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
+		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC.get()) {
+			amplifier_curse = 3;
+		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_1.get()) {
+			amplifier_curse = 2;
+		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_2.get()) {
+			amplifier_curse = 2;
+		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_3.get()) {
+			amplifier_curse = 1;
+		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_4.get()) {
+			amplifier_curse = 1;
+		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_5.get()) {
+			amplifier_curse = 0;
+		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_6.get()) {
+			amplifier_curse = 0;
+		}
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-					(("/effect give @a[distance=..10] cthulhufishing:ancient_curse " + "30") + "" + (" " + "0")));
+					(("/effect give @a[distance=..10] cthulhufishing:ancient_curse " + "3") + "" + (" " + amplifier_curse)));
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-					(("/effect give @a[distance=..10] minecraft:slowness " + "30") + "" + (" " + "1")));
+					(("effect give @e[type=!minecraft:player,distance=..10] minecraft:speed " + "3") + "" + (" " + amplifier_curse)));
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-					(("effect give @e[type=!minecraft:player,distance=..10] minecraft:speed " + "30") + "" + (" " + "3")));
+					(("effect give @e[type=!minecraft:player,distance=..10] minecraft:regeneration " + "3") + "" + (" " + amplifier_curse)));
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-					(("effect give @e[type=!minecraft:player,distance=..10] minecraft:regeneration " + "30") + "" + (" " + "3")));
+					(("effect give @e[type=!minecraft:player,distance=..10] minecraft:resistance " + "3") + "" + (" " + amplifier_curse)));
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-					(("effect give @e[type=!minecraft:player,distance=..10] minecraft:resistance " + "30") + "" + (" " + "3")));
+					(("effect give @e[type=!minecraft:player,distance=..10] minecraft:health_boost " + "3") + "" + (" " + amplifier_curse)));
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-					(("effect give @e[type=!minecraft:player,distance=..10] minecraft:health_boost " + "30") + "" + (" " + "3")));
+					(("effect give @e[type=!minecraft:player,distance=..10] minecraft:glowing " + "3") + "" + (" " + "0")));
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-					(("effect give @e[type=!minecraft:player,distance=..10] minecraft:glowing " + "30") + "" + (" " + "3")));
-		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-					(("effect give @e[type=!minecraft:player,distance=..10] cthulhufishing:madness " + "30") + "" + (" " + "0")));
+					(("effect give @e[type=!minecraft:player,distance=..10] cthulhufishing:madness " + "3") + "" + (" " + "0")));
 	}
 }
