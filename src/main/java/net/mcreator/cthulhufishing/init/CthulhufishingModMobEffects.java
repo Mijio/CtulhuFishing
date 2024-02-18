@@ -11,7 +11,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.effect.MobEffect;
 
 import net.mcreator.cthulhufishing.potion.RitualBleedingMobEffect;
-import net.mcreator.cthulhufishing.potion.MushroomedMobEffect;
 import net.mcreator.cthulhufishing.potion.MadnessMobEffect;
 import net.mcreator.cthulhufishing.potion.AncientCurseMobEffect;
 import net.mcreator.cthulhufishing.CthulhufishingMod;
@@ -21,5 +20,4 @@ public class CthulhufishingModMobEffects {
 	public static final RegistryObject<MobEffect> MADNESS = REGISTRY.register("madness", () -> new MadnessMobEffect());
 	public static final RegistryObject<MobEffect> RITUAL_BLEEDING = REGISTRY.register("ritual_bleeding", () -> new RitualBleedingMobEffect());
 	public static final RegistryObject<MobEffect> ANCIENT_CURSE = REGISTRY.register("ancient_curse", () -> new AncientCurseMobEffect());
-	public static final RegistryObject<MobEffect> MUSHROOMED = REGISTRY.register("mushroomed", () -> new MushroomedMobEffect());
 }

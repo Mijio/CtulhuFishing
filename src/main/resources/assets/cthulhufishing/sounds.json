@@ -95,29 +95,5 @@
         "stream": false
       }
     ]
-  },
-  "damage_fossil_fish": {
-    "sounds": [
-      {
-        "name": "cthulhufishing:damage_fosil_fsih",
-        "stream": false
-      }
-    ]
-  },
-  "idle_fossil_fish": {
-    "sounds": [
-      {
-        "name": "cthulhufishing:idle_fossil_fish_26sec",
-        "stream": false
-      }
-    ]
-  },
-  "fossil_fish_attack": {
-    "sounds": [
-      {
-        "name": "cthulhufishing:fossil_fish_attack",
-        "stream": false
-      }
-    ]
   }
 }

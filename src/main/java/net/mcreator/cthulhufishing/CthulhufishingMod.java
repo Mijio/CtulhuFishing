@@ -34,7 +34,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.cthulhufishing.init.CthulhufishingModVillagerProfessions;
 import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 import net.mcreator.cthulhufishing.init.CthulhufishingModSounds;
-import net.mcreator.cthulhufishing.init.CthulhufishingModPotions;
 import net.mcreator.cthulhufishing.init.CthulhufishingModParticleTypes;
 import net.mcreator.cthulhufishing.init.CthulhufishingModMobEffects;
 import net.mcreator.cthulhufishing.init.CthulhufishingModMenus;
@@ -71,7 +70,7 @@ public class CthulhufishingMod {
 		CthulhufishingModFeatures.REGISTRY.register(bus);
 
 		CthulhufishingModMobEffects.REGISTRY.register(bus);
-		CthulhufishingModPotions.REGISTRY.register(bus);
+
 		CthulhufishingModEnchantments.REGISTRY.register(bus);
 		CthulhufishingModParticleTypes.REGISTRY.register(bus);
 		CthulhufishingModMenus.REGISTRY.register(bus);
