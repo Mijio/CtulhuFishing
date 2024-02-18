@@ -1,0 +1,21 @@
+{
+  "_fv": 43,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Mushroomed Potion",
+    "splashName": "Splash Potion of Mushroomed Potion",
+    "lingeringName": "Lingering Potion of Mushroomed Potion",
+    "arrowName": "Arrow of Mushroomed Potion",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Mushroomed"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}
