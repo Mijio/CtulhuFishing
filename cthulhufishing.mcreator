@@ -2803,6 +2803,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2989,10 +3005,10 @@
   ],
   "language_map": {
     "en_us": {
-      "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
       "item.cthulhufishing.mask_of_revelation_helmet": "Mask Of Revelation Helmet",
-      "item.cthulhufishing.sculk_ring": "Sculk Ring",
+      "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
       "item.cthulhufishing.step_to_abyss": "Music disc - Step To Abyss ",
+      "item.cthulhufishing.sculk_ring": "Sculk Ring",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
       "item.cthulhufishing.cthulhu_grimoire": "Cthulhu Grimoire",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",

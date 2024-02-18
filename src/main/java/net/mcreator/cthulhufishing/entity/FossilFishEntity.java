@@ -20,10 +20,8 @@ import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
-import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.Pose;
@@ -64,7 +62,7 @@ public class FossilFishEntity extends Monster implements IAnimatable {
 
 	public FossilFishEntity(EntityType<FossilFishEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 10;
 		setNoAi(false);
 	}
 
@@ -85,6 +83,11 @@ public class FossilFishEntity extends Monster implements IAnimatable {
 	}
 
 	@Override
+	protected float getStandingEyeHeight(Pose poseIn, EntityDimensions sizeIn) {
+		return 0.5F;
+	}
+
+	@Override
 	public Packet<?> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
 	}
@@ -92,16 +95,14 @@ public class FossilFishEntity extends Monster implements IAnimatable {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
+		this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 0, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
 				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
-		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
-		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
-		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
-		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.goalSelector.addGoal(3, new LeapAtTargetGoal(this, (float) 0));
 	}
 
 	@Override
@@ -137,13 +138,13 @@ public class FossilFishEntity extends Monster implements IAnimatable {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		FossilFishOnEntityTickUpdateProcedure.execute(this);
+		FossilFishOnEntityTickUpdateProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 		this.refreshDimensions();
 	}
 
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 6.8);
+		return super.getDimensions(p_33597_).scale((float) 7);
 	}
 
 	@Override
@@ -180,12 +181,13 @@ public class FossilFishEntity extends Monster implements IAnimatable {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
-		builder = builder.add(Attributes.MAX_HEALTH, 10);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0);
+		builder = builder.add(Attributes.MAX_HEALTH, 20);
 		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 10);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 40);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 1);
+		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 0.5);
 		return builder;
 	}
 

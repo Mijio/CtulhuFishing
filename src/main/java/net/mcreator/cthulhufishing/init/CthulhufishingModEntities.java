@@ -33,7 +33,7 @@ public class CthulhufishingModEntities {
 	public static final RegistryObject<EntityType<FossilFishEntity>> FOSSIL_FISH = register("fossil_fish",
 			EntityType.Builder.<FossilFishEntity>of(FossilFishEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(80).setUpdateInterval(3).setCustomClientFactory(FossilFishEntity::new)
 
-					.sized(0.9f, 0.7f));
+					.sized(0.9f, 0.6f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
