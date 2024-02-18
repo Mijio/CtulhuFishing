@@ -2831,6 +2831,52 @@
         ]
       },
       "path": "~/FossilFishBoss"
+    },
+    {
+      "name": "Mushroomed",
+      "type": "potioneffect",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroomed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/potion/MushroomedMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "MushroomedOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroomed_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/MushroomedOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MushroomedPotion",
+      "type": "potion",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroomed_potion",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [
@@ -2985,17 +3031,42 @@
       ],
       "category": "neutral",
       "subtitle": ""
+    },
+    {
+      "name": "damage_fossil_fish",
+      "files": [
+        "damage_fosil_fsih"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "idle_fossil_fish",
+      "files": [
+        "idle_fossil_fish_26sec"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "fossil_fish_attack",
+      "files": [
+        "fossil_fish_attack"
+      ],
+      "category": "hostile",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
-      "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
       "item.cthulhufishing.mask_of_revelation_helmet": "Mask Of Revelation Helmet",
-      "item.cthulhufishing.sculk_ring": "Sculk Ring",
+      "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
       "item.cthulhufishing.step_to_abyss": "Music disc - Step To Abyss ",
+      "item.cthulhufishing.sculk_ring": "Sculk Ring",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
       "item.cthulhufishing.cthulhu_grimoire": "Cthulhu Grimoire",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
+      "subtitles.idle_fossil_fish": "",
       "subtitles.step_to_abyss_xythe": "",
       "item.cthulhufishing.knife_for_ritual_bleeding": "Knife For Ritual Bleeding",
       "item.cthulhufishing.hood_of_the_deep_void_helmet": "Hood Of The Deep Void Helmet",
@@ -3008,13 +3079,16 @@
       "subtitles.altar_loot": "",
       "item.cthulhufishing.revelation_fabric": "Revelation Fabric",
       "subtitles.reagent_input": "",
+      "effect.cthulhufishing.mushroomed": "Mushroomed",
       "item.cthulhufishing.faded_runic_tablet": "Faded Runic Tablet",
       "item.cthulhufishing.crimson_lure": "Crimson Lure",
       "entity.cthulhufishing.grimoire_tentacle": "Grimoire Tentacle",
       "item.cthulhufishing.grimoire_tentacle_spawn_egg": "Grimoire Tentacle Spawn Egg",
+      "subtitles.damage_fossil_fish": "",
       "item.cthulhufishing.relic": "Relic",
       "item.cthulhufishing.revelation_steel": "Revelation Steel",
       "entity.cthulhufishing.fossil_fish": "Fossil Fish",
+      "item.minecraft.lingering_potion.effect.mushroomed_potion": "Lingering Potion of Mushroomed Potion",
       "subtitles.catchfishmen": "fishmen",
       "effect.cthulhufishing.ancient_curse": "Ancient Curse",
       "subtitles.relic_loot": "",
@@ -3031,11 +3105,14 @@
       "block.cthulhufishing.altar_relic": "Altar Relic",
       "enchantment.cthulhufishing.power_of_the_extinct": "Power Of The Extinct",
       "item.cthulhufishing.obsessed_eye_mob_spawn_egg": "Obsessed Eye Spawn Egg",
+      "item.minecraft.splash_potion.effect.mushroomed_potion": "Splash Potion of Mushroomed Potion",
       "gui.cthulhufishing.ctulhu_altar.button_grab": "GRAB",
       "itemGroup.tabctulhu_fishing_tab": "Ctulhu Fishing Tab",
       "item.cthulhufishing.crimson_fish": "Crimson Fish",
+      "item.minecraft.potion.effect.mushroomed_potion": "Potion of Mushroomed Potion",
       "item.cthulhufishing.emerald_gold_ring": "Experience Ring",
       "item.cthulhufishing.drip_void": "Drip Void",
+      "subtitles.fossil_fish_attack": "",
       "item.cthulhufishing.reagent": "Reagent",
       "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
       "item.cthulhufishing.sculk_lure": "Sculk Lure",
@@ -3055,6 +3132,7 @@
       "item.cthulhufishing.heavy_fishing_road": "Heavy Fishing Road",
       "item.cthulhufishing.crimson_finger": "Crimson Finger",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
+      "item.minecraft.tipped_arrow.effect.mushroomed_potion": "Arrow of Mushroomed Potion",
       "block.cthulhufishing.deep_oil": "Deep Oil",
       "entity.minecraft.villager.cthulhufishing.void_merchant": "Void Merchant",
       "item.cthulhufishing.ancient_coin": "Ancient Coin",
