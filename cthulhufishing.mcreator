@@ -2780,10 +2780,10 @@
       "registry_name": "fossil_fish",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/client/renderer/FossilFishRenderer.java",
+          "src/main/resources/assets/cthulhufishing/models/item/fossil_fish_spawn_egg.json",
           "src/main/java/net/mcreator/cthulhufishing/entity/FossilFishEntity.java",
-          "src/main/java/net/mcreator/cthulhufishing/entity/model/FossilFishModel.java",
-          "src/main/resources/assets/cthulhufishing/models/item/fossil_fish_spawn_egg.json"
+          "src/main/java/net/mcreator/cthulhufishing/client/renderer/FossilFishRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/model/FossilFishModel.java"
         ]
       },
       "path": "~/FossilFishBoss"
@@ -3075,8 +3075,8 @@
   ],
   "language_map": {
     "en_us": {
-      "item.cthulhufishing.mask_of_revelation_helmet": "Mask Of Revelation Helmet",
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
+      "item.cthulhufishing.mask_of_revelation_helmet": "Mask Of Revelation Helmet",
       "item.cthulhufishing.step_to_abyss": "Music disc - Step To Abyss ",
       "item.cthulhufishing.sculk_ring": "Sculk Ring",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
