@@ -2780,10 +2780,10 @@
       "registry_name": "fossil_fish",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/fossil_fish_spawn_egg.json",
-          "src/main/java/net/mcreator/cthulhufishing/entity/FossilFishEntity.java",
           "src/main/java/net/mcreator/cthulhufishing/client/renderer/FossilFishRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/entity/model/FossilFishModel.java"
+          "src/main/java/net/mcreator/cthulhufishing/entity/FossilFishEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/model/FossilFishModel.java",
+          "src/main/resources/assets/cthulhufishing/models/item/fossil_fish_spawn_egg.json"
         ]
       },
       "path": "~/FossilFishBoss"
