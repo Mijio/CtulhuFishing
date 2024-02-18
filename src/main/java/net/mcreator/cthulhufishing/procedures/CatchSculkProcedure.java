@@ -44,7 +44,8 @@ public class CatchSculkProcedure {
 		if (entity == null)
 			return;
 		double RandomCrisonFishCatch = 0;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == CthulhufishingModItems.SCULK_LURE.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == CthulhufishingModItems.SCULK_LURE.get()
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CthulhufishingModItems.SCULK_LURE.get()) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.DARKNESS) : false) && world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("deep_dark"))) {
 				if (Mth.nextInt(RandomSource.create(), 1, 100) + (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score * 0.5
 						+ EnchantmentHelper.getItemEnchantmentLevel(CthulhufishingModEnchantments.SCULK_CATCHER_ENCHANTMENT.get(), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) * 5 > 90) {

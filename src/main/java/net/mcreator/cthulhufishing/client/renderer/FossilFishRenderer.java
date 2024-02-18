@@ -25,4 +25,9 @@ public class FossilFishRenderer extends GeoEntityRenderer<FossilFishEntity> {
 		stack.scale(3.4f, 3.4f, 3.4f);
 		return RenderType.entityTranslucent(getTextureLocation(entity));
 	}
+
+	@Override
+	protected float getDeathMaxRotation(FossilFishEntity entityLivingBaseIn) {
+		return 0.0F;
+	}
 }

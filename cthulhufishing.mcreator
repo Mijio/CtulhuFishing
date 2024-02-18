@@ -2746,8 +2746,8 @@
       "registry_name": "heavy_fishing_road",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/HeavyFishingRoadItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/heavy_fishing_road.json"
+          "src/main/resources/assets/cthulhufishing/models/item/heavy_fishing_road.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/HeavyFishingRoadItem.java"
         ]
       }
     },
@@ -2780,11 +2780,54 @@
       "registry_name": "fossil_fish",
       "metadata": {
         "files": [
-          "src/main/resources/data/cthulhufishing/forge/biome_modifier/fossil_fish_biome_modifier.json",
-          "src/main/resources/assets/cthulhufishing/models/item/fossil_fish_spawn_egg.json",
-          "src/main/java/net/mcreator/cthulhufishing/entity/FossilFishEntity.java",
           "src/main/java/net/mcreator/cthulhufishing/client/renderer/FossilFishRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/entity/model/FossilFishModel.java"
+          "src/main/java/net/mcreator/cthulhufishing/entity/FossilFishEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/model/FossilFishModel.java",
+          "src/main/resources/assets/cthulhufishing/models/item/fossil_fish_spawn_egg.json"
+        ]
+      },
+      "path": "~/FossilFishBoss"
+    },
+    {
+      "name": "FossilFishOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossil_fish_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FossilFishOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/FossilFishBoss"
+    },
+    {
+      "name": "FossilFishPlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossil_fish_player_collides_with_this_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FossilFishPlayerCollidesWithThisEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
         ]
       },
       "path": "~/FossilFishBoss"
