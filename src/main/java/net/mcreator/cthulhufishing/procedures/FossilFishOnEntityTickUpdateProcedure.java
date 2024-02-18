@@ -14,12 +14,18 @@ public class FossilFishOnEntityTickUpdateProcedure {
 		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)) {
 			entity.getPersistentData().putDouble("AI", (entity.getPersistentData().getDouble("AI") + 1));
 		}
-		if (entity.getPersistentData().getDouble("AI") == 115) {
+		if (entity.getPersistentData().getDouble("AI") == 110) {
 			if (entity instanceof FossilFishEntity) {
 				((FossilFishEntity) entity).setAnimation("animation.fossilized fish.new");
 			}
 		}
 		if (entity.getPersistentData().getDouble("AI") == 120) {
+			if (entity instanceof FossilFishEntity animatable)
+				animatable.setTexture("texture_fossil_fish_mushrumed");
+			entity.setDeltaMovement(new Vec3((entity.getLookAngle().x), 3, (entity.getLookAngle().z)));
+		}
+		if (entity.getPersistentData().getDouble("AI") == 124) {
+			entity.setDeltaMovement(new Vec3((entity.getLookAngle().x * 2.5), (-1.5), (entity.getLookAngle().z * 2.5)));
 			{
 				Entity _ent = entity;
 				_ent.setYRot(0);
@@ -33,10 +39,6 @@ public class FossilFishOnEntityTickUpdateProcedure {
 					_entity.yHeadRotO = _entity.getYRot();
 				}
 			}
-			entity.setDeltaMovement(new Vec3((-1), 3, 1));
-		}
-		if (entity.getPersistentData().getDouble("AI") == 124) {
-			entity.setDeltaMovement(new Vec3((entity.getLookAngle().x * 2.5), (-2), (entity.getLookAngle().z * 2.5)));
 			entity.getPersistentData().putDouble("AI", 0);
 		}
 	}
