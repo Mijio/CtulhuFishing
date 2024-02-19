@@ -10,7 +10,7 @@
       "fixedValue": 3.4
     },
     "boundingBoxScale": {
-      "fixedValue": 6.8
+      "fixedValue": 4.8
     },
     "modelWidth": 0.9,
     "modelHeight": 0.7,
@@ -58,7 +58,7 @@
     "armorBaseValue": 0.0,
     "trackingRange": 80,
     "followRange": 50,
-    "health": 80,
+    "health": 600,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
@@ -147,7 +147,7 @@
     "rangedAttackRadius": 10.0,
     "height": 1.0,
     "spawnThisMob": false,
-    "doesDespawnWhenIdle": true,
+    "doesDespawnWhenIdle": false,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
