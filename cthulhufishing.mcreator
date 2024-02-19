@@ -2746,8 +2746,8 @@
       "registry_name": "heavy_fishing_road",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/HeavyFishingRoadItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/heavy_fishing_road.json"
+          "src/main/resources/assets/cthulhufishing/models/item/heavy_fishing_road.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/HeavyFishingRoadItem.java"
         ]
       }
     },
@@ -2928,6 +2928,42 @@
           }
         ]
       }
+    },
+    {
+      "name": "FossilFishEntityIsHurt",
+      "type": "procedure",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossil_fish_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FossilFishEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FossilFishBoss"
     }
   ],
   "variable_elements": [
@@ -3158,7 +3194,6 @@
       "item.minecraft.lingering_potion.effect.mushroomed_potion": "Lingering Potion of Mushroomed Potion",
       "subtitles.catchfishmen": "fishmen",
       "effect.cthulhufishing.ancient_curse": "Ancient Curse",
-      "subtitles.jump_fossil_fish_attack": "",
       "subtitles.relic_loot": "",
       "item.cthulhufishing.step_to_abyss.desc": "Author - Xythe",
       "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
@@ -3183,7 +3218,6 @@
       "subtitles.fossil_fish_attack": "",
       "item.cthulhufishing.reagent": "Reagent",
       "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
-      "subtitles.summon_fossil_fish": "",
       "item.cthulhufishing.sculk_lure": "Sculk Lure",
       "item.cthulhufishing.runic_tablet": "Runic Tablet",
       "subtitles.catch_strange_fish": "",
@@ -3216,11 +3250,23 @@
         "children": []
       },
       {
-        "name": "ThirdEyeProcedures",
+        "name": "SculkSet",
         "children": []
       },
       {
-        "name": "SculkSet",
+        "name": "FossilFishBoss",
+        "children": []
+      },
+      {
+        "name": "CthulhuGrimoire",
+        "children": []
+      },
+      {
+        "name": "EyeCommands",
+        "children": []
+      },
+      {
+        "name": "ThirdEyeProcedures",
         "children": []
       },
       {
@@ -3240,23 +3286,11 @@
         "children": []
       },
       {
-        "name": "CthulhuGrimoire",
-        "children": []
-      },
-      {
         "name": "ObsessedEye",
         "children": []
       },
       {
-        "name": "EyeCommands",
-        "children": []
-      },
-      {
         "name": "Enchantments",
-        "children": []
-      },
-      {
-        "name": "FossilFishBoss",
         "children": []
       }
     ]
