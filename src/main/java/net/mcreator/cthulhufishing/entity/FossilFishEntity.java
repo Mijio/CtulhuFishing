@@ -71,7 +71,7 @@ public class FossilFishEntity extends Monster implements IAnimatable {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "texture_fossil_fish");
+		this.entityData.define(TEXTURE, "texture_fossil_fish_1");
 	}
 
 	public void setTexture(String texture) {
@@ -84,7 +84,7 @@ public class FossilFishEntity extends Monster implements IAnimatable {
 
 	@Override
 	protected float getStandingEyeHeight(Pose poseIn, EntityDimensions sizeIn) {
-		return 0.5F;
+		return 1F;
 	}
 
 	@Override
@@ -142,7 +142,7 @@ public class FossilFishEntity extends Monster implements IAnimatable {
 
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 6.3);
+		return super.getDimensions(p_33597_).scale((float) 6.8);
 	}
 
 	@Override
