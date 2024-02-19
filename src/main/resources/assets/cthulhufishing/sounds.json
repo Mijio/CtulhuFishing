@@ -119,21 +119,5 @@
         "stream": false
       }
     ]
-  },
-  "jump_fossil_fish_attack": {
-    "sounds": [
-      {
-        "name": "cthulhufishing:knockback",
-        "stream": false
-      }
-    ]
-  },
-  "summon_fossil_fish": {
-    "sounds": [
-      {
-        "name": "cthulhufishing:summon_fossil_fish",
-        "stream": false
-      }
-    ]
   }
 }

@@ -30,6 +30,4 @@ public class CthulhufishingModSounds {
 	public static final RegistryObject<SoundEvent> DAMAGE_FOSSIL_FISH = REGISTRY.register("damage_fossil_fish", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "damage_fossil_fish")));
 	public static final RegistryObject<SoundEvent> IDLE_FOSSIL_FISH = REGISTRY.register("idle_fossil_fish", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "idle_fossil_fish")));
 	public static final RegistryObject<SoundEvent> FOSSIL_FISH_ATTACK = REGISTRY.register("fossil_fish_attack", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "fossil_fish_attack")));
-	public static final RegistryObject<SoundEvent> JUMP_FOSSIL_FISH_ATTACK = REGISTRY.register("jump_fossil_fish_attack", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "jump_fossil_fish_attack")));
-	public static final RegistryObject<SoundEvent> SUMMON_FOSSIL_FISH = REGISTRY.register("summon_fossil_fish", () -> new SoundEvent(new ResourceLocation("cthulhufishing", "summon_fossil_fish")));
 }
