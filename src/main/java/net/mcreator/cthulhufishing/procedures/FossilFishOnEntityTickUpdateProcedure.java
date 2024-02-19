@@ -12,8 +12,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
@@ -32,35 +30,38 @@ public class FossilFishOnEntityTickUpdateProcedure {
 		double dy = 0;
 		double dz = 0;
 		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(CthulhufishingModMobEffects.MUSHROOMED.get()) : false) {
+			if (!world.isClientSide() && world.getServer() != null)
+				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("mushroomed"), false);
 			if (entity instanceof FossilFishEntity animatable)
 				animatable.setTexture("texture_fossil_fish_mushrumed");
+		} else {
+			if (entity instanceof FossilFishEntity animatable)
+				animatable.setTexture("texture_fossil_fish_1");
 		}
-		if (((entity instanceof FossilFishEntity animatable ? animatable.getTexture() : "null") + "").equals("texture_fossil_fish_1")) {
-			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 360, 4));
-		}
-		dx = x - 1;
-		dy = y - 1;
-		dz = z - 1;
-		for (int index0 = 0; index0 < 5; index0++) {
-			for (int index1 = 0; index1 < 5; index1++) {
-				for (int index2 = 0; index2 < 5; index2++) {
-					if (!((world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.AIR || (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.VOID_AIR
-							|| (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.CAVE_AIR || (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.WATER
-							|| (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.WATER || (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.LAVA
-							|| (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.LAVA || (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.BEDROCK
-							|| (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.OBSIDIAN)) {
-						world.levelEvent(2001, new BlockPos(dx, dy, dz), Block.getId((world.getBlockState(new BlockPos(dx, dy, dz)))));
-						world.destroyBlock(new BlockPos(dx, dy, dz), false);
-					}
-					dz = dz + 1;
-				}
-				dz = z - 1;
-				dx = dx + 1;
-			}
+		if ((((FossilFishEntity) entity).animationprocedure).equals("animation.fossilized fish.attack")) {
 			dx = x - 1;
+			dy = y - 1;
 			dz = z - 1;
-			dy = dy + 1;
+			for (int index0 = 0; index0 < 5; index0++) {
+				for (int index1 = 0; index1 < 5; index1++) {
+					for (int index2 = 0; index2 < 5; index2++) {
+						if (!((world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.AIR || (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.VOID_AIR
+								|| (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.CAVE_AIR || (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.WATER
+								|| (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.WATER || (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.LAVA
+								|| (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.LAVA || (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.BEDROCK
+								|| (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.OBSIDIAN)) {
+							world.levelEvent(2001, new BlockPos(dx, dy, dz), Block.getId((world.getBlockState(new BlockPos(dx, dy, dz)))));
+							world.destroyBlock(new BlockPos(dx, dy, dz), false);
+						}
+						dz = dz + 1;
+					}
+					dz = z - 1;
+					dx = dx + 1;
+				}
+				dx = x - 1;
+				dz = z - 1;
+				dy = dy + 1;
+			}
 		}
 		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)) {
 			entity.getPersistentData().putDouble("AI", (entity.getPersistentData().getDouble("AI") + 1));
@@ -90,29 +91,15 @@ public class FossilFishOnEntityTickUpdateProcedure {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getX() - entity.getX()) * 1), ((((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 40, 40, 40), e -> true).stream().sorted(new Object() {
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getX() - entity.getX()) * 0.5), ((((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 40, 40, 40), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getY() - entity.getY()) * 1), ((((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 40, 40, 40), e -> true).stream().sorted(new Object() {
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getY() - entity.getY()) * 0.5), ((((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 40, 40, 40), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getZ() - entity.getZ()) * 1)));
-				if (!world.isClientSide() && world.getServer() != null)
-					world.getServer().getPlayerList().broadcastSystemMessage(Component.literal(("vector X:" + (((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 40, 40, 40), e -> true).stream().sorted(new Object() {
-						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getX() - entity.getX()) * 1 + " Y:" + (((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 40, 40, 40), e -> true).stream().sorted(new Object() {
-						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getY() - entity.getY()) * 1 + " Z:" + (((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 40, 40, 40), e -> true).stream().sorted(new Object() {
-						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)).getZ() - entity.getZ()) * 1)), false);
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getZ() - entity.getZ()) * 0.5)));
 			}
 			entity.getPersistentData().putDouble("AI", 0);
 		}

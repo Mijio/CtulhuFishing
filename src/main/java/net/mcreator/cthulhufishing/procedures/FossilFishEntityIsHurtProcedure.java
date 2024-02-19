@@ -15,6 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.cthulhufishing.entity.FossilFishEntity;
+import net.mcreator.cthulhufishing.CthulhufishingMod;
 
 import java.util.stream.Collectors;
 import java.util.List;
@@ -33,23 +34,25 @@ public class FossilFishEntityIsHurtProcedure {
 				if (entity instanceof FossilFishEntity) {
 					((FossilFishEntity) entity).setAnimation("animation.fossilized fish.jump_attack");
 				}
-				if (world instanceof Level _level) {
-					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:jump_fossil_fish_attack")), SoundSource.HOSTILE, 2, 1);
-					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:jump_fossil_fish_attack")), SoundSource.HOSTILE, 2, 1, false);
-					}
-				}
-				{
-					final Vec3 _center = new Vec3(x, y, z);
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
-							.collect(Collectors.toList());
-					for (Entity entityiterator : _entfound) {
-						if (!(entityiterator instanceof FossilFishEntity)) {
-							entityiterator.setDeltaMovement(new Vec3(((entityiterator.getX() - entity.getX()) * 0.5), 0.5, ((entityiterator.getZ() - entity.getZ()) * 0.5)));
+				CthulhufishingMod.queueServerWork(10, () -> {
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:jump_fossil_fish_attack")), SoundSource.HOSTILE, 2, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:jump_fossil_fish_attack")), SoundSource.HOSTILE, 2, 1, false);
 						}
 					}
-				}
+					{
+						final Vec3 _center = new Vec3(x, y, z);
+						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+								.collect(Collectors.toList());
+						for (Entity entityiterator : _entfound) {
+							if (!(entityiterator instanceof FossilFishEntity)) {
+								entityiterator.setDeltaMovement(new Vec3(((entityiterator.getX() - entity.getX()) * 0.5), 0.5, ((entityiterator.getZ() - entity.getZ()) * 0.5)));
+							}
+						}
+					}
+				});
 			}
 		}
 	}

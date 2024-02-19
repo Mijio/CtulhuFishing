@@ -1,8 +1,13 @@
 package net.mcreator.cthulhufishing.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
 
-import javax.annotation.Nullable;
+import java.util.UUID;
+
+import java.lang.reflect.Modifier;
 
 public class ArmorFishProcedure {
 	public static void execute(Entity entity) {
