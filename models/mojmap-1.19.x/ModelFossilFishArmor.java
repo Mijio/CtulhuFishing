@@ -61,54 +61,48 @@ public class ModelFossilFishArmor<T extends Entity> extends EntityModel<T> {
 
 		PartDefinition bipedLeftArm = partdefinition.addOrReplaceChild("bipedLeftArm",
 				CubeListBuilder.create().texOffs(47, 63)
-						.addBox(0.0F, -1.0F, -2.5F, 5.0F, 10.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 75)
-						.addBox(0.0F, -1.0F, 1.5F, 5.0F, 10.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(22, 75)
-						.addBox(0.0F, -1.0F, -1.5F, 1.0F, 10.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(0, 63)
-						.addBox(0.0F, -3.0F, -2.5F, 5.0F, 2.0F, 5.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(-8.5F, 2.0F, 0.0F));
+						.addBox(-5.0F, -1.0F, -2.5F, 5.0F, 10.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 75)
+						.addBox(-5.0F, -1.0F, 1.5F, 5.0F, 10.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(22, 75)
+						.addBox(-5.0F, -1.0F, -1.5F, 1.0F, 10.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(0, 63)
+						.addBox(-5.0F, -3.0F, -2.5F, 5.0F, 2.0F, 5.0F, new CubeDeformation(0.0F)),
+				PartPose.offset(-3.5F, 2.0F, 0.0F));
 
 		PartDefinition cube_r5 = bipedLeftArm
 				.addOrReplaceChild("cube_r5",
 						CubeListBuilder.create().texOffs(72, 61).addBox(-2.25F, -23.15F, -5.75F, 4.25F, 11.25F, 2.0F,
 								new CubeDeformation(0.0F)),
-						PartPose.offsetAndRotation(9.0F, 22.0F, 0.0F, 0.0F, 1.5708F, 0.0F));
+						PartPose.offsetAndRotation(4.0F, 22.0F, 0.0F, 0.0F, 1.5708F, 0.0F));
 
 		PartDefinition cube_r6 = bipedLeftArm.addOrReplaceChild("cube_r6",
 				CubeListBuilder.create().texOffs(39, 35).addBox(-9.0F, -22.4F, -11.3F, 4.0F, 4.0F, 4.0F,
 						new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(9.0F, 22.0F, 0.0F, -0.3197F, 0.4423F, -0.0631F));
+				PartPose.offsetAndRotation(4.0F, 22.0F, 0.0F, -0.3197F, 0.4423F, -0.0631F));
 
 		PartDefinition armorLeftArm = bipedLeftArm.addOrReplaceChild("armorLeftArm", CubeListBuilder.create(),
-				PartPose.offset(5.0F, 0.0F, 0.0F));
+				PartPose.offset(0.0F, 0.0F, 0.0F));
 
 		PartDefinition bipedRightArm = partdefinition.addOrReplaceChild("bipedRightArm",
 				CubeListBuilder.create().texOffs(57, 51)
-						.addBox(-5.0F, -3.0F, -2.5F, 5.0F, 2.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(34, 63)
-						.addBox(-5.0F, -1.0F, -2.5F, 5.0F, 10.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(21, 63)
-						.addBox(-5.0F, -1.0F, 1.5F, 5.0F, 10.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(13, 75)
-						.addBox(-1.0F, -1.0F, -1.5F, 1.0F, 10.0F, 3.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(8.5F, 2.0F, 0.0F));
+						.addBox(0.0F, -3.0F, -2.5F, 5.0F, 2.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(34, 63)
+						.addBox(0.0F, -1.0F, -2.5F, 5.0F, 10.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(21, 63)
+						.addBox(0.0F, -1.0F, 1.5F, 5.0F, 10.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(13, 75)
+						.addBox(4.0F, -1.0F, -1.5F, 1.0F, 10.0F, 3.0F, new CubeDeformation(0.0F)),
+				PartPose.offset(3.5F, 2.0F, 0.0F));
 
 		PartDefinition cube_r7 = bipedRightArm.addOrReplaceChild("cube_r7",
 				CubeListBuilder.create().texOffs(38, 51).addBox(0.8F, -9.2F, 17.6F, 4.0F, 4.0F, 4.0F,
 						new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(-9.0F, 22.0F, 0.0F, 1.212F, 0.1975F, 0.3091F));
+				PartPose.offsetAndRotation(-4.0F, 22.0F, 0.0F, 1.212F, 0.1975F, 0.3091F));
 
 		PartDefinition cube_r8 = bipedRightArm.addOrReplaceChild("cube_r8",
 				CubeListBuilder.create().texOffs(62, 62).addBox(-2.0F, -24.15F, -5.75F, 4.25F, 12.25F, 1.0F,
 						new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(-9.0F, 22.1F, 0.0F, 0.0F, -1.5708F, 0.0F));
+				PartPose.offsetAndRotation(-4.0F, 22.1F, 0.0F, 0.0F, -1.5708F, 0.0F));
 
 		PartDefinition armorRightArm = bipedRightArm.addOrReplaceChild("armorRightArm", CubeListBuilder.create(),
-				PartPose.offset(-5.0F, 0.0F, 0.0F));
+				PartPose.offset(0.0F, 0.0F, 0.0F));
 
 		return LayerDefinition.create(meshdefinition, 96, 96);
-	}
-
-	@Override
-	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
-			float headPitch) {
-
 	}
 
 	@Override
@@ -118,5 +112,9 @@ public class ModelFossilFishArmor<T extends Entity> extends EntityModel<T> {
 		bipedBody.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		bipedLeftArm.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		bipedRightArm.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+	}
+
+	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
+			float headPitch) {
 	}
 }
