@@ -14,7 +14,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.cthulhufishing.init.CthulhufishingModMobEffects;
@@ -30,13 +29,8 @@ public class FossilFishOnEntityTickUpdateProcedure {
 		double dy = 0;
 		double dz = 0;
 		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(CthulhufishingModMobEffects.MUSHROOMED.get()) : false) {
-			if (!world.isClientSide() && world.getServer() != null)
-				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("mushroomed"), false);
 			if (entity instanceof FossilFishEntity animatable)
 				animatable.setTexture("texture_fossil_fish_mushrumed");
-		} else {
-			if (entity instanceof FossilFishEntity animatable)
-				animatable.setTexture("texture_fossil_fish_1");
 		}
 		if ((((FossilFishEntity) entity).animationprocedure).equals("animation.fossilized fish.attack")) {
 			dx = x - 1;

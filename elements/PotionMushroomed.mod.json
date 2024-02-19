@@ -1,0 +1,25 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "POTION:AWKWARD"
+    },
+    "brewingIngredientStack": {
+      "value": "CUSTOM:MushroomTorchfish"
+    },
+    "brewingReturnStack": {
+      "value": "POTION:CUSTOM:MushroomedPotion"
+    },
+    "name": "potion_mushroomed",
+    "namespace": "mod"
+  }
+}

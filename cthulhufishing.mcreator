@@ -3191,6 +3191,45 @@
           }
         ]
       }
+    },
+    {
+      "name": "PotionMushroomed",
+      "type": "recipe",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "potion_mushroomed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/recipes/brewing/PotionMushroomedBrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "PM2",
+      "type": "recipe",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pm_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/recipes/brewing/PM2BrewingRecipe.java"
+        ]
+      }
+    },
+    {
+      "name": "PM3",
+      "type": "recipe",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pm_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/recipes/brewing/PM3BrewingRecipe.java"
+        ]
+      }
     }
   ],
   "variable_elements": [

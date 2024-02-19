@@ -51,11 +51,11 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 3,
-    "attackKnockback": 0.0,
-    "knockbackResistance": 0.0,
+    "attackStrength": 5,
+    "attackKnockback": 0.4,
+    "knockbackResistance": 2.8000000000000003,
     "movementSpeed": 0.1,
-    "armorBaseValue": 0.0,
+    "armorBaseValue": 6.5,
     "trackingRange": 80,
     "followRange": 50,
     "health": 600,
@@ -85,7 +85,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:ChestplateFossilFish.body"
     },
     "livingSound": {
       "value": "CUSTOM:idle_fossil_fish"
