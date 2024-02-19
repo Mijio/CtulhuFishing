@@ -3124,21 +3124,6 @@
       "path": "~/MushroomSet"
     },
     {
-      "name": "MushroomTorchfish",
-      "type": "item",
-      "sortid": 166,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mushroom_torchfish",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/mushroom_torchfish.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/MushroomTorchfishItem.java"
-        ]
-      },
-      "path": "~/MushroomSet"
-    },
-    {
       "name": "MushroomSprat",
       "type": "item",
       "sortid": 167,
@@ -3172,6 +3157,40 @@
         ]
       },
       "path": "~/CrimsonSet"
+    },
+    {
+      "name": "MushroomTorchfish",
+      "type": "item",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_torchfish",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/mushroom_torchfish.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/MushroomTorchfishItem.java"
+        ]
+      },
+      "path": "~/MushroomSet"
+    },
+    {
+      "name": "ArmorFish",
+      "type": "procedure",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "armor_fish",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ArmorFishProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3489,6 +3508,10 @@
         "children": []
       },
       {
+        "name": "MushroomSet",
+        "children": []
+      },
+      {
         "name": "AtionsForDecreaseRevelationScore",
         "children": []
       },
@@ -3506,10 +3529,6 @@
       },
       {
         "name": "Enchantments",
-        "children": []
-      },
-      {
-        "name": "MushroomSet",
         "children": []
       }
     ]

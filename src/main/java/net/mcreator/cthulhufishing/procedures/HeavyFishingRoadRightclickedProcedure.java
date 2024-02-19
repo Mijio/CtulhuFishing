@@ -9,6 +9,6 @@ public class HeavyFishingRoadRightclickedProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player)
-			_player.getCooldowns().addCooldown(itemstack.getItem(), 100);
+			_player.getCooldowns().addCooldown(itemstack.getItem(), 150);
 	}
 }

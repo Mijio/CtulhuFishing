@@ -1,11 +1,8 @@
 package net.mcreator.cthulhufishing.procedures;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.cthulhufishing.init.CthulhufishingModMobEffects;
+import javax.annotation.Nullable;
 
 public class MushroomFishOnPlayerStoppedUsingProcedure {
 	public static void execute(Entity entity) {
