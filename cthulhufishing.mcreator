@@ -2780,10 +2780,10 @@
       "registry_name": "fossil_fish",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/client/renderer/FossilFishRenderer.java",
+          "src/main/resources/assets/cthulhufishing/models/item/fossil_fish_spawn_egg.json",
           "src/main/java/net/mcreator/cthulhufishing/entity/FossilFishEntity.java",
-          "src/main/java/net/mcreator/cthulhufishing/entity/model/FossilFishModel.java",
-          "src/main/resources/assets/cthulhufishing/models/item/fossil_fish_spawn_egg.json"
+          "src/main/java/net/mcreator/cthulhufishing/client/renderer/FossilFishRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/model/FossilFishModel.java"
         ]
       },
       "path": "~/FossilFishBoss"
@@ -2892,6 +2892,41 @@
       "registry_name": "mushroomed_potion",
       "metadata": {
         "files": []
+      }
+    },
+    {
+      "name": "FishingFossilFish",
+      "type": "procedure",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fishing_fossil_fish",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FishingFossilFishProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -3107,6 +3142,22 @@
       ],
       "category": "hostile",
       "subtitle": ""
+    },
+    {
+      "name": "jump_fossil_fish_attack",
+      "files": [
+        "knockback"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "summon_fossil_fish",
+      "files": [
+        "summon_fossil_fish"
+      ],
+      "category": "hostile",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -3199,11 +3250,23 @@
         "children": []
       },
       {
-        "name": "ThirdEyeProcedures",
+        "name": "SculkSet",
         "children": []
       },
       {
-        "name": "SculkSet",
+        "name": "FossilFishBoss",
+        "children": []
+      },
+      {
+        "name": "CthulhuGrimoire",
+        "children": []
+      },
+      {
+        "name": "EyeCommands",
+        "children": []
+      },
+      {
+        "name": "ThirdEyeProcedures",
         "children": []
       },
       {
@@ -3223,23 +3286,11 @@
         "children": []
       },
       {
-        "name": "CthulhuGrimoire",
-        "children": []
-      },
-      {
         "name": "ObsessedEye",
         "children": []
       },
       {
-        "name": "EyeCommands",
-        "children": []
-      },
-      {
         "name": "Enchantments",
-        "children": []
-      },
-      {
-        "name": "FossilFishBoss",
         "children": []
       }
     ]

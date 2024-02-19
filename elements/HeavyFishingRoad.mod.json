@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 1,
-    "texture": "texture_fishing_road",
+    "texture": "texture_rod",
     "customModelName": "heavy_fishing_road:default",
     "name": "Heavy Fishing Road",
     "specialInfo": [],

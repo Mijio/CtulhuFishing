@@ -2,6 +2,6 @@
   "parent": "cthulhufishing:custom/heavy_fishing_road",
   "textures": {
     "0": "cthulhufishing:blocks/texture_fishing_road",
-    "particle": "cthulhufishing:items/texture_fishing_road"
+    "particle": "cthulhufishing:items/texture_rod"
   }
 }
