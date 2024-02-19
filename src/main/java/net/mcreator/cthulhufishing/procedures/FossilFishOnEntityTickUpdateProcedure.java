@@ -34,9 +34,6 @@ public class FossilFishOnEntityTickUpdateProcedure {
 				world.getServer().getPlayerList().broadcastSystemMessage(Component.literal("mushroomed"), false);
 			if (entity instanceof FossilFishEntity animatable)
 				animatable.setTexture("texture_fossil_fish_mushrumed");
-		} else {
-			if (entity instanceof FossilFishEntity animatable)
-				animatable.setTexture("texture_fossil_fish_1");
 		}
 		if ((((FossilFishEntity) entity).animationprocedure).equals("animation.fossilized fish.attack")) {
 			dx = x - 1;
