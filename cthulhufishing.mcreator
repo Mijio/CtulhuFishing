@@ -2780,10 +2780,10 @@
       "registry_name": "fossil_fish",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/fossil_fish_spawn_egg.json",
-          "src/main/java/net/mcreator/cthulhufishing/entity/FossilFishEntity.java",
           "src/main/java/net/mcreator/cthulhufishing/client/renderer/FossilFishRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/entity/model/FossilFishModel.java"
+          "src/main/java/net/mcreator/cthulhufishing/entity/FossilFishEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/model/FossilFishModel.java",
+          "src/main/resources/assets/cthulhufishing/models/item/fossil_fish_spawn_egg.json"
         ]
       },
       "path": "~/FossilFishBoss"
@@ -2893,6 +2893,42 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "FossilFishEntityIsHurt",
+      "type": "procedure",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fossil_fish_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FossilFishEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FossilFishBoss"
     }
   ],
   "variable_elements": [

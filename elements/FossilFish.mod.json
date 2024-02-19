@@ -7,10 +7,10 @@
     "mobModelTexture": "texture_fossil_fish.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 2.8000000000000003
+      "fixedValue": 3.4
     },
     "boundingBoxScale": {
-      "fixedValue": 5.0
+      "fixedValue": 6.8
     },
     "modelWidth": 0.9,
     "modelHeight": 0.7,
@@ -54,10 +54,10 @@
     "attackStrength": 3,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 0.3,
+    "movementSpeed": 0.1,
     "armorBaseValue": 0.0,
-    "trackingRange": 64,
-    "followRange": 40,
+    "trackingRange": 80,
+    "followRange": 50,
     "health": 80,
     "xpAmount": 0,
     "waterMob": false,
@@ -99,6 +99,9 @@
     "stepSound": {
       "value": ""
     },
+    "whenMobIsHurt": {
+      "name": "FossilFishEntityIsHurt"
+    },
     "onMobTickUpdate": {
       "name": "FossilFishOnEntityTickUpdate"
     },
@@ -108,7 +111,7 @@
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">0</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">0</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block><block type=\"attack_action\" x=\"427\" y=\"218\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></xml>",
-    "model": "fossilized_fish_mushroom.geo.json",
+    "model": "fossilized_fish.geo.json",
     "groupName": "",
     "animation1": "animation.fossilized fish.idle",
     "animation2": "",
