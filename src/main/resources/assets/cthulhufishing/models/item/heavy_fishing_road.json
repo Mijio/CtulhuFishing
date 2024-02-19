@@ -45,14 +45,14 @@
       },
       "firstperson_righthand": {
         "rotation": [
-          159,
-          9,
+          139,
+          1,
           178
         ],
         "translation": [
-          0,
-          0,
-          -0.75
+          10,
+          -1.75,
+          -2.25
         ]
       },
       "firstperson_lefthand": {
