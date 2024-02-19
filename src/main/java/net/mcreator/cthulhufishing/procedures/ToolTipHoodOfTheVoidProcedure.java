@@ -85,7 +85,7 @@ public class ToolTipHoodOfTheVoidProcedure {
 		} else if (itemstack.getItem() == CthulhufishingModItems.EMERALD_GOLD_RING.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bRing of the King of Experience"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bQuickly consuming your experience increases your damage dealt by up to 25 based on the amount of experience"));
+				tooltip.add(Component.literal("\u00A7bQuickly consuming your experience increases your damage dealt by up to 25% based on the amount of experience"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
