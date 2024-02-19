@@ -18,7 +18,6 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.cthulhufishing.init.CthulhufishingModMobEffects;
 import net.mcreator.cthulhufishing.entity.FossilFishEntity;
-import net.mcreator.cthulhufishing.CthulhufishingMod;
 
 import java.util.Comparator;
 
@@ -30,15 +29,6 @@ public class FossilFishOnEntityTickUpdateProcedure {
 		double dy = 0;
 		double dz = 0;
 		double SoundTimer = 0;
-		CthulhufishingMod.queueServerWork(520, () -> {
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:idle_fossil_fish")), SoundSource.NEUTRAL, 1, 1);
-				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:idle_fossil_fish")), SoundSource.NEUTRAL, 1, 1, false);
-				}
-			}
-		});
 		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(CthulhufishingModMobEffects.MUSHROOMED.get()) : false) {
 			if (entity instanceof FossilFishEntity animatable)
 				animatable.setTexture("texture_fossil_fish_mushrumed");

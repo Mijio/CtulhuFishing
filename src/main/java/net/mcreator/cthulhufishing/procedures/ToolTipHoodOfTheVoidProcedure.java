@@ -12,6 +12,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.Screen;
 
 import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
+import net.mcreator.cthulhufishing.init.CthulhufishingModBlocks;
 
 import javax.annotation.Nullable;
 
@@ -70,28 +71,28 @@ public class ToolTipHoodOfTheVoidProcedure {
 		} else if (itemstack.getItem() == CthulhufishingModItems.CRIMSON_RING.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bCrimson fish ring"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bAdditionally enhances your revelation from catching the Crimson Fish"));
+				tooltip.add(Component.literal("\u00A7bAdditionally enhances your revelation from catching Crimson Fish"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
 		} else if (itemstack.getItem() == CthulhufishingModItems.SCULK_RING.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bSculk fish ring"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bAdditionally enhances your revelation from catching sculk fish"));
+				tooltip.add(Component.literal("\u00A7bAdditionally enhances your revelation from catching Sculk fish"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
 		} else if (itemstack.getItem() == CthulhufishingModItems.EMERALD_GOLD_RING.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bRing of the King of Experience"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bQuickly consuming your experience increases your damage dealt based on the amount of experience"));
+				tooltip.add(Component.literal("\u00A7bQuickly consuming your experience increases your damage dealt by up to 25 based on the amount of experience"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
 		} else if (itemstack.getItem() == CthulhufishingModItems.CTHULHU_GRIMOIRE.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bCthulhu grimoire"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bGrimoire of Cthulhu, use cam summon part of the power of cthulhu "));
+				tooltip.add(Component.literal("\u00A7bRight click summon tentacle"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
@@ -105,35 +106,35 @@ public class ToolTipHoodOfTheVoidProcedure {
 		} else if (itemstack.getItem() == CthulhufishingModItems.RELIC.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bAbyss relic"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bGrimoire of By placing it on the ground it drives aggressive creatures into madness, if you defeat them you can get abyss reagent"));
+				tooltip.add(Component.literal("\u00A7bGrimoire of by placing it on the ground it drives aggressive creatures into madness, if you defeat them you can get abyss reagent"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
 		} else if (itemstack.getItem() == CthulhufishingModItems.FADED_RUNIC_TABLET.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bFaded runic tablet"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bCan be activated again using the third eye"));
+				tooltip.add(Component.literal("\u00A7bCan be reactivated using the third eye"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
 		} else if (itemstack.getItem() == CthulhufishingModItems.RUNIC_TABLET.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bRunic tablet"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bRight click gives you 10 revelation ponts"));
+				tooltip.add(Component.literal("\u00A7bRight click gives you 10 revelation points"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
 		} else if (itemstack.getItem() == CthulhufishingModItems.SCULK_LURE.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bSculk lure"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bHold in your left hand when fishing in the deep dark, then you can catch sculk fish "));
+				tooltip.add(Component.literal("\u00A7bHold in your left hand when fishing in the deep dark, then you can catch Sculk fish "));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
 		} else if (itemstack.getItem() == CthulhufishingModItems.CRIMSON_LURE.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bCrimson lure"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bHold in your left hand when fishing with the effect of ritual bleeding, then you can catch crimson fish"));
+				tooltip.add(Component.literal("\u00A7bHold in your left hand when fishing with the effect of ritual bleeding, then you can catch Crimson fish"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
@@ -151,6 +152,7 @@ public class ToolTipHoodOfTheVoidProcedure {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
 		} else if (itemstack.getItem() == CthulhufishingModItems.MASK_OF_REVELATION_HELMET.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bMask of Revelation"));
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A7bWhen equip revelation costs you spend half as much "));
 			} else {
@@ -158,7 +160,68 @@ public class ToolTipHoodOfTheVoidProcedure {
 			}
 		} else if (itemstack.getItem() == CthulhufishingModItems.REVELATION_FABRIC.get()) {
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bused to improve equipment"));
+				tooltip.add(Component.literal("\u00A7bUsed to improve equipment"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.REVELATION_STEEL.get()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bUsed to improve equipment"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.HEAVY_FISHING_ROAD.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bHeavy fishing rod"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bGives you a chance for a giant catch"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModBlocks.CTULHU_ALTAR_FISH.get().asItem()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bGives you a quest for tribute of fish"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.CRIMSON_FISH.get()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bWhen eaten gives \"Health Boost\" effect"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.CRIMSON_CRUNCH.get()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bWhen eaten gives \"Health Boost\" effect"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.CRIMSON_JELLYFISH.get()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bWhen eaten gives \"Health Boost\" effect"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.GLUTON_SCULK_FISH.get()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bWhen eaten gives \"Night vision\" effect"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.HERMIT_SLULK_FISH.get()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bWhen eaten gives \"Night vision\" effect"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.HORSE_SCULK_FISH.get()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bWhen eaten gives \"Night vision\" effect"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.ANCIENT_COIN.get()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bUsed for netherite crafting"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}

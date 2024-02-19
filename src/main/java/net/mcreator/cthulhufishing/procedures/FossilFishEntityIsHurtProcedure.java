@@ -1,14 +1,21 @@
 package net.mcreator.cthulhufishing.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.Entity;
 
-import javax.annotation.Nullable;
+import net.mcreator.cthulhufishing.entity.FossilFishEntity;
+
+import java.util.stream.Collectors;
+import java.util.List;
+import java.util.Comparator;
 
 public class FossilFishEntityIsHurtProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (Math.random() < 7) {
+		if (Math.random() < 0.7) {
 			if (entity instanceof FossilFishEntity) {
 				((FossilFishEntity) entity).setAnimation("animation.fossilized fish.jump_attack");
 			}
