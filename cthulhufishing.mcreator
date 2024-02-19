@@ -2746,8 +2746,8 @@
       "registry_name": "heavy_fishing_road",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/heavy_fishing_road.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/HeavyFishingRoadItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/HeavyFishingRoadItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/heavy_fishing_road.json"
         ]
       }
     },
@@ -2892,6 +2892,41 @@
       "registry_name": "mushroomed_potion",
       "metadata": {
         "files": []
+      }
+    },
+    {
+      "name": "FishingFossilFish",
+      "type": "procedure",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fishing_fossil_fish",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FishingFossilFishProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     }
   ],
@@ -3071,12 +3106,28 @@
       ],
       "category": "hostile",
       "subtitle": ""
+    },
+    {
+      "name": "jump_fossil_fish_attack",
+      "files": [
+        "knockback"
+      ],
+      "category": "hostile",
+      "subtitle": ""
+    },
+    {
+      "name": "summon_fossil_fish",
+      "files": [
+        "summon_fossil_fish"
+      ],
+      "category": "hostile",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
-      "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
       "item.cthulhufishing.mask_of_revelation_helmet": "Mask Of Revelation Helmet",
+      "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
       "item.cthulhufishing.step_to_abyss": "Music disc - Step To Abyss ",
       "item.cthulhufishing.sculk_ring": "Sculk Ring",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
@@ -3107,6 +3158,7 @@
       "item.minecraft.lingering_potion.effect.mushroomed_potion": "Lingering Potion of Mushroomed Potion",
       "subtitles.catchfishmen": "fishmen",
       "effect.cthulhufishing.ancient_curse": "Ancient Curse",
+      "subtitles.jump_fossil_fish_attack": "",
       "subtitles.relic_loot": "",
       "item.cthulhufishing.step_to_abyss.desc": "Author - Xythe",
       "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
@@ -3131,6 +3183,7 @@
       "subtitles.fossil_fish_attack": "",
       "item.cthulhufishing.reagent": "Reagent",
       "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
+      "subtitles.summon_fossil_fish": "",
       "item.cthulhufishing.sculk_lure": "Sculk Lure",
       "item.cthulhufishing.runic_tablet": "Runic Tablet",
       "subtitles.catch_strange_fish": "",
