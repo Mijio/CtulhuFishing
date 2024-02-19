@@ -22,7 +22,7 @@ public class FossilFishRenderer extends GeoEntityRenderer<FossilFishEntity> {
 
 	@Override
 	public RenderType getRenderType(FossilFishEntity entity, float partialTicks, PoseStack stack, MultiBufferSource renderTypeBuffer, VertexConsumer vertexBuilder, int packedLightIn, ResourceLocation textureLocation) {
-		stack.scale(3.4f, 3.4f, 3.4f);
+		stack.scale(2.8f, 2.8f, 2.8f);
 		return RenderType.entityTranslucent(getTextureLocation(entity));
 	}
 }

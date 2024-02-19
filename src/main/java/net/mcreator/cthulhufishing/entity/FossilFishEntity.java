@@ -140,7 +140,7 @@ public class FossilFishEntity extends Monster implements IAnimatable {
 
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 6.8);
+		return super.getDimensions(p_33597_).scale((float) 5);
 	}
 
 	@Override
@@ -177,11 +177,11 @@ public class FossilFishEntity extends Monster implements IAnimatable {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.1);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
 		builder = builder.add(Attributes.MAX_HEALTH, 80);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
-		builder = builder.add(Attributes.FOLLOW_RANGE, 50);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 40);
 		return builder;
 	}
 
