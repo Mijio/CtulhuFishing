@@ -3,9 +3,9 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Mushroomed",
-    "icon": "ancient_blessing.png",
+    "icon": "mushroomed.png",
     "color": {
-      "value": -10092442,
+      "value": -10066432,
       "falpha": 0.0
     },
     "isInstant": false,

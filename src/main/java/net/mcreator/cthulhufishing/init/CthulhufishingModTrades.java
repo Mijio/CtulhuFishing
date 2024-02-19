@@ -33,6 +33,11 @@ public class CthulhufishingModTrades {
 			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Blocks.EMERALD_BLOCK, 5), new ItemStack(CthulhufishingModItems.REAGENT.get(), 16), new ItemStack(CthulhufishingModItems.EMERALD_GOLD_RING.get()), 1, 20, 0.05f));
 			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.EMERALD, 26), new ItemStack(CthulhufishingModItems.REAGENT.get(), 14), new ItemStack(CthulhufishingModItems.MASK_OF_REVELATION_HELMET.get()), 1, 20, 0.05f));
 			event.getTrades().get(3).add(new BasicItemListing(new ItemStack(Items.EMERALD, 26), new ItemStack(CthulhufishingModItems.REAGENT.get(), 16), new ItemStack(CthulhufishingModItems.HOOD_OF_THE_DEEP_VOID_HELMET.get()), 1, 20, 0.05f));
+			event.getTrades().get(5).add(new BasicItemListing(new ItemStack(Blocks.EMERALD_BLOCK, 5), new ItemStack(CthulhufishingModItems.REAGENT.get(), 20), new ItemStack(CthulhufishingModItems.HEAVY_FISHING_ROAD.get()), 10, 20, 0.05f));
+			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(Items.EMERALD, 8), new ItemStack(CthulhufishingModItems.REAGENT.get(), 6), new ItemStack(CthulhufishingModItems.MUSRHOOM_RING.get()), 1, 20, 0.05f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD, 4), new ItemStack(CthulhufishingModItems.REAGENT.get()), new ItemStack(CthulhufishingModItems.MUSHROOM_LURE.get(), 3), 5, 4, 0.05f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD, 4), new ItemStack(CthulhufishingModItems.REAGENT.get()), new ItemStack(CthulhufishingModItems.CRIMSON_LURE.get(), 3), 5, 4, 0.05f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD, 4), new ItemStack(CthulhufishingModItems.REAGENT.get()), new ItemStack(CthulhufishingModItems.SCULK_LURE.get(), 3), 5, 4, 0.05f));
 		}
 	}
 }

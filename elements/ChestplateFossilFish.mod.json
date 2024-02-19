@@ -5,7 +5,7 @@
     "enableHelmet": false,
     "textureHelmet": "",
     "enableBody": true,
-    "textureBody": "nonetexture",
+    "textureBody": "fossil_fish_armor",
     "enableLeggings": false,
     "textureLeggings": "",
     "enableBoots": false,
@@ -14,7 +14,7 @@
       "name": "ChestplateFossilFishChestplateTickEvent"
     },
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:CtulhuFishingTab"
     },
     "armorTextureFile": "texture_armor2",
     "helmetName": "Chestplate Fossil Fish Helmet",

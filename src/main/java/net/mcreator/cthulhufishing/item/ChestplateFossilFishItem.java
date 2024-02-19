@@ -10,7 +10,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.player.Player;
@@ -24,6 +23,7 @@ import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.cthulhufishing.procedures.ChestplateFossilFishChestplateTickEventProcedure;
+import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 import net.mcreator.cthulhufishing.client.model.ModelFossilFishArmor;
 
 import java.util.function.Consumer;
@@ -77,7 +77,7 @@ public abstract class ChestplateFossilFishItem extends ArmorItem {
 
 	public static class Chestplate extends ChestplateFossilFishItem {
 		public Chestplate() {
-			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
+			super(EquipmentSlot.CHEST, new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB));
 		}
 
 		@Override
