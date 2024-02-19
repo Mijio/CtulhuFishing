@@ -3107,6 +3107,71 @@
           "src/main/resources/assets/cthulhufishing/models/item/chestplate_fossil_fish_chestplate.json"
         ]
       }
+    },
+    {
+      "name": "MushroomAnglerfish",
+      "type": "item",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_anglerfish",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/MushroomAnglerfishItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/mushroom_anglerfish.json"
+        ]
+      },
+      "path": "~/MushroomSet"
+    },
+    {
+      "name": "MushroomTorchfish",
+      "type": "item",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_torchfish",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/mushroom_torchfish.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/MushroomTorchfishItem.java"
+        ]
+      },
+      "path": "~/MushroomSet"
+    },
+    {
+      "name": "MushroomSprat",
+      "type": "item",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_sprat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/mushroom_sprat.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/MushroomSpratItem.java"
+        ]
+      },
+      "path": "~/MushroomSet"
+    },
+    {
+      "name": "MushroomFishOnPlayerStoppedUsing",
+      "type": "procedure",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_fish_on_player_stopped_using",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/MushroomFishOnPlayerStoppedUsingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/CrimsonSet"
     }
   ],
   "variable_elements": [
@@ -3327,6 +3392,7 @@
       "item.cthulhufishing.revelation_fabric": "Revelation Fabric",
       "subtitles.reagent_input": "",
       "effect.cthulhufishing.mushroomed": "Mushroomed",
+      "item.cthulhufishing.mushroom_sprat": "Crimson Jellyfish",
       "item.cthulhufishing.faded_runic_tablet": "Faded Runic Tablet",
       "item.cthulhufishing.crimson_lure": "Crimson Lure",
       "entity.cthulhufishing.grimoire_tentacle": "Grimoire Tentacle",
@@ -3337,6 +3403,7 @@
       "entity.cthulhufishing.fossil_fish": "Fossil Fish",
       "item.minecraft.lingering_potion.effect.mushroomed_potion": "Lingering Potion of Mushroomed Potion",
       "subtitles.catchfishmen": "fishmen",
+      "item.cthulhufishing.mushroom_anglerfish": "Crimson Jellyfish",
       "effect.cthulhufishing.ancient_curse": "Ancient Curse",
       "subtitles.relic_loot": "",
       "item.cthulhufishing.step_to_abyss.desc": "Author - Xythe",
@@ -3352,6 +3419,7 @@
       "item.cthulhufishing.tentacle_staff": "Tentacle Staff",
       "block.cthulhufishing.altar_relic": "Altar Relic",
       "enchantment.cthulhufishing.power_of_the_extinct": "Power Of The Extinct",
+      "item.cthulhufishing.mushroom_torchfish": "Crimson Jellyfish",
       "item.cthulhufishing.obsessed_eye_mob_spawn_egg": "Obsessed Eye Spawn Egg",
       "item.minecraft.splash_potion.effect.mushroomed_potion": "Splash Potion of Mushroomed Potion",
       "gui.cthulhufishing.ctulhu_altar.button_grab": "GRAB",

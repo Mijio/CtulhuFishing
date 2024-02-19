@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "cthulhufishing:items/warm3"
+    "layer0": "cthulhufishing:items/fish8"
   }
 }

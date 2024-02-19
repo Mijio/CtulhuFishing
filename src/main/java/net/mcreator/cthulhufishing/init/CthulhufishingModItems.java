@@ -27,7 +27,10 @@ import net.mcreator.cthulhufishing.item.RevelationFabricItem;
 import net.mcreator.cthulhufishing.item.RelicItem;
 import net.mcreator.cthulhufishing.item.ReagentItem;
 import net.mcreator.cthulhufishing.item.MusrhoomRingItem;
+import net.mcreator.cthulhufishing.item.MushroomTorchfishItem;
+import net.mcreator.cthulhufishing.item.MushroomSpratItem;
 import net.mcreator.cthulhufishing.item.MushroomLureItem;
+import net.mcreator.cthulhufishing.item.MushroomAnglerfishItem;
 import net.mcreator.cthulhufishing.item.MaskOfRevelationItem;
 import net.mcreator.cthulhufishing.item.KnifeForRitualBleedingItem;
 import net.mcreator.cthulhufishing.item.HorseSculkFishItem;
@@ -108,6 +111,9 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> MUSHROOM_LURE = REGISTRY.register("mushroom_lure", () -> new MushroomLureItem());
 	public static final RegistryObject<Item> MUSRHOOM_RING = REGISTRY.register("musrhoom_ring", () -> new MusrhoomRingItem());
 	public static final RegistryObject<Item> CHESTPLATE_FOSSIL_FISH_CHESTPLATE = REGISTRY.register("chestplate_fossil_fish_chestplate", () -> new ChestplateFossilFishItem.Chestplate());
+	public static final RegistryObject<Item> MUSHROOM_ANGLERFISH = REGISTRY.register("mushroom_anglerfish", () -> new MushroomAnglerfishItem());
+	public static final RegistryObject<Item> MUSHROOM_TORCHFISH = REGISTRY.register("mushroom_torchfish", () -> new MushroomTorchfishItem());
+	public static final RegistryObject<Item> MUSHROOM_SPRAT = REGISTRY.register("mushroom_sprat", () -> new MushroomSpratItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

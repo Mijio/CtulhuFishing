@@ -46,7 +46,8 @@ public class CatchMushroomProcedure {
 		double RandomCrisonFishCatch = 0;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == CthulhufishingModItems.MUSHROOM_LURE.get()
 				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CthulhufishingModItems.MUSHROOM_LURE.get()) {
-			if ((entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.DARKNESS) : false) && world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("deep_dark"))) {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.DARKNESS) : false) && (world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("mushroom_fields"))
+					|| world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("mushroom_fields")))) {
 				if (Mth.nextInt(RandomSource.create(), 1, 100) + (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score * 0.5
 						+ EnchantmentHelper.getItemEnchantmentLevel(CthulhufishingModEnchantments.MUSHROOM_CATCHER_ENCHANTMENT.get(), (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) * 5 > 90) {
 					if (world instanceof Level _level) {
@@ -65,14 +66,14 @@ public class CatchMushroomProcedure {
 						});
 					}
 					{
-						double _setval = 2;
+						double _setval = 3;
 						entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.Revalation_Change = _setval;
 							capability.syncPlayerVariables(entity);
 						});
 					}
 					RevelationChangeProcedure.execute(entity);
-					if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(CthulhufishingModItems.SCULK_RING.get(), lv).isPresent() : false) {
+					if (entity instanceof LivingEntity lv ? CuriosApi.getCuriosHelper().findEquippedCurio(CthulhufishingModItems.MUSRHOOM_RING.get(), lv).isPresent() : false) {
 						{
 							boolean _setval = false;
 							entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -81,7 +82,7 @@ public class CatchMushroomProcedure {
 							});
 						}
 						{
-							double _setval = 2;
+							double _setval = 3;
 							entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 								capability.Revalation_Change = _setval;
 								capability.syncPlayerVariables(entity);
@@ -95,19 +96,19 @@ public class CatchMushroomProcedure {
 					}
 					if (RandomCrisonFishCatch == 1) {
 						if (entity instanceof Player _player) {
-							ItemStack _setstack = new ItemStack(CthulhufishingModItems.GLUTON_SCULK_FISH.get());
+							ItemStack _setstack = new ItemStack(CthulhufishingModItems.MUSHROOM_ANGLERFISH.get());
 							_setstack.setCount(1);
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 					} else if (RandomCrisonFishCatch == 2) {
 						if (entity instanceof Player _player) {
-							ItemStack _setstack = new ItemStack(CthulhufishingModItems.HORSE_SCULK_FISH.get());
+							ItemStack _setstack = new ItemStack(CthulhufishingModItems.MUSHROOM_TORCHFISH.get());
 							_setstack.setCount(1);
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
 					} else if (RandomCrisonFishCatch == 3) {
 						if (entity instanceof Player _player) {
-							ItemStack _setstack = new ItemStack(CthulhufishingModItems.HERMIT_SLULK_FISH.get());
+							ItemStack _setstack = new ItemStack(CthulhufishingModItems.MUSHROOM_SPRAT.get());
 							_setstack.setCount(1);
 							ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 						}
