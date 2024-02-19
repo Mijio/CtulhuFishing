@@ -2,7 +2,7 @@
   "_fv": 43,
   "_type": "enchantment",
   "definition": {
-    "name": "Crimson Catcher",
+    "name": "Mushroom Catcher",
     "type": "FISHING_ROD",
     "rarity": "RARE",
     "minLevel": 1,
@@ -10,10 +10,10 @@
     "damageModifier": 0,
     "compatibleEnchantments": [
       {
-        "value": "CUSTOM:SculkCatcherEnchantment"
+        "value": "CUSTOM:CrimsonCatcherEnchant"
       },
       {
-        "value": "CUSTOM:MushroomCatcherEnchantment"
+        "value": "CUSTOM:SculkCatcherEnchantment"
       }
     ],
     "excludeEnchantments": true,

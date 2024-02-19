@@ -11,6 +11,9 @@
     "compatibleEnchantments": [
       {
         "value": "CUSTOM:CrimsonCatcherEnchant"
+      },
+      {
+        "value": "CUSTOM:MushroomCatcherEnchantment"
       }
     ],
     "excludeEnchantments": true,

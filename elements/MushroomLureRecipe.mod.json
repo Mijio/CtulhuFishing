@@ -1,0 +1,48 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Blocks.RED_MUSHROOM"
+      },
+      {
+        "value": "Blocks.RED_MUSHROOM"
+      },
+      {
+        "value": "Blocks.RED_MUSHROOM"
+      },
+      {
+        "value": "Blocks.RED_MUSHROOM"
+      },
+      {
+        "value": "Items.DYE#17"
+      },
+      {
+        "value": "Blocks.BROWN_MUSHROOM"
+      },
+      {
+        "value": "Blocks.BROWN_MUSHROOM"
+      },
+      {
+        "value": "Blocks.BROWN_MUSHROOM"
+      },
+      {
+        "value": "Blocks.BROWN_MUSHROOM"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MushroomLure"
+    },
+    "name": "mushroom_lure_recipe",
+    "namespace": "mod"
+  }
+}
