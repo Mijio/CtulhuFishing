@@ -9,7 +9,7 @@ import net.mcreator.cthulhufishing.procedures.MushroomedOnEffectActiveTickProced
 
 public class MushroomedMobEffect extends MobEffect {
 	public MushroomedMobEffect() {
-		super(MobEffectCategory.HARMFUL, -10092442);
+		super(MobEffectCategory.HARMFUL, -10066432);
 	}
 
 	@Override

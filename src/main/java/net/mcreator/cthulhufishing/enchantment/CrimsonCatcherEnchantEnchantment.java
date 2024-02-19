@@ -21,6 +21,6 @@ public class CrimsonCatcherEnchantEnchantment extends Enchantment {
 
 	@Override
 	protected boolean checkCompatibility(Enchantment ench) {
-		return this != ench && !List.of(CthulhufishingModEnchantments.SCULK_CATCHER_ENCHANTMENT.get()).contains(ench);
+		return this != ench && !List.of(CthulhufishingModEnchantments.SCULK_CATCHER_ENCHANTMENT.get(), CthulhufishingModEnchantments.MUSHROOM_CATCHER_ENCHANTMENT.get()).contains(ench);
 	}
 }

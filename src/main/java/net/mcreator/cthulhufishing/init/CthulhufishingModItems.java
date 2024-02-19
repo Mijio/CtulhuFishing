@@ -26,6 +26,8 @@ import net.mcreator.cthulhufishing.item.RevelationSteelItem;
 import net.mcreator.cthulhufishing.item.RevelationFabricItem;
 import net.mcreator.cthulhufishing.item.RelicItem;
 import net.mcreator.cthulhufishing.item.ReagentItem;
+import net.mcreator.cthulhufishing.item.MusrhoomRingItem;
+import net.mcreator.cthulhufishing.item.MushroomLureItem;
 import net.mcreator.cthulhufishing.item.MaskOfRevelationItem;
 import net.mcreator.cthulhufishing.item.KnifeForRitualBleedingItem;
 import net.mcreator.cthulhufishing.item.HorseSculkFishItem;
@@ -43,6 +45,7 @@ import net.mcreator.cthulhufishing.item.CrimsonJellyfishItem;
 import net.mcreator.cthulhufishing.item.CrimsonFishItem;
 import net.mcreator.cthulhufishing.item.CrimsonFingerItem;
 import net.mcreator.cthulhufishing.item.CrimsonCrunchItem;
+import net.mcreator.cthulhufishing.item.ChestplateFossilFishItem;
 import net.mcreator.cthulhufishing.item.AncientCoinItem;
 import net.mcreator.cthulhufishing.block.display.BlockOreEyeDisplayItem;
 import net.mcreator.cthulhufishing.block.display.AltarRelicDisplayItem;
@@ -102,6 +105,9 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> MASK_OF_REVELATION_HELMET = REGISTRY.register("mask_of_revelation_helmet", () -> new MaskOfRevelationItem.Helmet());
 	public static final RegistryObject<Item> HEAVY_FISHING_ROAD = REGISTRY.register("heavy_fishing_road", () -> new HeavyFishingRoadItem());
 	public static final RegistryObject<Item> FOSSIL_FISH_SPAWN_EGG = REGISTRY.register("fossil_fish_spawn_egg", () -> new ForgeSpawnEggItem(CthulhufishingModEntities.FOSSIL_FISH, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MUSHROOM_LURE = REGISTRY.register("mushroom_lure", () -> new MushroomLureItem());
+	public static final RegistryObject<Item> MUSRHOOM_RING = REGISTRY.register("musrhoom_ring", () -> new MusrhoomRingItem());
+	public static final RegistryObject<Item> CHESTPLATE_FOSSIL_FISH_CHESTPLATE = REGISTRY.register("chestplate_fossil_fish_chestplate", () -> new ChestplateFossilFishItem.Chestplate());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

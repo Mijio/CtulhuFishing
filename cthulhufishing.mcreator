@@ -3006,6 +3006,126 @@
           }
         ]
       }
+    },
+    {
+      "name": "MushroomLureRecipe",
+      "type": "recipe",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_lure_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/recipes/mushroom_lure_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "ChestplateFossilFish",
+      "type": "armor",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chestplate_fossil_fish",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/chestplate_fossil_fish_chestplate.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/ChestplateFossilFishItem.java"
+        ]
+      }
+    },
+    {
+      "name": "MushroomLure",
+      "type": "item",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_lure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/MushroomLureItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/mushroom_lure.json"
+        ]
+      },
+      "path": "~/MushroomSet"
+    },
+    {
+      "name": "MushroomCatcherEnchantment",
+      "type": "enchantment",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_catcher_enchantment",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/enchantment/MushroomCatcherEnchantmentEnchantment.java"
+        ]
+      },
+      "path": "~/Enchantments"
+    },
+    {
+      "name": "ChestplateFossilFishChestplateTickEvent",
+      "type": "procedure",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chestplate_fossil_fish_chestplate_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ChestplateFossilFishChestplateTickEventProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "MusrhoomRing",
+      "type": "curiosbauble",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "musrhoom_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/MusrhoomRingItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/musrhoom_ring.json"
+        ]
+      }
+    },
+    {
+      "name": "CatchMushroom",
+      "type": "procedure",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "catch_mushroom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/CatchMushroomProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/MushroomSet"
     }
   ],
   "variable_elements": [
@@ -3204,8 +3324,8 @@
   ],
   "language_map": {
     "en_us": {
-      "item.cthulhufishing.mask_of_revelation_helmet": "Mask Of Revelation Helmet",
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
+      "item.cthulhufishing.mask_of_revelation_helmet": "Mask Of Revelation Helmet",
       "item.cthulhufishing.step_to_abyss": "Music disc - Step To Abyss ",
       "item.cthulhufishing.sculk_ring": "Sculk Ring",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
@@ -3313,6 +3433,10 @@
       },
       {
         "name": "RelicAltarEffect",
+        "children": []
+      },
+      {
+        "name": "MushroomSet",
         "children": []
       },
       {
