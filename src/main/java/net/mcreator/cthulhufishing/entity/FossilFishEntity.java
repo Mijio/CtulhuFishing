@@ -142,7 +142,7 @@ public class FossilFishEntity extends Monster implements IAnimatable {
 
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 6.8);
+		return super.getDimensions(p_33597_).scale((float) 6.3);
 	}
 
 	@Override
