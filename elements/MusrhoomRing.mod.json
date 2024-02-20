@@ -3,7 +3,7 @@
   "_type": "curiosbauble",
   "definition": {
     "renderType": 0,
-    "texture": "nonetexture",
+    "texture": "mushroom_ring",
     "customModelName": "Normal",
     "name": "Mushroom Ring",
     "rarity": "RARE",

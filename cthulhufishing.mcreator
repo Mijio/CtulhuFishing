@@ -482,8 +482,8 @@
       "registry_name": "knife_for_ritual_bleeding",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/KnifeForRitualBleedingItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/knife_for_ritual_bleeding.json"
+          "src/main/resources/assets/cthulhufishing/models/item/knife_for_ritual_bleeding.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/KnifeForRitualBleedingItem.java"
         ]
       }
     },
@@ -1008,15 +1008,15 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/block/BlockOreEyeBlock.java",
           "src/main/java/net/mcreator/cthulhufishing/block/display/BlockOreEyeDisplayItem.java",
-          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/BlockOreEyeFeature.java",
           "src/main/java/net/mcreator/cthulhufishing/block/entity/BlockOreEyeTileEntity.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeBlockModel.java",
           "src/main/resources/assets/cthulhufishing/blockstates/block_ore_eye.json",
-          "src/main/resources/assets/cthulhufishing/models/custom/block_ore_eye_particle.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/BlockOreEyeFeature.java",
           "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeTileRenderer.java",
+          "src/main/resources/assets/cthulhufishing/models/item/block_ore_eye.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeBlockModel.java",
           "src/main/java/net/mcreator/cthulhufishing/block/model/BlockOreEyeDisplayModel.java",
-          "src/main/resources/assets/cthulhufishing/models/item/block_ore_eye.json"
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/BlockOreEyeDisplayItemRenderer.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/block_ore_eye_particle.json"
         ]
       }
     },
@@ -1707,8 +1707,8 @@
       "registry_name": "faded_runic_tablet",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/FadedRunicTabletItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/faded_runic_tablet.json"
+          "src/main/resources/assets/cthulhufishing/models/item/faded_runic_tablet.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/FadedRunicTabletItem.java"
         ]
       }
     },
@@ -1721,8 +1721,8 @@
       "registry_name": "crimson_ring",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/CrimsonRingItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/crimson_ring.json"
+          "src/main/resources/assets/cthulhufishing/models/item/crimson_ring.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/CrimsonRingItem.java"
         ]
       }
     },
@@ -1735,8 +1735,8 @@
       "registry_name": "sculk_ring",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/sculk_ring.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/SculkRingItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/SculkRingItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/sculk_ring.json"
         ]
       }
     },
@@ -1776,8 +1776,8 @@
       "registry_name": "emerald_gold_ring",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/emerald_gold_ring.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/EmeraldGoldRingItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/EmeraldGoldRingItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/emerald_gold_ring.json"
         ]
       }
     },
@@ -1828,8 +1828,8 @@
       "registry_name": "reagent",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/ReagentItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/reagent.json"
+          "src/main/resources/assets/cthulhufishing/models/item/reagent.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/ReagentItem.java"
         ]
       }
     },
@@ -2509,11 +2509,11 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/block/PseudoEyeBlock.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/pseudo_eye.json",
           "src/main/resources/assets/cthulhufishing/models/item/pseudo_eye.json",
           "src/main/resources/data/cthulhufishing/forge/biome_modifier/pseudo_eye_biome_modifier.json",
-          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/PseudoEyeFeature.java",
           "src/main/resources/assets/cthulhufishing/models/block/pseudo_eye.json",
-          "src/main/resources/assets/cthulhufishing/blockstates/pseudo_eye.json"
+          "src/main/java/net/mcreator/cthulhufishing/world/features/ores/PseudoEyeFeature.java"
         ]
       }
     },
@@ -2673,8 +2673,8 @@
       "registry_name": "revelation_steel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/revelation_steel.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/RevelationSteelItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/RevelationSteelItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/revelation_steel.json"
         ]
       }
     },
@@ -3062,8 +3062,8 @@
       "registry_name": "musrhoom_ring",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/MusrhoomRingItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/musrhoom_ring.json"
+          "src/main/resources/assets/cthulhufishing/models/item/musrhoom_ring.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/MusrhoomRingItem.java"
         ]
       }
     },
