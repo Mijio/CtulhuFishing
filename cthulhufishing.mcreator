@@ -3062,8 +3062,8 @@
       "registry_name": "musrhoom_ring",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/musrhoom_ring.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/MusrhoomRingItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/MusrhoomRingItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/musrhoom_ring.json"
         ]
       }
     },
