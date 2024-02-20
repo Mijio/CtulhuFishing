@@ -8,7 +8,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.LivingEntity;
 
-import net.mcreator.cthulhufishing.procedures.CrimsonFishPlayerFinishesUsingItemProcedure;
+import net.mcreator.cthulhufishing.procedures.MushroomFishOnPlayerStoppedUsingProcedure;
 import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 
 public class MushroomTorchfishItem extends Item {
@@ -20,6 +20,6 @@ public class MushroomTorchfishItem extends Item {
 
 	@Override
 	public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entity, int time) {
-		CrimsonFishPlayerFinishesUsingItemProcedure.execute(entity);
+		MushroomFishOnPlayerStoppedUsingProcedure.execute(entity);
 	}
 }

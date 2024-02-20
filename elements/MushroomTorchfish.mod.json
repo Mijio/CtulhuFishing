@@ -30,7 +30,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onStoppedUsing": {
-      "name": "CrimsonFishPlayerFinishesUsingItem"
+      "name": "MushroomFishOnPlayerStoppedUsing"
     },
     "isFood": true,
     "nutritionalValue": 2,
