@@ -6,13 +6,11 @@ import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
@@ -22,7 +20,6 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.cthulhufishing.procedures.ChestplateFossilFishChestplateTickEventProcedure;
 import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 import net.mcreator.cthulhufishing.client.model.ModelFossilFishArmor;
 
@@ -101,13 +98,6 @@ public abstract class ChestplateFossilFishItem extends ArmorItem {
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "cthulhufishing:textures/models/armor/texture_armor2_layer_1.png";
-		}
-
-		@Override
-		public void onArmorTick(ItemStack itemstack, Level world, Player entity) {
-			ChestplateFossilFishChestplateTickEventProcedure.execute(
-
-			);
 		}
 	}
 }

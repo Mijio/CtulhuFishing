@@ -3103,8 +3103,8 @@
       "registry_name": "chestplate_fossil_fish",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/ChestplateFossilFishItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/chestplate_fossil_fish_chestplate.json"
+          "src/main/resources/assets/cthulhufishing/models/item/chestplate_fossil_fish_chestplate.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/ChestplateFossilFishItem.java"
         ]
       }
     },

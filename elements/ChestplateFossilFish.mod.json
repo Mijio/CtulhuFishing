@@ -10,9 +10,6 @@
     "textureLeggings": "",
     "enableBoots": false,
     "textureBoots": "",
-    "onBodyTick": {
-      "name": "ChestplateFossilFishChestplateTickEvent"
-    },
     "creativeTab": {
       "value": "CUSTOM:CtulhuFishingTab"
     },
