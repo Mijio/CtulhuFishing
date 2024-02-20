@@ -46,6 +46,13 @@ public class ToolTipHoodOfTheVoidProcedure {
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.CHESTPLATE_FOSSIL_FISH_CHESTPLATE.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bFossil Fish Chestplate"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bDepending on saturation increases your armor by up to 50%"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
 		} else if (itemstack.getItem() == CthulhufishingModItems.KNIFE_FOR_RITUAL_BLEEDING.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bSacrificial knife"));
 			if (Screen.hasShiftDown()) {

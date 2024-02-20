@@ -141,6 +141,69 @@ public class CheckFishSlotProcedure {
 				});
 			}
 			ButtonIsVisibleProcedure.execute(entity);
+		} else if ((entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Altar_Recipe == 7
+				&& (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY)
+						.getItem() == CthulhufishingModItems.MUSHROOM_SPRAT.get()
+				&& new Object() {
+					public int getAmount(int sltid) {
+						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+							ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+							if (stack != null)
+								return stack.getCount();
+						}
+						return 0;
+					}
+				}.getAmount(0) >= (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).AltarFishCount) {
+			{
+				boolean _setval = true;
+				entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.ButtonVis = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			ButtonIsVisibleProcedure.execute(entity);
+		} else if ((entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Altar_Recipe == 8
+				&& (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY)
+						.getItem() == CthulhufishingModItems.MUSHROOM_TORCHFISH.get()
+				&& new Object() {
+					public int getAmount(int sltid) {
+						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+							ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+							if (stack != null)
+								return stack.getCount();
+						}
+						return 0;
+					}
+				}.getAmount(0) >= (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).AltarFishCount) {
+			{
+				boolean _setval = true;
+				entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.ButtonVis = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			ButtonIsVisibleProcedure.execute(entity);
+		} else if ((entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Altar_Recipe == 9
+				&& (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY)
+						.getItem() == CthulhufishingModItems.MUSHROOM_ANGLERFISH.get()
+				&& new Object() {
+					public int getAmount(int sltid) {
+						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+							ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+							if (stack != null)
+								return stack.getCount();
+						}
+						return 0;
+					}
+				}.getAmount(0) >= (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).AltarFishCount) {
+			{
+				boolean _setval = true;
+				entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.ButtonVis = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			ButtonIsVisibleProcedure.execute(entity);
 		}
 	}
 }
