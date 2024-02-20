@@ -10,6 +10,9 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.cthulhufishing.world.inventory.CtulhuAltarMenu;
+import net.mcreator.cthulhufishing.procedures.FishShows9Procedure;
+import net.mcreator.cthulhufishing.procedures.FishShows8Procedure;
+import net.mcreator.cthulhufishing.procedures.FishShows7Procedure;
 import net.mcreator.cthulhufishing.procedures.FishShows6Procedure;
 import net.mcreator.cthulhufishing.procedures.FishShows5Procedure;
 import net.mcreator.cthulhufishing.procedures.FishShows4Procedure;
@@ -86,6 +89,18 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 		}
 		if (FishShows6Procedure.execute(entity)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur6.png"));
+			this.blit(ms, this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
+		}
+		if (FishShows7Procedure.execute(entity)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/blur_fish7.png"));
+			this.blit(ms, this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
+		}
+		if (FishShows8Procedure.execute(entity)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/blur_fish8.png"));
+			this.blit(ms, this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
+		}
+		if (FishShows9Procedure.execute(entity)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/blur_fish9.png"));
 			this.blit(ms, this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
 		}
 		RenderSystem.disableBlend();

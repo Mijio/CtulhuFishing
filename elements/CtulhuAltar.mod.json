@@ -140,6 +140,42 @@
           "x": 204,
           "y": 90
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blur_fish7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FishShows7"
+          },
+          "x": 204,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blur_fish8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FishShows8"
+          },
+          "x": 204,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blur_fish9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FishShows9"
+          },
+          "x": 204,
+          "y": 90
+        }
       }
     ],
     "onOpen": {
