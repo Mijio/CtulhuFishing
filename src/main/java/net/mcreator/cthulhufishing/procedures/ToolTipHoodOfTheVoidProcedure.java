@@ -60,6 +60,20 @@ public class ToolTipHoodOfTheVoidProcedure {
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.MUSRHOOM_RING.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bMushroom fish ring"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bAdditionally enhances your revelation from catching Mushroom Fish"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.MUSHROOM_LURE.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bMushroom lure"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bHold in your left hand when fishing in the deep dark, then you can catch Mushroom fish "));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
 		} else if (itemstack.getItem() == CthulhufishingModItems.SWORD_OF_REVELATION.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bGreatsword of Revelation"));
 			if (Screen.hasShiftDown()) {
@@ -228,6 +242,24 @@ public class ToolTipHoodOfTheVoidProcedure {
 		} else if (itemstack.getItem() == CthulhufishingModItems.ANCIENT_COIN.get()) {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A7bUsed for netherite crafting"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.MUSHROOM_ANGLERFISH.get()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bWhen eaten gives \"Mushroomed\" and \"Saturation\" effects"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.MUSHROOM_SPRAT.get()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bWhen eaten gives \"Mushroomed\" and \"Saturation\" effects"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.MUSHROOM_TORCHFISH.get()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bWhen eaten gives \"Mushroomed\" and \"Saturation\" effects"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
