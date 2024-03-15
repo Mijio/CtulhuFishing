@@ -19,6 +19,9 @@ import net.mcreator.cthulhufishing.procedures.FishShows4Procedure;
 import net.mcreator.cthulhufishing.procedures.FishShows3Procedure;
 import net.mcreator.cthulhufishing.procedures.FishShows2Procedure;
 import net.mcreator.cthulhufishing.procedures.FishShows1Procedure;
+import net.mcreator.cthulhufishing.procedures.FishShows12Procedure;
+import net.mcreator.cthulhufishing.procedures.FishShows11Procedure;
+import net.mcreator.cthulhufishing.procedures.FishShows10Procedure;
 import net.mcreator.cthulhufishing.procedures.ButtonIsVisibleProcedure;
 import net.mcreator.cthulhufishing.procedures.AltarFishCountTextingProcedure;
 import net.mcreator.cthulhufishing.network.CtulhuAltarButtonMessage;
@@ -101,6 +104,18 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 		}
 		if (FishShows9Procedure.execute(entity)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/blur_fish9.png"));
+			this.blit(ms, this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
+		}
+		if (FishShows10Procedure.execute(entity)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/ice_boulti_blur.png"));
+			this.blit(ms, this.leftPos + 75, this.topPos + 79, 0, 0, 16, 16, 16, 16);
+		}
+		if (FishShows11Procedure.execute(entity)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/ice_cod_blur.png"));
+			this.blit(ms, this.leftPos + 75, this.topPos + 79, 0, 0, 16, 16, 16, 16);
+		}
+		if (FishShows12Procedure.execute(entity)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/ice_stingray_blur.png"));
 			this.blit(ms, this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
 		}
 		RenderSystem.disableBlend();

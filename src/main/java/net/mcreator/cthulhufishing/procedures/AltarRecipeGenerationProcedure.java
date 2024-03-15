@@ -19,7 +19,7 @@ public class AltarRecipeGenerationProcedure {
 		}
 		if ((entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Altar_Recipe == 0) {
 			{
-				double _setval = Mth.nextInt(RandomSource.create(), 1, 9);
+				double _setval = Mth.nextInt(RandomSource.create(), 1, 12);
 				entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Altar_Recipe = _setval;
 					capability.syncPlayerVariables(entity);

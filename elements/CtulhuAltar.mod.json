@@ -176,6 +176,42 @@
           "x": 204,
           "y": 90
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ice_boulti_blur.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FishShows10"
+          },
+          "x": 204,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ice_cod_blur.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FishShows11"
+          },
+          "x": 204,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ice_stingray_blur.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "FishShows12"
+          },
+          "x": 204,
+          "y": 90
+        }
       }
     ],
     "onOpen": {

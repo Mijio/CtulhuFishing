@@ -33,6 +33,10 @@ import net.mcreator.cthulhufishing.item.MushroomLureItem;
 import net.mcreator.cthulhufishing.item.MushroomAnglerfishItem;
 import net.mcreator.cthulhufishing.item.MaskOfRevelationItem;
 import net.mcreator.cthulhufishing.item.KnifeForRitualBleedingItem;
+import net.mcreator.cthulhufishing.item.IceStingrayItem;
+import net.mcreator.cthulhufishing.item.IceLureItem;
+import net.mcreator.cthulhufishing.item.IceCodItem;
+import net.mcreator.cthulhufishing.item.IceBoultiItem;
 import net.mcreator.cthulhufishing.item.HorseSculkFishItem;
 import net.mcreator.cthulhufishing.item.HoodOfTheDeepVoidItem;
 import net.mcreator.cthulhufishing.item.HermitSlulkFishItem;
@@ -114,6 +118,12 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> MUSHROOM_ANGLERFISH = REGISTRY.register("mushroom_anglerfish", () -> new MushroomAnglerfishItem());
 	public static final RegistryObject<Item> MUSHROOM_TORCHFISH = REGISTRY.register("mushroom_torchfish", () -> new MushroomTorchfishItem());
 	public static final RegistryObject<Item> MUSHROOM_SPRAT = REGISTRY.register("mushroom_sprat", () -> new MushroomSpratItem());
+	public static final RegistryObject<Item> ICE_CRAB_SPAWN_EGG = REGISTRY.register("ice_crab_spawn_egg",
+			() -> new ForgeSpawnEggItem(CthulhufishingModEntities.ICE_CRAB, -1, -1, new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB)));
+	public static final RegistryObject<Item> ICE_COD = REGISTRY.register("ice_cod", () -> new IceCodItem());
+	public static final RegistryObject<Item> ICE_STINGRAY = REGISTRY.register("ice_stingray", () -> new IceStingrayItem());
+	public static final RegistryObject<Item> ICE_BOULTI = REGISTRY.register("ice_boulti", () -> new IceBoultiItem());
+	public static final RegistryObject<Item> ICE_LURE = REGISTRY.register("ice_lure", () -> new IceLureItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

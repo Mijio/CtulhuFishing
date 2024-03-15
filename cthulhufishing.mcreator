@@ -467,8 +467,8 @@
       "registry_name": "crimson_crunch",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/CrimsonCrunchItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/crimson_crunch.json"
+          "src/main/resources/assets/cthulhufishing/models/item/crimson_crunch.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/CrimsonCrunchItem.java"
         ]
       },
       "path": "~/CrimsonSet"
@@ -510,8 +510,8 @@
       "registry_name": "crimson_jellyfish",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/crimson_jellyfish.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/CrimsonJellyfishItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/CrimsonJellyfishItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/crimson_jellyfish.json"
         ]
       },
       "path": "~/CrimsonSet"
@@ -1310,8 +1310,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/client/renderer/ObsessedEyeMobRenderer.java",
-          "src/main/resources/assets/cthulhufishing/models/item/obsessed_eye_mob_spawn_egg.json",
           "src/main/java/net/mcreator/cthulhufishing/entity/model/ObsessedEyeMobModel.java",
+          "src/main/resources/assets/cthulhufishing/models/item/obsessed_eye_mob_spawn_egg.json",
           "src/main/java/net/mcreator/cthulhufishing/entity/ObsessedEyeMobEntity.java"
         ]
       },
@@ -1431,10 +1431,10 @@
       "registry_name": "grimoire_tentacle",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/grimoire_tentacle_spawn_egg.json",
-          "src/main/java/net/mcreator/cthulhufishing/client/renderer/GrimoireTentacleRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/GrimoireTentacleEntity.java",
           "src/main/java/net/mcreator/cthulhufishing/entity/model/GrimoireTentacleModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/entity/GrimoireTentacleEntity.java"
+          "src/main/resources/assets/cthulhufishing/models/item/grimoire_tentacle_spawn_egg.json",
+          "src/main/java/net/mcreator/cthulhufishing/client/renderer/GrimoireTentacleRenderer.java"
         ]
       },
       "path": "~/CthulhuGrimoire"
@@ -1447,8 +1447,8 @@
       "registry_name": "portal_tentacle_particle",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/client/particle/PortalTentacleParticleParticle.java",
-          "src/main/resources/assets/cthulhufishing/particles/portal_tentacle_particle.json"
+          "src/main/resources/assets/cthulhufishing/particles/portal_tentacle_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/client/particle/PortalTentacleParticleParticle.java"
         ]
       },
       "path": "~/CthulhuGrimoire"
@@ -1606,16 +1606,16 @@
       "registry_name": "altar_relic",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelicTileRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelicDisplayItem.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelicTileEntity.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelicDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelicBlock.java",
-          "src/main/resources/assets/cthulhufishing/models/item/altar_relic.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelicDisplayModel.java",
           "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelicBlockModel.java",
-          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_particle.json"
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelicDisplayModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelicTileEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelicDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelicDisplayItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic.json",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelicBlock.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelicTileRenderer.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic.json"
         ]
       },
       "path": "~/Relic"
@@ -1946,16 +1946,16 @@
       "registry_name": "altar_relic_6",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic6BlockModel.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_6.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic6TileEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic6DisplayItem.java",
           "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic6DisplayModel.java",
           "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic6DisplayItemRenderer.java",
-          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_6_particle.json",
-          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_6.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic6BlockModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic6TileRenderer.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_6.json",
           "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic6Block.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic6TileEntity.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic6DisplayItem.java"
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_6.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic6TileRenderer.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_6_particle.json"
         ]
       },
       "path": "~/Relic"
@@ -1970,15 +1970,15 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic5DisplayModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic5DisplayItemRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic5Block.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic5TileRenderer.java",
-          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_5.json",
           "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic5BlockModel.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_5.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic5TileEntity.java",
           "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic5DisplayItem.java",
-          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_5_particle.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic5TileEntity.java"
+          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_5.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic5TileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic5DisplayItemRenderer.java",
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_5.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic5Block.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_5_particle.json"
         ]
       },
       "path": "~/Relic"
@@ -2028,16 +2028,16 @@
       "registry_name": "altar_relic_4",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic4Block.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic4BlockModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic4TileEntity.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic4DisplayItemRenderer.java",
-          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_4_particle.json",
           "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic4DisplayModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic4DisplayItem.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic4Block.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic4TileEntity.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_4_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic4BlockModel.java",
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_4.json",
           "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_4.json",
           "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic4TileRenderer.java",
-          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_4.json"
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic4DisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic4DisplayItem.java"
         ]
       },
       "path": "~/Relic"
@@ -2087,16 +2087,16 @@
       "registry_name": "altar_relic_3",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic3Block.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic3BlockModel.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_3.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic3DisplayItemRenderer.java",
           "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic3TileRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic3DisplayModel.java",
-          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_3.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic3DisplayItem.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_3.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic3Block.java",
           "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_3_particle.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic3TileEntity.java"
+          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic3DisplayItem.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic3TileEntity.java",
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_3.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic3DisplayModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic3BlockModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic3DisplayItemRenderer.java"
         ]
       },
       "path": "~/Relic"
@@ -2111,15 +2111,15 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic2TileRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic2DisplayItemRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic2Block.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic2DisplayModel.java",
-          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_2.json",
           "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic2BlockModel.java",
           "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic2DisplayItem.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_2_particle.json",
           "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic2TileEntity.java",
-          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_2.json",
-          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_2_particle.json"
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic2DisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic2DisplayModel.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_2.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic2Block.java",
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_2.json"
         ]
       },
       "path": "~/Relic"
@@ -2169,16 +2169,16 @@
       "registry_name": "altar_relic_1",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic1DisplayItemRenderer.java",
-          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_1_particle.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic1TileRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic1DisplayModel.java",
-          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_1.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic1DisplayItem.java",
           "src/main/resources/assets/cthulhufishing/blockstates/altar_relic_1.json",
-          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic1TileEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic1TileRenderer.java",
           "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic1BlockModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic1Block.java"
+          "src/main/resources/assets/cthulhufishing/models/item/altar_relic_1.json",
+          "src/main/resources/assets/cthulhufishing/models/custom/altar_relic_1_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/AltarRelic1Block.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/AltarRelic1TileEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/AltarRelic1DisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/AltarRelic1DisplayModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/AltarRelic1DisplayItem.java"
         ]
       },
       "path": "~/Relic"
@@ -3062,8 +3062,8 @@
       "registry_name": "musrhoom_ring",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/MusrhoomRingItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/musrhoom_ring.json"
+          "src/main/resources/assets/cthulhufishing/models/item/musrhoom_ring.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/MusrhoomRingItem.java"
         ]
       }
     },
@@ -3230,6 +3230,207 @@
           "src/main/java/net/mcreator/cthulhufishing/recipes/brewing/PM3BrewingRecipe.java"
         ]
       }
+    },
+    {
+      "name": "IceCrab",
+      "type": "animatedentity",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_crab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/entity/model/IceCrabModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/IceCrabEntity.java",
+          "src/main/resources/data/cthulhufishing/forge/biome_modifier/ice_crab_biome_modifier.json",
+          "src/main/resources/assets/cthulhufishing/models/item/ice_crab_spawn_egg.json",
+          "src/main/java/net/mcreator/cthulhufishing/client/renderer/IceCrabRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "IceCod",
+      "type": "item",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_cod",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/ice_cod.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/IceCodItem.java"
+        ]
+      },
+      "path": "~/FrozenSet"
+    },
+    {
+      "name": "IceStingray",
+      "type": "item",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_stingray",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/ice_stingray.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/IceStingrayItem.java"
+        ]
+      },
+      "path": "~/FrozenSet"
+    },
+    {
+      "name": "IceBoulti",
+      "type": "item",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_boulti",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/ice_boulti.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/IceBoultiItem.java"
+        ]
+      },
+      "path": "~/FrozenSet"
+    },
+    {
+      "name": "CatchIce",
+      "type": "procedure",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "catch_ice",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/CatchIceProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FrozenSet"
+    },
+    {
+      "name": "IceLure",
+      "type": "item",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_lure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/IceLureItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/ice_lure.json"
+        ]
+      }
+    },
+    {
+      "name": "IceLureRecipe",
+      "type": "recipe",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_lure_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/recipes/ice_lure_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "IceSetBuff",
+      "type": "procedure",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_set_buff",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/IceSetBuffProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/FrozenSet"
+    },
+    {
+      "name": "FishShows11",
+      "type": "procedure",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_shows_11",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FishShows11Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "FishShows12",
+      "type": "procedure",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fish_shows_12",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FishShows12Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Altar"
+    },
+    {
+      "name": "FrozenCatcherEnchantment",
+      "type": "enchantment",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozen_catcher_enchantment",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/enchantment/FrozenCatcherEnchantmentEnchantment.java"
+        ]
+      },
+      "path": "~/Enchantments"
     }
   ],
   "variable_elements": [
@@ -3451,6 +3652,7 @@
       "subtitles.reagent_input": "",
       "effect.cthulhufishing.mushroomed": "Mushroomed",
       "item.cthulhufishing.mushroom_sprat": "Mushroom Sprat",
+      "entity.cthulhufishing.ice_crab": "Frozen Crab",
       "item.cthulhufishing.faded_runic_tablet": "Faded Runic Tablet",
       "item.cthulhufishing.crimson_lure": "Crimson Lure",
       "entity.cthulhufishing.grimoire_tentacle": "Grimoire Tentacle",
@@ -3460,6 +3662,7 @@
       "item.cthulhufishing.revelation_steel": "Revelation Steel",
       "entity.cthulhufishing.fossil_fish": "Fossil Fish",
       "item.minecraft.lingering_potion.effect.mushroomed_potion": "Lingering Potion of Mushroomed Potion",
+      "item.cthulhufishing.ice_crab_spawn_egg": "Frozen Crab Spawn Egg",
       "subtitles.catchfishmen": "fishmen",
       "item.cthulhufishing.mushroom_anglerfish": "Mushroom Anglerfish",
       "effect.cthulhufishing.ancient_curse": "Ancient Curse",
@@ -3485,7 +3688,9 @@
       "item.cthulhufishing.crimson_fish": "Crimson Fish",
       "item.minecraft.potion.effect.mushroomed_potion": "Potion of Mushroomed Potion",
       "item.cthulhufishing.emerald_gold_ring": "Experience Ring",
+      "item.cthulhufishing.ice_boulti": "Frozen Boulti Fish",
       "item.cthulhufishing.drip_void": "Drip Void",
+      "item.cthulhufishing.ice_stingray": "Frozen Stingray",
       "subtitles.fossil_fish_attack": "",
       "item.cthulhufishing.reagent": "Reagent",
       "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
@@ -3493,9 +3698,11 @@
       "item.cthulhufishing.runic_tablet": "Runic Tablet",
       "subtitles.catch_strange_fish": "",
       "subtitles.void_merchant": "",
+      "item.cthulhufishing.ice_cod": "Frozen Cod",
       "subtitles.relic_idle": "",
       "subtitles.hood_ablity": "",
       "item.cthulhufishing.sword_of_revelation": "GreatSwordOfRevelation",
+      "item.cthulhufishing.ice_lure": "Frozen Lure",
       "enchantment.cthulhufishing.mushroom_catcher_enchantment": "Mushroom Catcher",
       "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
       "subtitles.obsessed_eye_spawn": "",
@@ -3509,6 +3716,7 @@
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "item.minecraft.tipped_arrow.effect.mushroomed_potion": "Arrow of Mushroomed Potion",
       "block.cthulhufishing.deep_oil": "Deep Oil",
+      "enchantment.cthulhufishing.frozen_catcher_enchantment": "Frozen Catcher",
       "entity.minecraft.villager.cthulhufishing.void_merchant": "Void Merchant",
       "item.cthulhufishing.musrhoom_ring": "Mushroom Ring",
       "item.cthulhufishing.ancient_coin": "Ancient Coin",
@@ -3568,6 +3776,10 @@
       },
       {
         "name": "Enchantments",
+        "children": []
+      },
+      {
+        "name": "FrozenSet",
         "children": []
       }
     ]

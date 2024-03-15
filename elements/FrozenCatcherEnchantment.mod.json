@@ -1,0 +1,31 @@
+{
+  "_fv": 43,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Frozen Catcher",
+    "type": "FISHING_ROD",
+    "rarity": "RARE",
+    "minLevel": 1,
+    "maxLevel": 5,
+    "damageModifier": 0,
+    "compatibleEnchantments": [
+      {
+        "value": "CUSTOM:CrimsonCatcherEnchant"
+      },
+      {
+        "value": "CUSTOM:SculkCatcherEnchantment"
+      },
+      {
+        "value": "CUSTOM:MushroomCatcherEnchantment"
+      }
+    ],
+    "excludeEnchantments": true,
+    "compatibleItems": [],
+    "excludeItems": false,
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": false,
+    "canVillagerTrade": true
+  }
+}

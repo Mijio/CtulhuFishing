@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:snowball"
+    },
+    "1": {
+      "item": "minecraft:snowball"
+    },
+    "2": {
+      "item": "minecraft:snowball"
+    },
+    "3": {
+      "item": "minecraft:snowball"
+    },
+    "4": {
+      "item": "minecraft:light_blue_dye"
+    },
+    "5": {
+      "item": "minecraft:snowball"
+    },
+    "6": {
+      "item": "minecraft:snowball"
+    },
+    "7": {
+      "item": "minecraft:snowball"
+    },
+    "8": {
+      "item": "minecraft:snowball"
+    }
+  },
+  "result": {
+    "item": "cthulhufishing:ice_lure",
+    "count": 1
+  }
+}
