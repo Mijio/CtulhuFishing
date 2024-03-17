@@ -43,6 +43,7 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.cthulhufishing.procedures.IceCrabOnEntityTickUpdateProcedure;
+import net.mcreator.cthulhufishing.procedures.FrozenCrabGetHurtProcedure;
 import net.mcreator.cthulhufishing.init.CthulhufishingModEntities;
 
 public class IceCrabEntity extends Monster implements IAnimatable {
@@ -125,6 +126,7 @@ public class IceCrabEntity extends Monster implements IAnimatable {
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
+		FrozenCrabGetHurtProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this, source.getEntity());
 		if (source == DamageSource.FALL)
 			return false;
 		if (source == DamageSource.DROWN)
@@ -135,7 +137,7 @@ public class IceCrabEntity extends Monster implements IAnimatable {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		IceCrabOnEntityTickUpdateProcedure.execute(this.level, this);
+		IceCrabOnEntityTickUpdateProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 		this.refreshDimensions();
 	}
 
@@ -175,10 +177,10 @@ public class IceCrabEntity extends Monster implements IAnimatable {
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.2);
 		builder = builder.add(Attributes.MAX_HEALTH, 200);
 		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 7);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 40);
-		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 1);
-		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 2);
+		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 4);
+		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 1);
 		return builder;
 	}
 

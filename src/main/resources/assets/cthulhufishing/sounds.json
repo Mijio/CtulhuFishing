@@ -135,5 +135,13 @@
         "stream": false
       }
     ]
+  },
+  "frozen_crab_scream": {
+    "sounds": [
+      {
+        "name": "cthulhufishing:frozen_crab_scream",
+        "stream": false
+      }
+    ]
   }
 }

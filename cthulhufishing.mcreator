@@ -3245,7 +3245,8 @@
           "src/main/resources/assets/cthulhufishing/models/item/ice_crab_spawn_egg.json",
           "src/main/java/net/mcreator/cthulhufishing/client/renderer/IceCrabRenderer.java"
         ]
-      }
+      },
+      "path": "~/FrozenCrabBoss"
     },
     {
       "name": "IceCod",
@@ -3448,11 +3449,64 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/FrozenCrabBoss"
+    },
+    {
+      "name": "FrozenCrabGetHurt",
+      "type": "procedure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozen_crab_get_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FrozenCrabGetHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FrozenCrabBoss"
     }
   ],
   "variable_elements": [
@@ -3647,6 +3701,14 @@
       ],
       "category": "hostile",
       "subtitle": ""
+    },
+    {
+      "name": "frozen_crab_scream",
+      "files": [
+        "frozen_crab_scream"
+      ],
+      "category": "neutral",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -3697,6 +3759,7 @@
       "block.cthulhufishing.altar_relic_6": "Altar Relic",
       "block.cthulhufishing.altar_relic_5": "Altar Relic",
       "block.cthulhufishing.altar_relic_4": "Altar Relic",
+      "subtitles.frozen_crab_scream": "",
       "block.cthulhufishing.altar_relic_3": "Altar Relic",
       "item.cthulhufishing.chestplate_fossil_fish_chestplate": "Chestplate Fossil Fish Chestplate",
       "item.cthulhufishing.tentacle_staff": "Tentacle Staff",
@@ -3802,6 +3865,10 @@
       },
       {
         "name": "FrozenSet",
+        "children": []
+      },
+      {
+        "name": "FrozenCrabBoss",
         "children": []
       }
     ]

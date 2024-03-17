@@ -165,6 +165,13 @@ public class ToolTipHoodOfTheVoidProcedure {
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.ICE_LURE.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bFrozen lure"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bHold in your left hand when fishing with the effect of ritual bleeding, then you can catch Frozen fish"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
 		} else if (itemstack.getItem() == CthulhufishingModItems.HOOD_OF_THE_DEEP_VOID_HELMET.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bHood of the deep void"));
 			if (Screen.hasShiftDown()) {
@@ -267,6 +274,24 @@ public class ToolTipHoodOfTheVoidProcedure {
 		} else if (itemstack.getItem() == CthulhufishingModItems.MUSHROOM_TORCHFISH.get()) {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A7bWhen eaten gives \"Mushroomed\" and \"Saturation\" effects"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.ICE_COD.get()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bWhen eaten gives \"Water breathing\" effect"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.ICE_STINGRAY.get()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bWhen eaten gives \"Water breathing\" effect"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.ICE_BOULTI.get()) {
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bWhen eaten gives \"Water breathing\" effect"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
