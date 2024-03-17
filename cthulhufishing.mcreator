@@ -3242,7 +3242,6 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/entity/model/IceCrabModel.java",
           "src/main/java/net/mcreator/cthulhufishing/entity/IceCrabEntity.java",
-          "src/main/resources/data/cthulhufishing/forge/biome_modifier/ice_crab_biome_modifier.json",
           "src/main/resources/assets/cthulhufishing/models/item/ice_crab_spawn_egg.json",
           "src/main/java/net/mcreator/cthulhufishing/client/renderer/IceCrabRenderer.java"
         ]
@@ -3431,6 +3430,29 @@
         ]
       },
       "path": "~/Enchantments"
+    },
+    {
+      "name": "IceCrabOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_crab_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/IceCrabOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
