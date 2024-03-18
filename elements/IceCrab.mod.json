@@ -58,7 +58,7 @@
     "armorBaseValue": 0.0,
     "trackingRange": 80,
     "followRange": 40,
-    "health": 200,
+    "health": 500,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,

@@ -143,5 +143,13 @@
         "stream": false
       }
     ]
+  },
+  "frozen_crab_aoe": {
+    "sounds": [
+      {
+        "name": "cthulhufishing:493680_nicknamelarry_wind-snowstorm-sound-effect-_mp3cut.net_",
+        "stream": false
+      }
+    ]
   }
 }
