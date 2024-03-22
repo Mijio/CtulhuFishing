@@ -97,7 +97,7 @@ public abstract class FrozenLegginsItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "cthulhufishing:textures/entities/texture_frozen_leggins.png";
+			return "cthulhufishing:textures/entities/texture_frozen_leggins_1.png";
 		}
 	}
 }
