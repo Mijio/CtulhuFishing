@@ -9,12 +9,12 @@ import net.mcreator.cthulhufishing.entity.IceCrabEntity;
 public class IceCrabModel extends AnimatedGeoModel<IceCrabEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(IceCrabEntity entity) {
-		return new ResourceLocation("cthulhufishing", "animations/ice_crab.animation.json");
+		return new ResourceLocation("cthulhufishing", "animations/frozen_crab.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(IceCrabEntity entity) {
-		return new ResourceLocation("cthulhufishing", "geo/ice_crab.geo.json");
+		return new ResourceLocation("cthulhufishing", "geo/frozen_crab.geo.json");
 	}
 
 	@Override

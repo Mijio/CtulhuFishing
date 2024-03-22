@@ -60,6 +60,13 @@ public class ToolTipHoodOfTheVoidProcedure {
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.FROZEN_CRAB_NECKLACE.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bNecklace of Frozen Crab"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bIncreases your resistance of freezing by 70%"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
 		} else if (itemstack.getItem() == CthulhufishingModItems.THIRD_EYE.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bThird eye"));
 			if (Screen.hasShiftDown()) {
@@ -78,6 +85,13 @@ public class ToolTipHoodOfTheVoidProcedure {
 			(itemstack).setHoverName(Component.literal("\u00A7bMushroom lure"));
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A7bHold in your left hand when fishing in the deep dark, then you can catch Mushroom fish "));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.FROZEN_RING.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bFrozen fish ring"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bAdditionally enhances your revelation from catching Frozen Fish"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}

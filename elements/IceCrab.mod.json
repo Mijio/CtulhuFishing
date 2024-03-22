@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Frozen Crab",
     "mobLabel": "",
-    "mobModelTexture": "crab_texure.png",
+    "mobModelTexture": "texture_crabb.png",
     "mobModelGlowTexture": "",
     "visualScale": {
       "fixedValue": 20.0
@@ -26,7 +26,7 @@
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "CUSTOM:CtulhuFishingTab"
+      "value": "MISC"
     },
     "isBoss": true,
     "bossBarColor": "BLUE",
@@ -65,7 +65,7 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "deathTime": 20,
+    "deathTime": 30,
     "lerp": 4,
     "disableCollisions": false,
     "ridable": false,
@@ -85,7 +85,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:FrozenCrabNecklace"
     },
     "livingSound": {
       "value": ""
@@ -108,21 +108,21 @@
     "hasAI": true,
     "aiBase": "(none)",
     "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "model": "ice_crab.geo.json",
+    "model": "frozen_crab.geo.json",
     "groupName": "",
     "animation1": "animation.ice_crab.idle",
-    "animation2": "",
-    "animation3": "",
-    "animation4": "",
+    "animation2": "animation_ice_crab_walking",
+    "animation3": "animation_ice_crab_death",
+    "animation4": "animation_ice_crab_hit2",
     "animation5": "",
     "animation6": "",
     "animation7": "",
     "animation8": "",
     "animation9": "",
     "animation10": "",
-    "enable2": false,
-    "enable3": false,
-    "enable4": false,
+    "enable2": true,
+    "enable3": true,
+    "enable4": true,
     "enable5": false,
     "enable6": false,
     "enable7": false,
@@ -131,7 +131,7 @@
     "enable10": false,
     "breedable": false,
     "tameable": false,
-    "disableDeathRotation": false,
+    "disableDeathRotation": true,
     "headMovement": false,
     "eyeHeight": false,
     "breedTriggerItems": [],

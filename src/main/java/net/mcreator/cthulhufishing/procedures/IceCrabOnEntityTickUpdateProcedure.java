@@ -8,7 +8,9 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -81,6 +83,11 @@ public class IceCrabOnEntityTickUpdateProcedure {
 				}
 			}
 		}
+		if (entity.getPersistentData().getDouble("AI") == 190) {
+			if (entity instanceof IceCrabEntity) {
+				((IceCrabEntity) entity).setAnimation("animation_ice_crab_hit");
+			}
+		}
 		if (entity.getPersistentData().getDouble("AI") == 208) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
@@ -110,6 +117,7 @@ public class IceCrabOnEntityTickUpdateProcedure {
 					if (!(entityiterator instanceof IceCrabEntity)) {
 						entityiterator.setTicksFrozen(250);
 						entityiterator.setDeltaMovement(new Vec3(((entity.getX() - entityiterator.getX()) * 0.8), ((entity.getY() - entityiterator.getY()) * 0.8), ((entity.getZ() - entityiterator.getZ()) * 0.8)));
+						entityiterator.hurt(DamageSource.GENERIC, (float) ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).getValue());
 					}
 				}
 			}

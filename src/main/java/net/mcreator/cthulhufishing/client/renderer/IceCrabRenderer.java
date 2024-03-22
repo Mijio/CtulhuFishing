@@ -25,4 +25,9 @@ public class IceCrabRenderer extends GeoEntityRenderer<IceCrabEntity> {
 		stack.scale(20f, 20f, 20f);
 		return RenderType.entityTranslucent(getTextureLocation(entity));
 	}
+
+	@Override
+	protected float getDeathMaxRotation(IceCrabEntity entityLivingBaseIn) {
+		return 0.0F;
+	}
 }

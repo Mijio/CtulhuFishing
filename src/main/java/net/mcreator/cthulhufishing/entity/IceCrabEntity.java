@@ -16,6 +16,7 @@ import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
@@ -44,6 +45,7 @@ import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.cthulhufishing.procedures.IceCrabOnEntityTickUpdateProcedure;
 import net.mcreator.cthulhufishing.procedures.FrozenCrabGetHurtProcedure;
+import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
 import net.mcreator.cthulhufishing.init.CthulhufishingModEntities;
 
 public class IceCrabEntity extends Monster implements IAnimatable {
@@ -73,7 +75,7 @@ public class IceCrabEntity extends Monster implements IAnimatable {
 		super.defineSynchedData();
 		this.entityData.define(SHOOT, false);
 		this.entityData.define(ANIMATION, "undefined");
-		this.entityData.define(TEXTURE, "crab_texure");
+		this.entityData.define(TEXTURE, "texture_crabb");
 	}
 
 	public void setTexture(String texture) {
@@ -112,6 +114,11 @@ public class IceCrabEntity extends Monster implements IAnimatable {
 	@Override
 	public boolean removeWhenFarAway(double distanceToClosestPlayer) {
 		return false;
+	}
+
+	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
+		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
+		this.spawnAtLocation(new ItemStack(CthulhufishingModItems.FROZEN_CRAB_NECKLACE.get()));
 	}
 
 	@Override
@@ -186,10 +193,39 @@ public class IceCrabEntity extends Monster implements IAnimatable {
 
 	private <E extends IAnimatable> PlayState movementPredicate(AnimationEvent<E> event) {
 		if (this.animationprocedure.equals("empty")) {
+			if ((event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F))
+
+			) {
+				event.getController().setAnimation(new AnimationBuilder().addAnimation("animation_ice_crab_walking", EDefaultLoopTypes.LOOP));
+				return PlayState.CONTINUE;
+			}
+			if (this.isDeadOrDying()) {
+				event.getController().setAnimation(new AnimationBuilder().addAnimation("animation_ice_crab_death", EDefaultLoopTypes.PLAY_ONCE));
+				return PlayState.CONTINUE;
+			}
 			event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.ice_crab.idle", EDefaultLoopTypes.LOOP));
 			return PlayState.CONTINUE;
 		}
 		return PlayState.STOP;
+	}
+
+	private <E extends IAnimatable> PlayState attackingPredicate(AnimationEvent<E> event) {
+		double d1 = this.getX() - this.xOld;
+		double d0 = this.getZ() - this.zOld;
+		float velocity = (float) Math.sqrt(d1 * d1 + d0 * d0);
+		if (getAttackAnim(event.getPartialTick()) > 0f && !this.swinging) {
+			this.swinging = true;
+			this.lastSwing = level.getGameTime();
+		}
+		if (this.swinging && this.lastSwing + 15L <= level.getGameTime()) {
+			this.swinging = false;
+		}
+		if (this.swinging && event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
+			event.getController().markNeedsReload();
+			event.getController().setAnimation(new AnimationBuilder().addAnimation("animation_ice_crab_hit2", EDefaultLoopTypes.PLAY_ONCE));
+			return PlayState.CONTINUE;
+		}
+		return PlayState.CONTINUE;
 	}
 
 	private <E extends IAnimatable> PlayState procedurePredicate(AnimationEvent<E> event) {
@@ -223,7 +259,7 @@ public class IceCrabEntity extends Monster implements IAnimatable {
 	@Override
 	protected void tickDeath() {
 		++this.deathTime;
-		if (this.deathTime == 20) {
+		if (this.deathTime == 30) {
 			this.remove(IceCrabEntity.RemovalReason.KILLED);
 			this.dropExperience();
 		}
@@ -240,6 +276,7 @@ public class IceCrabEntity extends Monster implements IAnimatable {
 	@Override
 	public void registerControllers(AnimationData data) {
 		data.addAnimationController(new AnimationController<>(this, "movement", 4, this::movementPredicate));
+		data.addAnimationController(new AnimationController<>(this, "attacking", 4, this::attackingPredicate));
 		data.addAnimationController(new AnimationController<>(this, "procedure", 4, this::procedurePredicate));
 	}
 
