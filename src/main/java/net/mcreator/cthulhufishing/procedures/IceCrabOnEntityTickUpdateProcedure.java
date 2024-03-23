@@ -32,7 +32,7 @@ public class IceCrabOnEntityTickUpdateProcedure {
 		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)) {
 			entity.getPersistentData().putDouble("AI", (entity.getPersistentData().getDouble("AI") + 1));
 		}
-		if (entity.getPersistentData().getDouble("AI") == 109) {
+		if (entity.getPersistentData().getDouble("AI") == 129) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:frozen_crab_scream")), SoundSource.NEUTRAL, 1, 1);
@@ -41,7 +41,7 @@ public class IceCrabOnEntityTickUpdateProcedure {
 				}
 			}
 		}
-		if (entity.getPersistentData().getDouble("AI") > 110 && entity.getPersistentData().getDouble("AI") < 160) {
+		if (entity.getPersistentData().getDouble("AI") > 130 && entity.getPersistentData().getDouble("AI") < 180) {
 			if (Math.random() < 0.4) {
 				if (!(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 30, 30, 30), e -> true).stream().sorted(new Object() {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
@@ -83,12 +83,12 @@ public class IceCrabOnEntityTickUpdateProcedure {
 				}
 			}
 		}
-		if (entity.getPersistentData().getDouble("AI") == 190) {
+		if (entity.getPersistentData().getDouble("AI") == 210) {
 			if (entity instanceof IceCrabEntity) {
 				((IceCrabEntity) entity).setAnimation("animation_ice_crab_hit");
 			}
 		}
-		if (entity.getPersistentData().getDouble("AI") == 208) {
+		if (entity.getPersistentData().getDouble("AI") == 228) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
 					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:frozen_crab_aoe")), SoundSource.NEUTRAL, 3, 1);
@@ -97,7 +97,7 @@ public class IceCrabOnEntityTickUpdateProcedure {
 				}
 			}
 		}
-		if (entity.getPersistentData().getDouble("AI") == 210) {
+		if (entity.getPersistentData().getDouble("AI") == 230) {
 			dx = x - 10;
 			dz = z - 10;
 			for (int index1 = 0; index1 < 20; index1++) {
@@ -121,8 +121,6 @@ public class IceCrabOnEntityTickUpdateProcedure {
 					}
 				}
 			}
-		}
-		if (entity.getPersistentData().getDouble("AI") == 220) {
 			entity.getPersistentData().putDouble("AI", 0);
 		}
 	}

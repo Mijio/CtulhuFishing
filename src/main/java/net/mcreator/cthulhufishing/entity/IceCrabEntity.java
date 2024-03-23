@@ -150,7 +150,7 @@ public class IceCrabEntity extends Monster implements IAnimatable {
 
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 6);
+		return super.getDimensions(p_33597_).scale((float) 7);
 	}
 
 	@Override

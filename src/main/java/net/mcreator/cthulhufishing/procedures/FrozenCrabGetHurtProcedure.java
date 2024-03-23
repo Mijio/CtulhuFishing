@@ -14,7 +14,7 @@ public class FrozenCrabGetHurtProcedure {
 		double dx = 0;
 		double dy = 0;
 		double dz = 0;
-		if (Math.random() < 0.6) {
+		if (Math.random() < 0.3) {
 			dx = x - 1;
 			dy = y - 0;
 			dz = z - 1;
