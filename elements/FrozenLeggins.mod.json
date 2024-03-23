@@ -11,12 +11,12 @@
     "enableBoots": false,
     "textureBoots": "",
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:CtulhuFishingTab"
     },
     "armorTextureFile": "texture_layer_1",
     "helmetName": "Frozen Leggins Helmet",
     "bodyName": "Frozen Leggins Chestplate",
-    "leggingsName": "Frozen Leggins Leggings",
+    "leggingsName": "Frozen Leggings",
     "bootsName": "Frozen Leggins Boots",
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
@@ -50,13 +50,13 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
-    "maxDamage": 25,
-    "damageValueHelmet": 2,
-    "damageValueBody": 6,
-    "damageValueLeggings": 5,
-    "damageValueBoots": 2,
+    "maxDamage": 1000,
+    "damageValueHelmet": 0,
+    "damageValueBody": 0,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 0,
     "enchantability": 9,
-    "toughness": 0.0,
+    "toughness": 1.5,
     "knockbackResistance": 0.0,
     "equipSound": {
       "value": ""

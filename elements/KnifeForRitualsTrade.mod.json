@@ -367,6 +367,42 @@
             "maxTrades": 5,
             "xp": 4,
             "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 4,
+            "price2": {
+              "value": "CUSTOM:Reagent"
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:IceLure"
+            },
+            "countOffer": 3,
+            "level": 1,
+            "maxTrades": 5,
+            "xp": 4,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 8,
+            "price2": {
+              "value": "CUSTOM:Reagent"
+            },
+            "countPrice2": 6,
+            "offer": {
+              "value": "CUSTOM:FrozenRing"
+            },
+            "countOffer": 1,
+            "level": 2,
+            "maxTrades": 1,
+            "xp": 20,
+            "priceMultiplier": 0.05
           }
         ]
       }

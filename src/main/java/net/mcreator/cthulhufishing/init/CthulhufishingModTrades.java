@@ -38,6 +38,8 @@ public class CthulhufishingModTrades {
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD, 4), new ItemStack(CthulhufishingModItems.REAGENT.get()), new ItemStack(CthulhufishingModItems.MUSHROOM_LURE.get(), 3), 5, 4, 0.05f));
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD, 4), new ItemStack(CthulhufishingModItems.REAGENT.get()), new ItemStack(CthulhufishingModItems.CRIMSON_LURE.get(), 3), 5, 4, 0.05f));
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD, 4), new ItemStack(CthulhufishingModItems.REAGENT.get()), new ItemStack(CthulhufishingModItems.SCULK_LURE.get(), 3), 5, 4, 0.05f));
+			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD, 4), new ItemStack(CthulhufishingModItems.REAGENT.get()), new ItemStack(CthulhufishingModItems.ICE_LURE.get(), 3), 5, 4, 0.05f));
+			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(Items.EMERALD, 8), new ItemStack(CthulhufishingModItems.REAGENT.get(), 6), new ItemStack(CthulhufishingModItems.FROZEN_RING.get()), 1, 20, 0.05f));
 		}
 	}
 }

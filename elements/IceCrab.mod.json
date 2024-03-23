@@ -15,7 +15,7 @@
     "modelWidth": 0.6,
     "modelHeight": 0.4,
     "modelShadowSize": 0.5,
-    "mountedYOffset": 0.0,
+    "mountedYOffset": 1.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
       "value": -1,
@@ -85,7 +85,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "CUSTOM:FrozenCrabNecklace"
+      "value": ""
     },
     "livingSound": {
       "value": ""
@@ -98,6 +98,9 @@
     },
     "stepSound": {
       "value": ""
+    },
+    "whenMobDies": {
+      "name": "FrozenCrabRevard"
     },
     "whenMobIsHurt": {
       "name": "FrozenCrabGetHurt"

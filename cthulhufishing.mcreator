@@ -3513,7 +3513,7 @@
       "type": "armor",
       "sortid": 185,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "frozen_leggins",
       "metadata": {
         "files": [
@@ -3604,6 +3604,52 @@
           }
         ]
       }
+    },
+    {
+      "name": "FrozenCrabLoot",
+      "type": "loottable",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozen_crab_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/cthulhufishing/loot_tables/entities/frozen_crab.json"
+        ]
+      },
+      "path": "~/FrozenCrabBoss"
+    },
+    {
+      "name": "FrozenCrabRevard",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frozen_crab_revard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/FrozenCrabRevardProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FrozenCrabBoss"
     }
   ],
   "variable_elements": [
@@ -3911,7 +3957,7 @@
       "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
       "item.cthulhufishing.third_eye": "Third Eye",
       "item.cthulhufishing.crimson_finger": "Crimson Finger",
-      "item.cthulhufishing.frozen_leggins_leggings": "Frozen Leggins Leggings",
+      "item.cthulhufishing.frozen_leggins_leggings": "Frozen Leggings",
       "enchantment.cthulhufishing.frozen_catcher_enchantment": "Frozen Catcher",
       "item.cthulhufishing.frozen_ring": "Frozen fish ring",
       "block.cthulhufishing.pseudo_eye": "Pseudo Eye"

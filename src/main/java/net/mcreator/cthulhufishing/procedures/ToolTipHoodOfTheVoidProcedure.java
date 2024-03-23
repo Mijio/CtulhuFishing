@@ -74,6 +74,13 @@ public class ToolTipHoodOfTheVoidProcedure {
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.FROZEN_LEGGINS_LEGGINGS.get()) {
+			(itemstack).setHoverName(Component.literal("\u00A7bFrozen Leggings"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7bIncrease your movement speed depends on revelation"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
 		} else if (itemstack.getItem() == CthulhufishingModItems.MUSRHOOM_RING.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bMushroom fish ring"));
 			if (Screen.hasShiftDown()) {

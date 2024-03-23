@@ -16,7 +16,6 @@ import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
@@ -44,8 +43,8 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.cthulhufishing.procedures.IceCrabOnEntityTickUpdateProcedure;
+import net.mcreator.cthulhufishing.procedures.FrozenCrabRevardProcedure;
 import net.mcreator.cthulhufishing.procedures.FrozenCrabGetHurtProcedure;
-import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
 import net.mcreator.cthulhufishing.init.CthulhufishingModEntities;
 
 public class IceCrabEntity extends Monster implements IAnimatable {
@@ -116,9 +115,9 @@ public class IceCrabEntity extends Monster implements IAnimatable {
 		return false;
 	}
 
-	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
-		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(CthulhufishingModItems.FROZEN_CRAB_NECKLACE.get()));
+	@Override
+	public double getPassengersRidingOffset() {
+		return super.getPassengersRidingOffset() + 1;
 	}
 
 	@Override
@@ -139,6 +138,12 @@ public class IceCrabEntity extends Monster implements IAnimatable {
 		if (source == DamageSource.DROWN)
 			return false;
 		return super.hurt(source, amount);
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		FrozenCrabRevardProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override

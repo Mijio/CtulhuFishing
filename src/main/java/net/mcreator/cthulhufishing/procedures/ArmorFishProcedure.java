@@ -12,6 +12,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.cthulhufishing.network.CthulhufishingModVariables;
 import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
 
 import javax.annotation.Nullable;
@@ -36,8 +37,10 @@ public class ArmorFishProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		double CurrentFood = 0;
 		AttributeModifier Modifier = null;
+		AttributeModifier ModifierLeg = null;
+		double CurrentFood = 0;
+		double CurrentRev = 0;
 		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == CthulhufishingModItems.CHESTPLATE_FOSSIL_FISH_CHESTPLATE.get()) {
 			if (CurrentFood != (entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0)) {
 				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).removeModifier(UUID.fromString("9f521a51-009f-4bb5-bc08-188a495d6855"));
@@ -49,6 +52,19 @@ public class ArmorFishProcedure {
 			CurrentFood = entity instanceof Player _plr ? _plr.getFoodData().getFoodLevel() : 0;
 		} else {
 			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ARMOR).removeModifier(UUID.fromString("9f521a51-009f-4bb5-bc08-188a495d6855"));
+		}
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == CthulhufishingModItems.FROZEN_LEGGINS_LEGGINGS.get()) {
+			if (CurrentRev != (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score) {
+				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).removeModifier(UUID.fromString("49c7e769-a66c-434c-9f3d-caa218f53f28"));
+				ModifierLeg = new AttributeModifier(UUID.fromString("49c7e769-a66c-434c-9f3d-caa218f53f28"),
+						("" + (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score),
+						(0.01 * (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score), AttributeModifier.Operation.MULTIPLY_TOTAL);
+				if (!(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).hasModifier(ModifierLeg)))
+					((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).addTransientModifier(ModifierLeg);
+			}
+			CurrentRev = (entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score;
+		} else {
+			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).removeModifier(UUID.fromString("49c7e769-a66c-434c-9f3d-caa218f53f28"));
 		}
 	}
 }
