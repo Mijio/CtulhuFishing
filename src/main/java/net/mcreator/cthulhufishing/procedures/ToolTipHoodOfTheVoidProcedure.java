@@ -63,7 +63,7 @@ public class ToolTipHoodOfTheVoidProcedure {
 		} else if (itemstack.getItem() == CthulhufishingModItems.FROZEN_CRAB_NECKLACE.get()) {
 			(itemstack).setHoverName(Component.literal("\u00A7bNecklace of Frozen Crab"));
 			if (Screen.hasShiftDown()) {
-				tooltip.add(Component.literal("\u00A7bIncreases your resistance of freezing by 70%"));
+				tooltip.add(Component.literal("\u00A7bMakes you immune to the freezing effect"));
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
