@@ -20,7 +20,6 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
 import net.mcreator.cthulhufishing.init.CthulhufishingModEntities;
 import net.mcreator.cthulhufishing.entity.IceCrabEntity;
-import net.mcreator.cthulhufishing.entity.FossilFishEntity;
 
 import javax.annotation.Nullable;
 
@@ -82,7 +81,7 @@ public class FrozenCrabFishingProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = new FossilFishEntity(CthulhufishingModEntities.FOSSIL_FISH.get(), _level);
+						Entity entityToSpawn = new IceCrabEntity(CthulhufishingModEntities.ICE_CRAB.get(), _level);
 						entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 						entityToSpawn.setYBodyRot(0);
 						entityToSpawn.setYHeadRot(0);
@@ -108,7 +107,7 @@ public class FrozenCrabFishingProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = new FossilFishEntity(CthulhufishingModEntities.FOSSIL_FISH.get(), _level);
+						Entity entityToSpawn = new IceCrabEntity(CthulhufishingModEntities.ICE_CRAB.get(), _level);
 						entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
 						entityToSpawn.setYBodyRot(0);
 						entityToSpawn.setYHeadRot(0);

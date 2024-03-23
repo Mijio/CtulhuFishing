@@ -33,8 +33,8 @@
       "name": "IceSetBuff"
     },
     "isFood": true,
-    "nutritionalValue": 4,
-    "saturation": 0.3,
+    "nutritionalValue": 2,
+    "saturation": 0.19999999999999998,
     "eatResultItem": {
       "value": ""
     },

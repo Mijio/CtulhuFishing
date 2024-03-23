@@ -7,7 +7,7 @@ public class FrozenCrabNecklaceWhileBaubleIsEquippedTickProcedure {
 		if (entity == null)
 			return;
 		if (!(entity.getTicksFrozen() == 0)) {
-			entity.setTicksFrozen((int) (entity.getTicksFrozen() * 0.3));
+			entity.setTicksFrozen(0);
 		}
 	}
 }
