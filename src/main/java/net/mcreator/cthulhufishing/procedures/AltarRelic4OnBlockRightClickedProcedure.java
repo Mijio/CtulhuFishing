@@ -23,7 +23,7 @@ public class AltarRelic4OnBlockRightClickedProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CthulhufishingModItems.REAGENT.get()) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:reagent_input")), SoundSource.BLOCKS, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:reagent_input")), SoundSource.BLOCKS, 1, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:reagent_input")), SoundSource.BLOCKS, 1, 1, false);
 				}
@@ -32,8 +32,8 @@ public class AltarRelic4OnBlockRightClickedProcedure {
 				ItemStack _stktoremove = new ItemStack(CthulhufishingModItems.REAGENT.get());
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
-			world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-			world.setBlock(new BlockPos(x, y, z), CthulhufishingModBlocks.ALTAR_RELIC_5.get().defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y, z), CthulhufishingModBlocks.ALTAR_RELIC_5.get().defaultBlockState(), 3);
 		}
 	}
 }

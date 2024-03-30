@@ -7,7 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.ImageButton;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.cthulhufishing.world.inventory.CtulhuAltarMenu;
 import net.mcreator.cthulhufishing.procedures.FishShows9Procedure;
@@ -29,7 +29,6 @@ import net.mcreator.cthulhufishing.CthulhufishingMod;
 
 import java.util.HashMap;
 
-import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> {
@@ -53,70 +52,56 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 	private static final ResourceLocation texture = new ResourceLocation("cthulhufishing:textures/screens/ctulhu_altar.png");
 
 	@Override
-	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(ms);
-		super.render(ms, mouseX, mouseY, partialTicks);
-		this.renderTooltip(ms, mouseX, mouseY);
+	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
+		this.renderBackground(guiGraphics);
+		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
 	@Override
-	protected void renderBg(PoseStack ms, float partialTicks, int gx, int gy) {
+	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		RenderSystem.setShaderTexture(0, texture);
-		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
-		RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/ui.png"));
-		this.blit(ms, this.leftPos + -1, this.topPos + 0, 0, 0, 170, 223, 170, 223);
+		guiGraphics.blit(new ResourceLocation("cthulhufishing:textures/screens/ui.png"), this.leftPos + -1, this.topPos + 0, 0, 0, 170, 223, 170, 223);
 
 		if (FishShows1Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur1.png"));
-			this.blit(ms, this.leftPos + 75, this.topPos + 79, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("cthulhufishing:textures/screens/fishblur1.png"), this.leftPos + 75, this.topPos + 79, 0, 0, 16, 16, 16, 16);
 		}
 		if (FishShows2Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur2.png"));
-			this.blit(ms, this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("cthulhufishing:textures/screens/fishblur2.png"), this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
 		}
 		if (FishShows3Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur3.png"));
-			this.blit(ms, this.leftPos + 76, this.topPos + 80, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("cthulhufishing:textures/screens/fishblur3.png"), this.leftPos + 76, this.topPos + 80, 0, 0, 16, 16, 16, 16);
 		}
 		if (FishShows4Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur4.png"));
-			this.blit(ms, this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("cthulhufishing:textures/screens/fishblur4.png"), this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
 		}
 		if (FishShows5Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur5.png"));
-			this.blit(ms, this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("cthulhufishing:textures/screens/fishblur5.png"), this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
 		}
 		if (FishShows6Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/fishblur6.png"));
-			this.blit(ms, this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("cthulhufishing:textures/screens/fishblur6.png"), this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
 		}
 		if (FishShows7Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/blur_fish7.png"));
-			this.blit(ms, this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("cthulhufishing:textures/screens/blur_fish7.png"), this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
 		}
 		if (FishShows8Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/blur_fish8.png"));
-			this.blit(ms, this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("cthulhufishing:textures/screens/blur_fish8.png"), this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
 		}
 		if (FishShows9Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/blur_fish9.png"));
-			this.blit(ms, this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("cthulhufishing:textures/screens/blur_fish9.png"), this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
 		}
 		if (FishShows10Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/ice_boulti_blur.png"));
-			this.blit(ms, this.leftPos + 75, this.topPos + 79, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("cthulhufishing:textures/screens/ice_boulti_blur.png"), this.leftPos + 75, this.topPos + 79, 0, 0, 16, 16, 16, 16);
 		}
 		if (FishShows11Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/ice_cod_blur.png"));
-			this.blit(ms, this.leftPos + 75, this.topPos + 79, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("cthulhufishing:textures/screens/ice_cod_blur.png"), this.leftPos + 75, this.topPos + 79, 0, 0, 16, 16, 16, 16);
 		}
 		if (FishShows12Procedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("cthulhufishing:textures/screens/ice_stingray_blur.png"));
-			this.blit(ms, this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
+			guiGraphics.blit(new ResourceLocation("cthulhufishing:textures/screens/ice_stingray_blur.png"), this.leftPos + 75, this.topPos + 80, 0, 0, 16, 16, 16, 16);
 		}
 		RenderSystem.disableBlend();
 	}
@@ -136,22 +121,20 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 	}
 
 	@Override
-	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack,
+	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
+		guiGraphics.drawString(this.font,
 
-				AltarFishCountTextingProcedure.execute(entity), 82, 121, -12829636);
+				AltarFishCountTextingProcedure.execute(entity), 82, 121, -12829636, false);
 	}
 
 	@Override
 	public void onClose() {
 		super.onClose();
-		Minecraft.getInstance().keyboardHandler.setSendRepeatsToGui(false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
-		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
 		imagebutton_eye_button = new ImageButton(this.leftPos + 71, this.topPos + 24, 26, 28, 0, 0, 28, new ResourceLocation("cthulhufishing:textures/screens/atlas/imagebutton_eye_button.png"), 26, 56, e -> {
 			if (ButtonIsVisibleProcedure.execute(entity)) {
 				CthulhufishingMod.PACKET_HANDLER.sendToServer(new CtulhuAltarButtonMessage(0, x, y, z));
@@ -159,9 +142,9 @@ public class CtulhuAltarScreen extends AbstractContainerScreen<CtulhuAltarMenu> 
 			}
 		}) {
 			@Override
-			public void render(PoseStack ms, int gx, int gy, float ticks) {
+			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
 				if (ButtonIsVisibleProcedure.execute(entity))
-					super.render(ms, gx, gy, ticks);
+					super.render(guiGraphics, gx, gy, ticks);
 			}
 		};
 		guistate.put("button:imagebutton_eye_button", imagebutton_eye_button);

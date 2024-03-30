@@ -1,12 +1,12 @@
 package net.mcreator.cthulhufishing.item.model;
 
-import software.bernie.geckolib3.model.AnimatedGeoModel;
+import software.bernie.geckolib.model.GeoModel;
 
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.cthulhufishing.item.TentacleStaffItem;
 
-public class TentacleStaffItemModel extends AnimatedGeoModel<TentacleStaffItem> {
+public class TentacleStaffItemModel extends GeoModel<TentacleStaffItem> {
 	@Override
 	public ResourceLocation getAnimationResource(TentacleStaffItem animatable) {
 		return new ResourceLocation("cthulhufishing", "animations/tentacle_staff_item.animation.json");
@@ -19,6 +19,6 @@ public class TentacleStaffItemModel extends AnimatedGeoModel<TentacleStaffItem> 
 
 	@Override
 	public ResourceLocation getTextureResource(TentacleStaffItem animatable) {
-		return new ResourceLocation("cthulhufishing", "textures/items/texture_tentacle_staff.png");
+		return new ResourceLocation("cthulhufishing", "textures/item/texture_tentacle_staff.png");
 	}
 }

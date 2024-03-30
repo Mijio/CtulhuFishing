@@ -1,105 +1,105 @@
 {
-  "loader": "forge:separate_transforms",
-  "gui_light": "front",
-  "base": {
-    "parent": "cthulhufishing:displaysettings/gui_tentacle_staff.item",
-    "textures": {
-      "0": "cthulhufishing:displaysettings/gui_tentacle_staff.item"
-    },
-    "display": {
-      "thirdperson_righthand": {
-        "translation": [
-          0,
-          -2.75,
-          -0.25
-        ],
-        "scale": [
-          1,
-          1,
-          1
-        ]
+"loader": "forge:separate_transforms",
+"gui_light": "front",
+"base": {
+"parent": "cthulhufishing:displaysettings/gui_tentacle_staff.item",
+"textures": {
+"0": "cthulhufishing:displaysettings/gui_tentacle_staff.item"
+},
+"display": {
+"thirdperson_righthand": {
+"translation": [
+0,
+-2.75,
+-0.25
+],
+"scale": [
+1,
+1,
+1
+]
 ,
-        "rotation": [
-          -0,
-          -0,
-          -0
-        ]
-      },
-      "thirdperson_lefthand": {
-        "translation": [
-          0,
-          -2.75,
-          -0.25
-        ],
-        "scale": [
-          1,
-          1,
-          1
-        ]
+"rotation": [
+-0,
+-0,
+-0
+]
+},
+"thirdperson_lefthand": {
+"translation": [
+0,
+-2.75,
+-0.25
+],
+"scale": [
+1,
+1,
+1
+]
 ,
-        "rotation": [
-          -0,
-          -0,
-          -0
-        ]
-      },
-      "firstperson_righthand": {
-        "rotation": [
-          -0,
-          -0,
-          -0
-        ],
-        "translation": [
-          0,
-          -2,
-          0
-        ]
-      },
-      "firstperson_lefthand": {
-        "rotation": [
-          0,
-          0,
-          0
-        ],
-        "translation": [
-          0,
-          -2,
-          0
-        ]
-      },
-      "ground": {
-        "translation": [
-          0,
-          3,
-          1
-        ],
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "fixed": {
-        "rotation": [
-          0,
-          0,
-          0
-        ],
-        "translation": [
-          0,
-          3,
-          1
-        ]
-      }
-    }
-  },
-  "perspectives": {
-    "gui": {
-      "parent": "item/generated",
-      "textures": {
-        "layer0": "cthulhufishing:items/sword_tentacle"
-      },
-      "gui_light": "front"
-    }
-  }
+"rotation": [
+-0,
+-0,
+-0
+]
+},
+"firstperson_righthand": {
+"rotation": [
+-0,
+-0,
+-0
+],
+"translation": [
+0,
+-2,
+0
+]
+},
+"firstperson_lefthand": {
+"rotation": [
+0,
+0,
+0
+],
+"translation": [
+0,
+-2,
+0
+]
+},
+"ground": {
+"translation": [
+0,
+3,
+1
+],
+"scale": [
+1,
+1,
+1
+]
+},
+"fixed": {
+"rotation": [
+0,
+0,
+0
+],
+"translation": [
+0,
+3,
+1
+]
+}
+}
+},
+"perspectives": {
+"gui": {
+"parent": "item/generated",
+"textures": {
+"layer0": "cthulhufishing:items/sword_tentacle"
+},
+"gui_light": "front"
+}
+}
 }

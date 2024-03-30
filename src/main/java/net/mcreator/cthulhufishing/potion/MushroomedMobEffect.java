@@ -19,7 +19,7 @@ public class MushroomedMobEffect extends MobEffect {
 
 	@Override
 	public void applyEffectTick(LivingEntity entity, int amplifier) {
-		MushroomedOnEffectActiveTickProcedure.execute(entity.level, entity);
+		MushroomedOnEffectActiveTickProcedure.execute(entity.level(), entity);
 	}
 
 	@Override

@@ -12,7 +12,6 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
 import net.mcreator.cthulhufishing.procedures.KnifeForRitualBleedingRightclickedProcedure;
-import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 
 public class KnifeForRitualBleedingItem extends SwordItem {
 	public KnifeForRitualBleedingItem() {
@@ -40,7 +39,7 @@ public class KnifeForRitualBleedingItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 3, -2.2f, new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB));
+		}, 3, -2.2f, new Item.Properties());
 	}
 
 	@Override

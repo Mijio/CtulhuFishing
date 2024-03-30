@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "cthulhufishing:ctulhu_altar_fish",
     "cthulhufishing:block_ore_eye"
   ]
 }

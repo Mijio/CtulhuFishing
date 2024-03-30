@@ -14,8 +14,8 @@ public class RelicRightclickedOnBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (!(Blocks.AIR == (world.getBlockState(new BlockPos(x, y, z))).getBlock())) {
-			world.setBlock(new BlockPos(x, y + 2, z), CthulhufishingModBlocks.ALTAR_RELIC.get().defaultBlockState(), 3);
+		if (!(Blocks.AIR == (world.getBlockState(BlockPos.containing(x, y, z))).getBlock())) {
+			world.setBlock(BlockPos.containing(x, y + 2, z), CthulhufishingModBlocks.ALTAR_RELIC.get().defaultBlockState(), 3);
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(CthulhufishingModItems.RELIC.get());
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());

@@ -1,6 +1,6 @@
 {
   "parent": "cthulhufishing:displaysettings/block-itemeye.item",
   "textures": {
-    "particle": "cthulhufishing:blocks/texture_relic"
+    "particle": "cthulhufishing:block/texture_relic"
   }
 }

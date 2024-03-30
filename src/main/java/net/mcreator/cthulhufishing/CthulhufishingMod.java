@@ -13,8 +13,6 @@
  */
 package net.mcreator.cthulhufishing;
 
-import software.bernie.geckolib3.GeckoLib;
-
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -61,23 +59,21 @@ public class CthulhufishingMod {
 
 	public CthulhufishingMod() {
 		MinecraftForge.EVENT_BUS.register(this);
-		CthulhufishingModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		CthulhufishingModSounds.REGISTRY.register(bus);
 		CthulhufishingModBlocks.REGISTRY.register(bus);
+		CthulhufishingModBlockEntities.REGISTRY.register(bus);
 		CthulhufishingModItems.REGISTRY.register(bus);
 		CthulhufishingModEntities.REGISTRY.register(bus);
-		CthulhufishingModBlockEntities.REGISTRY.register(bus);
+		CthulhufishingModEnchantments.REGISTRY.register(bus);
+		CthulhufishingModTabs.REGISTRY.register(bus);
 		CthulhufishingModFeatures.REGISTRY.register(bus);
-
 		CthulhufishingModMobEffects.REGISTRY.register(bus);
 		CthulhufishingModPotions.REGISTRY.register(bus);
-		CthulhufishingModEnchantments.REGISTRY.register(bus);
-		CthulhufishingModParticleTypes.REGISTRY.register(bus);
-		CthulhufishingModMenus.REGISTRY.register(bus);
 
+		CthulhufishingModParticleTypes.REGISTRY.register(bus);
 		CthulhufishingModVillagerProfessions.PROFESSIONS.register(bus);
-		GeckoLib.initialize();
+		CthulhufishingModMenus.REGISTRY.register(bus);
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

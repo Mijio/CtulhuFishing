@@ -177,5 +177,6 @@
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "cthulhufishing:gameplay/treasure_bag_loot_table"
 }

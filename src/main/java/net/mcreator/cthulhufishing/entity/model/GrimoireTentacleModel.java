@@ -1,12 +1,12 @@
 package net.mcreator.cthulhufishing.entity.model;
 
-import software.bernie.geckolib3.model.AnimatedGeoModel;
+import software.bernie.geckolib.model.GeoModel;
 
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.cthulhufishing.entity.GrimoireTentacleEntity;
 
-public class GrimoireTentacleModel extends AnimatedGeoModel<GrimoireTentacleEntity> {
+public class GrimoireTentacleModel extends GeoModel<GrimoireTentacleEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(GrimoireTentacleEntity entity) {
 		return new ResourceLocation("cthulhufishing", "animations/tentacleattack.animation.json");

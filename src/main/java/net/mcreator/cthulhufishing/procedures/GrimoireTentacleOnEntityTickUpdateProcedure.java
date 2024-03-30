@@ -6,11 +6,12 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.core.registries.Registries;
 
 import net.mcreator.cthulhufishing.entity.GrimoireTentacleEntity;
 
-import java.util.stream.Collectors;
 import java.util.List;
 import java.util.Comparator;
 
@@ -22,12 +23,13 @@ public class GrimoireTentacleOnEntityTickUpdateProcedure {
 		Mobs_Count = 1;
 		{
 			final Vec3 _center = new Vec3(x, y, z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList();
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof PathfinderMob && !(entityiterator instanceof GrimoireTentacleEntity)) {
 					Mobs_Count = Mobs_Count + 1;
 					entityiterator.setDeltaMovement(new Vec3(0, 1, 0));
-					entityiterator.hurt(DamageSource.MAGIC, (float) (Mobs_Count * 0.05 * ((LivingEntity) entityiterator).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).getBaseValue()));
+					entityiterator.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.MAGIC)),
+							(float) (Mobs_Count * 0.05 * ((LivingEntity) entityiterator).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MAX_HEALTH).getBaseValue()));
 				}
 			}
 		}

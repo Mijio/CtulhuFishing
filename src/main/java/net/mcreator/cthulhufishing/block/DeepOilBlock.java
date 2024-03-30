@@ -3,7 +3,6 @@ package net.mcreator.cthulhufishing.block;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -15,7 +14,7 @@ import net.minecraft.core.BlockPos;
 
 public class DeepOilBlock extends Block {
 	public DeepOilBlock() {
-		super(BlockBehaviour.Properties.of(Material.SCULK).sound(SoundType.MUD).strength(1.8f, 20f).lightLevel(s -> 1).requiresCorrectToolForDrops().speedFactor(0.6f).jumpFactor(0.5f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.MUD).strength(1.8f, 20f).lightLevel(s -> 1).requiresCorrectToolForDrops().speedFactor(0.6f).jumpFactor(0.5f));
 	}
 
 	@Override

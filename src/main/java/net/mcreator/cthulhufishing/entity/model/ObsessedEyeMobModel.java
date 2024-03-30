@@ -1,12 +1,12 @@
 package net.mcreator.cthulhufishing.entity.model;
 
-import software.bernie.geckolib3.model.AnimatedGeoModel;
+import software.bernie.geckolib.model.GeoModel;
 
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.cthulhufishing.entity.ObsessedEyeMobEntity;
 
-public class ObsessedEyeMobModel extends AnimatedGeoModel<ObsessedEyeMobEntity> {
+public class ObsessedEyeMobModel extends GeoModel<ObsessedEyeMobEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(ObsessedEyeMobEntity entity) {
 		return new ResourceLocation("cthulhufishing", "animations/obsessed_eye.animation.json");

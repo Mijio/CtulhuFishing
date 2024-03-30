@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "cthulhufishing:items/ice_stingray"
+    "layer0": "cthulhufishing:item/ice_stingray"
   }
 }

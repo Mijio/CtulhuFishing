@@ -1,12 +1,12 @@
 package net.mcreator.cthulhufishing.item.model;
 
-import software.bernie.geckolib3.model.AnimatedGeoModel;
+import software.bernie.geckolib.model.GeoModel;
 
 import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.cthulhufishing.item.CthulhuGrimoireItem;
 
-public class CthulhuGrimoireItemModel extends AnimatedGeoModel<CthulhuGrimoireItem> {
+public class CthulhuGrimoireItemModel extends GeoModel<CthulhuGrimoireItem> {
 	@Override
 	public ResourceLocation getAnimationResource(CthulhuGrimoireItem animatable) {
 		return new ResourceLocation("cthulhufishing", "animations/cthulhugrimoire.animation.json");
@@ -19,6 +19,6 @@ public class CthulhuGrimoireItemModel extends AnimatedGeoModel<CthulhuGrimoireIt
 
 	@Override
 	public ResourceLocation getTextureResource(CthulhuGrimoireItem animatable) {
-		return new ResourceLocation("cthulhufishing", "textures/items/texture_cthulhu_grimoire.png");
+		return new ResourceLocation("cthulhufishing", "textures/item/texture_cthulhu_grimoire.png");
 	}
 }

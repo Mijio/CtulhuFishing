@@ -28,7 +28,7 @@ public class FossilFishOnEntityTickUpdateProcedure {
 		double dx = 0;
 		double dy = 0;
 		double dz = 0;
-		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(CthulhufishingModMobEffects.MUSHROOMED.get()) : false) {
+		if (entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(CthulhufishingModMobEffects.MUSHROOMED.get())) {
 			if (entity instanceof FossilFishEntity animatable)
 				animatable.setTexture("texture_fossil_fish_mushrumed");
 		}
@@ -39,13 +39,13 @@ public class FossilFishOnEntityTickUpdateProcedure {
 			for (int index0 = 0; index0 < 5; index0++) {
 				for (int index1 = 0; index1 < 5; index1++) {
 					for (int index2 = 0; index2 < 5; index2++) {
-						if (!((world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.AIR || (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.VOID_AIR
-								|| (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.CAVE_AIR || (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.WATER
-								|| (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.WATER || (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.LAVA
-								|| (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.LAVA || (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.BEDROCK
-								|| (world.getBlockState(new BlockPos(dx, dy, dz))).getBlock() == Blocks.OBSIDIAN)) {
-							world.levelEvent(2001, new BlockPos(dx, dy, dz), Block.getId((world.getBlockState(new BlockPos(dx, dy, dz)))));
-							world.destroyBlock(new BlockPos(dx, dy, dz), false);
+						if (!((world.getBlockState(BlockPos.containing(dx, dy, dz))).getBlock() == Blocks.AIR || (world.getBlockState(BlockPos.containing(dx, dy, dz))).getBlock() == Blocks.VOID_AIR
+								|| (world.getBlockState(BlockPos.containing(dx, dy, dz))).getBlock() == Blocks.CAVE_AIR || (world.getBlockState(BlockPos.containing(dx, dy, dz))).getBlock() == Blocks.WATER
+								|| (world.getBlockState(BlockPos.containing(dx, dy, dz))).getBlock() == Blocks.WATER || (world.getBlockState(BlockPos.containing(dx, dy, dz))).getBlock() == Blocks.LAVA
+								|| (world.getBlockState(BlockPos.containing(dx, dy, dz))).getBlock() == Blocks.LAVA || (world.getBlockState(BlockPos.containing(dx, dy, dz))).getBlock() == Blocks.BEDROCK
+								|| (world.getBlockState(BlockPos.containing(dx, dy, dz))).getBlock() == Blocks.OBSIDIAN)) {
+							world.levelEvent(2001, BlockPos.containing(dx, dy, dz), Block.getId((world.getBlockState(BlockPos.containing(dx, dy, dz)))));
+							world.destroyBlock(BlockPos.containing(dx, dy, dz), false);
 						}
 						dz = dz + 1;
 					}
@@ -68,7 +68,7 @@ public class FossilFishOnEntityTickUpdateProcedure {
 		if (entity.getPersistentData().getDouble("AI") == 120) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:fossil_fish_attack")), SoundSource.NEUTRAL, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:fossil_fish_attack")), SoundSource.NEUTRAL, 1, 1);
 				} else {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:fossil_fish_attack")), SoundSource.NEUTRAL, 1, 1, false);
 				}

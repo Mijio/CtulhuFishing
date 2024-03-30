@@ -10,11 +10,10 @@ import net.minecraft.world.item.Item;
 
 import net.mcreator.cthulhufishing.procedures.EmeraldGoldRingWhileBaubleIsEquippedTickProcedure;
 import net.mcreator.cthulhufishing.procedures.EmeraldGoldRingBaubleIsUnequippedProcedure;
-import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 
 public class EmeraldGoldRingItem extends Item implements ICurioItem {
 	public EmeraldGoldRingItem() {
-		super(new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB).stacksTo(1).rarity(Rarity.RARE));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.RARE));
 	}
 
 	@Override

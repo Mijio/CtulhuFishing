@@ -9,13 +9,10 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.LivingEntity;
 
 import net.mcreator.cthulhufishing.procedures.CrimsonFishPlayerFinishesUsingItemProcedure;
-import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 
 public class CrimsonCrunchItem extends Item {
 	public CrimsonCrunchItem() {
-		super(new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.2f)
-
-				.build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.2f).build()));
 	}
 
 	@Override
@@ -24,7 +21,6 @@ public class CrimsonCrunchItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		CrimsonFishPlayerFinishesUsingItemProcedure.execute(entity);
 		return retval;
 	}

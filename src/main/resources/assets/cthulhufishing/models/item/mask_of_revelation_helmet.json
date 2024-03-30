@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "cthulhufishing:items/mask-eye-revelation"
+    "layer0": "cthulhufishing:item/mask-eye-revelation"
   }
 }

@@ -1,105 +1,105 @@
 {
-  "loader": "forge:separate_transforms",
-  "gui_light": "front",
-  "base": {
-    "parent": "cthulhufishing:custom/heavy_fishing_road",
-    "textures": {
-      "0": "cthulhufishing:items/texture_rod"
-    },
-    "display": {
-      "thirdperson_righthand": {
-        "translation": [
-          0,
-          -3.25,
-          -3.75
-        ],
-        "scale": [
-          1,
-          1,
-          1
-        ]
+"loader": "forge:separate_transforms",
+"gui_light": "front",
+"base": {
+"parent": "cthulhufishing:custom/heavy_fishing_road",
+"textures": {
+"0": "cthulhufishing:items/texture_rod"
+},
+"display": {
+"thirdperson_righthand": {
+"translation": [
+0,
+-3.25,
+-3.75
+],
+"scale": [
+1,
+1,
+1
+]
 ,
-        "rotation": [
-          35,
-          180,
-          -0
-        ]
-      },
-      "thirdperson_lefthand": {
-        "translation": [
-          -0.75,
-          -5.25,
-          -1
-        ],
-        "scale": [
-          1,
-          1,
-          1
-        ]
+"rotation": [
+35,
+180,
+-0
+]
+},
+"thirdperson_lefthand": {
+"translation": [
+-0.75,
+-5.25,
+-1
+],
+"scale": [
+1,
+1,
+1
+]
 ,
-        "rotation": [
-          -5,
-          -9,
-          0
-        ]
-      },
-      "firstperson_righthand": {
-        "rotation": [
-          139,
-          1,
-          178
-        ],
-        "translation": [
-          10,
-          -1.75,
-          -2.25
-        ]
-      },
-      "firstperson_lefthand": {
-        "rotation": [
-          -105,
-          -25,
-          -27
-        ],
-        "translation": [
-          3.0,
-          3.75,
-          6.25
-        ]
-      },
-      "ground": {
-        "translation": [
-          0,
-          3.5,
-          0
-        ],
-        "scale": [
-          1,
-          1,
-          1
-        ]
-      },
-      "fixed": {
-        "rotation": [
-          0,
-          0,
-          0
-        ],
-        "translation": [
-          0,
-          3,
-          1
-        ]
-      }
-    }
-  },
-  "perspectives": {
-    "gui": {
-      "parent": "item/generated",
-      "textures": {
-        "layer0": "cthulhufishing:items/heavyrod"
-      },
-      "gui_light": "front"
-    }
-  }
+"rotation": [
+-5,
+-9,
+0
+]
+},
+"firstperson_righthand": {
+"rotation": [
+139,
+1,
+178
+],
+"translation": [
+10,
+-1.75,
+-2.25
+]
+},
+"firstperson_lefthand": {
+"rotation": [
+-105,
+-25,
+-27
+],
+"translation": [
+3.0,
+3.75,
+6.25
+]
+},
+"ground": {
+"translation": [
+0,
+3.5,
+0
+],
+"scale": [
+1,
+1,
+1
+]
+},
+"fixed": {
+"rotation": [
+0,
+0,
+0
+],
+"translation": [
+0,
+3,
+1
+]
+}
+}
+},
+"perspectives": {
+"gui": {
+"parent": "item/generated",
+"textures": {
+"layer0": "cthulhufishing:items/heavyrod"
+},
+"gui_light": "front"
+}
+}
 }

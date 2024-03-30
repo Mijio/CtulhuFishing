@@ -10,11 +10,10 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
 import net.mcreator.cthulhufishing.procedures.TreasureBagRightclickedProcedure;
-import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 
 public class TreasureBagItem extends Item {
 	public TreasureBagItem() {
-		super(new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB).stacksTo(16).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(16).rarity(Rarity.COMMON));
 	}
 
 	@Override
@@ -24,7 +23,6 @@ public class TreasureBagItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		TreasureBagRightclickedProcedure.execute(world, x, y, z, entity);
 		return ar;
 	}

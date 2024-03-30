@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "cthulhufishing:items/reagent"
+    "layer0": "cthulhufishing:item/reagent"
   }
 }

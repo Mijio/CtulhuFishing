@@ -10,7 +10,7 @@ public class GrimoireTentacleOnInitialEntitySpawnProcedure {
 		if (entity == null)
 			return;
 		CthulhufishingMod.queueServerWork(50, () -> {
-			if (!entity.level.isClientSide())
+			if (!entity.level().isClientSide())
 				entity.discard();
 		});
 	}

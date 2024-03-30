@@ -9,7 +9,6 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.util.RandomSource;
@@ -19,7 +18,6 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
 import net.mcreator.cthulhufishing.init.CthulhufishingModEntities;
-import net.mcreator.cthulhufishing.entity.FossilFishEntity;
 
 import javax.annotation.Nullable;
 
@@ -27,7 +25,7 @@ import javax.annotation.Nullable;
 public class FishingFossilFishProcedure {
 	@SubscribeEvent
 	public static void onPlayerFishItem(ItemFishedEvent event) {
-		execute(event, event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
+		execute(event, event.getEntity().level(), event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getEntity());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -37,8 +35,8 @@ public class FishingFossilFishProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("dripstone_caves")) || world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("lush_caves"))
-				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("deep_dark"))) {
+		if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("dripstone_caves")) || world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("lush_caves"))
+				|| world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("deep_dark"))) {
 			if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CthulhufishingModItems.HEAVY_FISHING_ROAD.get()
 					|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == CthulhufishingModItems.HEAVY_FISHING_ROAD.get())
 					&& ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CthulhufishingModItems.MUSHROOM_ANGLERFISH.get()
@@ -56,13 +54,9 @@ public class FishingFossilFishProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = new FossilFishEntity(CthulhufishingModEntities.FOSSIL_FISH.get(), _level);
-						entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
-						entityToSpawn.setYBodyRot(0);
-						entityToSpawn.setYHeadRot(0);
-						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-						world.addFreshEntity(entityToSpawn);
+						Entity entityToSpawn = CthulhufishingModEntities.FOSSIL_FISH.get().spawn(_level, BlockPos.containing(x, y + 1, z), MobSpawnType.MOB_SUMMONED);
+						if (entityToSpawn != null) {
+						}
 					}
 				}
 			} else if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CthulhufishingModItems.HEAVY_FISHING_ROAD.get()
@@ -82,13 +76,9 @@ public class FishingFossilFishProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = new FossilFishEntity(CthulhufishingModEntities.FOSSIL_FISH.get(), _level);
-						entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
-						entityToSpawn.setYBodyRot(0);
-						entityToSpawn.setYHeadRot(0);
-						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-						world.addFreshEntity(entityToSpawn);
+						Entity entityToSpawn = CthulhufishingModEntities.FOSSIL_FISH.get().spawn(_level, BlockPos.containing(x, y + 1, z), MobSpawnType.MOB_SUMMONED);
+						if (entityToSpawn != null) {
+						}
 					}
 				}
 			} else if (((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == CthulhufishingModItems.HEAVY_FISHING_ROAD.get()
@@ -108,13 +98,9 @@ public class FishingFossilFishProcedure {
 						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 					}
 					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = new FossilFishEntity(CthulhufishingModEntities.FOSSIL_FISH.get(), _level);
-						entityToSpawn.moveTo(x, (y + 1), z, 0, 0);
-						entityToSpawn.setYBodyRot(0);
-						entityToSpawn.setYHeadRot(0);
-						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
-						world.addFreshEntity(entityToSpawn);
+						Entity entityToSpawn = CthulhufishingModEntities.FOSSIL_FISH.get().spawn(_level, BlockPos.containing(x, y + 1, z), MobSpawnType.MOB_SUMMONED);
+						if (entityToSpawn != null) {
+						}
 					}
 				}
 			}

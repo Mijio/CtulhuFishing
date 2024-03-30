@@ -1,7 +1,8 @@
 {
-  "_fv": 43,
+  "_fv": 47,
   "_type": "tool",
   "definition": {
+    "toolType": "Sword",
     "renderType": 0,
     "texture": "knife_for_ritual_bleeding",
     "customModelName": "Normal",
@@ -10,7 +11,6 @@
     "creativeTab": {
       "value": "CUSTOM:CtulhuFishingTab"
     },
-    "toolType": "Sword",
     "harvestLevel": 1,
     "efficiency": 1.0,
     "attackSpeed": 1.7999999999999998,

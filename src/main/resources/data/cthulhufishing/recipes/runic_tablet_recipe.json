@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
     "012",
     "345",
@@ -7,13 +8,13 @@
   ],
   "key": {
     "0": {
-      "tag": "forge:stone"
+      "tag": "minecraft:stone"
     },
     "1": {
       "item": "cthulhufishing:drip_void"
     },
     "2": {
-      "tag": "forge:stone"
+      "tag": "minecraft:stone"
     },
     "3": {
       "item": "cthulhufishing:drip_void"
@@ -25,13 +26,13 @@
       "item": "cthulhufishing:drip_void"
     },
     "6": {
-      "tag": "forge:stone"
+      "tag": "minecraft:stone"
     },
     "7": {
-      "tag": "forge:stone"
+      "tag": "minecraft:stone"
     },
     "8": {
-      "tag": "forge:stone"
+      "tag": "minecraft:stone"
     }
   },
   "result": {

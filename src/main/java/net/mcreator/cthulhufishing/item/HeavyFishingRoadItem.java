@@ -10,11 +10,10 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
 import net.mcreator.cthulhufishing.procedures.HeavyFishingRoadRightclickedProcedure;
-import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 
 public class HeavyFishingRoadItem extends FishingRodItem {
 	public HeavyFishingRoadItem() {
-		super(new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB).durability(80));
+		super(new Item.Properties().durability(80));
 	}
 
 	@Override

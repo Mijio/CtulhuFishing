@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "cthulhufishing:items/drip_void"
+    "layer0": "cthulhufishing:item/drip_void"
   }
 }

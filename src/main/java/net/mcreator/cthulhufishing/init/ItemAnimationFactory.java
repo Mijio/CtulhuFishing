@@ -1,12 +1,12 @@
 package net.mcreator.cthulhufishing.init;
 
-import software.bernie.geckolib3.item.GeoArmorItem;
-import software.bernie.geckolib3.core.IAnimatable;
+import software.bernie.geckolib.animatable.GeoItem;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.TickEvent;
 
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.client.renderer.ItemInHandRenderer;
 import net.minecraft.client.Minecraft;
 
@@ -43,31 +43,31 @@ public class ItemAnimationFactory {
 	@SubscribeEvent
 	public static void animatedItems(TickEvent.PlayerTickEvent event) {
 		String animation = "";
-		if (event.phase == TickEvent.Phase.START && (event.player.getMainHandItem().getItem() instanceof IAnimatable || event.player.getOffhandItem().getItem() instanceof IAnimatable)) {
-			if (!event.player.getMainHandItem().getOrCreateTag().getString("geckoAnim").equals("") && !(event.player.getMainHandItem().getItem() instanceof GeoArmorItem)) {
+		if (event.phase == TickEvent.Phase.START && (event.player.getMainHandItem().getItem() instanceof GeoItem || event.player.getOffhandItem().getItem() instanceof GeoItem)) {
+			if (!event.player.getMainHandItem().getOrCreateTag().getString("geckoAnim").equals("") && !(event.player.getMainHandItem().getItem() instanceof ArmorItem)) {
 				animation = event.player.getMainHandItem().getOrCreateTag().getString("geckoAnim");
 				event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
 				if (event.player.getMainHandItem().getItem() instanceof TentacleStaffItem animatable)
-					if (event.player.level.isClientSide()) {
+					if (event.player.level().isClientSide()) {
 						animatable.animationprocedure = animation;
 						disableUseAnim();
 					}
 				if (event.player.getMainHandItem().getItem() instanceof CthulhuGrimoireItem animatable)
-					if (event.player.level.isClientSide()) {
+					if (event.player.level().isClientSide()) {
 						animatable.animationprocedure = animation;
 						disableUseAnim();
 					}
 			}
-			if (!event.player.getOffhandItem().getOrCreateTag().getString("geckoAnim").equals("") && !(event.player.getOffhandItem().getItem() instanceof GeoArmorItem)) {
+			if (!event.player.getOffhandItem().getOrCreateTag().getString("geckoAnim").equals("") && !(event.player.getOffhandItem().getItem() instanceof ArmorItem)) {
 				animation = event.player.getOffhandItem().getOrCreateTag().getString("geckoAnim");
 				event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
 				if (event.player.getOffhandItem().getItem() instanceof TentacleStaffItem animatable)
-					if (event.player.level.isClientSide()) {
+					if (event.player.level().isClientSide()) {
 						animatable.animationprocedure = animation;
 						disableUseAnim();
 					}
 				if (event.player.getOffhandItem().getItem() instanceof CthulhuGrimoireItem animatable)
-					if (event.player.level.isClientSide()) {
+					if (event.player.level().isClientSide()) {
 						animatable.animationprocedure = animation;
 						disableUseAnim();
 					}

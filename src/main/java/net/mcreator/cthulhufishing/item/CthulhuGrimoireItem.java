@@ -1,44 +1,39 @@
 
 package net.mcreator.cthulhufishing.item;
 
-import software.bernie.geckolib3.util.GeckoLibUtil;
-import software.bernie.geckolib3.core.manager.AnimationFactory;
-import software.bernie.geckolib3.core.manager.AnimationData;
-import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
-import software.bernie.geckolib3.core.controller.AnimationController;
-import software.bernie.geckolib3.core.builder.ILoopType.EDefaultLoopTypes;
-import software.bernie.geckolib3.core.builder.AnimationBuilder;
-import software.bernie.geckolib3.core.PlayState;
-import software.bernie.geckolib3.core.IAnimatable;
+import software.bernie.geckolib.util.GeckoLibUtil;
+import software.bernie.geckolib.core.object.PlayState;
+import software.bernie.geckolib.core.animation.RawAnimation;
+import software.bernie.geckolib.core.animation.AnimationState;
+import software.bernie.geckolib.core.animation.AnimationController;
+import software.bernie.geckolib.core.animation.AnimatableManager;
+import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animatable.GeoItem;
 
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.client.renderer.block.model.ItemTransforms;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 
 import net.mcreator.cthulhufishing.procedures.CthulhuGrimoireRightclickedProcedure;
 import net.mcreator.cthulhufishing.item.renderer.CthulhuGrimoireItemRenderer;
-import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 
 import java.util.function.Consumer;
-import java.util.List;
 
-import com.mojang.blaze3d.vertex.PoseStack;
-
-public class CthulhuGrimoireItem extends Item implements IAnimatable {
-	public AnimationFactory factory = GeckoLibUtil.createFactory(this);
+public class CthulhuGrimoireItem extends Item implements GeoItem {
+	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	public String animationprocedure = "empty";
-	public static ItemTransforms.TransformType transformType;
+	public static ItemDisplayContext transformType;
 
 	public CthulhuGrimoireItem() {
-		super(new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB).stacksTo(1).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override
@@ -54,72 +49,44 @@ public class CthulhuGrimoireItem extends Item implements IAnimatable {
 		});
 	}
 
-	public void getTransformType(ItemTransforms.TransformType type) {
+	public void getTransformType(ItemDisplayContext type) {
 		this.transformType = type;
 	}
 
-	protected void interpretFirstPersonInstructions(List<String> tokens, CthulhuGrimoireItemRenderer renderer) {
-		String firstTok = tokens.get(0);
-		if (tokens.size() < 2)
-			return;
-		String boneName = tokens.get(1);
-		if (firstTok.equals("set_hidden")) {
-			boolean hidden = Boolean.valueOf(tokens.get(2));
-			renderer.hideBone(boneName, hidden);
-		} else if (firstTok.equals("move")) {
-			float x = Float.valueOf(tokens.get(2));
-			float y = Float.valueOf(tokens.get(3));
-			float z = Float.valueOf(tokens.get(4));
-			renderer.setBonePosition(boneName, x, y, z);
-		} else if (firstTok.equals("rotate")) {
-			float x = Float.valueOf(tokens.get(2));
-			float y = Float.valueOf(tokens.get(3));
-			float z = Float.valueOf(tokens.get(4));
-			renderer.setBoneRotation(boneName, x, y, z);
-		} else if (firstTok.equals("suppress_mod")) {
-			renderer.suppressModification(boneName);
-		} else if (firstTok.equals("allow_mod")) {
-			renderer.allowModification(boneName);
-		}
-	}
-
-	private <P extends Item & IAnimatable> PlayState idlePredicate(AnimationEvent<P> event) {
+	private PlayState idlePredicate(AnimationState event) {
 		if (this.transformType != null ? true : false) {
 			if (this.animationprocedure.equals("empty")) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("nope", EDefaultLoopTypes.LOOP));
+				event.getController().setAnimation(RawAnimation.begin().thenLoop("nope"));
 				return PlayState.CONTINUE;
 			}
 		}
 		return PlayState.STOP;
 	}
 
-	private <P extends Item & IAnimatable> PlayState procedurePredicate(AnimationEvent<P> event) {
+	private PlayState procedurePredicate(AnimationState event) {
 		if (this.transformType != null ? true : false) {
-			if (!(this.animationprocedure.equals("empty")) && event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation(this.animationprocedure, EDefaultLoopTypes.PLAY_ONCE));
-				if (event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
+			if (!(this.animationprocedure.equals("empty")) && event.getController().getAnimationState() == AnimationController.State.STOPPED) {
+				event.getController().setAnimation(RawAnimation.begin().thenPlay(this.animationprocedure));
+				if (event.getController().getAnimationState() == AnimationController.State.STOPPED) {
 					this.animationprocedure = "empty";
-					event.getController().markNeedsReload();
+					event.getController().forceAnimationReset();
 				}
 			}
 		}
 		return PlayState.CONTINUE;
 	}
 
-	public void setupAnimationState(CthulhuGrimoireItemRenderer renderer, ItemStack stack, PoseStack matrixStack, float aimProgress) {
-	}
-
 	@Override
-	public void registerControllers(AnimationData data) {
+	public void registerControllers(AnimatableManager.ControllerRegistrar data) {
 		AnimationController procedureController = new AnimationController(this, "procedureController", 0, this::procedurePredicate);
-		data.addAnimationController(procedureController);
+		data.add(procedureController);
 		AnimationController idleController = new AnimationController(this, "idleController", 0, this::idlePredicate);
-		data.addAnimationController(idleController);
+		data.add(idleController);
 	}
 
 	@Override
-	public AnimationFactory getFactory() {
-		return this.factory;
+	public AnimatableInstanceCache getAnimatableInstanceCache() {
+		return this.cache;
 	}
 
 	@Override

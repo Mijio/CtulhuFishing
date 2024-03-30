@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "cthulhufishing:blocks/soliddeepoil",
-    "up": "cthulhufishing:blocks/soliddeepoil",
-    "north": "cthulhufishing:blocks/soliddeepoil",
-    "east": "cthulhufishing:blocks/soliddeepoil",
-    "south": "cthulhufishing:blocks/soliddeepoil",
-    "west": "cthulhufishing:blocks/soliddeepoil",
-    "particle": "cthulhufishing:blocks/soliddeepoil"
+    "down": "cthulhufishing:block/soliddeepoil",
+    "up": "cthulhufishing:block/soliddeepoil",
+    "north": "cthulhufishing:block/soliddeepoil",
+    "east": "cthulhufishing:block/soliddeepoil",
+    "south": "cthulhufishing:block/soliddeepoil",
+    "west": "cthulhufishing:block/soliddeepoil",
+    "particle": "cthulhufishing:block/soliddeepoil"
   },
   "render_type": "solid"
 }

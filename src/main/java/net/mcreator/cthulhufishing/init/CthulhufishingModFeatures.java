@@ -19,7 +19,7 @@ import net.mcreator.cthulhufishing.CthulhufishingMod;
 @Mod.EventBusSubscriber
 public class CthulhufishingModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, CthulhufishingMod.MODID);
-	public static final RegistryObject<Feature<?>> DEEP_OIL = REGISTRY.register("deep_oil", DeepOilFeature::feature);
-	public static final RegistryObject<Feature<?>> BLOCK_ORE_EYE = REGISTRY.register("block_ore_eye", BlockOreEyeFeature::feature);
-	public static final RegistryObject<Feature<?>> PSEUDO_EYE = REGISTRY.register("pseudo_eye", PseudoEyeFeature::feature);
+	public static final RegistryObject<Feature<?>> DEEP_OIL = REGISTRY.register("deep_oil", DeepOilFeature::new);
+	public static final RegistryObject<Feature<?>> BLOCK_ORE_EYE = REGISTRY.register("block_ore_eye", BlockOreEyeFeature::new);
+	public static final RegistryObject<Feature<?>> PSEUDO_EYE = REGISTRY.register("pseudo_eye", PseudoEyeFeature::new);
 }

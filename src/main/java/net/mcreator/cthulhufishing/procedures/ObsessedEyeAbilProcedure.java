@@ -10,8 +10,8 @@ public class ObsessedEyeAbilProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.LEVITATION) : false)) {
-			if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
+		if (!(entity instanceof LivingEntity _livEnt0 && _livEnt0.hasEffect(MobEffects.LEVITATION))) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 90, 0));
 			entity.setDeltaMovement(new Vec3((1.5 * entity.getLookAngle().x), (1.5 * (-1)), (1.5 * entity.getLookAngle().z)));
 		}

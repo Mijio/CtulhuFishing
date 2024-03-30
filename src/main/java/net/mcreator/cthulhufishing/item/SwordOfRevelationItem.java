@@ -9,13 +9,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
 
 import net.mcreator.cthulhufishing.procedures.SwordOfRevelationLivingEntityIsHitWithToolProcedure;
-import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 
 public class SwordOfRevelationItem extends SwordItem {
 	public SwordOfRevelationItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 1000;
+				return 65;
 			}
 
 			public float getSpeed() {
@@ -37,13 +36,13 @@ public class SwordOfRevelationItem extends SwordItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of();
 			}
-		}, 3, -1.2f, new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB));
+		}, 3, -1.2f, new Item.Properties());
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		SwordOfRevelationLivingEntityIsHitWithToolProcedure.execute(entity, sourceentity);
+		SwordOfRevelationLivingEntityIsHitWithToolProcedure.execute(entity.level(), entity, sourceentity);
 		return retval;
 	}
 }

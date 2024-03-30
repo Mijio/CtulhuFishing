@@ -9,7 +9,6 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.Explosion;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
@@ -30,20 +29,20 @@ public class AltarRelicUpdateTickProcedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "Timer") == 60) {
-			world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+		}.getValue(world, BlockPos.containing(x, y, z), "Timer") == 60) {
+			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			if (world instanceof Level _level && !_level.isClientSide())
-				_level.explode(null, x, y, z, 4, Explosion.BlockInteraction.DESTROY);
+				_level.explode(null, x, y, z, 4, Level.ExplosionInteraction.BLOCK);
 		}
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:relic_idle")), SoundSource.BLOCKS, 1, 1);
+				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:relic_idle")), SoundSource.BLOCKS, 1, 1);
 			} else {
 				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:relic_idle")), SoundSource.BLOCKS, 1, 1, false);
 			}
 		}
 		if (!world.isClientSide()) {
-			BlockPos _bp = new BlockPos(x, y, z);
+			BlockPos _bp = BlockPos.containing(x, y, z);
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
@@ -54,23 +53,23 @@ public class AltarRelicUpdateTickProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "Timer") + 1));
+				}.getValue(world, BlockPos.containing(x, y, z), "Timer") + 1));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
-		if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC.get()) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC.get()) {
 			amplifier_curse = "3";
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_1.get()) {
+		} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_1.get()) {
 			amplifier_curse = "2";
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_2.get()) {
+		} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_2.get()) {
 			amplifier_curse = "2";
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_3.get()) {
+		} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_3.get()) {
 			amplifier_curse = "1";
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_4.get()) {
+		} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_4.get()) {
 			amplifier_curse = "1";
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_5.get()) {
+		} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_5.get()) {
 			amplifier_curse = "0";
-		} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_6.get()) {
+		} else if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == CthulhufishingModBlocks.ALTAR_RELIC_6.get()) {
 			amplifier_curse = "0";
 		}
 		if (world instanceof ServerLevel _level)

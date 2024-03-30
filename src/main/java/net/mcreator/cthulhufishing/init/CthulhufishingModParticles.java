@@ -15,6 +15,6 @@ import net.mcreator.cthulhufishing.client.particle.PortalTentacleParticleParticl
 public class CthulhufishingModParticles {
 	@SubscribeEvent
 	public static void registerParticles(RegisterParticleProvidersEvent event) {
-		event.register(CthulhufishingModParticleTypes.PORTAL_TENTACLE_PARTICLE.get(), PortalTentacleParticleParticle::provider);
+		event.registerSpriteSet(CthulhufishingModParticleTypes.PORTAL_TENTACLE_PARTICLE.get(), PortalTentacleParticleParticle::provider);
 	}
 }

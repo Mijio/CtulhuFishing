@@ -1,7 +1,6 @@
 
 package net.mcreator.cthulhufishing.item;
 
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 
 import net.minecraft.world.item.crafting.Ingredient;
@@ -12,13 +11,12 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.cthulhufishing.init.CthulhufishingModTabs;
 import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
 import net.mcreator.cthulhufishing.client.model.Modelmodel_HoodOfTheWhispersOfTheDeep;
 
@@ -27,16 +25,16 @@ import java.util.Map;
 import java.util.Collections;
 
 public abstract class HoodOfTheDeepVoidItem extends ArmorItem {
-	public HoodOfTheDeepVoidItem(EquipmentSlot slot, Item.Properties properties) {
+	public HoodOfTheDeepVoidItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
-			public int getDurabilityForSlot(EquipmentSlot slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 900;
+			public int getDurabilityForType(ArmorItem.Type type) {
+				return new int[]{13, 15, 16, 11}[type.getSlot().getIndex()] * 900;
 			}
 
 			@Override
-			public int getDefenseForSlot(EquipmentSlot slot) {
-				return new int[]{0, 0, 0, 3}[slot.getIndex()];
+			public int getDefenseForType(ArmorItem.Type type) {
+				return new int[]{0, 0, 0, 3}[type.getSlot().getIndex()];
 			}
 
 			@Override
@@ -46,7 +44,7 @@ public abstract class HoodOfTheDeepVoidItem extends ArmorItem {
 
 			@Override
 			public SoundEvent getEquipSound() {
-				return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
+				return SoundEvents.EMPTY;
 			}
 
 			@Override
@@ -68,12 +66,12 @@ public abstract class HoodOfTheDeepVoidItem extends ArmorItem {
 			public float getKnockbackResistance() {
 				return 0f;
 			}
-		}, slot, properties);
+		}, type, properties);
 	}
 
 	public static class Helmet extends HoodOfTheDeepVoidItem {
 		public Helmet() {
-			super(EquipmentSlot.HEAD, new Item.Properties().tab(CthulhufishingModTabs.TAB_CTULHU_FISHING_TAB));
+			super(ArmorItem.Type.HELMET, new Item.Properties());
 		}
 
 		@Override

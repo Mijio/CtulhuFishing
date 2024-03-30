@@ -22,13 +22,13 @@ public class ClientListener {
 	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
 	public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.BLOCK_ORE_EYE.get(), BlockOreEyeTileRenderer::new);
-		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.ALTAR_RELIC.get(), AltarRelicTileRenderer::new);
-		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.ALTAR_RELIC_1.get(), AltarRelic1TileRenderer::new);
-		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.ALTAR_RELIC_2.get(), AltarRelic2TileRenderer::new);
-		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.ALTAR_RELIC_3.get(), AltarRelic3TileRenderer::new);
-		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.ALTAR_RELIC_4.get(), AltarRelic4TileRenderer::new);
-		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.ALTAR_RELIC_5.get(), AltarRelic5TileRenderer::new);
-		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.ALTAR_RELIC_6.get(), AltarRelic6TileRenderer::new);
+		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.BLOCK_ORE_EYE.get(), context -> new BlockOreEyeTileRenderer());
+		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.ALTAR_RELIC.get(), context -> new AltarRelicTileRenderer());
+		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.ALTAR_RELIC_1.get(), context -> new AltarRelic1TileRenderer());
+		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.ALTAR_RELIC_2.get(), context -> new AltarRelic2TileRenderer());
+		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.ALTAR_RELIC_3.get(), context -> new AltarRelic3TileRenderer());
+		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.ALTAR_RELIC_4.get(), context -> new AltarRelic4TileRenderer());
+		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.ALTAR_RELIC_5.get(), context -> new AltarRelic5TileRenderer());
+		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.ALTAR_RELIC_6.get(), context -> new AltarRelic6TileRenderer());
 	}
 }

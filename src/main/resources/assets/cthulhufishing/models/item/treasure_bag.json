@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "cthulhufishing:items/treasure_bag"
+    "layer0": "cthulhufishing:item/treasure_bag"
   }
 }

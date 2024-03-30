@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "cthulhufishing:items/relic_ice"
+    "layer0": "cthulhufishing:item/relic_ice"
   }
 }
