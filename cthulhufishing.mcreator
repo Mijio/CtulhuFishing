@@ -2672,20 +2672,6 @@
       }
     },
     {
-      "name": "MaskOfRevelation",
-      "type": "armor",
-      "sortid": 147,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mask_of_revelation",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/MaskOfRevelationItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/mask_of_revelation_helmet.json"
-        ]
-      }
-    },
-    {
       "name": "MaskOfRevelationCraft",
       "type": "recipe",
       "sortid": 148,
@@ -3063,20 +3049,6 @@
         "files": [
           "src/main/resources/data/cthulhufishing/recipes/mushroom_lure_recipe.json"
         ]
-      }
-    },
-    {
-      "name": "ChestplateFossilFishChestplateTickEvent",
-      "type": "procedure",
-      "sortid": 163,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "chestplate_fossil_fish_chestplate_tick_event",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/procedures/ChestplateFossilFishChestplateTickEventProcedure.java"
-        ],
-        "dependencies": []
       }
     },
     {
@@ -3650,20 +3622,6 @@
       }
     },
     {
-      "name": "ThirdEye",
-      "type": "item",
-      "sortid": 201,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "third_eye",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeItem.java",
-          "src/main/resources/assets/cthulhufishing/models/item/third_eye.json"
-        ]
-      }
-    },
-    {
       "name": "HoodOfTheDeepVoidR",
       "type": "armor",
       "sortid": 202,
@@ -3674,6 +3632,34 @@
         "files": [
           "src/main/java/net/mcreator/cthulhufishing/item/HoodOfTheDeepVoidRItem.java",
           "src/main/resources/assets/cthulhufishing/models/item/hood_of_the_deep_void_r_helmet.json"
+        ]
+      }
+    },
+    {
+      "name": "ThirdEyeR",
+      "type": "item",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "third_eye_r",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/ThirdEyeRItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/third_eye_r.json"
+        ]
+      }
+    },
+    {
+      "name": "MaskOfRevelationR",
+      "type": "armor",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mask_of_revelation_r",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/mask_of_revelation_r_helmet.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/MaskOfRevelationRItem.java"
         ]
       }
     }
@@ -3890,7 +3876,6 @@
   ],
   "language_map": {
     "en_us": {
-      "item.cthulhufishing.mask_of_revelation_helmet": "Mask Of Revelation Helmet",
       "item.cthulhufishing.step_to_abyss": "Music disc - Step To Abyss ",
       "item.cthulhufishing.sculk_ring": "Sculk Ring",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
@@ -3927,9 +3912,11 @@
       "item.cthulhufishing.emerald_gold_ring": "Experience Ring",
       "item.cthulhufishing.ice_boulti": "Frozen Boulti Fish",
       "item.cthulhufishing.sculk_lure": "Sculk Lure",
+      "item.cthulhufishing.mask_of_revelation_r_helmet": "Mask Of Revelation Helmet",
       "subtitles.catch_strange_fish": "",
       "item.cthulhufishing.hood_of_the_deep_void_r_helmet": "Hood Of The Deep Void Helmet",
       "subtitles.hood_ablity": "",
+      "item.cthulhufishing.third_eye_r": "Third Eye",
       "subtitles.obsessed_eye_spawn": "",
       "entity.cthulhufishing.obsessed_eye_mob": "Obsessed Eye",
       "block.cthulhufishing.block_ore_eye": "Block Ore Eye",
@@ -3982,7 +3969,6 @@
       "item.cthulhufishing.ice_lure": "Frozen Lure",
       "enchantment.cthulhufishing.mushroom_catcher_enchantment": "Mushroom Catcher",
       "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",
-      "item.cthulhufishing.third_eye": "Third Eye",
       "item.cthulhufishing.crimson_finger": "Crimson Finger",
       "item.cthulhufishing.frozen_leggins_leggings": "Frozen Leggings",
       "enchantment.cthulhufishing.frozen_catcher_enchantment": "Frozen Catcher",

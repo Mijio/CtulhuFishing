@@ -14,7 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.cthulhufishing.item.TreasureBagItem;
-import net.mcreator.cthulhufishing.item.ThirdEyeItem;
+import net.mcreator.cthulhufishing.item.ThirdEyeRItem;
 import net.mcreator.cthulhufishing.item.TentacleStaffItem;
 import net.mcreator.cthulhufishing.item.SwordOfRevelationItem;
 import net.mcreator.cthulhufishing.item.StepToAbyssItem;
@@ -30,7 +30,7 @@ import net.mcreator.cthulhufishing.item.MushroomTorchfishItem;
 import net.mcreator.cthulhufishing.item.MushroomSpratItem;
 import net.mcreator.cthulhufishing.item.MushroomLureItem;
 import net.mcreator.cthulhufishing.item.MushroomAnglerfishItem;
-import net.mcreator.cthulhufishing.item.MaskOfRevelationItem;
+import net.mcreator.cthulhufishing.item.MaskOfRevelationRItem;
 import net.mcreator.cthulhufishing.item.KnifeForRitualBleedingItem;
 import net.mcreator.cthulhufishing.item.IceStingrayItem;
 import net.mcreator.cthulhufishing.item.IceLureItem;
@@ -107,7 +107,6 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> REVELATION_FABRIC = REGISTRY.register("revelation_fabric", () -> new RevelationFabricItem());
 	public static final RegistryObject<Item> STEP_TO_ABYSS = REGISTRY.register("step_to_abyss", () -> new StepToAbyssItem());
 	public static final RegistryObject<Item> REVELATION_STEEL = REGISTRY.register("revelation_steel", () -> new RevelationSteelItem());
-	public static final RegistryObject<Item> MASK_OF_REVELATION_HELMET = REGISTRY.register("mask_of_revelation_helmet", () -> new MaskOfRevelationItem.Helmet());
 	public static final RegistryObject<Item> HEAVY_FISHING_ROAD = REGISTRY.register("heavy_fishing_road", () -> new HeavyFishingRoadItem());
 	public static final RegistryObject<Item> FOSSIL_FISH_SPAWN_EGG = REGISTRY.register("fossil_fish_spawn_egg", () -> new ForgeSpawnEggItem(CthulhufishingModEntities.FOSSIL_FISH, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> MUSHROOM_LURE = REGISTRY.register("mushroom_lure", () -> new MushroomLureItem());
@@ -124,8 +123,9 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> FROZEN_LEGGINS_LEGGINGS = REGISTRY.register("frozen_leggins_leggings", () -> new FrozenLegginsItem.Leggings());
 	public static final RegistryObject<Item> FROZEN_RING = REGISTRY.register("frozen_ring", () -> new FrozenRingItem());
 	public static final RegistryObject<Item> FROZEN_CRAB_NECKLACE = REGISTRY.register("frozen_crab_necklace", () -> new FrozenCrabNecklaceItem());
-	public static final RegistryObject<Item> THIRD_EYE = REGISTRY.register("third_eye", () -> new ThirdEyeItem());
 	public static final RegistryObject<Item> HOOD_OF_THE_DEEP_VOID_R_HELMET = REGISTRY.register("hood_of_the_deep_void_r_helmet", () -> new HoodOfTheDeepVoidRItem.Helmet());
+	public static final RegistryObject<Item> THIRD_EYE_R = REGISTRY.register("third_eye_r", () -> new ThirdEyeRItem());
+	public static final RegistryObject<Item> MASK_OF_REVELATION_R_HELMET = REGISTRY.register("mask_of_revelation_r_helmet", () -> new MaskOfRevelationRItem.Helmet());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -118,7 +118,7 @@
           },
           {
             "price1": {
-              "value": "CUSTOM:ThirdEye"
+              "value": "CUSTOM:ThirdEyeR"
             },
             "countPrice1": 1,
             "price2": {
@@ -252,7 +252,7 @@
             },
             "countPrice2": 14,
             "offer": {
-              "value": "CUSTOM:MaskOfRevelation.helmet"
+              "value": "CUSTOM:MaskOfRevelationR.helmet"
             },
             "countOffer": 1,
             "level": 3,

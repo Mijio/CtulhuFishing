@@ -24,8 +24,8 @@ import java.util.function.Consumer;
 import java.util.Map;
 import java.util.Collections;
 
-public abstract class MaskOfRevelationItem extends ArmorItem {
-	public MaskOfRevelationItem(ArmorItem.Type type, Item.Properties properties) {
+public abstract class MaskOfRevelationRItem extends ArmorItem {
+	public MaskOfRevelationRItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
@@ -34,7 +34,7 @@ public abstract class MaskOfRevelationItem extends ArmorItem {
 
 			@Override
 			public int getDefenseForType(ArmorItem.Type type) {
-				return new int[]{2, 5, 6, 2}[type.getSlot().getIndex()];
+				return new int[]{0, 0, 0, 2}[type.getSlot().getIndex()];
 			}
 
 			@Override
@@ -49,12 +49,12 @@ public abstract class MaskOfRevelationItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(CthulhufishingModItems.THIRD_EYE.get()));
+				return Ingredient.of(new ItemStack(CthulhufishingModItems.THIRD_EYE_R.get()));
 			}
 
 			@Override
 			public String getName() {
-				return "mask_of_revelation";
+				return "mask_of_revelation_r";
 			}
 
 			@Override
@@ -69,7 +69,7 @@ public abstract class MaskOfRevelationItem extends ArmorItem {
 		}, type, properties);
 	}
 
-	public static class Helmet extends MaskOfRevelationItem {
+	public static class Helmet extends MaskOfRevelationRItem {
 		public Helmet() {
 			super(ArmorItem.Type.HELMET, new Item.Properties());
 		}

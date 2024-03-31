@@ -11,7 +11,7 @@ public class ThirdEye1Procedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(CthulhufishingModItems.THIRD_EYE.get())) : false) {
+		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(CthulhufishingModItems.THIRD_EYE_R.get())) : false) {
 			if ((entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score >= 10) {
 				if ((entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score < 20) {
 					return true;

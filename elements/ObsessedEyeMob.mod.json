@@ -85,7 +85,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": "CUSTOM:ThirdEye"
+      "value": "CUSTOM:ThirdEyeR"
     },
     "livingSound": {
       "value": ""

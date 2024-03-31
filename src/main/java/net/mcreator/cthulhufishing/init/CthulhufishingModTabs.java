@@ -22,7 +22,7 @@ import net.mcreator.cthulhufishing.CthulhufishingMod;
 public class CthulhufishingModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CthulhufishingMod.MODID);
 	public static final RegistryObject<CreativeModeTab> CTULHU_FISHING_TAB = REGISTRY.register("ctulhu_fishing_tab",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.cthulhufishing.ctulhu_fishing_tab")).icon(() -> new ItemStack(CthulhufishingModItems.THIRD_EYE.get())).displayItems((parameters, tabData) -> {
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.cthulhufishing.ctulhu_fishing_tab")).icon(() -> new ItemStack(CthulhufishingModItems.THIRD_EYE_R.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(CthulhufishingModItems.CRIMSON_FISH.get());
 				tabData.accept(CthulhufishingModBlocks.DEEP_OIL.get().asItem());
 				tabData.accept(CthulhufishingModBlocks.CTULHU_ALTAR_FISH.get().asItem());
@@ -52,7 +52,6 @@ public class CthulhufishingModTabs {
 				tabData.accept(CthulhufishingModItems.REVELATION_FABRIC.get());
 				tabData.accept(CthulhufishingModItems.STEP_TO_ABYSS.get());
 				tabData.accept(CthulhufishingModItems.REVELATION_STEEL.get());
-				tabData.accept(CthulhufishingModItems.MASK_OF_REVELATION_HELMET.get());
 				tabData.accept(CthulhufishingModItems.HEAVY_FISHING_ROAD.get());
 				tabData.accept(CthulhufishingModItems.MUSHROOM_LURE.get());
 				tabData.accept(CthulhufishingModItems.MUSRHOOM_RING.get());
@@ -67,8 +66,9 @@ public class CthulhufishingModTabs {
 				tabData.accept(CthulhufishingModItems.FROZEN_LEGGINS_LEGGINGS.get());
 				tabData.accept(CthulhufishingModItems.FROZEN_RING.get());
 				tabData.accept(CthulhufishingModItems.FROZEN_CRAB_NECKLACE.get());
-				tabData.accept(CthulhufishingModItems.THIRD_EYE.get());
 				tabData.accept(CthulhufishingModItems.HOOD_OF_THE_DEEP_VOID_R_HELMET.get());
+				tabData.accept(CthulhufishingModItems.THIRD_EYE_R.get());
+				tabData.accept(CthulhufishingModItems.MASK_OF_REVELATION_R_HELMET.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

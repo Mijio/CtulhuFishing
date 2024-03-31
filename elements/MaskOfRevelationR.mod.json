@@ -15,9 +15,9 @@
     },
     "armorTextureFile": "mask",
     "helmetName": "Mask Of Revelation Helmet",
-    "bodyName": "Mask Of Revelation Chestplate",
-    "leggingsName": "Mask Of Revelation Leggings",
-    "bootsName": "Mask Of Revelation Boots",
+    "bodyName": "Mask Of Revelation R Chestplate",
+    "leggingsName": "Mask Of Revelation R Leggings",
+    "bootsName": "Mask Of Revelation R Boots",
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],
@@ -52,9 +52,9 @@
     "bootsImmuneToFire": false,
     "maxDamage": 980,
     "damageValueHelmet": 2,
-    "damageValueBody": 6,
-    "damageValueLeggings": 5,
-    "damageValueBoots": 2,
+    "damageValueBody": 0,
+    "damageValueLeggings": 0,
+    "damageValueBoots": 0,
     "enchantability": 12,
     "toughness": 1.5,
     "knockbackResistance": 0.0,
@@ -63,7 +63,7 @@
     },
     "repairItems": [
       {
-        "value": "CUSTOM:ThirdEye"
+        "value": "CUSTOM:ThirdEyeR"
       }
     ]
   }

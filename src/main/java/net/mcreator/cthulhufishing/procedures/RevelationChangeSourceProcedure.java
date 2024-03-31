@@ -13,7 +13,7 @@ public class RevelationChangeSourceProcedure {
 		if (sourceentity == null)
 			return;
 		if ((sourceentity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).RC_IsNegative) {
-			if ((sourceentity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == CthulhufishingModItems.MASK_OF_REVELATION_HELMET.get()) {
+			if ((sourceentity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == CthulhufishingModItems.MASK_OF_REVELATION_R_HELMET.get()) {
 				if ((sourceentity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revelation_Score
 						- (sourceentity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CthulhufishingModVariables.PlayerVariables())).Revalation_Change / 2 < 0) {
 					{

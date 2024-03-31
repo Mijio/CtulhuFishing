@@ -173,7 +173,7 @@ public class ObsessedEyeMobEntity extends Monster implements GeoEntity {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(CthulhufishingModItems.THIRD_EYE.get()));
+		this.spawnAtLocation(new ItemStack(CthulhufishingModItems.THIRD_EYE_R.get()));
 	}
 
 	@Override

@@ -49,7 +49,7 @@ public abstract class HoodOfTheDeepVoidRItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(CthulhufishingModItems.THIRD_EYE.get()));
+				return Ingredient.of(new ItemStack(CthulhufishingModItems.THIRD_EYE_R.get()));
 			}
 
 			@Override

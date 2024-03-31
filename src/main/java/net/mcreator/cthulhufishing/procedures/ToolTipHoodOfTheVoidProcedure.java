@@ -67,7 +67,7 @@ public class ToolTipHoodOfTheVoidProcedure {
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
-		} else if (itemstack.getItem() == CthulhufishingModItems.THIRD_EYE.get()) {
+		} else if (itemstack.getItem() == CthulhufishingModItems.THIRD_EYE_R.get()) {
 			itemstack.setHoverName(Component.literal("\u00A7bThird eye"));
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A7bAccompanying you, the eye opens up the opportunity for you to catch creatures of the deep and grant revelation for their capture"));
@@ -206,7 +206,7 @@ public class ToolTipHoodOfTheVoidProcedure {
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
-		} else if (itemstack.getItem() == CthulhufishingModItems.MASK_OF_REVELATION_HELMET.get()) {
+		} else if (itemstack.getItem() == CthulhufishingModItems.MASK_OF_REVELATION_R_HELMET.get()) {
 			itemstack.setHoverName(Component.literal("\u00A7bMask of Revelation"));
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A7bWhen equip revelation costs you spend half as much "));
