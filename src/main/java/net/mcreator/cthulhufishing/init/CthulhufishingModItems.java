@@ -37,7 +37,7 @@ import net.mcreator.cthulhufishing.item.IceLureItem;
 import net.mcreator.cthulhufishing.item.IceCodItem;
 import net.mcreator.cthulhufishing.item.IceBoultiItem;
 import net.mcreator.cthulhufishing.item.HorseSculkFishItem;
-import net.mcreator.cthulhufishing.item.HoodOfTheDeepVoidItem;
+import net.mcreator.cthulhufishing.item.HoodOfTheDeepVoidRItem;
 import net.mcreator.cthulhufishing.item.HermitSlulkFishItem;
 import net.mcreator.cthulhufishing.item.HeavyFishingRoadItem;
 import net.mcreator.cthulhufishing.item.GlutonSculkFishItem;
@@ -72,7 +72,6 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> DEEP_OIL = block(CthulhufishingModBlocks.DEEP_OIL);
 	public static final RegistryObject<Item> CTULHU_ALTAR_FISH = block(CthulhufishingModBlocks.CTULHU_ALTAR_FISH);
 	public static final RegistryObject<Item> KNIFE_FOR_RITUAL_BLEEDING = REGISTRY.register("knife_for_ritual_bleeding", () -> new KnifeForRitualBleedingItem());
-	public static final RegistryObject<Item> HOOD_OF_THE_DEEP_VOID_HELMET = REGISTRY.register("hood_of_the_deep_void_helmet", () -> new HoodOfTheDeepVoidItem.Helmet());
 	public static final RegistryObject<Item> CRIMSON_JELLYFISH = REGISTRY.register("crimson_jellyfish", () -> new CrimsonJellyfishItem());
 	public static final RegistryObject<Item> CRIMSON_CRUNCH = REGISTRY.register("crimson_crunch", () -> new CrimsonCrunchItem());
 	public static final RegistryObject<Item> HERMIT_SLULK_FISH = REGISTRY.register("hermit_slulk_fish", () -> new HermitSlulkFishItem());
@@ -126,6 +125,7 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> FROZEN_RING = REGISTRY.register("frozen_ring", () -> new FrozenRingItem());
 	public static final RegistryObject<Item> FROZEN_CRAB_NECKLACE = REGISTRY.register("frozen_crab_necklace", () -> new FrozenCrabNecklaceItem());
 	public static final RegistryObject<Item> THIRD_EYE = REGISTRY.register("third_eye", () -> new ThirdEyeItem());
+	public static final RegistryObject<Item> HOOD_OF_THE_DEEP_VOID_R_HELMET = REGISTRY.register("hood_of_the_deep_void_r_helmet", () -> new HoodOfTheDeepVoidRItem.Helmet());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -193,7 +193,7 @@ public class ToolTipHoodOfTheVoidProcedure {
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
-		} else if (itemstack.getItem() == CthulhufishingModItems.HOOD_OF_THE_DEEP_VOID_HELMET.get()) {
+		} else if (itemstack.getItem() == CthulhufishingModItems.HOOD_OF_THE_DEEP_VOID_R_HELMET.get()) {
 			itemstack.setHoverName(Component.literal("\u00A7bHood of the deep void"));
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A7bDoesn't let you go hungry till you have revelation"));

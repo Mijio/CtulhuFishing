@@ -24,8 +24,8 @@ import java.util.function.Consumer;
 import java.util.Map;
 import java.util.Collections;
 
-public abstract class HoodOfTheDeepVoidItem extends ArmorItem {
-	public HoodOfTheDeepVoidItem(ArmorItem.Type type, Item.Properties properties) {
+public abstract class HoodOfTheDeepVoidRItem extends ArmorItem {
+	public HoodOfTheDeepVoidRItem(ArmorItem.Type type, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForType(ArmorItem.Type type) {
@@ -54,7 +54,7 @@ public abstract class HoodOfTheDeepVoidItem extends ArmorItem {
 
 			@Override
 			public String getName() {
-				return "hood_of_the_deep_void";
+				return "hood_of_the_deep_void_r";
 			}
 
 			@Override
@@ -69,7 +69,7 @@ public abstract class HoodOfTheDeepVoidItem extends ArmorItem {
 		}, type, properties);
 	}
 
-	public static class Helmet extends HoodOfTheDeepVoidItem {
+	public static class Helmet extends HoodOfTheDeepVoidRItem {
 		public Helmet() {
 			super(ArmorItem.Type.HELMET, new Item.Properties());
 		}

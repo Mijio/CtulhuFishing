@@ -27,7 +27,6 @@ public class CthulhufishingModTabs {
 				tabData.accept(CthulhufishingModBlocks.DEEP_OIL.get().asItem());
 				tabData.accept(CthulhufishingModBlocks.CTULHU_ALTAR_FISH.get().asItem());
 				tabData.accept(CthulhufishingModItems.KNIFE_FOR_RITUAL_BLEEDING.get());
-				tabData.accept(CthulhufishingModItems.HOOD_OF_THE_DEEP_VOID_HELMET.get());
 				tabData.accept(CthulhufishingModItems.CRIMSON_JELLYFISH.get());
 				tabData.accept(CthulhufishingModItems.CRIMSON_CRUNCH.get());
 				tabData.accept(CthulhufishingModItems.HERMIT_SLULK_FISH.get());
@@ -69,6 +68,7 @@ public class CthulhufishingModTabs {
 				tabData.accept(CthulhufishingModItems.FROZEN_RING.get());
 				tabData.accept(CthulhufishingModItems.FROZEN_CRAB_NECKLACE.get());
 				tabData.accept(CthulhufishingModItems.THIRD_EYE.get());
+				tabData.accept(CthulhufishingModItems.HOOD_OF_THE_DEEP_VOID_R_HELMET.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
