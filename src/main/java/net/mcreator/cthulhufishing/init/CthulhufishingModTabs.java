@@ -23,7 +23,6 @@ public class CthulhufishingModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CthulhufishingMod.MODID);
 	public static final RegistryObject<CreativeModeTab> CTULHU_FISHING_TAB = REGISTRY.register("ctulhu_fishing_tab",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.cthulhufishing.ctulhu_fishing_tab")).icon(() -> new ItemStack(CthulhufishingModItems.THIRD_EYE.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(CthulhufishingModItems.THIRD_EYE.get());
 				tabData.accept(CthulhufishingModItems.CRIMSON_FISH.get());
 				tabData.accept(CthulhufishingModBlocks.DEEP_OIL.get().asItem());
 				tabData.accept(CthulhufishingModBlocks.CTULHU_ALTAR_FISH.get().asItem());
@@ -69,6 +68,7 @@ public class CthulhufishingModTabs {
 				tabData.accept(CthulhufishingModItems.FROZEN_LEGGINS_LEGGINGS.get());
 				tabData.accept(CthulhufishingModItems.FROZEN_RING.get());
 				tabData.accept(CthulhufishingModItems.FROZEN_CRAB_NECKLACE.get());
+				tabData.accept(CthulhufishingModItems.THIRD_EYE.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

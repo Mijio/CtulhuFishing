@@ -68,7 +68,6 @@ import net.mcreator.cthulhufishing.CthulhufishingMod;
 
 public class CthulhufishingModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, CthulhufishingMod.MODID);
-	public static final RegistryObject<Item> THIRD_EYE = REGISTRY.register("third_eye", () -> new ThirdEyeItem());
 	public static final RegistryObject<Item> CRIMSON_FISH = REGISTRY.register("crimson_fish", () -> new CrimsonFishItem());
 	public static final RegistryObject<Item> DEEP_OIL = block(CthulhufishingModBlocks.DEEP_OIL);
 	public static final RegistryObject<Item> CTULHU_ALTAR_FISH = block(CthulhufishingModBlocks.CTULHU_ALTAR_FISH);
@@ -126,6 +125,7 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> FROZEN_LEGGINS_LEGGINGS = REGISTRY.register("frozen_leggins_leggings", () -> new FrozenLegginsItem.Leggings());
 	public static final RegistryObject<Item> FROZEN_RING = REGISTRY.register("frozen_ring", () -> new FrozenRingItem());
 	public static final RegistryObject<Item> FROZEN_CRAB_NECKLACE = REGISTRY.register("frozen_crab_necklace", () -> new FrozenCrabNecklaceItem());
+	public static final RegistryObject<Item> THIRD_EYE = REGISTRY.register("third_eye", () -> new ThirdEyeItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
