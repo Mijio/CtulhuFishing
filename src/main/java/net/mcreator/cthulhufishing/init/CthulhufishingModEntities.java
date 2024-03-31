@@ -38,7 +38,7 @@ public class CthulhufishingModEntities {
 	public static final RegistryObject<EntityType<IceCrabEntity>> ICE_CRAB = register("ice_crab",
 			EntityType.Builder.<IceCrabEntity>of(IceCrabEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(80).setUpdateInterval(3).setCustomClientFactory(IceCrabEntity::new)
 
-					.sized(0.6f, 0.4f));
+					.sized(0.6f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

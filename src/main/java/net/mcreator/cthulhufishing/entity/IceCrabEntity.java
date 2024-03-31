@@ -118,7 +118,7 @@ public class IceCrabEntity extends Monster implements GeoEntity {
 
 	@Override
 	public double getPassengersRidingOffset() {
-		return super.getPassengersRidingOffset() + 1;
+		return super.getPassengersRidingOffset() + 2;
 	}
 
 	@Override

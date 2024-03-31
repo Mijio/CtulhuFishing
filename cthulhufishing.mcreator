@@ -1102,8 +1102,8 @@
       "registry_name": "sword_of_revelation",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/sword_of_revelation.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/SwordOfRevelationItem.java"
+          "src/main/java/net/mcreator/cthulhufishing/item/SwordOfRevelationItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/sword_of_revelation.json"
         ]
       }
     },
@@ -3266,10 +3266,10 @@
       "registry_name": "ice_crab",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/entity/IceCrabEntity.java",
+          "src/main/resources/assets/cthulhufishing/models/item/ice_crab_spawn_egg.json",
           "src/main/java/net/mcreator/cthulhufishing/entity/model/IceCrabModel.java",
-          "src/main/java/net/mcreator/cthulhufishing/client/renderer/IceCrabRenderer.java",
-          "src/main/resources/assets/cthulhufishing/models/item/ice_crab_spawn_egg.json"
+          "src/main/java/net/mcreator/cthulhufishing/entity/IceCrabEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/client/renderer/IceCrabRenderer.java"
         ]
       },
       "path": "~/FrozenCrabBoss"

@@ -18,7 +18,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class IceCrabRenderer extends GeoEntityRenderer<IceCrabEntity> {
 	public IceCrabRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new IceCrabModel());
-		this.shadowRadius = 0.5f;
+		this.shadowRadius = 2f;
 	}
 
 	@Override
