@@ -64,7 +64,7 @@ public class CatchIceProcedure {
 						});
 					}
 					{
-						double _setval = 3;
+						double _setval = 2;
 						entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.Revalation_Change = _setval;
 							capability.syncPlayerVariables(entity);
@@ -80,7 +80,7 @@ public class CatchIceProcedure {
 							});
 						}
 						{
-							double _setval = 3;
+							double _setval = 2;
 							entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 								capability.Revalation_Change = _setval;
 								capability.syncPlayerVariables(entity);

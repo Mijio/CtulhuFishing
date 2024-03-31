@@ -63,7 +63,7 @@ public class CatchSculkProcedure {
 						});
 					}
 					{
-						double _setval = 2;
+						double _setval = 4;
 						entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.Revalation_Change = _setval;
 							capability.syncPlayerVariables(entity);
@@ -79,7 +79,7 @@ public class CatchSculkProcedure {
 							});
 						}
 						{
-							double _setval = 2;
+							double _setval = 4;
 							entity.getCapability(CthulhufishingModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 								capability.Revalation_Change = _setval;
 								capability.syncPlayerVariables(entity);
