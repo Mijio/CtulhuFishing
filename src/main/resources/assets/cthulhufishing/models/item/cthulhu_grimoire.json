@@ -4,7 +4,7 @@
 "base": {
 "parent": "cthulhufishing:displaysettings/cthulhu_grimoire.item",
 "textures": {
-"0": "cthulhufishing:items/texture_cthulhu_grimoire"
+"0": "cthulhufishing:item/texture_cthulhu_grimoire"
 },
 "display": {
 "thirdperson_righthand": {
@@ -105,7 +105,7 @@
 "gui": {
 "parent": "item/generated",
 "textures": {
-"layer0": "cthulhufishing:items/grim"
+"layer0": "cthulhufishing:item/grim"
 },
 "gui_light": "front"
 }

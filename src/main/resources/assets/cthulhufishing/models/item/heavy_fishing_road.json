@@ -4,7 +4,7 @@
 "base": {
 "parent": "cthulhufishing:custom/heavy_fishing_road",
 "textures": {
-"0": "cthulhufishing:items/texture_rod"
+"0": "cthulhufishing:item/texture_rod"
 },
 "display": {
 "thirdperson_righthand": {
@@ -97,7 +97,7 @@
 "gui": {
 "parent": "item/generated",
 "textures": {
-"layer0": "cthulhufishing:items/heavyrod"
+"layer0": "cthulhufishing:item/heavyrod"
 },
 "gui_light": "front"
 }

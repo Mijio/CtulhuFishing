@@ -4,7 +4,7 @@
 "base": {
 "parent": "cthulhufishing:custom/revelation_great_sword",
 "textures": {
-"0": "cthulhufishing:blocks/texture_revelation_greatsword"
+"0": "cthulhufishing:block/texture_revelation_greatsword"
 },
 "display": {
 "thirdperson_righthand": {
@@ -97,7 +97,7 @@
 "gui": {
 "parent": "item/generated",
 "textures": {
-"layer0": "cthulhufishing:items/swordofrev"
+"layer0": "cthulhufishing:item/swordofrev"
 },
 "gui_light": "front"
 }
