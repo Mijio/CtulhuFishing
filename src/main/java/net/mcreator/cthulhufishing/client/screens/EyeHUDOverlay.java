@@ -56,22 +56,22 @@ public class EyeHUDOverlay {
 				event.getGuiGraphics().blit(new ResourceLocation("cthulhufishing:textures/screens/eye0.png"), posX + -31, posY + -120, 0, 0, 64, 32, 64, 32);
 			}
 			if (ThirdEye1Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("cthulhufishing:textures/screens/eye1.png"), posX + -31, posY + -120, 0, 0, 64, 32, 64, 32);
+				event.getGuiGraphics().blit(new ResourceLocation("cthulhufishing:textures/screens/eye1.png"), posX + -113, posY + -33, 0, 0, 64, 32, 64, 32);
 			}
 			if (ThirdEye2Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("cthulhufishing:textures/screens/eye2.png"), posX + -31, posY + -120, 0, 0, 64, 32, 64, 32);
+				event.getGuiGraphics().blit(new ResourceLocation("cthulhufishing:textures/screens/eye2.png"), posX + -17, posY + -19, 0, 0, 64, 32, 64, 32);
 			}
 			if (ThirdEye3Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("cthulhufishing:textures/screens/eye3.png"), posX + -31, posY + -120, 0, 0, 64, 32, 64, 32);
+				event.getGuiGraphics().blit(new ResourceLocation("cthulhufishing:textures/screens/eye3.png"), posX + 66, posY + -42, 0, 0, 64, 32, 64, 32);
 			}
 			if (ThirdEye4Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("cthulhufishing:textures/screens/eye4.png"), posX + -31, posY + -120, 0, 0, 64, 32, 64, 32);
+				event.getGuiGraphics().blit(new ResourceLocation("cthulhufishing:textures/screens/eye4.png"), posX + -49, posY + -55, 0, 0, 64, 32, 64, 32);
 			}
 			if (ThirdEye5Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("cthulhufishing:textures/screens/eye5.png"), posX + -31, posY + -120, 0, 0, 64, 32, 64, 32);
+				event.getGuiGraphics().blit(new ResourceLocation("cthulhufishing:textures/screens/eye5.png"), posX + 94, posY + -97, 0, 0, 64, 32, 64, 32);
 			}
 			if (ThirdEye6Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("cthulhufishing:textures/screens/eye6.png"), posX + -31, posY + -120, 0, 0, 64, 32, 64, 32);
+				event.getGuiGraphics().blit(new ResourceLocation("cthulhufishing:textures/screens/eye6.png"), posX + -140, posY + -82, 0, 0, 64, 32, 64, 32);
 			}
 		}
 		RenderSystem.depthMask(true);

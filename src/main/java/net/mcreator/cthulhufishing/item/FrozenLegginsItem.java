@@ -84,7 +84,7 @@ public abstract class FrozenLegginsItem extends ArmorItem {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
 							Map.of("left_leg", new Modelnew_frozen_leggins(Minecraft.getInstance().getEntityModels().bakeLayer(Modelnew_frozen_leggins.LAYER_LOCATION)).LeftLeg, "right_leg",
 									new Modelnew_frozen_leggins(Minecraft.getInstance().getEntityModels().bakeLayer(Modelnew_frozen_leggins.LAYER_LOCATION)).RightLeg, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",new Modelnew_frozen_leggins(Minecraft.getInstance().getEntityModels().bakeLayer(Modelnew_frozen_leggins.LAYER_LOCATION)).Body , "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
 									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
 					armorModel.riding = defaultModel.riding;
