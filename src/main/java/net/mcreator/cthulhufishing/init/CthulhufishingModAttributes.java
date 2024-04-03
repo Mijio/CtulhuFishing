@@ -21,7 +21,7 @@ import net.mcreator.cthulhufishing.CthulhufishingMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CthulhufishingModAttributes {
 	public static final DeferredRegister<Attribute> ATTRIBUTES = DeferredRegister.create(ForgeRegistries.ATTRIBUTES, CthulhufishingMod.MODID);
-	public static final RegistryObject<Attribute> SUMMONDAMAGE = ATTRIBUTES.register("summon_damage", () -> (new RangedAttribute("attribute." + CthulhufishingMod.MODID + ".summon_damage", 1, 0, 10)).setSyncable(true));
+	public static final RegistryObject<Attribute> SUMMONDAMAGE = ATTRIBUTES.register("summon_damage", () -> (new RangedAttribute("attribute." + CthulhufishingMod.MODID + ".summon_damage", 2, 0, 10)).setSyncable(true));
 	public static final RegistryObject<Attribute> SUMMONCOUNTER = ATTRIBUTES.register("summon_counter", () -> (new RangedAttribute("attribute." + CthulhufishingMod.MODID + ".summon_counter", 1, 0, 5)).setSyncable(true));
 
 	@SubscribeEvent
