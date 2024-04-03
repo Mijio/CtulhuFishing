@@ -1,0 +1,6 @@
+{
+  "parent": "cthulhufishing:displaysettings/staff_of_obsessed_eyes",
+  "textures": {
+    "layer0": "cthulhufishing:item/texture_staff_of_obsessed_eyes"
+  }
+}
