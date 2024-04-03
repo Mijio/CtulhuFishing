@@ -17,8 +17,8 @@ public class ObsessedEyePetAbilProcedure {
 			return;
 		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)) {
 			entity.getPersistentData().putDouble("AI", (entity.getPersistentData().getDouble("AI") + 1));
-			if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX() - entity.getX() <= 0.2 && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY() - entity.getY() <= 0.2
-					&& (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ() - entity.getZ() <= 0.2) {
+			if (Math.pow(Math.pow((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX() - entity.getX(), 2) + Math.pow((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY() - entity.getY(), 2)
+					+ Math.pow((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ() - entity.getZ(), 2), 0.5) <= 1.5) {
 				if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 60, 0, false, false));
 				(entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.MOB_ATTACK)),
@@ -27,7 +27,7 @@ public class ObsessedEyePetAbilProcedure {
 		}
 		if (!(entity instanceof LivingEntity _livEnt19 && _livEnt19.hasEffect(MobEffects.LEVITATION)) && entity.getPersistentData().getDouble("AI") == 1) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 60, 0, false, false));
+				_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40, 0, false, false));
 			entity.setDeltaMovement(new Vec3((0.2 * ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX() - entity.getX())),
 					(0.2 * ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY() - entity.getY())), (0.2 * ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ() - entity.getZ()))));
 		}
