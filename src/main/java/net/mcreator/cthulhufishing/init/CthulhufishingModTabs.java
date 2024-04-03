@@ -69,6 +69,7 @@ public class CthulhufishingModTabs {
 				tabData.accept(CthulhufishingModItems.HOOD_OF_THE_DEEP_VOID_R_HELMET.get());
 				tabData.accept(CthulhufishingModItems.THIRD_EYE_R.get());
 				tabData.accept(CthulhufishingModItems.MASK_OF_REVELATION_R_HELMET.get());
+				tabData.accept(CthulhufishingModItems.OBSESSED_EYE_STAFF.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent
@@ -78,6 +79,7 @@ public class CthulhufishingModTabs {
 			tabData.accept(CthulhufishingModItems.OBSESSED_EYE_MOB_SPAWN_EGG.get());
 			tabData.accept(CthulhufishingModItems.FOSSIL_FISH_SPAWN_EGG.get());
 			tabData.accept(CthulhufishingModItems.ICE_CRAB_SPAWN_EGG.get());
+			tabData.accept(CthulhufishingModItems.OBSESSED_EYE_PET_SPAWN_EGG.get());
 		}
 	}
 }
