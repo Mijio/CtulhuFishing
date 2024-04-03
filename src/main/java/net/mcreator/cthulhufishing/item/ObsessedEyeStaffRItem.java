@@ -97,7 +97,7 @@ public class ObsessedEyeStaffRItem extends Item implements GeoItem {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		ObsessedEyeStaffRightclickedProcedure.execute(world, x, y, z, itemstack);
+		ObsessedEyeStaffRightclickedProcedure.execute(world, x, y, z, entity, itemstack);
 		return ar;
 	}
 }

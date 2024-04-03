@@ -3753,6 +3753,10 @@
         ],
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "itemstack",
             "type": "itemstack"
           },
@@ -3780,14 +3784,14 @@
       "type": "animateditem",
       "sortid": 210,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "obsessed_eye_staff_r",
       "metadata": {
         "files": [
-          "src/main/resources/assets/cthulhufishing/models/item/obsessed_eye_staff_r.json",
-          "src/main/java/net/mcreator/cthulhufishing/item/ObsessedEyeStaffRItem.java",
           "src/main/java/net/mcreator/cthulhufishing/item/renderer/ObsessedEyeStaffRItemRenderer.java",
-          "src/main/java/net/mcreator/cthulhufishing/item/model/ObsessedEyeStaffRItemModel.java"
+          "src/main/resources/assets/cthulhufishing/models/item/obsessed_eye_staff_r.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/model/ObsessedEyeStaffRItemModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/item/ObsessedEyeStaffRItem.java"
         ]
       }
     },
@@ -3798,6 +3802,17 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "summon_damage",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "SummonCounter",
+      "type": "attribute",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "summon_counter",
       "metadata": {
         "files": []
       }
@@ -4015,16 +4030,16 @@
   ],
   "language_map": {
     "en_us": {
-      "item.cthulhufishing.sculk_ring": "Sculk Ring",
       "item.cthulhufishing.step_to_abyss": "Music disc - Step To Abyss ",
+      "item.cthulhufishing.sculk_ring": "Sculk Ring",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
       "item.cthulhufishing.cthulhu_grimoire": "Cthulhu Grimoire",
-      "subtitles.idle_fossil_fish": "",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
+      "subtitles.idle_fossil_fish": "",
       "item.cthulhufishing.frozen_crab_necklace": "Necklace of Frozen Crab",
       "subtitles.step_to_abyss_xythe": "",
-      "item.cthulhufishing.treasure_bag": "Treasure Bag",
       "subtitles.obsessed_eye_damage": "",
+      "item.cthulhufishing.treasure_bag": "Treasure Bag",
       "subtitles.ritual_bleeding_knife": "",
       "item.cthulhufishing.crimson_ring": "Crimson Ring",
       "subtitles.altar_loot": "",
@@ -4033,19 +4048,19 @@
       "entity.cthulhufishing.grimoire_tentacle": "Grimoire Tentacle",
       "subtitles.damage_fossil_fish": "",
       "item.cthulhufishing.relic": "Relic",
-      "item.minecraft.lingering_potion.effect.mushroomed_potion": "Lingering Potion of Mushroomed Potion",
       "item.cthulhufishing.revelation_steel": "Revelation Steel",
+      "item.minecraft.lingering_potion.effect.mushroomed_potion": "Lingering Potion of Mushroomed Potion",
       "item.cthulhufishing.ice_crab_spawn_egg": "Frozen Crab Spawn Egg",
       "subtitles.catchfishmen": "fishmen",
       "effect.cthulhufishing.ancient_curse": "Ancient Curse",
-      "item.cthulhufishing.step_to_abyss.desc": "Author - Xythe",
       "subtitles.relic_loot": "",
+      "item.cthulhufishing.step_to_abyss.desc": "Author - Xythe",
       "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
       "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
       "item.cthulhufishing.chestplate_fossil_fish_chestplate": "Chestplate Fossil Fish Chestplate",
       "item.cthulhufishing.tentacle_staff": "Tentacle Staff",
-      "enchantment.cthulhufishing.power_of_the_extinct": "Power Of The Extinct",
       "item.cthulhufishing.mushroom_torchfish": "Mushroom Torchfish",
+      "enchantment.cthulhufishing.power_of_the_extinct": "Power Of The Extinct",
       "item.cthulhufishing.obsessed_eye_mob_spawn_egg": "Obsessed Eye Spawn Egg",
       "item.minecraft.potion.effect.mushroomed_potion": "Potion of Mushroomed Potion",
       "item.cthulhufishing.emerald_gold_ring": "Experience Ring",
@@ -4104,6 +4119,7 @@
       "item.cthulhufishing.reagent": "Reagent",
       "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
       "item.cthulhufishing.runic_tablet": "Runic Tablet",
+      "attribute.cthulhufishing.summon_counter": "Summon Damage",
       "subtitles.void_merchant": "",
       "item.cthulhufishing.ice_cod": "Frozen Cod",
       "subtitles.relic_idle": "",

@@ -25,6 +25,7 @@ import net.mcreator.cthulhufishing.item.RevelationSteelItem;
 import net.mcreator.cthulhufishing.item.RevelationFabricItem;
 import net.mcreator.cthulhufishing.item.RelicItem;
 import net.mcreator.cthulhufishing.item.ReagentItem;
+import net.mcreator.cthulhufishing.item.ObsessedEyeStaffRItem;
 import net.mcreator.cthulhufishing.item.MusrhoomRingItem;
 import net.mcreator.cthulhufishing.item.MushroomTorchfishItem;
 import net.mcreator.cthulhufishing.item.MushroomSpratItem;
@@ -127,7 +128,7 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> THIRD_EYE_R = REGISTRY.register("third_eye_r", () -> new ThirdEyeRItem());
 	public static final RegistryObject<Item> MASK_OF_REVELATION_R_HELMET = REGISTRY.register("mask_of_revelation_r_helmet", () -> new MaskOfRevelationRItem.Helmet());
 	public static final RegistryObject<Item> OBSESSED_EYE_PET_SPAWN_EGG = REGISTRY.register("obsessed_eye_pet_spawn_egg", () -> new ForgeSpawnEggItem(CthulhufishingModEntities.OBSESSED_EYE_PET, -12563314, -11183488, new Item.Properties()));
-	public static final RegistryObject<Item> OBSESSED_EYE_STAFF = REGISTRY.register("obsessed_eye_staff", () -> new ObsessedEyeStaffItem());
+	public static final RegistryObject<Item> OBSESSED_EYE_STAFF_R = REGISTRY.register("obsessed_eye_staff_r", () -> new ObsessedEyeStaffRItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
