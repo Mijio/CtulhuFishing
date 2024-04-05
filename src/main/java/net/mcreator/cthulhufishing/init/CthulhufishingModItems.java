@@ -57,6 +57,7 @@ import net.mcreator.cthulhufishing.item.CrimsonFingerItem;
 import net.mcreator.cthulhufishing.item.CrimsonCrunchItem;
 import net.mcreator.cthulhufishing.item.ChestplateFossilFishItem;
 import net.mcreator.cthulhufishing.item.AncientCoinItem;
+import net.mcreator.cthulhufishing.block.display.ObeliskOfGteatestObsessedEyeDisplayItem;
 import net.mcreator.cthulhufishing.block.display.BlockOreEyeDisplayItem;
 import net.mcreator.cthulhufishing.block.display.AltarRelicDisplayItem;
 import net.mcreator.cthulhufishing.block.display.AltarRelic6DisplayItem;
@@ -129,6 +130,8 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> MASK_OF_REVELATION_R_HELMET = REGISTRY.register("mask_of_revelation_r_helmet", () -> new MaskOfRevelationRItem.Helmet());
 	public static final RegistryObject<Item> OBSESSED_EYE_PET_SPAWN_EGG = REGISTRY.register("obsessed_eye_pet_spawn_egg", () -> new ForgeSpawnEggItem(CthulhufishingModEntities.OBSESSED_EYE_PET, -12563314, -11183488, new Item.Properties()));
 	public static final RegistryObject<Item> OBSESSED_EYE_STAFF_R = REGISTRY.register("obsessed_eye_staff_r", () -> new ObsessedEyeStaffRItem());
+	public static final RegistryObject<Item> OBELISK_OF_GTEATEST_OBSESSED_EYE = REGISTRY.register(CthulhufishingModBlocks.OBELISK_OF_GTEATEST_OBSESSED_EYE.getId().getPath(),
+			() -> new ObeliskOfGteatestObsessedEyeDisplayItem(CthulhufishingModBlocks.OBELISK_OF_GTEATEST_OBSESSED_EYE.get(), new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
