@@ -6,6 +6,7 @@ import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.mcreator.cthulhufishing.entity.ObsessedEyePetEntity;
 import net.mcreator.cthulhufishing.entity.ObsessedEyeMobEntity;
+import net.mcreator.cthulhufishing.entity.ObsessedEyeMinionEntity;
 import net.mcreator.cthulhufishing.entity.ObsessedEyeBossEntity;
 import net.mcreator.cthulhufishing.entity.IceCrabEntity;
 import net.mcreator.cthulhufishing.entity.GrimoireTentacleEntity;
@@ -52,6 +53,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof ObsessedEyeBossEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof ObsessedEyeMinionEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

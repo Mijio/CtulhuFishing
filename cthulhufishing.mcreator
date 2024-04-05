@@ -3897,6 +3897,51 @@
         ]
       },
       "path": "~/ObsessedEyeBoss"
+    },
+    {
+      "name": "ObsessedEyeMinion",
+      "type": "animatedentity",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsessed_eye_minion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/client/renderer/ObsessedEyeMinionRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/ObsessedEyeMinionEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/model/ObsessedEyeMinionModel.java",
+          "src/main/resources/assets/cthulhufishing/models/item/obsessed_eye_minion_spawn_egg.json"
+        ]
+      },
+      "path": "~/ObsessedEye"
+    },
+    {
+      "name": "ObsessedEyeMinionPassiv",
+      "type": "procedure",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsessed_eye_minion_passiv",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ObsessedEyeMinionPassivProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ObsessedEye"
     }
   ],
   "variable_elements": [
@@ -4138,6 +4183,7 @@
       "item.cthulhufishing.step_to_abyss.desc": "Author - Xythe",
       "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
       "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
+      "entity.cthulhufishing.obsessed_eye_minion": "Obsessed Eye",
       "item.cthulhufishing.chestplate_fossil_fish_chestplate": "Chestplate Fossil Fish Chestplate",
       "item.cthulhufishing.tentacle_staff": "Tentacle Staff",
       "item.cthulhufishing.mushroom_torchfish": "Mushroom Torchfish",
@@ -4207,6 +4253,7 @@
       "item.cthulhufishing.ice_cod": "Frozen Cod",
       "subtitles.relic_idle": "",
       "item.cthulhufishing.sword_of_revelation": "GreatSwordOfRevelation",
+      "item.cthulhufishing.obsessed_eye_minion_spawn_egg": "Obsessed Eye Spawn Egg",
       "item.cthulhufishing.ice_lure": "Frozen Lure",
       "enchantment.cthulhufishing.mushroom_catcher_enchantment": "Mushroom Catcher",
       "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",

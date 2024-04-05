@@ -130,6 +130,7 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> OBSESSED_EYE_PET_SPAWN_EGG = REGISTRY.register("obsessed_eye_pet_spawn_egg", () -> new ForgeSpawnEggItem(CthulhufishingModEntities.OBSESSED_EYE_PET, -12563314, -11183488, new Item.Properties()));
 	public static final RegistryObject<Item> OBSESSED_EYE_STAFF_R = REGISTRY.register("obsessed_eye_staff_r", () -> new ObsessedEyeStaffRItem());
 	public static final RegistryObject<Item> OBSESSED_EYE_BOSS_SPAWN_EGG = REGISTRY.register("obsessed_eye_boss_spawn_egg", () -> new ForgeSpawnEggItem(CthulhufishingModEntities.OBSESSED_EYE_BOSS, -12563314, -11183488, new Item.Properties()));
+	public static final RegistryObject<Item> OBSESSED_EYE_MINION_SPAWN_EGG = REGISTRY.register("obsessed_eye_minion_spawn_egg", () -> new ForgeSpawnEggItem(CthulhufishingModEntities.OBSESSED_EYE_MINION, -12563314, -11183488, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
