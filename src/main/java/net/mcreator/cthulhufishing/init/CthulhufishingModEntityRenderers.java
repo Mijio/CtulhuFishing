@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.cthulhufishing.client.renderer.ObsessedEyePetRenderer;
 import net.mcreator.cthulhufishing.client.renderer.ObsessedEyeMobRenderer;
+import net.mcreator.cthulhufishing.client.renderer.ObsessedEyeBossRenderer;
 import net.mcreator.cthulhufishing.client.renderer.IceCrabRenderer;
 import net.mcreator.cthulhufishing.client.renderer.GrimoireTentacleRenderer;
 import net.mcreator.cthulhufishing.client.renderer.FossilFishRenderer;
@@ -24,5 +25,6 @@ public class CthulhufishingModEntityRenderers {
 		event.registerEntityRenderer(CthulhufishingModEntities.FOSSIL_FISH.get(), FossilFishRenderer::new);
 		event.registerEntityRenderer(CthulhufishingModEntities.ICE_CRAB.get(), IceCrabRenderer::new);
 		event.registerEntityRenderer(CthulhufishingModEntities.OBSESSED_EYE_PET.get(), ObsessedEyePetRenderer::new);
+		event.registerEntityRenderer(CthulhufishingModEntities.OBSESSED_EYE_BOSS.get(), ObsessedEyeBossRenderer::new);
 	}
 }

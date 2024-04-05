@@ -2,15 +2,15 @@
   "_fv": 47,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Obsessed Eye Pet",
+    "mobName": "Obsessed Eye Boss",
     "mobLabel": "",
     "mobModelTexture": "texture_obsessed_eye_r.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 2.0
+      "fixedValue": 10.0
     },
     "boundingBoxScale": {
-      "fixedValue": 1.6
+      "fixedValue": 6.0
     },
     "modelWidth": 0.6,
     "modelHeight": 0.6,
@@ -28,8 +28,8 @@
     "creativeTab": {
       "value": "MISC"
     },
-    "isBoss": false,
-    "bossBarColor": "PINK",
+    "isBoss": true,
+    "bossBarColor": "BLUE",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
       "value": ""
@@ -49,16 +49,16 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Creature",
+    "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 4,
-    "attackKnockback": 0.30000000000000004,
-    "knockbackResistance": 0.0,
+    "attackStrength": 5,
+    "attackKnockback": 0.5,
+    "knockbackResistance": 2.0,
     "movementSpeed": 0.3,
     "armorBaseValue": 0.0,
-    "trackingRange": 64,
-    "followRange": 16,
-    "health": 18,
+    "trackingRange": 80,
+    "followRange": 40,
+    "health": 600,
     "xpAmount": 3,
     "waterMob": false,
     "flyingMob": true,
@@ -100,20 +100,20 @@
       "value": ""
     },
     "onMobTickUpdate": {
-      "name": "ObsessedEyePetAbil"
+      "name": "ObsessedEyeBossOnEntityTickUpdate"
     },
-    "onInitialSpawn": {
-      "name": "ObsessedEyePetOnInitialEntitySpawn"
+    "onPlayerCollidesWith": {
+      "name": "ObsessedEyeBossPlayerCollidesWithThisEntity"
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"follow_owner\"><field name=\"speed\">5</field><field name=\"min_distance\">7</field><field name=\"max_distance\">2</field><field name=\"condition\">null,null</field><next><block type=\"protect_owner\"><field name=\"condition\">null,null</field><next><block type=\"fight_as_owner\"><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
     "model": "obsessed_eye.geo.json",
     "groupName": "",
     "animation1": "animation.obsessed_eye.idle2",
     "animation2": "",
     "animation3": "animation.obsessed_eye.die",
-    "animation4": "animation.obsessed_eye.idle",
+    "animation4": "",
     "animation5": "",
     "animation6": "",
     "animation7": "",
@@ -122,15 +122,15 @@
     "animation10": "",
     "enable2": false,
     "enable3": true,
-    "enable4": true,
+    "enable4": false,
     "enable5": false,
     "enable6": false,
     "enable7": false,
     "enable8": false,
     "enable9": false,
     "enable10": false,
-    "breedable": true,
-    "tameable": true,
+    "breedable": false,
+    "tameable": false,
     "disableDeathRotation": false,
     "headMovement": false,
     "eyeHeight": false,
@@ -144,9 +144,9 @@
     "rangedAttackRadius": 10.0,
     "height": 1.0,
     "spawnThisMob": false,
-    "doesDespawnWhenIdle": true,
+    "doesDespawnWhenIdle": false,
     "spawningProbability": 20,
-    "mobSpawningType": "creature",
+    "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,
     "maxNumberOfMobsPerGroup": 4,
     "restrictionBiomes": [],
