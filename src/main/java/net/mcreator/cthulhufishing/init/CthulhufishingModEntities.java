@@ -18,6 +18,7 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.cthulhufishing.entity.ObsessedEyePetEntity;
 import net.mcreator.cthulhufishing.entity.ObsessedEyeMobEntity;
+import net.mcreator.cthulhufishing.entity.ObsessedEyeBossEntity;
 import net.mcreator.cthulhufishing.entity.IceCrabEntity;
 import net.mcreator.cthulhufishing.entity.GrimoireTentacleEntity;
 import net.mcreator.cthulhufishing.entity.FossilFishEntity;
@@ -44,6 +45,10 @@ public class CthulhufishingModEntities {
 			EntityType.Builder.<ObsessedEyePetEntity>of(ObsessedEyePetEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ObsessedEyePetEntity::new)
 
 					.sized(0.6f, 0.6f));
+	public static final RegistryObject<EntityType<ObsessedEyeBossEntity>> OBSESSED_EYE_BOSS = register("obsessed_eye_boss",
+			EntityType.Builder.<ObsessedEyeBossEntity>of(ObsessedEyeBossEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(80).setUpdateInterval(3).setCustomClientFactory(ObsessedEyeBossEntity::new)
+
+					.sized(0.6f, 0.6f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -57,6 +62,7 @@ public class CthulhufishingModEntities {
 			FossilFishEntity.init();
 			IceCrabEntity.init();
 			ObsessedEyePetEntity.init();
+			ObsessedEyeBossEntity.init();
 		});
 	}
 
@@ -67,5 +73,6 @@ public class CthulhufishingModEntities {
 		event.put(FOSSIL_FISH.get(), FossilFishEntity.createAttributes().build());
 		event.put(ICE_CRAB.get(), IceCrabEntity.createAttributes().build());
 		event.put(OBSESSED_EYE_PET.get(), ObsessedEyePetEntity.createAttributes().build());
+		event.put(OBSESSED_EYE_BOSS.get(), ObsessedEyeBossEntity.createAttributes().build());
 	}
 }

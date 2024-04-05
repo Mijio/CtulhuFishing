@@ -2,7 +2,7 @@
   "_fv": 47,
   "_type": "attribute",
   "definition": {
-    "description": "Summon Damage",
+    "description": "Summon Counter",
     "minValue": 0.0,
     "maxValue": 5.0,
     "defaultValue": 1.0,

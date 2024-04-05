@@ -3816,6 +3816,87 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "ObsessedEyeBoss",
+      "type": "animatedentity",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsessed_eye_boss",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/obsessed_eye_boss_spawn_egg.json",
+          "src/main/java/net/mcreator/cthulhufishing/client/renderer/ObsessedEyeBossRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/model/ObsessedEyeBossModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/ObsessedEyeBossEntity.java"
+        ]
+      },
+      "path": "~/ObsessedEyeBoss"
+    },
+    {
+      "name": "ObsessedEyeBossOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsessed_eye_boss_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ObsessedEyeBossOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ObsessedEyeBoss"
+    },
+    {
+      "name": "ObsessedEyeBossPlayerCollidesWithThisEntity",
+      "type": "procedure",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsessed_eye_boss_player_collides_with_this_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ObsessedEyeBossPlayerCollidesWithThisEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ObsessedEyeBoss"
     }
   ],
   "variable_elements": [
@@ -4077,10 +4158,12 @@
       "gui.cthulhufishing.ctulhu_altar.label_12": "11",
       "effect.cthulhufishing.madness": "Madness",
       "item.cthulhufishing.heavy_fishing_road": "Heavy Fishing Road",
+      "entity.cthulhufishing.obsessed_eye_boss": "Obsessed Eye Boss",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "item.minecraft.tipped_arrow.effect.mushroomed_potion": "Arrow of Mushroomed Potion",
       "block.cthulhufishing.deep_oil": "Deep Oil",
       "entity.minecraft.villager.cthulhufishing.void_merchant": "Void Merchant",
+      "item.cthulhufishing.obsessed_eye_boss_spawn_egg": "Obsessed Eye Boss Spawn Egg",
       "item.cthulhufishing.musrhoom_ring": "Mushroom Ring",
       "item.cthulhufishing.ancient_coin": "Ancient Coin",
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
@@ -4119,7 +4202,7 @@
       "item.cthulhufishing.reagent": "Reagent",
       "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
       "item.cthulhufishing.runic_tablet": "Runic Tablet",
-      "attribute.cthulhufishing.summon_counter": "Summon Damage",
+      "attribute.cthulhufishing.summon_counter": "Summon Counter",
       "subtitles.void_merchant": "",
       "item.cthulhufishing.ice_cod": "Frozen Cod",
       "subtitles.relic_idle": "",
@@ -4196,6 +4279,10 @@
       },
       {
         "name": "FrozenCrabBoss",
+        "children": []
+      },
+      {
+        "name": "ObsessedEyeBoss",
         "children": []
       }
     ]
