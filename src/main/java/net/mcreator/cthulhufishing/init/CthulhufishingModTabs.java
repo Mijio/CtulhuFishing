@@ -70,6 +70,7 @@ public class CthulhufishingModTabs {
 				tabData.accept(CthulhufishingModItems.THIRD_EYE_R.get());
 				tabData.accept(CthulhufishingModItems.MASK_OF_REVELATION_R_HELMET.get());
 				tabData.accept(CthulhufishingModItems.OBSESSED_EYE_STAFF_R.get());
+				tabData.accept(CthulhufishingModBlocks.OBELISK_OF_GTEATEST_OBSESSED_EYE.get().asItem());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

@@ -1,0 +1,232 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.greatest_eye_obelisk.claw1": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"claw1": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.2083": {
+							"vector": [-47.25471, 5.52235, 5.08269]
+						},
+						"0.3333": {
+							"vector": [-32.10382, -5.35355, -8.45862]
+						},
+						"0.4583": {
+							"vector": [-27.5, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.greatest_eye_obelisk.claw2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"claw1": {
+					"rotation": {
+						"vector": [-27.5, 0, 0]
+					}
+				},
+				"claw2": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.2083": {
+							"vector": [-47.25471, 5.52235, 5.08269]
+						},
+						"0.3333": {
+							"vector": [-32.10382, -5.35355, -8.45862]
+						},
+						"0.4583": {
+							"vector": [-27.5, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.greatest_eye_obelisk.claw3": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"claw1": {
+					"rotation": {
+						"vector": [-27.5, 0, 0]
+					}
+				},
+				"claw3": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.2083": {
+							"vector": [-47.25471, 5.52235, 5.08269]
+						},
+						"0.3333": {
+							"vector": [-32.10382, -5.35355, -8.45862]
+						},
+						"0.4583": {
+							"vector": [-27.5, 0, 0]
+						}
+					}
+				},
+				"claw2": {
+					"rotation": {
+						"vector": [-27.5, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.greatest_eye_obelisk.claw4": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"claw1": {
+					"rotation": {
+						"vector": [-27.5, 0, 0]
+					}
+				},
+				"claw3": {
+					"rotation": {
+						"vector": [-27.5, 0, 0]
+					}
+				},
+				"claw2": {
+					"rotation": {
+						"vector": [-27.5, 0, 0]
+					}
+				},
+				"claw4": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.2083": {
+							"vector": [-47.25471, 5.52235, 5.08269]
+						},
+						"0.3333": {
+							"vector": [-32.10382, -5.35355, -8.45862]
+						},
+						"0.4583": {
+							"vector": [-27.5, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.greatest_eye_obelisk.summon": {
+			"animation_length": 2.5,
+			"bones": {
+				"claw1": {
+					"rotation": {
+						"0.0": {
+							"vector": [-27.5, 0, 0]
+						},
+						"0.25": {
+							"vector": [-47.5, 0, 0]
+						}
+					}
+				},
+				"claw3": {
+					"rotation": {
+						"0.0": {
+							"vector": [-27.5, 0, 0]
+						},
+						"0.25": {
+							"vector": [-47.5, 0, 0]
+						}
+					}
+				},
+				"claw2": {
+					"rotation": {
+						"0.0": {
+							"vector": [-27.5, 0, 0]
+						},
+						"0.25": {
+							"vector": [-47.5, 0, 0]
+						}
+					}
+				},
+				"claw4": {
+					"rotation": {
+						"0.0": {
+							"vector": [-27.5, 0, 0]
+						},
+						"0.25": {
+							"vector": [-47.5, 0, 0]
+						}
+					}
+				},
+				"eye": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [0, -22.5, 0]
+						},
+						"0.4583": {
+							"vector": [0, -52.5, 0]
+						},
+						"0.5": {
+							"vector": [0, -22.5, 0]
+						},
+						"0.5417": {
+							"vector": [0, -107.5, 0]
+						},
+						"0.6667": {
+							"vector": [-77.39249, -36.26076, 91.7756]
+						},
+						"0.875": {
+							"vector": [-15.91232, -28.12901, 103.01978]
+						},
+						"1.0": {
+							"vector": [57.804, 6.78434, 115.26248]
+						},
+						"1.125": {
+							"vector": [-57.66008, 54.33102, -132.24118]
+						},
+						"1.25": {
+							"vector": [9.27876, -23.65886, -1.66027]
+						}
+					},
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.5417": {
+							"vector": [0, 3, 0]
+						},
+						"0.6667": {
+							"vector": [0, 8, 0]
+						},
+						"0.875": {
+							"vector": [0, 12, 0]
+						},
+						"1.0": {
+							"vector": [0, 15, 0]
+						},
+						"1.125": {
+							"vector": [0, 22, 0]
+						},
+						"1.25": {
+							"vector": [0, 23, 0]
+						},
+						"1.3333": {
+							"vector": [0, 14, 0]
+						},
+						"2.5": {
+							"vector": [0, 671, 0]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

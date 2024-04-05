@@ -1,10 +1,6 @@
 package net.mcreator.cthulhufishing.entity.model;
 
-import software.bernie.geckolib.model.GeoModel;
-
-import net.minecraft.resources.ResourceLocation;
-
-import net.mcreator.cthulhufishing.entity.ObsessedEyeBossEntity;
+import software.bernie.geckolib.core.animation.AnimationState;
 
 public class ObsessedEyeBossModel extends GeoModel<ObsessedEyeBossEntity> {
 	@Override

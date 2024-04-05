@@ -7,6 +7,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.cthulhufishing.init.CthulhufishingModBlockEntities;
+import net.mcreator.cthulhufishing.block.renderer.ObeliskOfGteatestObsessedEyeTileRenderer;
 import net.mcreator.cthulhufishing.block.renderer.BlockOreEyeTileRenderer;
 import net.mcreator.cthulhufishing.block.renderer.AltarRelicTileRenderer;
 import net.mcreator.cthulhufishing.block.renderer.AltarRelic6TileRenderer;
@@ -30,5 +31,6 @@ public class ClientListener {
 		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.ALTAR_RELIC_4.get(), context -> new AltarRelic4TileRenderer());
 		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.ALTAR_RELIC_5.get(), context -> new AltarRelic5TileRenderer());
 		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.ALTAR_RELIC_6.get(), context -> new AltarRelic6TileRenderer());
+		event.registerBlockEntityRenderer(CthulhufishingModBlockEntities.OBELISK_OF_GTEATEST_OBSESSED_EYE.get(), context -> new ObeliskOfGteatestObsessedEyeTileRenderer());
 	}
 }
