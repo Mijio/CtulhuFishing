@@ -2,31 +2,31 @@
   "_fv": 47,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Obsessed Eye Minion",
+    "mobName": "Cthulhu Adept",
     "mobLabel": "",
-    "mobModelTexture": "texture_obsessed_eye_r.png",
+    "mobModelTexture": "texture_adept_cthulhu.png",
     "mobModelGlowTexture": "",
     "visualScale": {
-      "fixedValue": 2.0
+      "fixedValue": 1.0
     },
     "boundingBoxScale": {
-      "fixedValue": 1.6
+      "fixedValue": 1.0
     },
     "modelWidth": 0.6,
-    "modelHeight": 0.6,
-    "modelShadowSize": 0.6,
+    "modelHeight": 1.8,
+    "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -12563314,
+      "value": -1,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -11183488,
+      "value": -1,
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "MISC"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -51,21 +51,21 @@
     },
     "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 3,
-    "attackKnockback": 0.30000000000000004,
-    "knockbackResistance": 0.0,
-    "movementSpeed": 0.3,
+    "attackStrength": 4,
+    "attackKnockback": 0.0,
+    "knockbackResistance": 0.30000000000000004,
+    "movementSpeed": 0.19999999999999998,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
-    "followRange": 16,
-    "health": 15,
-    "xpAmount": 3,
+    "followRange": 24,
+    "health": 30,
+    "xpAmount": 2,
     "waterMob": false,
-    "flyingMob": true,
+    "flyingMob": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "deathTime": 40,
+    "deathTime": 20,
     "lerp": 4,
     "disableCollisions": false,
     "ridable": false,
@@ -91,7 +91,7 @@
       "value": ""
     },
     "hurtSound": {
-      "value": "CUSTOM:obsessed_eye_damage"
+      "value": "entity.generic.hurt"
     },
     "deathSound": {
       "value": "entity.generic.death"
@@ -100,20 +100,17 @@
       "value": ""
     },
     "onMobTickUpdate": {
-      "name": "ObsessedEyeAbil"
-    },
-    "onPlayerCollidesWith": {
-      "name": "ObsessedEyeMinionPassiv"
+      "name": "CthulhuAdeptOnEntityTickUpdate"
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_fly\"><field name=\"radius\">16</field><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"fly\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
-    "model": "obsessed_eye.geo.json",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "model": "model_cthulhu_adept.geo.json",
     "groupName": "",
-    "animation1": "animation.obsessed_eye.idle2",
+    "animation1": "animation.adeptidle",
     "animation2": "",
-    "animation3": "animation.obsessed_eye.die",
-    "animation4": "animation.obsessed_eye.idle",
+    "animation3": "",
+    "animation4": "",
     "animation5": "",
     "animation6": "",
     "animation7": "",
@@ -121,8 +118,8 @@
     "animation9": "",
     "animation10": "",
     "enable2": false,
-    "enable3": true,
-    "enable4": true,
+    "enable3": false,
+    "enable4": false,
     "enable5": false,
     "enable6": false,
     "enable7": false,
@@ -144,7 +141,7 @@
     "rangedAttackRadius": 10.0,
     "height": 1.0,
     "spawnThisMob": false,
-    "doesDespawnWhenIdle": true,
+    "doesDespawnWhenIdle": false,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 4,

@@ -80,8 +80,8 @@ public class CthulhufishingModTabs {
 			tabData.accept(CthulhufishingModItems.OBSESSED_EYE_MOB_SPAWN_EGG.get());
 			tabData.accept(CthulhufishingModItems.FOSSIL_FISH_SPAWN_EGG.get());
 			tabData.accept(CthulhufishingModItems.ICE_CRAB_SPAWN_EGG.get());
-			tabData.accept(CthulhufishingModItems.OBSESSED_EYE_PET_SPAWN_EGG.get());
 			tabData.accept(CthulhufishingModItems.OBSESSED_EYE_BOSS_SPAWN_EGG.get());
+			tabData.accept(CthulhufishingModItems.CTHULHU_ADEPT_SPAWN_EGG.get());
 		}
 	}
 }

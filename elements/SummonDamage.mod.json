@@ -4,8 +4,8 @@
   "definition": {
     "description": "Summon Damage",
     "minValue": 0.0,
-    "maxValue": 10.0,
-    "defaultValue": 2.0,
+    "maxValue": 100.0,
+    "defaultValue": 1.0,
     "isPersistent": false,
     "entities": [
       {
