@@ -3915,6 +3915,51 @@
         ]
       },
       "path": "~/ObsessedEyeBoss"
+    },
+    {
+      "name": "ObsessedEyeMinionPassiv",
+      "type": "procedure",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsessed_eye_minion_passiv",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ObsessedEyeMinionPassivProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ObsessedEye"
+    },
+    {
+      "name": "ObsessedEyeMinion",
+      "type": "animatedentity",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obsessed_eye_minion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/entity/model/ObsessedEyeMinionModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/ObsessedEyeMinionEntity.java",
+          "src/main/java/net/mcreator/cthulhufishing/client/renderer/ObsessedEyeMinionRenderer.java",
+          "src/main/resources/assets/cthulhufishing/models/item/obsessed_eye_minion_spawn_egg.json"
+        ]
+      },
+      "path": "~/ObsessedEye"
     }
   ],
   "variable_elements": [
@@ -4156,11 +4201,12 @@
       "item.cthulhufishing.step_to_abyss.desc": "Author - Xythe",
       "item.cthulhufishing.crimson_jellyfish": "Crimson Jellyfish",
       "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
+      "entity.cthulhufishing.obsessed_eye_minion": "Obsessed Eye",
       "item.cthulhufishing.chestplate_fossil_fish_chestplate": "Chestplate Fossil Fish Chestplate",
       "item.cthulhufishing.tentacle_staff": "Tentacle Staff",
-      "block.cthulhufishing.obelisk_of_gteatest_obsessed_eye": "Obelisk Of Gteatest Obsessed Eye",
       "item.cthulhufishing.mushroom_torchfish": "Mushroom Torchfish",
       "enchantment.cthulhufishing.power_of_the_extinct": "Power Of The Extinct",
+      "block.cthulhufishing.obelisk_of_gteatest_obsessed_eye": "Obelisk Of Gteatest Obsessed Eye",
       "item.cthulhufishing.obsessed_eye_mob_spawn_egg": "Obsessed Eye Spawn Egg",
       "item.minecraft.potion.effect.mushroomed_potion": "Potion of Mushroomed Potion",
       "item.cthulhufishing.emerald_gold_ring": "Experience Ring",
@@ -4177,12 +4223,12 @@
       "gui.cthulhufishing.ctulhu_altar.label_12": "11",
       "effect.cthulhufishing.madness": "Madness",
       "item.cthulhufishing.heavy_fishing_road": "Heavy Fishing Road",
-      "entity.cthulhufishing.obsessed_eye_boss": "Obsessed Eye Boss",
+      "entity.cthulhufishing.obsessed_eye_boss": "Giant Obsessed Eye",
       "enchantment.cthulhufishing.crimson_catcher_enchant": "Crimson Catcher",
       "item.minecraft.tipped_arrow.effect.mushroomed_potion": "Arrow of Mushroomed Potion",
       "block.cthulhufishing.deep_oil": "Deep Oil",
       "entity.minecraft.villager.cthulhufishing.void_merchant": "Void Merchant",
-      "item.cthulhufishing.obsessed_eye_boss_spawn_egg": "Obsessed Eye Boss Spawn Egg",
+      "item.cthulhufishing.obsessed_eye_boss_spawn_egg": "Giant Obsessed Eye Spawn Egg",
       "item.cthulhufishing.musrhoom_ring": "Mushroom Ring",
       "item.cthulhufishing.ancient_coin": "Ancient Coin",
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
@@ -4225,6 +4271,7 @@
       "item.cthulhufishing.ice_cod": "Frozen Cod",
       "subtitles.relic_idle": "",
       "item.cthulhufishing.sword_of_revelation": "GreatSwordOfRevelation",
+      "item.cthulhufishing.obsessed_eye_minion_spawn_egg": "Obsessed Eye Spawn Egg",
       "item.cthulhufishing.ice_lure": "Frozen Lure",
       "enchantment.cthulhufishing.mushroom_catcher_enchantment": "Mushroom Catcher",
       "enchantment.cthulhufishing.sculk_catcher_enchantment": "Sculk Catcher",

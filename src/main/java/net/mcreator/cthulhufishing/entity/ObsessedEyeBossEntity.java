@@ -147,7 +147,7 @@ public class ObsessedEyeBossEntity extends Monster implements GeoEntity {
 
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 6);
+		return super.getDimensions(p_33597_).scale((float) 7);
 	}
 
 	@Override
@@ -214,7 +214,7 @@ public class ObsessedEyeBossEntity extends Monster implements GeoEntity {
 			if (this.isDeadOrDying()) {
 				return event.setAndContinue(RawAnimation.begin().thenPlay("animation.obsessed_eye.die"));
 			}
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.obsessed_eye.idle2"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.obsessed_eye.idle"));
 		}
 		return PlayState.STOP;
 	}
