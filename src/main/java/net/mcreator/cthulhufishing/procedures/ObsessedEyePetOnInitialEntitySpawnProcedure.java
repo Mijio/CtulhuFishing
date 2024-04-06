@@ -39,7 +39,7 @@ public class ObsessedEyePetOnInitialEntitySpawnProcedure {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null))).getAttribute(CthulhufishingModAttributes.SUMMONDAMAGE.get()).getBaseValue());
+					}.compareDistOf(x, y, z)).findFirst().orElse(null))).getAttribute(CthulhufishingModAttributes.SUMMONDAMAGE.get()).getValue());
 		}
 	}
 }
