@@ -40,6 +40,34 @@ public class ToolTipHoodOfTheVoidProcedure {
 			} else {
 				tooltip.add(Component.literal("Press shift fo show tooltip"));
 			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.NETHERITE_KNIFE.get()) {
+			itemstack.setHoverName(Component.literal("\u00A7bNetherite knife amulet"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7b+3 Attack damage"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.GHOST_NETHERITE_KNIFE.get()) {
+			itemstack.setHoverName(Component.literal("\u00A7bGhost netherite knife amulet"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7b+2 Attack damage, +3 Summon damage"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.PURPLE_GEM_RING.get()) {
+			itemstack.setHoverName(Component.literal("\u00A7bAmored summoner ring"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7b+1 Armor, +2 Summon count"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
+		} else if (itemstack.getItem() == CthulhufishingModItems.GREEN_GEM_RING.get()) {
+			itemstack.setHoverName(Component.literal("\u00A7bLucky summoner ring"));
+			if (Screen.hasShiftDown()) {
+				tooltip.add(Component.literal("\u00A7b+1 Luck, +2 Summon count"));
+			} else {
+				tooltip.add(Component.literal("Press shift fo show tooltip"));
+			}
 		} else if (itemstack.getItem() == CthulhufishingModItems.TREASURE_BAG.get()) {
 			if (Screen.hasShiftDown()) {
 				tooltip.add(Component.literal("\u00A7bContains precious items"));

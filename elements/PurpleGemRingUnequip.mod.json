@@ -1,0 +1,7 @@
+{
+  "_fv": 47,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"remove_modifier_uuid\"><field name=\"attribute\">ARMOR</field><field name=\"permanent\">FALSE</field><value name=\"modifierid\"><block type=\"text\"><field name=\"TEXT\">17517e4a-2343-4394-b228-0f1bce7ddef5</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value><next><block type=\"remove_modifier\"><field name=\"attribute\">CUSTOM:SummonCounter</field><field name=\"permanent\">FALSE</field><value name=\"modifier\"><block type=\"variables_get_modifier\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"false\" has_entity=\"false\"></mutation><field name=\"VAR\">global:Summon_Count_PGR</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></next></block></next></block></xml>"
+  }
+}

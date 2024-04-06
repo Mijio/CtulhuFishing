@@ -25,7 +25,9 @@ import net.mcreator.cthulhufishing.item.RevelationSteelItem;
 import net.mcreator.cthulhufishing.item.RevelationFabricItem;
 import net.mcreator.cthulhufishing.item.RelicItem;
 import net.mcreator.cthulhufishing.item.ReagentItem;
+import net.mcreator.cthulhufishing.item.PurpleGemRingItem;
 import net.mcreator.cthulhufishing.item.ObsessedEyeStaffRItem;
+import net.mcreator.cthulhufishing.item.NetheriteKnifeItem;
 import net.mcreator.cthulhufishing.item.MusrhoomRingItem;
 import net.mcreator.cthulhufishing.item.MushroomTorchfishItem;
 import net.mcreator.cthulhufishing.item.MushroomSpratItem;
@@ -41,7 +43,9 @@ import net.mcreator.cthulhufishing.item.HorseSculkFishItem;
 import net.mcreator.cthulhufishing.item.HoodOfTheDeepVoidRItem;
 import net.mcreator.cthulhufishing.item.HermitSlulkFishItem;
 import net.mcreator.cthulhufishing.item.HeavyFishingRoadItem;
+import net.mcreator.cthulhufishing.item.GreenGemRingItem;
 import net.mcreator.cthulhufishing.item.GlutonSculkFishItem;
+import net.mcreator.cthulhufishing.item.GhostNetheriteKnifeItem;
 import net.mcreator.cthulhufishing.item.FrozenRingItem;
 import net.mcreator.cthulhufishing.item.FrozenLegginsItem;
 import net.mcreator.cthulhufishing.item.FrozenCrabNecklaceItem;
@@ -134,6 +138,10 @@ public class CthulhufishingModItems {
 			() -> new ObeliskOfGteatestObsessedEyeDisplayItem(CthulhufishingModBlocks.OBELISK_OF_GTEATEST_OBSESSED_EYE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> OBSESSED_EYE_BOSS_SPAWN_EGG = REGISTRY.register("obsessed_eye_boss_spawn_egg", () -> new ForgeSpawnEggItem(CthulhufishingModEntities.OBSESSED_EYE_BOSS, -12563314, -11183488, new Item.Properties()));
 	public static final RegistryObject<Item> OBSESSED_EYE_MINION_SPAWN_EGG = REGISTRY.register("obsessed_eye_minion_spawn_egg", () -> new ForgeSpawnEggItem(CthulhufishingModEntities.OBSESSED_EYE_MINION, -12563314, -11183488, new Item.Properties()));
+	public static final RegistryObject<Item> NETHERITE_KNIFE = REGISTRY.register("netherite_knife", () -> new NetheriteKnifeItem());
+	public static final RegistryObject<Item> GHOST_NETHERITE_KNIFE = REGISTRY.register("ghost_netherite_knife", () -> new GhostNetheriteKnifeItem());
+	public static final RegistryObject<Item> PURPLE_GEM_RING = REGISTRY.register("purple_gem_ring", () -> new PurpleGemRingItem());
+	public static final RegistryObject<Item> GREEN_GEM_RING = REGISTRY.register("green_gem_ring", () -> new GreenGemRingItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

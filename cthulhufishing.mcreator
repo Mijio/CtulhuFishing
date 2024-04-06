@@ -3960,6 +3960,214 @@
         ]
       },
       "path": "~/ObsessedEye"
+    },
+    {
+      "name": "NetheriteKnifeBaubleIsEquipped",
+      "type": "procedure",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_knife_bauble_is_equipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/NetheriteKnifeBaubleIsEquippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NetheriteKnifeBaubleIsUnequipped",
+      "type": "procedure",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_knife_bauble_is_unequipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/NetheriteKnifeBaubleIsUnequippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NetheriteKnife",
+      "type": "curiosbauble",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_knife",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/netherite_knife.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/NetheriteKnifeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "GhostNetheriteKnife",
+      "type": "curiosbauble",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghost_netherite_knife",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/GhostNetheriteKnifeItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/ghost_netherite_knife.json"
+        ]
+      }
+    },
+    {
+      "name": "GhostNetheriteKnifeBaubleEquip",
+      "type": "procedure",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghost_netherite_knife_bauble_equip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/GhostNetheriteKnifeBaubleEquipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GhostNetheritKnifeBaubleUnequip",
+      "type": "procedure",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghost_netherit_knife_bauble_unequip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/GhostNetheritKnifeBaubleUnequipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurpleGemRing",
+      "type": "curiosbauble",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_gem_ring",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/cthulhufishing/models/item/purple_gem_ring.json",
+          "src/main/java/net/mcreator/cthulhufishing/item/PurpleGemRingItem.java"
+        ]
+      }
+    },
+    {
+      "name": "PurpleGemRingEquip",
+      "type": "procedure",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_gem_ring_equip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/PurpleGemRingEquipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurpleGemRingUnequip",
+      "type": "procedure",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_gem_ring_unequip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/PurpleGemRingUnequipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GreenGemRing",
+      "type": "curiosbauble",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_gem_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/GreenGemRingItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/green_gem_ring.json"
+        ]
+      }
+    },
+    {
+      "name": "GreenGemRingEquip",
+      "type": "procedure",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_gem_ring_equip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/GreenGemRingEquipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GreenGemRingUnequip",
+      "type": "procedure",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_gem_ring_unequip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/GreenGemRingUnequipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -4016,6 +4224,24 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "Summon_Damage_GNB",
+      "type": "modifier",
+      "scope": "global",
+      "value": "null"
+    },
+    {
+      "name": "Summon_Count_PGR",
+      "type": "modifier",
+      "scope": "global",
+      "value": "null"
+    },
+    {
+      "name": "Summon_Count_GGR",
+      "type": "modifier",
+      "scope": "global",
+      "value": "null"
     }
   ],
   "sound_elements": [
@@ -4174,16 +4400,16 @@
   ],
   "language_map": {
     "en_us": {
-      "item.cthulhufishing.step_to_abyss": "Music disc - Step To Abyss ",
       "item.cthulhufishing.sculk_ring": "Sculk Ring",
+      "item.cthulhufishing.step_to_abyss": "Music disc - Step To Abyss ",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
       "item.cthulhufishing.cthulhu_grimoire": "Cthulhu Grimoire",
-      "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
       "subtitles.idle_fossil_fish": "",
+      "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
       "item.cthulhufishing.frozen_crab_necklace": "Necklace of Frozen Crab",
       "subtitles.step_to_abyss_xythe": "",
-      "subtitles.obsessed_eye_damage": "",
       "item.cthulhufishing.treasure_bag": "Treasure Bag",
+      "subtitles.obsessed_eye_damage": "",
       "subtitles.ritual_bleeding_knife": "",
       "item.cthulhufishing.crimson_ring": "Crimson Ring",
       "subtitles.altar_loot": "",
@@ -4192,9 +4418,10 @@
       "entity.cthulhufishing.grimoire_tentacle": "Grimoire Tentacle",
       "subtitles.damage_fossil_fish": "",
       "item.cthulhufishing.relic": "Relic",
-      "item.cthulhufishing.revelation_steel": "Revelation Steel",
       "item.minecraft.lingering_potion.effect.mushroomed_potion": "Lingering Potion of Mushroomed Potion",
+      "item.cthulhufishing.revelation_steel": "Revelation Steel",
       "item.cthulhufishing.ice_crab_spawn_egg": "Frozen Crab Spawn Egg",
+      "item.cthulhufishing.purple_gem_ring": "Ring of Purple Gem",
       "subtitles.catchfishmen": "fishmen",
       "effect.cthulhufishing.ancient_curse": "Ancient Curse",
       "subtitles.relic_loot": "",
@@ -4203,16 +4430,18 @@
       "item.cthulhufishing.hermit_slulk_fish": "Hermit Sculk Fish",
       "entity.cthulhufishing.obsessed_eye_minion": "Obsessed Eye",
       "item.cthulhufishing.chestplate_fossil_fish_chestplate": "Chestplate Fossil Fish Chestplate",
+      "item.cthulhufishing.netherite_knife": "Netherite Knife",
       "item.cthulhufishing.tentacle_staff": "Tentacle Staff",
-      "item.cthulhufishing.mushroom_torchfish": "Mushroom Torchfish",
-      "enchantment.cthulhufishing.power_of_the_extinct": "Power Of The Extinct",
       "block.cthulhufishing.obelisk_of_gteatest_obsessed_eye": "Obelisk Of Gteatest Obsessed Eye",
+      "enchantment.cthulhufishing.power_of_the_extinct": "Power Of The Extinct",
+      "item.cthulhufishing.mushroom_torchfish": "Mushroom Torchfish",
       "item.cthulhufishing.obsessed_eye_mob_spawn_egg": "Obsessed Eye Spawn Egg",
       "item.minecraft.potion.effect.mushroomed_potion": "Potion of Mushroomed Potion",
       "item.cthulhufishing.emerald_gold_ring": "Experience Ring",
       "item.cthulhufishing.ice_boulti": "Frozen Boulti Fish",
       "item.cthulhufishing.sculk_lure": "Sculk Lure",
       "item.cthulhufishing.mask_of_revelation_r_helmet": "Mask Of Revelation Helmet",
+      "item.cthulhufishing.ghost_netherite_knife": "Ghost Netherite Knife",
       "subtitles.catch_strange_fish": "",
       "item.cthulhufishing.hood_of_the_deep_void_r_helmet": "Hood Of The Deep Void Helmet",
       "subtitles.hood_ablity": "",
@@ -4230,6 +4459,7 @@
       "entity.minecraft.villager.cthulhufishing.void_merchant": "Void Merchant",
       "item.cthulhufishing.obsessed_eye_boss_spawn_egg": "Giant Obsessed Eye Spawn Egg",
       "item.cthulhufishing.musrhoom_ring": "Mushroom Ring",
+      "item.cthulhufishing.green_gem_ring": "Ring of Green Gem",
       "item.cthulhufishing.ancient_coin": "Ancient Coin",
       "effect.cthulhufishing.ritual_bleeding": "Ritual bleeding",
       "item_group.cthulhufishing.ctulhu_fishing_tab": "Ctulhu Fishing Tab",
@@ -4267,6 +4497,7 @@
       "item.cthulhufishing.reagent": "Reagent",
       "item.cthulhufishing.gluton_sculk_fish": "Gluton Sculk Fish",
       "item.cthulhufishing.runic_tablet": "Runic Tablet",
+      "attribute.cthulhufishing.summon_counter": "Summon Count",
       "subtitles.void_merchant": "",
       "item.cthulhufishing.ice_cod": "Frozen Cod",
       "subtitles.relic_idle": "",

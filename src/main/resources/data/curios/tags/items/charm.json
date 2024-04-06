@@ -1,6 +1,8 @@
 {
   "replace": "false",
   "values": [
-    "minecraft:air"
+    "minecraft:air",
+    "cthulhufishing:netherite_knife",
+    "cthulhufishing:ghost_netherite_knife"
   ]
 }
