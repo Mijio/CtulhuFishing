@@ -1,8 +1,14 @@
 package net.mcreator.cthulhufishing.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
 
-import javax.annotation.Nullable;
+import net.mcreator.cthulhufishing.init.CthulhufishingModAttributes;
+
+import java.util.UUID;
+
+import java.lang.reflect.Modifier;
 
 public class GreenGemRingEquipProcedure {
 	public static void execute(Entity entity) {

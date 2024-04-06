@@ -1,11 +1,17 @@
 
 package net.mcreator.cthulhufishing.item;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import javax.annotation.Nullable;
+import top.theillusivec4.curios.api.type.capability.ICurioItem;
+import top.theillusivec4.curios.api.SlotContext;
+
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+
+import net.mcreator.cthulhufishing.procedures.GreenGemRingUnequipProcedure;
+import net.mcreator.cthulhufishing.procedures.GreenGemRingEquipProcedure;
 
 public class GreenGemRingItem extends Item implements ICurioItem {
-
 	public GreenGemRingItem() {
 		super(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON));
 	}
@@ -17,9 +23,6 @@ public class GreenGemRingItem extends Item implements ICurioItem {
 
 	@Override
 	public void onUnequip(SlotContext slotContext, ItemStack newStack, ItemStack stack) {
-		GreenGemRingUnequipProcedure.execute(
-
-		);
+		GreenGemRingUnequipProcedure.execute(slotContext.entity());
 	}
-
 }
