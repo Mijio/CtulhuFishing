@@ -71,6 +71,10 @@ public class CthulhufishingModTabs {
 				tabData.accept(CthulhufishingModItems.MASK_OF_REVELATION_R_HELMET.get());
 				tabData.accept(CthulhufishingModItems.OBSESSED_EYE_STAFF_R.get());
 				tabData.accept(CthulhufishingModBlocks.OBELISK_OF_GTEATEST_OBSESSED_EYE.get().asItem());
+				tabData.accept(CthulhufishingModItems.NETHERITE_KNIFE.get());
+				tabData.accept(CthulhufishingModItems.GHOST_NETHERITE_KNIFE.get());
+				tabData.accept(CthulhufishingModItems.PURPLE_GEM_RING.get());
+				tabData.accept(CthulhufishingModItems.GREEN_GEM_RING.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

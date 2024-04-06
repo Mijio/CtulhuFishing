@@ -3672,10 +3672,10 @@
       "registry_name": "obsessed_eye_pet",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/cthulhufishing/entity/model/ObsessedEyePetModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/entity/ObsessedEyePetEntity.java",
           "src/main/java/net/mcreator/cthulhufishing/client/renderer/ObsessedEyePetRenderer.java",
-          "src/main/resources/assets/cthulhufishing/models/item/obsessed_eye_pet_spawn_egg.json",
-          "src/main/java/net/mcreator/cthulhufishing/entity/ObsessedEyePetEntity.java"
+          "src/main/java/net/mcreator/cthulhufishing/entity/model/ObsessedEyePetModel.java",
+          "src/main/resources/assets/cthulhufishing/models/item/obsessed_eye_pet_spawn_egg.json"
         ]
       },
       "path": "~/ObsessedEye"
@@ -4017,6 +4017,214 @@
         ]
       },
       "path": "~/CthulhuAdept"
+    },
+    {
+      "name": "PurpleGemRingEquip",
+      "type": "procedure",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_gem_ring_equip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/PurpleGemRingEquipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NetheriteKnifeBaubleIsUnequipped",
+      "type": "procedure",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_knife_bauble_is_unequipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/NetheriteKnifeBaubleIsUnequippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NetheriteKnife",
+      "type": "curiosbauble",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_knife",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/NetheriteKnifeItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/netherite_knife.json"
+        ]
+      }
+    },
+    {
+      "name": "GhostNetheriteKnife",
+      "type": "curiosbauble",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghost_netherite_knife",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/GhostNetheriteKnifeItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/ghost_netherite_knife.json"
+        ]
+      }
+    },
+    {
+      "name": "GhostNetheritKnifeBaubleUnequip",
+      "type": "procedure",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghost_netherit_knife_bauble_unequip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/GhostNetheritKnifeBaubleUnequipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GreenGemRingEquip",
+      "type": "procedure",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_gem_ring_equip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/GreenGemRingEquipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GhostNetheriteKnifeBaubleEquip",
+      "type": "procedure",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ghost_netherite_knife_bauble_equip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/GhostNetheriteKnifeBaubleEquipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurpleGemRingUnequip",
+      "type": "procedure",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_gem_ring_unequip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/PurpleGemRingUnequipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NetheriteKnifeBaubleIsEquipped",
+      "type": "procedure",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_knife_bauble_is_equipped",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/NetheriteKnifeBaubleIsEquippedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GreenGemRing",
+      "type": "curiosbauble",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_gem_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/GreenGemRingItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/green_gem_ring.json"
+        ]
+      }
+    },
+    {
+      "name": "GreenGemRingUnequip",
+      "type": "procedure",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "green_gem_ring_unequip",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/GreenGemRingUnequipProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PurpleGemRing",
+      "type": "curiosbauble",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purple_gem_ring",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/item/PurpleGemRingItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/purple_gem_ring.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -4073,6 +4281,24 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "Summon_Count_GGR",
+      "type": "modifier",
+      "scope": "global",
+      "value": "null"
+    },
+    {
+      "name": "Summon_Count_PGR",
+      "type": "modifier",
+      "scope": "global",
+      "value": "null"
+    },
+    {
+      "name": "Summon_Damage_GNB",
+      "type": "modifier",
+      "scope": "global",
+      "value": "null"
     }
   ],
   "sound_elements": [
@@ -4391,6 +4617,10 @@
         "children": []
       },
       {
+        "name": "CthulhuAdept",
+        "children": []
+      },
+      {
         "name": "CrimsonSet",
         "children": []
       },
@@ -4408,10 +4638,6 @@
       },
       {
         "name": "Enchantments",
-        "children": []
-      },
-      {
-        "name": "CthulhuAdept",
         "children": []
       }
     ]

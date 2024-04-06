@@ -16,6 +16,7 @@ import net.minecraftforge.common.capabilities.CapabilityManager;
 import net.minecraftforge.common.capabilities.Capability;
 
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
@@ -31,6 +32,10 @@ import java.util.function.Supplier;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CthulhufishingModVariables {
+	public static AttributeModifier Summon_Count_GGR = null;
+	public static AttributeModifier Summon_Count_PGR = null;
+	public static AttributeModifier Summon_Damage_GNB = null;
+
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		CthulhufishingMod.addNetworkMessage(PlayerVariablesSyncMessage.class, PlayerVariablesSyncMessage::buffer, PlayerVariablesSyncMessage::new, PlayerVariablesSyncMessage::handler);
