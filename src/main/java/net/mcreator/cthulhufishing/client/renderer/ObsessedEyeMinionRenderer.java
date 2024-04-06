@@ -1,6 +1,20 @@
 
 package net.mcreator.cthulhufishing.client.renderer;
 
+import software.bernie.geckolib.renderer.GeoEntityRenderer;
+import software.bernie.geckolib.cache.object.BakedGeoModel;
+
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.entity.EntityRendererProvider;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.MultiBufferSource;
+
+import net.mcreator.cthulhufishing.entity.model.ObsessedEyeMinionModel;
+import net.mcreator.cthulhufishing.entity.ObsessedEyeMinionEntity;
+
+import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.blaze3d.vertex.PoseStack;
+
 public class ObsessedEyeMinionRenderer extends GeoEntityRenderer<ObsessedEyeMinionEntity> {
 	public ObsessedEyeMinionRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new ObsessedEyeMinionModel());
@@ -20,5 +34,4 @@ public class ObsessedEyeMinionRenderer extends GeoEntityRenderer<ObsessedEyeMini
 		this.scaleWidth = scale;
 		super.preRender(poseStack, entity, model, bufferSource, buffer, isReRender, partialTick, packedLight, packedOverlay, red, green, blue, alpha);
 	}
-
 }
