@@ -5,7 +5,7 @@
     "description": "Summon Damage",
     "minValue": 0.0,
     "maxValue": 100.0,
-    "defaultValue": 1.0,
+    "defaultValue": 3.0,
     "isPersistent": false,
     "entities": [
       {

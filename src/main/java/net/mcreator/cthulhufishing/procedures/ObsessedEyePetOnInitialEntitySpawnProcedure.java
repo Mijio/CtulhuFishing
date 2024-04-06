@@ -11,7 +11,6 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.cthulhufishing.init.CthulhufishingModItems;
 import net.mcreator.cthulhufishing.init.CthulhufishingModAttributes;
-import net.mcreator.cthulhufishing.CthulhufishingMod;
 
 import java.util.Comparator;
 
@@ -41,10 +40,6 @@ public class ObsessedEyePetOnInitialEntitySpawnProcedure {
 							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 						}
 					}.compareDistOf(x, y, z)).findFirst().orElse(null))).getAttribute(CthulhufishingModAttributes.SUMMONDAMAGE.get()).getBaseValue());
-			CthulhufishingMod.queueServerWork(2000, () -> {
-				if (!entity.level().isClientSide())
-					entity.discard();
-			});
 		}
 	}
 }
