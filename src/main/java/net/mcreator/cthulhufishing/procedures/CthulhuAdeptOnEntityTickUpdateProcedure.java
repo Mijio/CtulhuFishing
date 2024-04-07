@@ -8,6 +8,8 @@ import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
@@ -22,6 +24,22 @@ public class CthulhuAdeptOnEntityTickUpdateProcedure {
 			return;
 		double n = 0;
 		double speed = 0;
+		if (entity.getPersistentData().getDouble("AI") > 0 && (entity instanceof Player _plr ? _plr.getAbilities().getWalkingSpeed() : 0) > 0) {
+			entity.getPersistentData().putDouble("walking", (entity.getPersistentData().getDouble("walking") + 1));
+		}
+		if (entity.getPersistentData().getDouble("walking") == 1) {
+			if (entity instanceof CthulhuAdeptEntity) {
+				((CthulhuAdeptEntity) entity).setAnimation("animation.adeptwalking");
+			}
+		}
+		if (entity.getPersistentData().getDouble("walking") == 15) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 10, 6, false, false));
+			entity.getPersistentData().putDouble("walking", 0);
+		}
+		if (entity.getPersistentData().getDouble("walking") == 25) {
+			entity.getPersistentData().putDouble("walking", 0);
+		}
 		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)) {
 			entity.getPersistentData().putDouble("AI", (entity.getPersistentData().getDouble("AI") + 1));
 		} else {
@@ -35,79 +53,77 @@ public class CthulhuAdeptOnEntityTickUpdateProcedure {
 		if (entity.getPersistentData().getDouble("IDLE") == 80) {
 			entity.getPersistentData().putDouble("IDLE", 0);
 		}
-		if (entity.getPersistentData().getDouble("AI") == 50) {
-			if (entity instanceof CthulhuAdeptEntity) {
-				((CthulhuAdeptEntity) entity).setAnimation("animation.adeptattack");
-			}
-			speed = ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).getBaseValue();
-		}
-		if (entity.getPersistentData().getDouble("AI") == 60) {
+		if (entity.getPersistentData().getDouble("AI") == 80) {
 			if (!(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
 				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 				}
 			}.compareDistOf(x, y, z)).findFirst().orElse(null)) == null)) {
-				entity.getPersistentData().putDouble("attack", 1);
-				((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).setBaseValue(0);
-				n = 4;
-				for (int index0 = 0; index0 < 3; index0++) {
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = CthulhufishingModEntities.GRIMOIRE_TENTACLE.get().spawn(_level, BlockPos.containing(x + n, y, z), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setDeltaMovement(0, 0, 0);
-						}
-					}
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = CthulhufishingModEntities.GRIMOIRE_TENTACLE.get().spawn(_level, BlockPos.containing(x, y, z + n), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setDeltaMovement(0, 0, 0);
-						}
-					}
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = CthulhufishingModEntities.GRIMOIRE_TENTACLE.get().spawn(_level, BlockPos.containing(x - n, y, z), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setDeltaMovement(0, 0, 0);
-						}
-					}
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = CthulhufishingModEntities.GRIMOIRE_TENTACLE.get().spawn(_level, BlockPos.containing(x, y, z - n), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setDeltaMovement(0, 0, 0);
-						}
-					}
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = CthulhufishingModEntities.GRIMOIRE_TENTACLE.get().spawn(_level, BlockPos.containing(x + n - 1, y, z + n - 1), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setDeltaMovement(0, 0, 0);
-						}
-					}
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = CthulhufishingModEntities.GRIMOIRE_TENTACLE.get().spawn(_level, BlockPos.containing(x - (n - 1), y, z + n - 1), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setDeltaMovement(0, 0, 0);
-						}
-					}
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = CthulhufishingModEntities.GRIMOIRE_TENTACLE.get().spawn(_level, BlockPos.containing(x + n - 1, y, z - (n - 1)), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setDeltaMovement(0, 0, 0);
-						}
-					}
-					if (world instanceof ServerLevel _level) {
-						Entity entityToSpawn = CthulhufishingModEntities.GRIMOIRE_TENTACLE.get().spawn(_level, BlockPos.containing(x - (n - 1), y, z - (n - 1)), MobSpawnType.MOB_SUMMONED);
-						if (entityToSpawn != null) {
-							entityToSpawn.setDeltaMovement(0, 0, 0);
-						}
-					}
-					n = n + 2;
+				if (entity instanceof CthulhuAdeptEntity) {
+					((CthulhuAdeptEntity) entity).setAnimation("animation.adeptattack");
 				}
-			} else {
-				entity.getPersistentData().putDouble("AI", 0);
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 70, 6, false, false));
 			}
 		}
-		if (entity.getPersistentData().getDouble("AI") == 90) {
+		if (entity.getPersistentData().getDouble("AI") == 100 && entity.getPersistentData().getDouble("attack") != 1 && (((CthulhuAdeptEntity) entity).animationprocedure).equals("animation.adeptattack")) {
+			entity.getPersistentData().putDouble("attack", 1);
+			n = 4;
+			for (int index0 = 0; index0 < 3; index0++) {
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = CthulhufishingModEntities.GRIMOIRE_TENTACLE.get().spawn(_level, BlockPos.containing(x + n, y, z), MobSpawnType.MOB_SUMMONED);
+					if (entityToSpawn != null) {
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+					}
+				}
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = CthulhufishingModEntities.GRIMOIRE_TENTACLE.get().spawn(_level, BlockPos.containing(x, y, z + n), MobSpawnType.MOB_SUMMONED);
+					if (entityToSpawn != null) {
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+					}
+				}
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = CthulhufishingModEntities.GRIMOIRE_TENTACLE.get().spawn(_level, BlockPos.containing(x - n, y, z), MobSpawnType.MOB_SUMMONED);
+					if (entityToSpawn != null) {
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+					}
+				}
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = CthulhufishingModEntities.GRIMOIRE_TENTACLE.get().spawn(_level, BlockPos.containing(x, y, z - n), MobSpawnType.MOB_SUMMONED);
+					if (entityToSpawn != null) {
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+					}
+				}
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = CthulhufishingModEntities.GRIMOIRE_TENTACLE.get().spawn(_level, BlockPos.containing(x + n - 1, y, z + n - 1), MobSpawnType.MOB_SUMMONED);
+					if (entityToSpawn != null) {
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+					}
+				}
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = CthulhufishingModEntities.GRIMOIRE_TENTACLE.get().spawn(_level, BlockPos.containing(x - (n - 1), y, z + n - 1), MobSpawnType.MOB_SUMMONED);
+					if (entityToSpawn != null) {
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+					}
+				}
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = CthulhufishingModEntities.GRIMOIRE_TENTACLE.get().spawn(_level, BlockPos.containing(x + n - 1, y, z - (n - 1)), MobSpawnType.MOB_SUMMONED);
+					if (entityToSpawn != null) {
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+					}
+				}
+				if (world instanceof ServerLevel _level) {
+					Entity entityToSpawn = CthulhufishingModEntities.GRIMOIRE_TENTACLE.get().spawn(_level, BlockPos.containing(x - (n - 1), y, z - (n - 1)), MobSpawnType.MOB_SUMMONED);
+					if (entityToSpawn != null) {
+						entityToSpawn.setDeltaMovement(0, 0, 0);
+					}
+				}
+				n = n + 2;
+			}
+		}
+		if (entity.getPersistentData().getDouble("AI") == 150) {
 			entity.getPersistentData().putDouble("AI", 0);
-			((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.MOVEMENT_SPEED).setBaseValue(speed);
+			entity.getPersistentData().putDouble("attack", 0);
 		}
 	}
 }
