@@ -126,6 +126,9 @@
     "onRightClicked": {
       "name": "ObeliskOfGteatestObsessedEyeOnBlockRightClicked"
     },
+    "onTickUpdate": {
+      "name": "ObeliskOfGteatestObsessedEyeUpdateTick"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
