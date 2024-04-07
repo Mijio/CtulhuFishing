@@ -24,24 +24,23 @@ public class CthulhuAdeptOnEntityTickUpdateProcedure {
 			return;
 		double n = 0;
 		double speed = 0;
-		if (entity.getPersistentData().getDouble("AI") > 0 && (entity instanceof Player _plr ? _plr.getAbilities().getWalkingSpeed() : 0) > 0) {
+		if (entity.getPersistentData().getDouble("AI") > 0) {
 			entity.getPersistentData().putDouble("walking", (entity.getPersistentData().getDouble("walking") + 1));
 		}
-		if (entity.getPersistentData().getDouble("walking") == 1) {
-			if (entity instanceof CthulhuAdeptEntity) {
-				((CthulhuAdeptEntity) entity).setAnimation("animation.adeptwalking");
-			}
-		}
-		if (entity.getPersistentData().getDouble("walking") == 15) {
+		if (entity.getPersistentData().getDouble("walking") == 1 && !(entity instanceof LivingEntity _livEnt4 && _livEnt4.hasEffect(MobEffects.MOVEMENT_SLOWDOWN))) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 10, 6, false, false));
-			entity.getPersistentData().putDouble("walking", 0);
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 20, 0, false, false));
 		}
-		if (entity.getPersistentData().getDouble("walking") == 25) {
+		if (entity.getPersistentData().getDouble("walking") == 20 && (((CthulhuAdeptEntity) entity).animationprocedure).equals("animation.adeptwalking")) {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 10, 2, false, false));
+		}
+		if (entity.getPersistentData().getDouble("walking") == 36) {
 			entity.getPersistentData().putDouble("walking", 0);
 		}
 		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)) {
 			entity.getPersistentData().putDouble("AI", (entity.getPersistentData().getDouble("AI") + 1));
+			entity.getPersistentData().putDouble("IDLE", 0);
 		} else {
 			entity.getPersistentData().putDouble("IDLE", (entity.getPersistentData().getDouble("IDLE") + 1));
 		}
@@ -52,6 +51,9 @@ public class CthulhuAdeptOnEntityTickUpdateProcedure {
 		}
 		if (entity.getPersistentData().getDouble("IDLE") == 80) {
 			entity.getPersistentData().putDouble("IDLE", 0);
+		}
+		if (entity.getPersistentData().getDouble("AI") == 78) {
+			entity.getPersistentData().putDouble("walking", 100);
 		}
 		if (entity.getPersistentData().getDouble("AI") == 80) {
 			if (!(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).stream().sorted(new Object() {
@@ -121,7 +123,10 @@ public class CthulhuAdeptOnEntityTickUpdateProcedure {
 				n = n + 2;
 			}
 		}
-		if (entity.getPersistentData().getDouble("AI") == 150) {
+		if (entity.getPersistentData().getDouble("AI") == 155) {
+			entity.getPersistentData().putDouble("walking", 0);
+		}
+		if (entity.getPersistentData().getDouble("AI") == 155) {
 			entity.getPersistentData().putDouble("AI", 0);
 			entity.getPersistentData().putDouble("attack", 0);
 		}
