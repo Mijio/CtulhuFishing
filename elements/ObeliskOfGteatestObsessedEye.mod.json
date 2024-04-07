@@ -123,6 +123,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "ObeliskOfGteatestObsessedEyeOnBlockRightClicked"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
@@ -136,6 +139,6 @@
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
     "normal": "greatest_eye_obelisk.geo.json",
-    "displaySettings": "greatest_eye_obelisk.item.json"
+    "displaySettings": "obelisk_display.item.json"
   }
 }

@@ -1,5 +1,6 @@
+
 {
-  "parent": "cthulhufishing:displaysettings/greatest_eye_obelisk.item",
+  "parent": "cthulhufishing:displaysettings/obelisk_display.item",
   "textures": {
     "particle": "cthulhufishing:block/texture_obelisk_eye"
   }
