@@ -39,7 +39,7 @@
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {
-      "value": "CUSTOM:CtulhuFishingTab"
+      "value": "No creative tab entry"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -123,8 +123,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "ObeliskOfGteatestObsessedEyeUpdateTick"
+    "onBlockAdded": {
+      "name": "Obelisk4BlockAdded"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

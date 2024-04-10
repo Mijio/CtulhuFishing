@@ -3963,7 +3963,8 @@
           "src/main/java/net/mcreator/cthulhufishing/block/model/ObeliskOfGteatestObsessedEyeBlockModel.java",
           "src/main/resources/assets/cthulhufishing/models/item/obelisk_of_gteatest_obsessed_eye.json"
         ]
-      }
+      },
+      "path": "~/ObeliskOfGreatestEye"
     },
     {
       "name": "CthulhuAdept",
@@ -4255,7 +4256,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/ObeliskOfGreatestEye"
     },
     {
       "name": "ObeliskOfGteatestObsessedEyeUpdateTick",
@@ -4287,7 +4289,227 @@
           }
         ]
       },
-      "path": "~/CthulhuAdept"
+      "path": "~/ObeliskOfGreatestEye"
+    },
+    {
+      "name": "Obelisk1",
+      "type": "animatedblock",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obelisk_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/model/Obelisk1BlockModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/Obelisk1DisplayItem.java",
+          "src/main/resources/assets/cthulhufishing/models/item/obelisk_1.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/Obelisk1DisplayModel.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/obelisk_1_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/Obelisk1Block.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/Obelisk1TileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/Obelisk1TileEntity.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/obelisk_1.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/Obelisk1DisplayItemRenderer.java"
+        ]
+      },
+      "path": "~/ObeliskOfGreatestEye"
+    },
+    {
+      "name": "ObeliskTick1",
+      "type": "procedure",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obelisk_tick_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ObeliskTick1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ObeliskOfGreatestEye"
+    },
+    {
+      "name": "Obelisk2",
+      "type": "animatedblock",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obelisk_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/model/Obelisk2BlockModel.java",
+          "src/main/resources/assets/cthulhufishing/models/item/obelisk_2.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/Obelisk2DisplayModel.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/obelisk_2_particle.json",
+          "src/main/resources/assets/cthulhufishing/blockstates/obelisk_2.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/Obelisk2DisplayItem.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/Obelisk2Block.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/Obelisk2DisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/Obelisk2TileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/Obelisk2TileEntity.java"
+        ]
+      },
+      "path": "~/ObeliskOfGreatestEye"
+    },
+    {
+      "name": "ObeliskTick2",
+      "type": "procedure",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obelisk_tick_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ObeliskTick2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ObeliskOfGreatestEye"
+    },
+    {
+      "name": "Obelisk3",
+      "type": "animatedblock",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obelisk_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/Obelisk3DisplayItemRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/Obelisk3TileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/Obelisk3DisplayModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/Obelisk3TileEntity.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/obelisk_3.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/Obelisk3Block.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/Obelisk3BlockModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/Obelisk3DisplayItem.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/obelisk_3_particle.json",
+          "src/main/resources/assets/cthulhufishing/models/item/obelisk_3.json"
+        ]
+      },
+      "path": "~/ObeliskOfGreatestEye"
+    },
+    {
+      "name": "ObeliskTick3",
+      "type": "procedure",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obelisk_tick_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/ObeliskTick3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ObeliskOfGreatestEye"
+    },
+    {
+      "name": "Obelisk4",
+      "type": "animatedblock",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obelisk_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/Obelisk4DisplayItemRenderer.java",
+          "src/main/resources/assets/cthulhufishing/blockstates/obelisk_4.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/Obelisk4DisplayModel.java",
+          "src/main/resources/assets/cthulhufishing/models/custom/obelisk_4_particle.json",
+          "src/main/java/net/mcreator/cthulhufishing/block/Obelisk4Block.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/display/Obelisk4DisplayItem.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/model/Obelisk4BlockModel.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/renderer/Obelisk4TileRenderer.java",
+          "src/main/java/net/mcreator/cthulhufishing/block/entity/Obelisk4TileEntity.java",
+          "src/main/resources/assets/cthulhufishing/models/item/obelisk_4.json"
+        ]
+      },
+      "path": "~/ObeliskOfGreatestEye"
+    },
+    {
+      "name": "Obelisk4BlockAdded",
+      "type": "procedure",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obelisk_4_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/cthulhufishing/procedures/Obelisk4BlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ObeliskOfGreatestEye"
     }
   ],
   "variable_elements": [
@@ -4520,13 +4742,17 @@
   ],
   "language_map": {
     "en_us": {
+      "block.cthulhufishing.obelisk_1": "Obelisk Of Gteatest Obsessed Eye",
       "item.cthulhufishing.sculk_ring": "Sculk Ring",
       "item.cthulhufishing.step_to_abyss": "Music disc - Step To Abyss ",
       "item.cthulhufishing.horse_sculk_fish": "Horse Sculk Fish",
       "item.cthulhufishing.cthulhu_grimoire": "Cthulhu Grimoire",
-      "subtitles.idle_fossil_fish": "",
+      "block.cthulhufishing.obelisk_4": "Obelisk Of Gteatest Obsessed Eye",
       "block.cthulhufishing.ctulhu_altar_fish": "Ctulhu Altar Fish",
+      "subtitles.idle_fossil_fish": "",
+      "block.cthulhufishing.obelisk_3": "Obelisk Of Gteatest Obsessed Eye",
       "item.cthulhufishing.frozen_crab_necklace": "Necklace of Frozen Crab",
+      "block.cthulhufishing.obelisk_2": "Obelisk Of Gteatest Obsessed Eye",
       "subtitles.step_to_abyss_xythe": "",
       "item.cthulhufishing.treasure_bag": "Treasure Bag",
       "subtitles.obsessed_eye_damage": "",
@@ -4705,6 +4931,10 @@
       },
       {
         "name": "Enchantments",
+        "children": []
+      },
+      {
+        "name": "ObeliskOfGreatestEye",
         "children": []
       }
     ]

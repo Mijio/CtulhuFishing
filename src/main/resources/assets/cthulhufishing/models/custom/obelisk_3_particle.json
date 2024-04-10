@@ -1,0 +1,7 @@
+
+{
+  "parent": "cthulhufishing:displaysettings/obelisk_display.item",
+  "textures": {
+    "particle": "cthulhufishing:block/texture_obelisk_eye"
+  }
+}

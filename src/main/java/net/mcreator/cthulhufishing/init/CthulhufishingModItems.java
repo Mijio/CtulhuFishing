@@ -62,6 +62,10 @@ import net.mcreator.cthulhufishing.item.CrimsonCrunchItem;
 import net.mcreator.cthulhufishing.item.ChestplateFossilFishItem;
 import net.mcreator.cthulhufishing.item.AncientCoinItem;
 import net.mcreator.cthulhufishing.block.display.ObeliskOfGteatestObsessedEyeDisplayItem;
+import net.mcreator.cthulhufishing.block.display.Obelisk4DisplayItem;
+import net.mcreator.cthulhufishing.block.display.Obelisk3DisplayItem;
+import net.mcreator.cthulhufishing.block.display.Obelisk2DisplayItem;
+import net.mcreator.cthulhufishing.block.display.Obelisk1DisplayItem;
 import net.mcreator.cthulhufishing.block.display.BlockOreEyeDisplayItem;
 import net.mcreator.cthulhufishing.block.display.AltarRelicDisplayItem;
 import net.mcreator.cthulhufishing.block.display.AltarRelic6DisplayItem;
@@ -143,6 +147,10 @@ public class CthulhufishingModItems {
 	public static final RegistryObject<Item> GHOST_NETHERITE_KNIFE = REGISTRY.register("ghost_netherite_knife", () -> new GhostNetheriteKnifeItem());
 	public static final RegistryObject<Item> PURPLE_GEM_RING = REGISTRY.register("purple_gem_ring", () -> new PurpleGemRingItem());
 	public static final RegistryObject<Item> GREEN_GEM_RING = REGISTRY.register("green_gem_ring", () -> new GreenGemRingItem());
+	public static final RegistryObject<Item> OBELISK_1 = REGISTRY.register(CthulhufishingModBlocks.OBELISK_1.getId().getPath(), () -> new Obelisk1DisplayItem(CthulhufishingModBlocks.OBELISK_1.get(), new Item.Properties()));
+	public static final RegistryObject<Item> OBELISK_2 = REGISTRY.register(CthulhufishingModBlocks.OBELISK_2.getId().getPath(), () -> new Obelisk2DisplayItem(CthulhufishingModBlocks.OBELISK_2.get(), new Item.Properties()));
+	public static final RegistryObject<Item> OBELISK_3 = REGISTRY.register(CthulhufishingModBlocks.OBELISK_3.getId().getPath(), () -> new Obelisk3DisplayItem(CthulhufishingModBlocks.OBELISK_3.get(), new Item.Properties()));
+	public static final RegistryObject<Item> OBELISK_4 = REGISTRY.register(CthulhufishingModBlocks.OBELISK_4.getId().getPath(), () -> new Obelisk4DisplayItem(CthulhufishingModBlocks.OBELISK_4.get(), new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

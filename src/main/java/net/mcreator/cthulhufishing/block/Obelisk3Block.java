@@ -3,6 +3,7 @@ package net.mcreator.cthulhufishing.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
@@ -31,12 +32,15 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.cthulhufishing.procedures.ObeliskOfGteatestObsessedEyeUpdateTickProcedure;
+import net.mcreator.cthulhufishing.procedures.ObeliskTick3Procedure;
+import net.mcreator.cthulhufishing.procedures.ObeliskOfGteatestObsessedEyeOnBlockRightClickedProcedure;
 import net.mcreator.cthulhufishing.init.CthulhufishingModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -44,12 +48,12 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Collections;
 
-public class ObeliskOfGteatestObsessedEyeBlock extends BaseEntityBlock implements SimpleWaterloggedBlock, EntityBlock {
+public class Obelisk3Block extends BaseEntityBlock implements SimpleWaterloggedBlock, EntityBlock {
 	public static final IntegerProperty ANIMATION = IntegerProperty.create("animation", 0, (int) 5);
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-	public ObeliskOfGteatestObsessedEyeBlock() {
+	public Obelisk3Block() {
 		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1f, 10f).requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
@@ -62,7 +66,7 @@ public class ObeliskOfGteatestObsessedEyeBlock extends BaseEntityBlock implement
 	@Nullable
 	@Override
 	public BlockEntity newBlockEntity(BlockPos blockPos, BlockState blockState) {
-		return CthulhufishingModBlockEntities.OBELISK_OF_GTEATEST_OBSESSED_EYE.get().create(blockPos, blockState);
+		return CthulhufishingModBlockEntities.OBELISK_3.get().create(blockPos, blockState);
 	}
 
 	@Override
@@ -146,7 +150,22 @@ public class ObeliskOfGteatestObsessedEyeBlock extends BaseEntityBlock implement
 		int y = pos.getY();
 		int z = pos.getZ();
 
-		ObeliskOfGteatestObsessedEyeUpdateTickProcedure.execute(world, x, y, z);
+		ObeliskTick3Procedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
+	}
+
+	@Override
+	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
+		super.use(blockstate, world, pos, entity, hand, hit);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		double hitX = hit.getLocation().x;
+		double hitY = hit.getLocation().y;
+		double hitZ = hit.getLocation().z;
+		Direction direction = hit.getDirection();
+
+		ObeliskOfGteatestObsessedEyeOnBlockRightClickedProcedure.execute(world, x, y, z);
+		return InteractionResult.SUCCESS;
 	}
 }

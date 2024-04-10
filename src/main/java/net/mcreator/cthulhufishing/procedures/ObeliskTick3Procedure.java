@@ -11,11 +11,10 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.cthulhufishing.init.CthulhufishingModEntities;
-import net.mcreator.cthulhufishing.init.CthulhufishingModBlocks;
 
-public class ObeliskOfGteatestObsessedEyeUpdateTickProcedure {
+public class ObeliskTick3Procedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (world.dayTime() == 13001) {
+		if (world.dayTime() == 13007) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -42,7 +41,7 @@ public class ObeliskOfGteatestObsessedEyeUpdateTickProcedure {
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "night") == 1) {
 			{
-				int _value = 1;
+				int _value = 4;
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				BlockState _bs = world.getBlockState(_pos);
 				if (_bs.getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _integerProp && _integerProp.getPossibleValues().contains(_value))
@@ -74,21 +73,29 @@ public class ObeliskOfGteatestObsessedEyeUpdateTickProcedure {
 			}
 		}.getValue(world, BlockPos.containing(x, y, z), "spawn") == 1) {
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = CthulhufishingModEntities.CTHULHU_ADEPT.get().spawn(_level, BlockPos.containing(x + 1 + Math.random(), y, z - (1 + Math.random())), MobSpawnType.MOB_SUMMONED);
+				Entity entityToSpawn = CthulhufishingModEntities.CTHULHU_ADEPT.get().spawn(_level, BlockPos.containing(x + 2 + Math.random(), y, z - (2 + Math.random())), MobSpawnType.MOB_SUMMONED);
 				if (entityToSpawn != null) {
 					entityToSpawn.setDeltaMovement(0, 0, 0);
 				}
 			}
-		}
-		if (new Object() {
-			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-				BlockEntity blockEntity = world.getBlockEntity(pos);
-				if (blockEntity != null)
-					return blockEntity.getPersistentData().getDouble(tag);
-				return -1;
+			if (world instanceof ServerLevel _level) {
+				Entity entityToSpawn = CthulhufishingModEntities.CTHULHU_ADEPT.get().spawn(_level, BlockPos.containing(x - (2 + Math.random()), y, z + 2 + Math.random()), MobSpawnType.MOB_SUMMONED);
+				if (entityToSpawn != null) {
+					entityToSpawn.setDeltaMovement(0, 0, 0);
+				}
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "night") == 2) {
-			world.setBlock(BlockPos.containing(x, y, z), CthulhufishingModBlocks.OBELISK_1.get().defaultBlockState(), 3);
+			if (world instanceof ServerLevel _level) {
+				Entity entityToSpawn = CthulhufishingModEntities.CTHULHU_ADEPT.get().spawn(_level, BlockPos.containing(x - (2 + Math.random()), y, z - (2 + Math.random())), MobSpawnType.MOB_SUMMONED);
+				if (entityToSpawn != null) {
+					entityToSpawn.setDeltaMovement(0, 0, 0);
+				}
+			}
+			if (world instanceof ServerLevel _level) {
+				Entity entityToSpawn = CthulhufishingModEntities.CTHULHU_ADEPT.get().spawn(_level, BlockPos.containing(x + 2 + Math.random(), y, z + 2 + Math.random()), MobSpawnType.MOB_SUMMONED);
+				if (entityToSpawn != null) {
+					entityToSpawn.setDeltaMovement(0, 0, 0);
+				}
+			}
 		}
 	}
 }
