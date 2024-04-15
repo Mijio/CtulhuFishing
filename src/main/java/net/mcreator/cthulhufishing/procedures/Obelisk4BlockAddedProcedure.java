@@ -2,6 +2,7 @@ package net.mcreator.cthulhufishing.procedures;
 
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Entity;
@@ -22,11 +23,12 @@ public class Obelisk4BlockAddedProcedure {
 		}
 		CthulhufishingMod.queueServerWork(20, () -> {
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = CthulhufishingModEntities.OBSESSED_EYE_BOSS.get().spawn(_level, BlockPos.containing(x, y + 3, z), MobSpawnType.MOB_SUMMONED);
+				Entity entityToSpawn = CthulhufishingModEntities.OBSESSED_EYE_BOSS.get().spawn(_level, BlockPos.containing(x, y + 2, z), MobSpawnType.MOB_SUMMONED);
 				if (entityToSpawn != null) {
 					entityToSpawn.setDeltaMovement(0, 0, 0);
 				}
 			}
+			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 		});
 	}
 }

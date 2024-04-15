@@ -41,6 +41,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.cthulhufishing.procedures.ObeliskTick3Procedure;
 import net.mcreator.cthulhufishing.procedures.ObeliskOfGteatestObsessedEyeOnBlockRightClickedProcedure;
+import net.mcreator.cthulhufishing.init.CthulhufishingModBlocks;
 import net.mcreator.cthulhufishing.init.CthulhufishingModBlockEntities;
 
 import javax.annotation.Nullable;
@@ -134,7 +135,7 @@ public class Obelisk3Block extends BaseEntityBlock implements SimpleWaterloggedB
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(this, 1));
+		return Collections.singletonList(new ItemStack(CthulhufishingModBlocks.OBELISK_OF_GTEATEST_OBSESSED_EYE.get()));
 	}
 
 	@Override

@@ -43,7 +43,7 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:ObeliskOfGteatestObsessedEye"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -139,6 +139,6 @@
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
     "normal": "greatest_eye_obelisk.geo.json",
-    "displaySettings": "obelisk_display.item.json"
+    "displaySettings": "greatest_eye_obelisk_try2_item.json"
   }
 }

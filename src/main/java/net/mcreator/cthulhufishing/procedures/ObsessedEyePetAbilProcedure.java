@@ -30,7 +30,7 @@ public class ObsessedEyePetAbilProcedure {
 						(float) ((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_DAMAGE).getBaseValue());
 			}
 		}
-		if (!(entity instanceof LivingEntity _livEnt23 && _livEnt23.hasEffect(MobEffects.LEVITATION)) && entity.getPersistentData().getDouble("AI") == 1) {
+		if (!(entity instanceof LivingEntity _livEnt23 && _livEnt23.hasEffect(MobEffects.LEVITATION)) && !((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null) && entity.getPersistentData().getDouble("AI") == 1) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40, 0, false, false));
 			entity.setDeltaMovement(new Vec3((0.2 * ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX() - entity.getX())),
