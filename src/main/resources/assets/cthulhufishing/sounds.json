@@ -151,5 +151,21 @@
         "stream": false
       }
     ]
+  },
+  "adept_get_hurt": {
+    "sounds": [
+      {
+        "name": "cthulhufishing:adept_get_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "adept_attack": {
+    "sounds": [
+      {
+        "name": "cthulhufishing:adept_attack",
+        "stream": false
+      }
+    ]
   }
 }

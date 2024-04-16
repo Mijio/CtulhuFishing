@@ -40,6 +40,12 @@ public class CthulhufishingModTrades {
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD, 4), new ItemStack(CthulhufishingModItems.REAGENT.get()), new ItemStack(CthulhufishingModItems.SCULK_LURE.get(), 3), 5, 4, 0.05f));
 			event.getTrades().get(1).add(new BasicItemListing(new ItemStack(Items.EMERALD, 4), new ItemStack(CthulhufishingModItems.REAGENT.get()), new ItemStack(CthulhufishingModItems.ICE_LURE.get(), 3), 5, 4, 0.05f));
 			event.getTrades().get(2).add(new BasicItemListing(new ItemStack(Items.EMERALD, 8), new ItemStack(CthulhufishingModItems.REAGENT.get(), 6), new ItemStack(CthulhufishingModItems.FROZEN_RING.get()), 1, 20, 0.05f));
+			event.getTrades().get(5)
+					.add(new BasicItemListing(new ItemStack(Blocks.EMERALD_BLOCK, 5), new ItemStack(CthulhufishingModItems.REAGENT.get(), 10), new ItemStack(CthulhufishingModBlocks.OBELISK_OF_GTEATEST_OBSESSED_EYE.get()), 10, 5, 0.05f));
+			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(Items.EMERALD, 16), new ItemStack(CthulhufishingModItems.REAGENT.get(), 8), new ItemStack(CthulhufishingModItems.NETHERITE_KNIFE.get()), 10, 5, 0.05f));
+			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(Items.EMERALD, 16), new ItemStack(CthulhufishingModItems.REAGENT.get(), 8), new ItemStack(CthulhufishingModItems.GHOST_NETHERITE_KNIFE.get()), 10, 5, 0.05f));
+			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(Items.EMERALD, 16), new ItemStack(CthulhufishingModItems.REAGENT.get(), 8), new ItemStack(CthulhufishingModItems.GREEN_GEM_RING.get()), 10, 5, 0.05f));
+			event.getTrades().get(4).add(new BasicItemListing(new ItemStack(Items.EMERALD, 16), new ItemStack(CthulhufishingModItems.REAGENT.get(), 8), new ItemStack(CthulhufishingModItems.PURPLE_GEM_RING.get()), 10, 5, 0.05f));
 		}
 	}
 }

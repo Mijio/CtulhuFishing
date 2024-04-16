@@ -91,7 +91,7 @@
       "value": ""
     },
     "hurtSound": {
-      "value": "entity.generic.hurt"
+      "value": "CUSTOM:adept_get_hurt"
     },
     "deathSound": {
       "value": "entity.generic.death"

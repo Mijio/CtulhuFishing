@@ -112,7 +112,7 @@ public class CthulhuAdeptEntity extends Monster implements GeoEntity {
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("cthulhufishing:adept_get_hurt"));
 	}
 
 	@Override
