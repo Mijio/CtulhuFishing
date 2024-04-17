@@ -1,6 +1,5 @@
 package net.mcreator.cthulhufishing.procedures;
 
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -9,6 +8,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.cthulhufishing.init.CthulhufishingModEntities;
@@ -17,7 +17,11 @@ import net.mcreator.cthulhufishing.init.CthulhufishingModBlocks;
 public class ObeliskOfGteatestObsessedEyeUpdateTickProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (world.dayTime() == 13001) {
-			if (y >= world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) z)) {
+			if (!world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("ocean")) && !world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("warm_ocean"))
+					&& !world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("deep_ocean")) && !world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("lukewarm_ocean"))
+					&& !world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("deep_lukewarm_ocean")) && !world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("cold_ocean"))
+					&& !world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("deep_cold_ocean")) && !world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("deep_dark"))
+					&& !world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("dripstone_caves")) && !world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("lush_caves"))) {
 				if (!world.isClientSide()) {
 					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
