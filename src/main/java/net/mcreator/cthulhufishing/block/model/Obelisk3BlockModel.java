@@ -1,5 +1,11 @@
 package net.mcreator.cthulhufishing.block.model;
 
+import software.bernie.geckolib.model.GeoModel;
+
+import net.minecraft.resources.ResourceLocation;
+
+import net.mcreator.cthulhufishing.block.entity.Obelisk3TileEntity;
+
 public class Obelisk3BlockModel extends GeoModel<Obelisk3TileEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(Obelisk3TileEntity animatable) {
