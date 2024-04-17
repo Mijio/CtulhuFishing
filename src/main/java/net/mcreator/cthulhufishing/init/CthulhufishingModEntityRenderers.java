@@ -16,6 +16,7 @@ import net.mcreator.cthulhufishing.client.renderer.ObsessedEyeBossRenderer;
 import net.mcreator.cthulhufishing.client.renderer.IceCrabRenderer;
 import net.mcreator.cthulhufishing.client.renderer.GrimoireTentacleRenderer;
 import net.mcreator.cthulhufishing.client.renderer.FossilFishRenderer;
+import net.mcreator.cthulhufishing.client.renderer.CthulhuAdeptRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class CthulhufishingModEntityRenderers {
@@ -28,5 +29,6 @@ public class CthulhufishingModEntityRenderers {
 		event.registerEntityRenderer(CthulhufishingModEntities.OBSESSED_EYE_PET.get(), ObsessedEyePetRenderer::new);
 		event.registerEntityRenderer(CthulhufishingModEntities.OBSESSED_EYE_BOSS.get(), ObsessedEyeBossRenderer::new);
 		event.registerEntityRenderer(CthulhufishingModEntities.OBSESSED_EYE_MINION.get(), ObsessedEyeMinionRenderer::new);
+		event.registerEntityRenderer(CthulhufishingModEntities.CTHULHU_ADEPT.get(), CthulhuAdeptRenderer::new);
 	}
 }

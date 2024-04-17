@@ -12,6 +12,10 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.cthulhufishing.block.entity.ObeliskOfGteatestObsessedEyeTileEntity;
+import net.mcreator.cthulhufishing.block.entity.Obelisk4TileEntity;
+import net.mcreator.cthulhufishing.block.entity.Obelisk3TileEntity;
+import net.mcreator.cthulhufishing.block.entity.Obelisk2TileEntity;
+import net.mcreator.cthulhufishing.block.entity.Obelisk1TileEntity;
 import net.mcreator.cthulhufishing.block.entity.BlockOreEyeTileEntity;
 import net.mcreator.cthulhufishing.block.entity.AltarRelicTileEntity;
 import net.mcreator.cthulhufishing.block.entity.AltarRelic6TileEntity;
@@ -34,6 +38,10 @@ public class CthulhufishingModBlockEntities {
 	public static final RegistryObject<BlockEntityType<AltarRelic6TileEntity>> ALTAR_RELIC_6 = REGISTRY.register("altar_relic_6", () -> BlockEntityType.Builder.of(AltarRelic6TileEntity::new, CthulhufishingModBlocks.ALTAR_RELIC_6.get()).build(null));
 	public static final RegistryObject<BlockEntityType<ObeliskOfGteatestObsessedEyeTileEntity>> OBELISK_OF_GTEATEST_OBSESSED_EYE = REGISTRY.register("obelisk_of_gteatest_obsessed_eye",
 			() -> BlockEntityType.Builder.of(ObeliskOfGteatestObsessedEyeTileEntity::new, CthulhufishingModBlocks.OBELISK_OF_GTEATEST_OBSESSED_EYE.get()).build(null));
+	public static final RegistryObject<BlockEntityType<Obelisk1TileEntity>> OBELISK_1 = REGISTRY.register("obelisk_1", () -> BlockEntityType.Builder.of(Obelisk1TileEntity::new, CthulhufishingModBlocks.OBELISK_1.get()).build(null));
+	public static final RegistryObject<BlockEntityType<Obelisk2TileEntity>> OBELISK_2 = REGISTRY.register("obelisk_2", () -> BlockEntityType.Builder.of(Obelisk2TileEntity::new, CthulhufishingModBlocks.OBELISK_2.get()).build(null));
+	public static final RegistryObject<BlockEntityType<Obelisk3TileEntity>> OBELISK_3 = REGISTRY.register("obelisk_3", () -> BlockEntityType.Builder.of(Obelisk3TileEntity::new, CthulhufishingModBlocks.OBELISK_3.get()).build(null));
+	public static final RegistryObject<BlockEntityType<Obelisk4TileEntity>> OBELISK_4 = REGISTRY.register("obelisk_4", () -> BlockEntityType.Builder.of(Obelisk4TileEntity::new, CthulhufishingModBlocks.OBELISK_4.get()).build(null));
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

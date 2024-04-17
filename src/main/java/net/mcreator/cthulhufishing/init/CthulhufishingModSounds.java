@@ -34,4 +34,6 @@ public class CthulhufishingModSounds {
 	public static final RegistryObject<SoundEvent> SUMMON_FOSSIL_FISH = REGISTRY.register("summon_fossil_fish", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("cthulhufishing", "summon_fossil_fish")));
 	public static final RegistryObject<SoundEvent> FROZEN_CRAB_SCREAM = REGISTRY.register("frozen_crab_scream", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("cthulhufishing", "frozen_crab_scream")));
 	public static final RegistryObject<SoundEvent> FROZEN_CRAB_AOE = REGISTRY.register("frozen_crab_aoe", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("cthulhufishing", "frozen_crab_aoe")));
+	public static final RegistryObject<SoundEvent> ADEPT_GET_HURT = REGISTRY.register("adept_get_hurt", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("cthulhufishing", "adept_get_hurt")));
+	public static final RegistryObject<SoundEvent> ADEPT_ATTACK = REGISTRY.register("adept_attack", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("cthulhufishing", "adept_attack")));
 }

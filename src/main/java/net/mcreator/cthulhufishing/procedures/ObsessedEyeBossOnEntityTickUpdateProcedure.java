@@ -54,6 +54,8 @@ public class ObsessedEyeBossOnEntityTickUpdateProcedure {
 				}
 				entity.getPersistentData().putDouble("EyeSpawn", 1);
 			}
+		} else {
+			entity.getPersistentData().putDouble("EyeSpawn", 0);
 		}
 		if (entity.getPersistentData().getDouble("AI") == 80 || entity.getPersistentData().getDouble("AI") == 160) {
 			if (!(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 30, 30, 30), e -> true).stream().sorted(new Object() {
@@ -77,7 +79,7 @@ public class ObsessedEyeBossOnEntityTickUpdateProcedure {
 			}
 		}
 		if (entity.getPersistentData().getDouble("AI") == 180) {
-			if (Math.random() < 0.3) {
+			if (Math.random() < 0.2) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = CthulhufishingModEntities.OBSESSED_EYE_MINION.get().spawn(_level, BlockPos.containing(x + Math.random(), y, z + Math.random()), MobSpawnType.MOB_SUMMONED);
 					if (entityToSpawn != null) {

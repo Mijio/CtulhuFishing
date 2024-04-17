@@ -43,7 +43,7 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:ObeliskOfGteatestObsessedEye"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -55,7 +55,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -123,6 +123,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "ObeliskOfGteatestObsessedEyeUpdateTick"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
@@ -136,6 +139,6 @@
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
     "normal": "greatest_eye_obelisk.geo.json",
-    "displaySettings": "greatest_eye_obelisk.item.json"
+    "displaySettings": "greatest_eye_obelisk_try2_item.json"
   }
 }

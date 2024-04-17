@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.greatest_eye_obelisk.claw1": {
+		"1": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 0.5,
 			"bones": {
@@ -23,7 +23,7 @@
 				}
 			}
 		},
-		"animation.greatest_eye_obelisk.claw2": {
+		"2": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 0.5,
 			"bones": {
@@ -50,7 +50,7 @@
 				}
 			}
 		},
-		"animation.greatest_eye_obelisk.claw3": {
+		"3": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 0.5,
 			"bones": {
@@ -82,7 +82,7 @@
 				}
 			}
 		},
-		"animation.greatest_eye_obelisk.claw4": {
+		"4": {
 			"loop": "hold_on_last_frame",
 			"animation_length": 0.5,
 			"bones": {
@@ -119,7 +119,7 @@
 				}
 			}
 		},
-		"animation.greatest_eye_obelisk.summon": {
+		"5": {
 			"animation_length": 2.5,
 			"bones": {
 				"claw1": {

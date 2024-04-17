@@ -11,6 +11,7 @@ import net.mcreator.cthulhufishing.entity.ObsessedEyeBossEntity;
 import net.mcreator.cthulhufishing.entity.IceCrabEntity;
 import net.mcreator.cthulhufishing.entity.GrimoireTentacleEntity;
 import net.mcreator.cthulhufishing.entity.FossilFishEntity;
+import net.mcreator.cthulhufishing.entity.CthulhuAdeptEntity;
 
 @Mod.EventBusSubscriber
 public class EntityAnimationFactory {
@@ -60,6 +61,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof ObsessedEyeMinionEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof CthulhuAdeptEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

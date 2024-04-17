@@ -21,7 +21,7 @@ public class ObsessedEyeStaffRightclickedProcedure {
 			return;
 		if (entity instanceof Player _player)
 			_player.getCooldowns().addCooldown(itemstack.getItem(), 2000);
-		for (int index0 = 0; index0 < (int) ((LivingEntity) entity).getAttribute(CthulhufishingModAttributes.SUMMONCOUNTER.get()).getBaseValue(); index0++) {
+		for (int index0 = 0; index0 < (int) ((LivingEntity) entity).getAttribute(CthulhufishingModAttributes.SUMMONCOUNTER.get()).getValue(); index0++) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = CthulhufishingModEntities.OBSESSED_EYE_PET.get().spawn(_level,
 						BlockPos.containing(x + Mth.nextInt(RandomSource.create(), 0, 1), y + Mth.nextInt(RandomSource.create(), 0, 1), z + Mth.nextInt(RandomSource.create(), 0, 1)), MobSpawnType.MOB_SUMMONED);

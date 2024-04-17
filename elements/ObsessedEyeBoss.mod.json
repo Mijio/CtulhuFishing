@@ -2,7 +2,7 @@
   "_fv": 47,
   "_type": "animatedentity",
   "definition": {
-    "mobName": "Giant Obsessed Eye",
+    "mobName": "Greatest Obsessed Eye",
     "mobLabel": "",
     "mobModelTexture": "texture_obsessed_eye_r.png",
     "mobModelGlowTexture": "",
@@ -85,7 +85,7 @@
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:ObsessedEyeStaffR"
     },
     "livingSound": {
       "value": ""

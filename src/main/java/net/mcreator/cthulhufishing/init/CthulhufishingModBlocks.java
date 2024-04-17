@@ -12,6 +12,10 @@ import net.minecraft.world.level.block.Block;
 
 import net.mcreator.cthulhufishing.block.PseudoEyeBlock;
 import net.mcreator.cthulhufishing.block.ObeliskOfGteatestObsessedEyeBlock;
+import net.mcreator.cthulhufishing.block.Obelisk4Block;
+import net.mcreator.cthulhufishing.block.Obelisk3Block;
+import net.mcreator.cthulhufishing.block.Obelisk2Block;
+import net.mcreator.cthulhufishing.block.Obelisk1Block;
 import net.mcreator.cthulhufishing.block.DeepOilBlock;
 import net.mcreator.cthulhufishing.block.CtulhuAltarFishBlock;
 import net.mcreator.cthulhufishing.block.BlockOreEyeBlock;
@@ -38,4 +42,8 @@ public class CthulhufishingModBlocks {
 	public static final RegistryObject<Block> ALTAR_RELIC_6 = REGISTRY.register("altar_relic_6", () -> new AltarRelic6Block());
 	public static final RegistryObject<Block> PSEUDO_EYE = REGISTRY.register("pseudo_eye", () -> new PseudoEyeBlock());
 	public static final RegistryObject<Block> OBELISK_OF_GTEATEST_OBSESSED_EYE = REGISTRY.register("obelisk_of_gteatest_obsessed_eye", () -> new ObeliskOfGteatestObsessedEyeBlock());
+	public static final RegistryObject<Block> OBELISK_1 = REGISTRY.register("obelisk_1", () -> new Obelisk1Block());
+	public static final RegistryObject<Block> OBELISK_2 = REGISTRY.register("obelisk_2", () -> new Obelisk2Block());
+	public static final RegistryObject<Block> OBELISK_3 = REGISTRY.register("obelisk_3", () -> new Obelisk3Block());
+	public static final RegistryObject<Block> OBELISK_4 = REGISTRY.register("obelisk_4", () -> new Obelisk4Block());
 }
