@@ -154,7 +154,7 @@ public class ObsessedEyeBossEntity extends Monster implements GeoEntity {
 
 	@Override
 	public EntityDimensions getDimensions(Pose p_33597_) {
-		return super.getDimensions(p_33597_).scale((float) 7);
+		return super.getDimensions(p_33597_).scale((float) 8.4);
 	}
 
 	@Override

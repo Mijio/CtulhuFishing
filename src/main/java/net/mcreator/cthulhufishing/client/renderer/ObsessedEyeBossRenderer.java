@@ -18,7 +18,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class ObsessedEyeBossRenderer extends GeoEntityRenderer<ObsessedEyeBossEntity> {
 	public ObsessedEyeBossRenderer(EntityRendererProvider.Context renderManager) {
 		super(renderManager, new ObsessedEyeBossModel());
-		this.shadowRadius = 0.6f;
+		this.shadowRadius = 3f;
 	}
 
 	@Override
