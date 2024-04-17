@@ -1,11 +1,5 @@
 package net.mcreator.cthulhufishing.block.model;
 
-import software.bernie.geckolib.model.GeoModel;
-
-import net.minecraft.resources.ResourceLocation;
-
-import net.mcreator.cthulhufishing.block.display.Obelisk2DisplayItem;
-
 public class Obelisk2DisplayModel extends GeoModel<Obelisk2DisplayItem> {
 	@Override
 	public ResourceLocation getAnimationResource(Obelisk2DisplayItem animatable) {

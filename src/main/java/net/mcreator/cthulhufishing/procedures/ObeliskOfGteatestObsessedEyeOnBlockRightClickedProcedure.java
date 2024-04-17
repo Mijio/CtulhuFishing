@@ -1,9 +1,8 @@
 package net.mcreator.cthulhufishing.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.core.BlockPos;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.mcreator.cthulhufishing.init.CthulhufishingModBlocks;
+import javax.annotation.Nullable;
 
 public class ObeliskOfGteatestObsessedEyeOnBlockRightClickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {

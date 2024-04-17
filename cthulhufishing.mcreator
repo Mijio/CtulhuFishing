@@ -4896,6 +4896,10 @@
         "children": []
       },
       {
+        "name": "ObeliskOfGreatestEye",
+        "children": []
+      },
+      {
         "name": "CthulhuGrimoire",
         "children": []
       },
@@ -4949,10 +4953,6 @@
       },
       {
         "name": "Enchantments",
-        "children": []
-      },
-      {
-        "name": "ObeliskOfGreatestEye",
         "children": []
       }
     ]
